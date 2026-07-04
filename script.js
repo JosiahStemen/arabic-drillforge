@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '7';
+  const APP_VERSION = '8';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -27,6 +27,7 @@
   let session = null;
   let selectedItem = null;
   let conjDrill = null;
+  let conjSession = null;
   let sentenceSession = null;
 
   // ─── Storage ───────────────────────────────────────────────
@@ -765,11 +766,13 @@
 
   function renderConjugation() {
     conjDrill = null;
+    conjSession = null;
     const drillArea = document.getElementById('conj-drill-area');
     if (drillArea) {
       drillArea.classList.add('hidden');
       drillArea.innerHTML = '';
     }
+    document.getElementById('conj-browse')?.classList.remove('hidden');
 
     const select = document.getElementById('conj-verb-select');
     const verbs = vocabData.items.filter(i => i.type === 'verb' && conjData.tables[i.id]);
@@ -822,6 +825,26 @@
     `;
   }
 
+  function getConjVerbPool() {
+    return vocabData.items.filter(i => i.type === 'verb' && conjData.tables[i.id]);
+  }
+
+  function buildConjQueue(count) {
+    const reg = settings.register;
+    const prompts = [];
+    getConjVerbPool().forEach(verb => {
+      ['past', 'present'].forEach(tense => {
+        PRONOUNS.forEach(pronoun => {
+          const expected = conjData.tables[verb.id]?.[reg]?.[tense]?.[pronoun];
+          if (expected) {
+            prompts.push({ verbId: verb.id, tense, pronoun, reg, english: conjData.tables[verb.id].english });
+          }
+        });
+      });
+    });
+    return shuffle(prompts).slice(0, Math.min(count, prompts.length));
+  }
+
   function gatherConjWrongOptions(conj, reg, tense, pronoun, expected) {
     const pool = new Set();
     ['past', 'present'].forEach(t => {
@@ -839,29 +862,45 @@
   }
 
   function startConjDrill() {
-    const verbId = document.getElementById('conj-verb-select')?.value;
-    const conj = conjData.tables[verbId];
+    const count = parseInt(document.getElementById('conj-count')?.value || '20', 10);
+    const queue = buildConjQueue(count);
     const area = document.getElementById('conj-drill-area');
-    if (!conj || !area) {
-      alert('Select a verb with conjugation data first.');
+
+    if (!queue.length || !area) {
+      alert('No conjugation drills available. Add verbs in data/conjugations.json.');
       return;
     }
 
-    const tense = Math.random() < 0.5 ? 'past' : 'present';
-    const pronoun = PRONOUNS[Math.floor(Math.random() * PRONOUNS.length)];
-    const reg = settings.register;
+    conjSession = { queue, index: 0, results: [] };
+    conjDrill = null;
+    document.getElementById('conj-browse')?.classList.add('hidden');
+    area.classList.remove('hidden');
+    renderConjQuestion();
+  }
+
+  function renderConjQuestion() {
+    if (!conjSession) return;
+    const prompt = conjSession.queue[conjSession.index];
+    if (!prompt) return endConjSession();
+
+    const conj = conjData.tables[prompt.verbId];
+    const area = document.getElementById('conj-drill-area');
+    if (!conj || !area) return;
+
+    const { tense, pronoun, reg } = prompt;
     const expected = conj[reg]?.[tense]?.[pronoun];
     if (!expected) {
-      alert('No conjugation form found for this combination. Try another verb.');
+      conjSession.index++;
+      renderConjQuestion();
       return;
     }
 
     const labels = conjData._meta?.pronoun_labels || {};
     const wrongPool = gatherConjWrongOptions(conj, reg, tense, pronoun, expected);
     const distractors = wrongPool.slice(0, 3);
-    while (distractors.length < 3) {
-      const fallback = wrongPool[distractors.length] || expected;
-      if (!distractors.includes(fallback)) distractors.push(fallback);
+    while (distractors.length < 3 && wrongPool.length > distractors.length) {
+      const fb = wrongPool[distractors.length];
+      if (fb && !distractors.includes(fb)) distractors.push(fb);
       else break;
     }
     const options = shuffle([
@@ -869,25 +908,32 @@
       ...distractors.map(text => ({ text, correct: false })),
     ]).slice(0, 4);
 
-    conjDrill = { verbId, tense, pronoun, reg, expected, options, answered: false };
+    conjDrill = { ...prompt, expected, options, answered: false };
 
-    area.classList.remove('hidden');
     area.innerHTML = `
+      <div class="flex items-center justify-between mb-4 text-sm text-forge-400">
+        <span>${conjSession.index + 1} / ${conjSession.queue.length}</span>
+        <button id="conj-exit" type="button" class="text-forge-danger hover:underline">Exit</button>
+      </div>
       <h4 class="font-semibold text-forge-accent mb-2">Conjugation Drill</h4>
       <p class="text-sm mb-3">Pick the correct form: <strong>${esc(conj.english)}</strong> — ${reg === 'lev' ? 'Levantine' : 'MSA'} <strong>${tense}</strong> for <strong>${esc(labels[pronoun] || pronoun)}</strong></p>
       <div class="grid sm:grid-cols-2 gap-2" id="conj-mc-options">
         ${options.map((o, i) => `
-          <button class="mc-option p-3 text-left bg-forge-800 border border-forge-600 rounded arabic arabic-sm" data-idx="${i}">
+          <button type="button" class="mc-option p-3 text-left bg-forge-800 border border-forge-600 rounded arabic arabic-sm" data-idx="${i}">
             <span class="text-forge-500 text-xs mr-2">${i + 1}</span>
             ${esc(o.text)}
           </button>
         `).join('')}
       </div>
       <div id="conj-result" class="mt-3 hidden"></div>
-      <button id="conj-show-table" class="mt-2 text-sm text-forge-400 hover:text-white hidden">Show full table</button>
-      <button id="conj-next" class="mt-2 ml-2 px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm hidden">Next (Space)</button>
+      <div id="conj-actions" class="mt-3 hidden">
+        <button id="conj-show-table" type="button" class="text-sm text-forge-400 hover:text-white">Show verb table</button>
+        <button id="conj-next" type="button" class="ml-2 px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Next (Space)</button>
+      </div>
       <p class="text-xs text-forge-500 mt-2">Press 1–4 to choose</p>
     `;
+
+    document.getElementById('conj-exit')?.addEventListener('click', exitConjDrill);
     document.querySelectorAll('#conj-mc-options .mc-option').forEach(btn => {
       btn.addEventListener('click', () => pickConjMC(parseInt(btn.dataset.idx, 10)));
     });
@@ -912,12 +958,61 @@
       ? `<span class="text-forge-success font-semibold">✓ Correct: <span class="arabic arabic-sm">${esc(conjDrill.expected)}</span></span>`
       : `<span class="text-forge-danger font-semibold">✗ Expected: <span class="arabic arabic-sm">${esc(conjDrill.expected)}</span></span>${picked ? ` — You: <span class="arabic arabic-sm">${esc(picked)}</span>` : ''}`;
 
-    document.getElementById('conj-show-table').classList.remove('hidden');
-    document.getElementById('conj-show-table').onclick = () => renderConjTable(conjDrill.verbId);
-    document.getElementById('conj-next').classList.remove('hidden');
-    document.getElementById('conj-next').onclick = () => { conjDrill = null; startConjDrill(); };
+    document.getElementById('conj-actions')?.classList.remove('hidden');
+    document.getElementById('conj-show-table')?.addEventListener('click', () => {
+      document.getElementById('conj-browse')?.classList.remove('hidden');
+      renderConjTable(conjDrill.verbId);
+      const sel = document.getElementById('conj-verb-select');
+      if (sel) sel.value = conjDrill.verbId;
+    });
+    document.getElementById('conj-next')?.addEventListener('click', nextConjQuestion);
+
+    conjSession.results.push({
+      verbId: conjDrill.verbId,
+      english: conjDrill.english || conjData.tables[conjDrill.verbId]?.english,
+      correct,
+    });
     recordAnswer(conjDrill.verbId, conjDrill.reg, correct);
     updateStats();
+  }
+
+  function nextConjQuestion() {
+    if (!conjSession) return;
+    conjSession.index++;
+    conjDrill = null;
+    if (conjSession.index >= conjSession.queue.length) endConjSession();
+    else renderConjQuestion();
+  }
+
+  function endConjSession() {
+    const correct = conjSession.results.filter(r => r.correct).length;
+    const total = conjSession.results.length;
+    const acc = total ? Math.round((correct / total) * 100) : 0;
+    const weak = conjSession.results.filter(r => !r.correct);
+
+    const area = document.getElementById('conj-drill-area');
+    area.innerHTML = `
+      <h3 class="text-lg font-bold text-forge-accent mb-2">Conjugation Drill Complete</h3>
+      <div class="grid sm:grid-cols-3 gap-4 mb-4">
+        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Accuracy</div><div class="text-3xl font-bold text-forge-accent">${acc}%</div></div>
+        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Correct</div><div class="text-3xl font-bold text-forge-success">${correct}</div></div>
+        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Total</div><div class="text-3xl font-bold">${total}</div></div>
+      </div>
+      ${weak.length ? `<div class="mb-4 text-sm"><h4 class="text-forge-danger font-semibold mb-1">Review:</h4><ul class="space-y-1">${weak.map(w => `<li>• ${esc(w.english)}</li>`).join('')}</ul></div>` : '<p class="text-forge-success text-sm mb-4">Perfect session.</p>'}
+      <button id="conj-done" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Back to Tables</button>
+    `;
+    document.getElementById('conj-done')?.addEventListener('click', exitConjDrill);
+    conjSession = null;
+    conjDrill = null;
+  }
+
+  function exitConjDrill() {
+    if (conjSession && conjSession.results.length && !confirm('Exit conjugation drill? Progress for answered items is saved.')) return;
+    conjSession = null;
+    conjDrill = null;
+    document.getElementById('conj-drill-area')?.classList.add('hidden');
+    document.getElementById('conj-drill-area').innerHTML = '';
+    document.getElementById('conj-browse')?.classList.remove('hidden');
   }
 
   // ─── Sentence drill ─────────────────────────────────────────
@@ -1288,10 +1383,9 @@
       pickConjMC(parseInt(e.key, 10) - 1);
       return;
     }
-    if (conjDrill && conjDrill.answered && e.code === 'Space') {
+    if (conjDrill && conjDrill.answered && (e.code === 'Space' || e.key === 'Enter')) {
       e.preventDefault();
-      conjDrill = null;
-      startConjDrill();
+      nextConjQuestion();
       return;
     }
 

@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body class="bg-forge-950 text-gray-100 min-h-screen font-sans">
   <!-- Onboarding overlay -->
@@ -196,11 +196,19 @@
 
       <!-- Conjugation view -->
       <div id="conjugation-view" class="hidden">
-        <div class="flex flex-wrap gap-2 mb-4">
-          <select id="conj-verb-select" class="flex-1 min-w-[200px] px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm"></select>
-          <button id="conj-drill-btn" data-action="conj-drill" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Drill Conjugation (Multiple Choice)</button>
+        <div id="conj-browse" class="mb-4">
+          <div class="flex flex-wrap gap-2 mb-4 items-center">
+            <select id="conj-verb-select" class="flex-1 min-w-[200px] px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm"></select>
+            <select id="conj-count" class="px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm">
+              <option value="10">10 questions</option>
+              <option value="20" selected>20 questions</option>
+              <option value="30">30 questions</option>
+            </select>
+            <button id="conj-drill-btn" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Start Random Drill</button>
+          </div>
+          <p class="text-xs text-forge-500 mb-3">Drill pulls random verbs, tenses, and pronouns. Browse tables below for reference.</p>
+          <div id="conj-tables" class="overflow-x-auto"></div>
         </div>
-        <div id="conj-tables" class="overflow-x-auto"></div>
         <div id="conj-drill-area" class="hidden mt-4 p-4 bg-forge-900 border border-forge-600 rounded-lg"></div>
       </div>
 
@@ -273,6 +281,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=8"></script>
 </body>
 </html>
