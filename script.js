@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '5';
+  const APP_VERSION = '6';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -242,6 +242,57 @@
     return 1 - levenshtein(x, y) / maxLen;
   }
 
+  const EN_STOP = new Set([
+    'the', 'a', 'an', 'is', 'are', 'was', 'were', 'am', 'be', 'been', 'being',
+    'has', 'have', 'had', 'do', 'does', 'did', 'will', 'would', 'can', 'could',
+    'to', 'in', 'on', 'at', 'for', 'of', 'with', 'from', 'by', 'about',
+    'my', 'his', 'her', 'their', 'our', 'your', 'its', 'i', 'he', 'she', 'they',
+    'we', 'you', 'it', 'me', 'him', 'them', 'us', 'there', 'this', 'that', 'very',
+  ]);
+
+  function verbStem(w) {
+    if (!w || w.length < 3) return w;
+    if (w.endsWith('ing') && w.length > 4) {
+      let base = w.slice(0, -3);
+      if (base.length >= 2 && base[base.length - 1] === base[base.length - 2]) base = base.slice(0, -1);
+      if (base.endsWith('y')) base = base.slice(0, -1) + 'i';
+      return base;
+    }
+    if (w.endsWith('ies') && w.length > 4) return w.slice(0, -3) + 'y';
+    if (w.endsWith('es') && w.length > 4) return w.slice(0, -2);
+    if (w.endsWith('s') && w.length > 3 && !w.endsWith('ss')) return w.slice(0, -1);
+    if (w.endsWith('ed') && w.length > 4) {
+      let base = w.slice(0, -2);
+      if (base.length >= 2 && base[base.length - 1] === base[base.length - 2]) base = base.slice(0, -1);
+      if (base.endsWith('i')) base = base.slice(0, -1) + 'y';
+      return base;
+    }
+    return w;
+  }
+
+  function wordMatches(a, b) {
+    if (!a || !b) return false;
+    if (a === b) return true;
+    if (verbStem(a) === verbStem(b)) return true;
+    if (similarity(a, b) >= 0.8) return true;
+    return levenshtein(a, b) <= 1;
+  }
+
+  function contentWords(text) {
+    return normalizeEnglish(text)
+      .split(' ')
+      .filter(w => w.length > 1 && !EN_STOP.has(w))
+      .map(w => verbStem(w));
+  }
+
+  function contentOverlap(input, target) {
+    const a = contentWords(input);
+    const b = contentWords(target);
+    if (!a.length || !b.length) return 0;
+    const hits = b.filter(bw => a.some(aw => wordMatches(aw, bw)));
+    return hits.length / b.length;
+  }
+
   function fuzzyMatchEnglish(input, sentence) {
     const norm = normalizeEnglish(input);
     if (!norm) return false;
@@ -251,17 +302,21 @@
       const t = normalizeEnglish(target);
       if (!t) continue;
       if (norm === t) return true;
-      if (similarity(norm, t) >= 0.82) return true;
+      if (similarity(norm, t) >= 0.78) return true;
       if (t.includes(norm) || norm.includes(t)) return true;
+      // Same meaning, different tense/aspect: "the boy plays" ≈ "the boy is playing"
+      if (contentOverlap(norm, t) >= 0.75) return true;
     }
 
     const keywords = sentence.keywords || [];
-    if (keywords.length >= 2) {
-      const words = norm.split(' ').filter(Boolean);
-      const hit = keywords.filter(kw =>
-        norm.includes(kw) || words.some(w => w === kw || similarity(w, kw) >= 0.8 || levenshtein(w, kw) <= 1)
-      );
-      if (hit.length / keywords.length >= 0.65 && hit.length >= 2) return true;
+    if (keywords.length >= 1) {
+      const stems = contentWords(norm);
+      const hit = keywords.filter(kw => {
+        const ks = verbStem(kw);
+        return stems.some(s => wordMatches(s, kw) || s === ks);
+      });
+      const need = keywords.length === 1 ? 1 : Math.ceil(keywords.length * 0.6);
+      if (hit.length >= need) return true;
     }
 
     return false;
