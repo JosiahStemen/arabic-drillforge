@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '3';
+  const APP_VERSION = '4';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -1002,7 +1002,8 @@
     document.getElementById('sentence-actions').innerHTML =
       `<button id="sentence-submit" class="px-6 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Submit (Enter)</button>`;
     document.getElementById('sentence-submit').onclick = submitSentence;
-    document.getElementById('sentence-tts').onclick = () => speakArabic(s.arabic);
+    const ttsBtn = document.getElementById('sentence-tts');
+    if (ttsBtn) ttsBtn.onclick = () => speakArabic(s.arabic, ttsBtn);
     setTimeout(() => document.getElementById('sentence-input')?.focus(), 50);
   }
 
@@ -1193,11 +1194,80 @@
     sel.value = current;
   }
 
-  function speakArabic(text) {
-    if (!text || !window.speechSynthesis) return;
-    const u = new SpeechSynthesisUtterance(text.replace(/\/.*$/, '').trim());
-    u.lang = settings.register === 'lev' ? 'ar-LB' : 'ar-SA';
+  let ttsVoices = [];
+
+  function initTtsVoices() {
+    if (!window.speechSynthesis) return;
+    const load = () => { ttsVoices = speechSynthesis.getVoices() || []; };
+    load();
+    speechSynthesis.addEventListener('voiceschanged', load);
+  }
+
+  function pickArabicVoice() {
+    const prefs = settings.register === 'lev'
+      ? ['ar-LB', 'ar-SY', 'ar-JO', 'ar-PS', 'ar-SA', 'ar-EG', 'ar']
+      : ['ar-SA', 'ar-EG', 'ar', 'ar-LB'];
+    for (const code of prefs) {
+      const v = ttsVoices.find(v => v.lang === code || v.lang.startsWith(code + '-'));
+      if (v) return v;
+    }
+    return ttsVoices.find(v => v.lang.startsWith('ar')) || null;
+  }
+
+  function showTtsNotice(msg) {
+    let el = document.getElementById('tts-notice');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'tts-notice';
+      el.className = 'fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-w-md px-4 py-3 bg-forge-800 border border-forge-accent text-sm text-gray-200 rounded-lg shadow-lg';
+      document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.classList.remove('hidden');
+    clearTimeout(showTtsNotice._t);
+    showTtsNotice._t = setTimeout(() => el.classList.add('hidden'), 5000);
+  }
+
+  function speakArabic(text, btn) {
+    const clean = (text || '').replace(/\/.*$/, '').trim();
+    if (!clean) return;
+
+    if (!window.speechSynthesis) {
+      showTtsNotice('Speech not supported in this browser.');
+      return;
+    }
+
+    if (!ttsVoices.length) ttsVoices = speechSynthesis.getVoices() || [];
+    const voice = pickArabicVoice();
+    if (!voice) {
+      showTtsNotice('No Arabic voice found. Install an Arabic language/speech pack in Windows Settings → Time & language → Speech, then reload.');
+      return;
+    }
+
+    speechSynthesis.cancel();
+
+    const u = new SpeechSynthesisUtterance(clean);
+    u.voice = voice;
+    u.lang = voice.lang;
+    u.rate = 0.9;
+
+    const resetBtn = () => { if (btn) btn.textContent = '🔊 Listen'; };
+    if (btn) btn.textContent = '🔊 Playing…';
+
+    u.onend = resetBtn;
+    u.onerror = () => {
+      resetBtn();
+      showTtsNotice('Playback failed. Try Chrome/Edge with Arabic speech installed.');
+    };
+
     speechSynthesis.speak(u);
+
+    // Chrome occasionally drops the first speak() call before voices load
+    setTimeout(() => {
+      if (!speechSynthesis.speaking && !speechSynthesis.pending) {
+        speechSynthesis.speak(u);
+      }
+    }, 120);
   }
 
   // ─── Keyboard ────────────────────────────────────────────────
@@ -1262,6 +1332,19 @@
   function bindEvents() {
     // Delegated clicks — survives partial init failures & cache mismatches
     document.addEventListener('click', (e) => {
+      const ttsBtn = e.target.closest('#sentence-tts, #modal-tts');
+      if (ttsBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (ttsBtn.id === 'sentence-tts') {
+          const ar = document.getElementById('sentence-arabic')?.textContent;
+          speakArabic(ar, ttsBtn);
+        } else if (selectedItem) {
+          speakArabic(getRegister(selectedItem).form, ttsBtn);
+        }
+        return;
+      }
+
       const btn = e.target.closest('[data-action]');
       if (!btn) return;
       e.preventDefault();
@@ -1295,9 +1378,7 @@
     document.getElementById('detail-modal').onclick = (e) => {
       if (e.target.id === 'detail-modal') closeDetail();
     };
-    document.getElementById('modal-tts').onclick = () => {
-      if (selectedItem) speakArabic(getRegister(selectedItem).form);
-    };
+
     document.getElementById('modal-drill').onclick = () => {
       if (!selectedItem) return;
       closeDetail();
@@ -1329,6 +1410,7 @@
 
   async function init() {
     loadStorage();
+    initTtsVoices();
     bindEvents();
     try {
       await loadData();
