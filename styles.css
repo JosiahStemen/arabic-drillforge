@@ -228,7 +228,8 @@ select:focus-visible {
 
 /* Onboarding + modal flex */
 #onboarding.flex,
-#detail-modal.flex {
+#detail-modal.flex,
+#settings-modal.flex {
   display: flex;
 }
 

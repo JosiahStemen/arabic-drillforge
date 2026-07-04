@@ -3,9 +3,21 @@
     "description": "Arabic DrillForge vocabulary. Edit items below. Fields: id (unique), type (verb|noun), english, msa/lev objects, tags array, frequency_rank (lower=higher frequency).",
     "version": "1.0",
     "counts": {
-      "verbs": 115,
-      "nouns": 100
-    }
+      "verbs": 125,
+      "nouns": 120,
+      "total": 245
+    },
+    "dlpt_levels": [
+      "0+",
+      "1",
+      "1+",
+      "2",
+      "2+",
+      "3",
+      "3+",
+      "4",
+      "4+"
+    ]
   },
   "items": [
     {
@@ -28,7 +40,8 @@
         "motion",
         "daily"
       ],
-      "frequency_rank": 1
+      "frequency_rank": 1,
+      "dlpt_level": "0+"
     },
     {
       "id": "v002",
@@ -50,7 +63,8 @@
         "motion",
         "daily"
       ],
-      "frequency_rank": 2
+      "frequency_rank": 2,
+      "dlpt_level": "0+"
     },
     {
       "id": "v003",
@@ -72,7 +86,8 @@
         "daily",
         "food"
       ],
-      "frequency_rank": 3
+      "frequency_rank": 3,
+      "dlpt_level": "0+"
     },
     {
       "id": "v004",
@@ -94,7 +109,8 @@
         "daily",
         "food"
       ],
-      "frequency_rank": 4
+      "frequency_rank": 4,
+      "dlpt_level": "0+"
     },
     {
       "id": "v005",
@@ -116,7 +132,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 5
+      "frequency_rank": 5,
+      "dlpt_level": "0+"
     },
     {
       "id": "v006",
@@ -138,7 +155,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 6
+      "frequency_rank": 6,
+      "dlpt_level": "0+"
     },
     {
       "id": "v007",
@@ -160,7 +178,8 @@
         "daily",
         "modal"
       ],
-      "frequency_rank": 7
+      "frequency_rank": 7,
+      "dlpt_level": "0+"
     },
     {
       "id": "v008",
@@ -182,7 +201,8 @@
         "perception",
         "daily"
       ],
-      "frequency_rank": 8
+      "frequency_rank": 8,
+      "dlpt_level": "0+"
     },
     {
       "id": "v009",
@@ -203,7 +223,8 @@
       "tags": [
         "perception"
       ],
-      "frequency_rank": 9
+      "frequency_rank": 9,
+      "dlpt_level": "0+"
     },
     {
       "id": "v010",
@@ -224,7 +245,8 @@
       "tags": [
         "cognition"
       ],
-      "frequency_rank": 10
+      "frequency_rank": 10,
+      "dlpt_level": "0+"
     },
     {
       "id": "v011",
@@ -246,7 +268,8 @@
         "cognition",
         "social"
       ],
-      "frequency_rank": 11
+      "frequency_rank": 11,
+      "dlpt_level": "0+"
     },
     {
       "id": "v012",
@@ -267,7 +290,8 @@
       "tags": [
         "cognition"
       ],
-      "frequency_rank": 12
+      "frequency_rank": 12,
+      "dlpt_level": "0+"
     },
     {
       "id": "v013",
@@ -288,7 +312,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 13
+      "frequency_rank": 13,
+      "dlpt_level": "0+"
     },
     {
       "id": "v014",
@@ -309,7 +334,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 14
+      "frequency_rank": 14,
+      "dlpt_level": "0+"
     },
     {
       "id": "v015",
@@ -330,7 +356,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 15
+      "frequency_rank": 15,
+      "dlpt_level": "0+"
     },
     {
       "id": "v016",
@@ -351,7 +378,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 16
+      "frequency_rank": 16,
+      "dlpt_level": "0+"
     },
     {
       "id": "v017",
@@ -373,7 +401,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 17
+      "frequency_rank": 17,
+      "dlpt_level": "0+"
     },
     {
       "id": "v018",
@@ -395,7 +424,8 @@
         "daily",
         "work"
       ],
-      "frequency_rank": 18
+      "frequency_rank": 18,
+      "dlpt_level": "0+"
     },
     {
       "id": "v019",
@@ -417,7 +447,8 @@
         "action",
         "study"
       ],
-      "frequency_rank": 19
+      "frequency_rank": 19,
+      "dlpt_level": "0+"
     },
     {
       "id": "v020",
@@ -439,7 +470,8 @@
         "action",
         "study"
       ],
-      "frequency_rank": 20
+      "frequency_rank": 20,
+      "dlpt_level": "0+"
     },
     {
       "id": "v021",
@@ -460,7 +492,8 @@
       "tags": [
         "study"
       ],
-      "frequency_rank": 21
+      "frequency_rank": 21,
+      "dlpt_level": "0+"
     },
     {
       "id": "v022",
@@ -481,7 +514,8 @@
       "tags": [
         "study"
       ],
-      "frequency_rank": 22
+      "frequency_rank": 22,
+      "dlpt_level": "0+"
     },
     {
       "id": "v023",
@@ -502,7 +536,8 @@
       "tags": [
         "study"
       ],
-      "frequency_rank": 23
+      "frequency_rank": 23,
+      "dlpt_level": "0+"
     },
     {
       "id": "v024",
@@ -524,7 +559,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 24
+      "frequency_rank": 24,
+      "dlpt_level": "0+"
     },
     {
       "id": "v025",
@@ -546,7 +582,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 25
+      "frequency_rank": 25,
+      "dlpt_level": "0+"
     },
     {
       "id": "v026",
@@ -567,7 +604,8 @@
       "tags": [
         "motion"
       ],
-      "frequency_rank": 26
+      "frequency_rank": 26,
+      "dlpt_level": "0+"
     },
     {
       "id": "v027",
@@ -588,7 +626,8 @@
       "tags": [
         "motion"
       ],
-      "frequency_rank": 27
+      "frequency_rank": 27,
+      "dlpt_level": "0+"
     },
     {
       "id": "v028",
@@ -610,7 +649,8 @@
         "daily",
         "posture"
       ],
-      "frequency_rank": 28
+      "frequency_rank": 28,
+      "dlpt_level": "0+"
     },
     {
       "id": "v029",
@@ -632,7 +672,8 @@
         "daily",
         "posture"
       ],
-      "frequency_rank": 29
+      "frequency_rank": 29,
+      "dlpt_level": "0+"
     },
     {
       "id": "v030",
@@ -654,7 +695,8 @@
         "daily",
         "body"
       ],
-      "frequency_rank": 30
+      "frequency_rank": 30,
+      "dlpt_level": "0+"
     },
     {
       "id": "v031",
@@ -676,7 +718,8 @@
         "daily",
         "body"
       ],
-      "frequency_rank": 31
+      "frequency_rank": 31,
+      "dlpt_level": "0+"
     },
     {
       "id": "v032",
@@ -698,7 +741,8 @@
         "daily",
         "home"
       ],
-      "frequency_rank": 32
+      "frequency_rank": 32,
+      "dlpt_level": "0+"
     },
     {
       "id": "v033",
@@ -719,7 +763,8 @@
       "tags": [
         "life"
       ],
-      "frequency_rank": 33
+      "frequency_rank": 33,
+      "dlpt_level": "0+"
     },
     {
       "id": "v034",
@@ -740,7 +785,8 @@
       "tags": [
         "life"
       ],
-      "frequency_rank": 34
+      "frequency_rank": 34,
+      "dlpt_level": "0+"
     },
     {
       "id": "v035",
@@ -761,7 +807,8 @@
       "tags": [
         "emotion"
       ],
-      "frequency_rank": 35
+      "frequency_rank": 35,
+      "dlpt_level": "0+"
     },
     {
       "id": "v036",
@@ -782,7 +829,8 @@
       "tags": [
         "emotion"
       ],
-      "frequency_rank": 36
+      "frequency_rank": 36,
+      "dlpt_level": "1"
     },
     {
       "id": "v037",
@@ -804,7 +852,8 @@
         "social",
         "action"
       ],
-      "frequency_rank": 37
+      "frequency_rank": 37,
+      "dlpt_level": "1"
     },
     {
       "id": "v038",
@@ -825,7 +874,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 38
+      "frequency_rank": 38,
+      "dlpt_level": "1"
     },
     {
       "id": "v039",
@@ -847,7 +897,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 39
+      "frequency_rank": 39,
+      "dlpt_level": "1"
     },
     {
       "id": "v040",
@@ -869,7 +920,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 40
+      "frequency_rank": 40,
+      "dlpt_level": "1"
     },
     {
       "id": "v041",
@@ -891,7 +943,8 @@
         "commerce",
         "daily"
       ],
-      "frequency_rank": 41
+      "frequency_rank": 41,
+      "dlpt_level": "1"
     },
     {
       "id": "v042",
@@ -912,7 +965,8 @@
       "tags": [
         "commerce"
       ],
-      "frequency_rank": 42
+      "frequency_rank": 42,
+      "dlpt_level": "1"
     },
     {
       "id": "v043",
@@ -933,7 +987,8 @@
       "tags": [
         "commerce"
       ],
-      "frequency_rank": 43
+      "frequency_rank": 43,
+      "dlpt_level": "1"
     },
     {
       "id": "v044",
@@ -955,7 +1010,8 @@
         "commerce",
         "daily"
       ],
-      "frequency_rank": 44
+      "frequency_rank": 44,
+      "dlpt_level": "1"
     },
     {
       "id": "v045",
@@ -977,7 +1033,8 @@
         "food",
         "daily"
       ],
-      "frequency_rank": 45
+      "frequency_rank": 45,
+      "dlpt_level": "1"
     },
     {
       "id": "v046",
@@ -999,7 +1056,8 @@
         "daily",
         "home"
       ],
-      "frequency_rank": 46
+      "frequency_rank": 46,
+      "dlpt_level": "1"
     },
     {
       "id": "v047",
@@ -1021,7 +1079,8 @@
         "daily",
         "body"
       ],
-      "frequency_rank": 47
+      "frequency_rank": 47,
+      "dlpt_level": "1"
     },
     {
       "id": "v048",
@@ -1043,7 +1102,8 @@
         "daily",
         "body"
       ],
-      "frequency_rank": 48
+      "frequency_rank": 48,
+      "dlpt_level": "1"
     },
     {
       "id": "v049",
@@ -1065,7 +1125,8 @@
         "motion",
         "travel"
       ],
-      "frequency_rank": 49
+      "frequency_rank": 49,
+      "dlpt_level": "1"
     },
     {
       "id": "v050",
@@ -1086,7 +1147,8 @@
       "tags": [
         "motion"
       ],
-      "frequency_rank": 50
+      "frequency_rank": 50,
+      "dlpt_level": "1"
     },
     {
       "id": "v051",
@@ -1107,7 +1169,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 51
+      "frequency_rank": 51,
+      "dlpt_level": "1"
     },
     {
       "id": "v052",
@@ -1129,7 +1192,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 52
+      "frequency_rank": 52,
+      "dlpt_level": "1"
     },
     {
       "id": "v053",
@@ -1151,7 +1215,8 @@
         "action",
         "motion"
       ],
-      "frequency_rank": 53
+      "frequency_rank": 53,
+      "dlpt_level": "1"
     },
     {
       "id": "v054",
@@ -1172,7 +1237,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 54
+      "frequency_rank": 54,
+      "dlpt_level": "1"
     },
     {
       "id": "v055",
@@ -1194,7 +1260,8 @@
         "action",
         "daily"
       ],
-      "frequency_rank": 55
+      "frequency_rank": 55,
+      "dlpt_level": "1"
     },
     {
       "id": "v056",
@@ -1215,7 +1282,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 56
+      "frequency_rank": 56,
+      "dlpt_level": "1"
     },
     {
       "id": "v057",
@@ -1236,7 +1304,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 57
+      "frequency_rank": 57,
+      "dlpt_level": "1"
     },
     {
       "id": "v058",
@@ -1257,7 +1326,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 58
+      "frequency_rank": 58,
+      "dlpt_level": "1"
     },
     {
       "id": "v059",
@@ -1278,7 +1348,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 59
+      "frequency_rank": 59,
+      "dlpt_level": "1"
     },
     {
       "id": "v060",
@@ -1299,7 +1370,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 60
+      "frequency_rank": 60,
+      "dlpt_level": "1"
     },
     {
       "id": "v061",
@@ -1320,7 +1392,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 61
+      "frequency_rank": 61,
+      "dlpt_level": "1"
     },
     {
       "id": "v062",
@@ -1341,7 +1414,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 62
+      "frequency_rank": 62,
+      "dlpt_level": "1"
     },
     {
       "id": "v063",
@@ -1363,7 +1437,8 @@
         "daily",
         "leisure"
       ],
-      "frequency_rank": 63
+      "frequency_rank": 63,
+      "dlpt_level": "1"
     },
     {
       "id": "v064",
@@ -1385,7 +1460,8 @@
         "motion",
         "body"
       ],
-      "frequency_rank": 64
+      "frequency_rank": 64,
+      "dlpt_level": "1"
     },
     {
       "id": "v065",
@@ -1407,7 +1483,8 @@
         "motion",
         "body"
       ],
-      "frequency_rank": 65
+      "frequency_rank": 65,
+      "dlpt_level": "1"
     },
     {
       "id": "v066",
@@ -1429,7 +1506,8 @@
         "motion",
         "travel"
       ],
-      "frequency_rank": 66
+      "frequency_rank": 66,
+      "dlpt_level": "1"
     },
     {
       "id": "v067",
@@ -1451,7 +1529,8 @@
         "motion",
         "travel"
       ],
-      "frequency_rank": 67
+      "frequency_rank": 67,
+      "dlpt_level": "1"
     },
     {
       "id": "v068",
@@ -1473,7 +1552,8 @@
         "motion",
         "body"
       ],
-      "frequency_rank": 68
+      "frequency_rank": 68,
+      "dlpt_level": "1"
     },
     {
       "id": "v069",
@@ -1494,7 +1574,8 @@
       "tags": [
         "cognition"
       ],
-      "frequency_rank": 69
+      "frequency_rank": 69,
+      "dlpt_level": "1"
     },
     {
       "id": "v070",
@@ -1516,7 +1597,8 @@
         "cognition",
         "religion"
       ],
-      "frequency_rank": 70
+      "frequency_rank": 70,
+      "dlpt_level": "1"
     },
     {
       "id": "v071",
@@ -1537,7 +1619,8 @@
       "tags": [
         "cognition"
       ],
-      "frequency_rank": 71
+      "frequency_rank": 71,
+      "dlpt_level": "1+"
     },
     {
       "id": "v072",
@@ -1558,7 +1641,8 @@
       "tags": [
         "cognition"
       ],
-      "frequency_rank": 72
+      "frequency_rank": 72,
+      "dlpt_level": "1+"
     },
     {
       "id": "v073",
@@ -1580,7 +1664,8 @@
         "emotion",
         "body"
       ],
-      "frequency_rank": 73
+      "frequency_rank": 73,
+      "dlpt_level": "1+"
     },
     {
       "id": "v074",
@@ -1601,7 +1686,8 @@
       "tags": [
         "emotion"
       ],
-      "frequency_rank": 74
+      "frequency_rank": 74,
+      "dlpt_level": "1+"
     },
     {
       "id": "v075",
@@ -1622,7 +1708,8 @@
       "tags": [
         "emotion"
       ],
-      "frequency_rank": 75
+      "frequency_rank": 75,
+      "dlpt_level": "1+"
     },
     {
       "id": "v076",
@@ -1643,7 +1730,8 @@
       "tags": [
         "emotion"
       ],
-      "frequency_rank": 76
+      "frequency_rank": 76,
+      "dlpt_level": "1+"
     },
     {
       "id": "v077",
@@ -1664,7 +1752,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 77
+      "frequency_rank": 77,
+      "dlpt_level": "1+"
     },
     {
       "id": "v078",
@@ -1686,7 +1775,8 @@
         "communication",
         "action"
       ],
-      "frequency_rank": 78
+      "frequency_rank": 78,
+      "dlpt_level": "1+"
     },
     {
       "id": "v079",
@@ -1707,7 +1797,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 79
+      "frequency_rank": 79,
+      "dlpt_level": "1+"
     },
     {
       "id": "v080",
@@ -1729,7 +1820,8 @@
         "action",
         "daily"
       ],
-      "frequency_rank": 80
+      "frequency_rank": 80,
+      "dlpt_level": "1+"
     },
     {
       "id": "v081",
@@ -1751,7 +1843,8 @@
         "action",
         "daily"
       ],
-      "frequency_rank": 81
+      "frequency_rank": 81,
+      "dlpt_level": "1+"
     },
     {
       "id": "v082",
@@ -1772,7 +1865,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 82
+      "frequency_rank": 82,
+      "dlpt_level": "1+"
     },
     {
       "id": "v083",
@@ -1794,7 +1888,8 @@
         "action",
         "motion"
       ],
-      "frequency_rank": 83
+      "frequency_rank": 83,
+      "dlpt_level": "1+"
     },
     {
       "id": "v084",
@@ -1815,7 +1910,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 84
+      "frequency_rank": 84,
+      "dlpt_level": "1+"
     },
     {
       "id": "v085",
@@ -1837,7 +1933,8 @@
         "study",
         "action"
       ],
-      "frequency_rank": 85
+      "frequency_rank": 85,
+      "dlpt_level": "1+"
     },
     {
       "id": "v086",
@@ -1859,7 +1956,8 @@
         "study",
         "action"
       ],
-      "frequency_rank": 86
+      "frequency_rank": 86,
+      "dlpt_level": "1+"
     },
     {
       "id": "v087",
@@ -1880,7 +1978,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 87
+      "frequency_rank": 87,
+      "dlpt_level": "1+"
     },
     {
       "id": "v088",
@@ -1902,7 +2001,8 @@
         "daily",
         "action"
       ],
-      "frequency_rank": 88
+      "frequency_rank": 88,
+      "dlpt_level": "1+"
     },
     {
       "id": "v089",
@@ -1924,7 +2024,8 @@
         "modal",
         "daily"
       ],
-      "frequency_rank": 89
+      "frequency_rank": 89,
+      "dlpt_level": "1+"
     },
     {
       "id": "v090",
@@ -1945,7 +2046,8 @@
       "tags": [
         "modal"
       ],
-      "frequency_rank": 90
+      "frequency_rank": 90,
+      "dlpt_level": "1+"
     },
     {
       "id": "v091",
@@ -1966,7 +2068,8 @@
       "tags": [
         "modal"
       ],
-      "frequency_rank": 91
+      "frequency_rank": 91,
+      "dlpt_level": "1+"
     },
     {
       "id": "v092",
@@ -1987,7 +2090,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 92
+      "frequency_rank": 92,
+      "dlpt_level": "1+"
     },
     {
       "id": "v093",
@@ -2008,7 +2112,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 93
+      "frequency_rank": 93,
+      "dlpt_level": "1+"
     },
     {
       "id": "v094",
@@ -2029,7 +2134,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 94
+      "frequency_rank": 94,
+      "dlpt_level": "1+"
     },
     {
       "id": "v095",
@@ -2050,7 +2156,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 95
+      "frequency_rank": 95,
+      "dlpt_level": "1+"
     },
     {
       "id": "v096",
@@ -2071,7 +2178,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 96
+      "frequency_rank": 96,
+      "dlpt_level": "1+"
     },
     {
       "id": "v097",
@@ -2093,7 +2201,8 @@
         "action",
         "daily"
       ],
-      "frequency_rank": 97
+      "frequency_rank": 97,
+      "dlpt_level": "1+"
     },
     {
       "id": "v098",
@@ -2114,7 +2223,8 @@
       "tags": [
         "action"
       ],
-      "frequency_rank": 98
+      "frequency_rank": 98,
+      "dlpt_level": "1+"
     },
     {
       "id": "v099",
@@ -2136,7 +2246,8 @@
         "action",
         "food"
       ],
-      "frequency_rank": 99
+      "frequency_rank": 99,
+      "dlpt_level": "1+"
     },
     {
       "id": "v100",
@@ -2157,7 +2268,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 100
+      "frequency_rank": 100,
+      "dlpt_level": "1+"
     },
     {
       "id": "v101",
@@ -2178,7 +2290,8 @@
       "tags": [
         "weather"
       ],
-      "frequency_rank": 101
+      "frequency_rank": 101,
+      "dlpt_level": "2"
     },
     {
       "id": "v102",
@@ -2199,7 +2312,8 @@
       "tags": [
         "weather"
       ],
-      "frequency_rank": 102
+      "frequency_rank": 102,
+      "dlpt_level": "2"
     },
     {
       "id": "v103",
@@ -2220,7 +2334,8 @@
       "tags": [
         "weather"
       ],
-      "frequency_rank": 103
+      "frequency_rank": 103,
+      "dlpt_level": "2"
     },
     {
       "id": "v104",
@@ -2242,7 +2357,8 @@
         "social",
         "life"
       ],
-      "frequency_rank": 104
+      "frequency_rank": 104,
+      "dlpt_level": "2"
     },
     {
       "id": "v105",
@@ -2264,7 +2380,8 @@
         "social",
         "life"
       ],
-      "frequency_rank": 105
+      "frequency_rank": 105,
+      "dlpt_level": "2"
     },
     {
       "id": "v106",
@@ -2285,7 +2402,8 @@
       "tags": [
         "social"
       ],
-      "frequency_rank": 106
+      "frequency_rank": 106,
+      "dlpt_level": "2"
     },
     {
       "id": "v107",
@@ -2307,7 +2425,8 @@
         "social",
         "motion"
       ],
-      "frequency_rank": 107
+      "frequency_rank": 107,
+      "dlpt_level": "2"
     },
     {
       "id": "v108",
@@ -2328,7 +2447,8 @@
       "tags": [
         "social"
       ],
-      "frequency_rank": 108
+      "frequency_rank": 108,
+      "dlpt_level": "2"
     },
     {
       "id": "v109",
@@ -2349,7 +2469,8 @@
       "tags": [
         "social"
       ],
-      "frequency_rank": 109
+      "frequency_rank": 109,
+      "dlpt_level": "2"
     },
     {
       "id": "v110",
@@ -2370,7 +2491,8 @@
       "tags": [
         "social"
       ],
-      "frequency_rank": 110
+      "frequency_rank": 110,
+      "dlpt_level": "2"
     },
     {
       "id": "v111",
@@ -2391,7 +2513,8 @@
       "tags": [
         "social"
       ],
-      "frequency_rank": 111
+      "frequency_rank": 111,
+      "dlpt_level": "2"
     },
     {
       "id": "v112",
@@ -2412,7 +2535,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 112
+      "frequency_rank": 112,
+      "dlpt_level": "2"
     },
     {
       "id": "v113",
@@ -2433,7 +2557,8 @@
       "tags": [
         "communication"
       ],
-      "frequency_rank": 113
+      "frequency_rank": 113,
+      "dlpt_level": "2"
     },
     {
       "id": "v114",
@@ -2455,7 +2580,8 @@
         "communication",
         "study"
       ],
-      "frequency_rank": 114
+      "frequency_rank": 114,
+      "dlpt_level": "2"
     },
     {
       "id": "v115",
@@ -2477,7 +2603,8 @@
         "communication",
         "action"
       ],
-      "frequency_rank": 115
+      "frequency_rank": 115,
+      "dlpt_level": "2"
     },
     {
       "id": "n001",
@@ -2499,7 +2626,8 @@
         "home",
         "daily"
       ],
-      "frequency_rank": 1
+      "frequency_rank": 1,
+      "dlpt_level": "0+"
     },
     {
       "id": "n002",
@@ -2520,7 +2648,8 @@
       "tags": [
         "home"
       ],
-      "frequency_rank": 2
+      "frequency_rank": 2,
+      "dlpt_level": "0+"
     },
     {
       "id": "n003",
@@ -2541,7 +2670,8 @@
       "tags": [
         "home"
       ],
-      "frequency_rank": 3
+      "frequency_rank": 3,
+      "dlpt_level": "0+"
     },
     {
       "id": "n004",
@@ -2562,7 +2692,8 @@
       "tags": [
         "home"
       ],
-      "frequency_rank": 4
+      "frequency_rank": 4,
+      "dlpt_level": "0+"
     },
     {
       "id": "n005",
@@ -2584,7 +2715,8 @@
         "food",
         "daily"
       ],
-      "frequency_rank": 5
+      "frequency_rank": 5,
+      "dlpt_level": "0+"
     },
     {
       "id": "n006",
@@ -2606,7 +2738,8 @@
         "food",
         "daily"
       ],
-      "frequency_rank": 6
+      "frequency_rank": 6,
+      "dlpt_level": "0+"
     },
     {
       "id": "n007",
@@ -2627,7 +2760,8 @@
       "tags": [
         "food"
       ],
-      "frequency_rank": 7
+      "frequency_rank": 7,
+      "dlpt_level": "0+"
     },
     {
       "id": "n008",
@@ -2649,7 +2783,8 @@
         "food",
         "daily"
       ],
-      "frequency_rank": 8
+      "frequency_rank": 8,
+      "dlpt_level": "0+"
     },
     {
       "id": "n009",
@@ -2670,7 +2805,8 @@
       "tags": [
         "food"
       ],
-      "frequency_rank": 9
+      "frequency_rank": 9,
+      "dlpt_level": "0+"
     },
     {
       "id": "n010",
@@ -2691,7 +2827,8 @@
       "tags": [
         "people"
       ],
-      "frequency_rank": 10
+      "frequency_rank": 10,
+      "dlpt_level": "0+"
     },
     {
       "id": "n011",
@@ -2712,7 +2849,8 @@
       "tags": [
         "people"
       ],
-      "frequency_rank": 11
+      "frequency_rank": 11,
+      "dlpt_level": "0+"
     },
     {
       "id": "n012",
@@ -2734,7 +2872,8 @@
         "people",
         "family"
       ],
-      "frequency_rank": 12
+      "frequency_rank": 12,
+      "dlpt_level": "0+"
     },
     {
       "id": "n013",
@@ -2756,7 +2895,8 @@
         "people",
         "family"
       ],
-      "frequency_rank": 13
+      "frequency_rank": 13,
+      "dlpt_level": "0+"
     },
     {
       "id": "n014",
@@ -2777,7 +2917,8 @@
       "tags": [
         "people"
       ],
-      "frequency_rank": 14
+      "frequency_rank": 14,
+      "dlpt_level": "0+"
     },
     {
       "id": "n015",
@@ -2799,7 +2940,8 @@
         "people",
         "social"
       ],
-      "frequency_rank": 15
+      "frequency_rank": 15,
+      "dlpt_level": "0+"
     },
     {
       "id": "n016",
@@ -2821,7 +2963,8 @@
         "people",
         "social"
       ],
-      "frequency_rank": 16
+      "frequency_rank": 16,
+      "dlpt_level": "0+"
     },
     {
       "id": "n017",
@@ -2842,7 +2985,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 17
+      "frequency_rank": 17,
+      "dlpt_level": "0+"
     },
     {
       "id": "n018",
@@ -2863,7 +3007,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 18
+      "frequency_rank": 18,
+      "dlpt_level": "0+"
     },
     {
       "id": "n019",
@@ -2884,7 +3029,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 19
+      "frequency_rank": 19,
+      "dlpt_level": "0+"
     },
     {
       "id": "n020",
@@ -2905,7 +3051,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 20
+      "frequency_rank": 20,
+      "dlpt_level": "0+"
     },
     {
       "id": "n021",
@@ -2926,7 +3073,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 21
+      "frequency_rank": 21,
+      "dlpt_level": "0+"
     },
     {
       "id": "n022",
@@ -2947,7 +3095,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 22
+      "frequency_rank": 22,
+      "dlpt_level": "0+"
     },
     {
       "id": "n023",
@@ -2968,7 +3117,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 23
+      "frequency_rank": 23,
+      "dlpt_level": "0+"
     },
     {
       "id": "n024",
@@ -2989,7 +3139,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 24
+      "frequency_rank": 24,
+      "dlpt_level": "0+"
     },
     {
       "id": "n025",
@@ -3010,7 +3161,8 @@
       "tags": [
         "family"
       ],
-      "frequency_rank": 25
+      "frequency_rank": 25,
+      "dlpt_level": "0+"
     },
     {
       "id": "n026",
@@ -3031,7 +3183,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 26
+      "frequency_rank": 26,
+      "dlpt_level": "0+"
     },
     {
       "id": "n027",
@@ -3052,7 +3205,8 @@
       "tags": [
         "study"
       ],
-      "frequency_rank": 27
+      "frequency_rank": 27,
+      "dlpt_level": "0+"
     },
     {
       "id": "n028",
@@ -3073,7 +3227,8 @@
       "tags": [
         "study"
       ],
-      "frequency_rank": 28
+      "frequency_rank": 28,
+      "dlpt_level": "0+"
     },
     {
       "id": "n029",
@@ -3094,7 +3249,8 @@
       "tags": [
         "study"
       ],
-      "frequency_rank": 29
+      "frequency_rank": 29,
+      "dlpt_level": "0+"
     },
     {
       "id": "n030",
@@ -3116,7 +3272,8 @@
         "work",
         "daily"
       ],
-      "frequency_rank": 30
+      "frequency_rank": 30,
+      "dlpt_level": "0+"
     },
     {
       "id": "n031",
@@ -3137,7 +3294,8 @@
       "tags": [
         "work"
       ],
-      "frequency_rank": 31
+      "frequency_rank": 31,
+      "dlpt_level": "0+"
     },
     {
       "id": "n032",
@@ -3159,7 +3317,8 @@
         "commerce",
         "daily"
       ],
-      "frequency_rank": 32
+      "frequency_rank": 32,
+      "dlpt_level": "0+"
     },
     {
       "id": "n033",
@@ -3180,7 +3339,8 @@
       "tags": [
         "commerce"
       ],
-      "frequency_rank": 33
+      "frequency_rank": 33,
+      "dlpt_level": "0+"
     },
     {
       "id": "n034",
@@ -3202,7 +3362,8 @@
         "commerce",
         "daily"
       ],
-      "frequency_rank": 34
+      "frequency_rank": 34,
+      "dlpt_level": "0+"
     },
     {
       "id": "n035",
@@ -3224,7 +3385,8 @@
         "travel",
         "daily"
       ],
-      "frequency_rank": 35
+      "frequency_rank": 35,
+      "dlpt_level": "0+"
     },
     {
       "id": "n036",
@@ -3246,7 +3408,8 @@
         "place",
         "daily"
       ],
-      "frequency_rank": 36
+      "frequency_rank": 36,
+      "dlpt_level": "1"
     },
     {
       "id": "n037",
@@ -3267,7 +3430,8 @@
       "tags": [
         "place"
       ],
-      "frequency_rank": 37
+      "frequency_rank": 37,
+      "dlpt_level": "1"
     },
     {
       "id": "n038",
@@ -3288,7 +3452,8 @@
       "tags": [
         "place"
       ],
-      "frequency_rank": 38
+      "frequency_rank": 38,
+      "dlpt_level": "1"
     },
     {
       "id": "n039",
@@ -3309,7 +3474,8 @@
       "tags": [
         "place"
       ],
-      "frequency_rank": 39
+      "frequency_rank": 39,
+      "dlpt_level": "1"
     },
     {
       "id": "n040",
@@ -3330,7 +3496,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 40
+      "frequency_rank": 40,
+      "dlpt_level": "1"
     },
     {
       "id": "n041",
@@ -3351,7 +3518,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 41
+      "frequency_rank": 41,
+      "dlpt_level": "1"
     },
     {
       "id": "n042",
@@ -3372,7 +3540,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 42
+      "frequency_rank": 42,
+      "dlpt_level": "1"
     },
     {
       "id": "n043",
@@ -3393,7 +3562,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 43
+      "frequency_rank": 43,
+      "dlpt_level": "1"
     },
     {
       "id": "n044",
@@ -3414,7 +3584,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 44
+      "frequency_rank": 44,
+      "dlpt_level": "1"
     },
     {
       "id": "n045",
@@ -3435,7 +3606,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 45
+      "frequency_rank": 45,
+      "dlpt_level": "1"
     },
     {
       "id": "n046",
@@ -3456,7 +3628,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 46
+      "frequency_rank": 46,
+      "dlpt_level": "1"
     },
     {
       "id": "n047",
@@ -3477,7 +3650,8 @@
       "tags": [
         "time"
       ],
-      "frequency_rank": 47
+      "frequency_rank": 47,
+      "dlpt_level": "1"
     },
     {
       "id": "n048",
@@ -3499,7 +3673,8 @@
         "time",
         "daily"
       ],
-      "frequency_rank": 48
+      "frequency_rank": 48,
+      "dlpt_level": "1"
     },
     {
       "id": "n049",
@@ -3521,7 +3696,8 @@
         "time",
         "daily"
       ],
-      "frequency_rank": 49
+      "frequency_rank": 49,
+      "dlpt_level": "1"
     },
     {
       "id": "n050",
@@ -3543,7 +3719,8 @@
         "time",
         "daily"
       ],
-      "frequency_rank": 50
+      "frequency_rank": 50,
+      "dlpt_level": "1"
     },
     {
       "id": "n051",
@@ -3564,7 +3741,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 51
+      "frequency_rank": 51,
+      "dlpt_level": "1"
     },
     {
       "id": "n052",
@@ -3585,7 +3763,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 52
+      "frequency_rank": 52,
+      "dlpt_level": "1"
     },
     {
       "id": "n053",
@@ -3606,7 +3785,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 53
+      "frequency_rank": 53,
+      "dlpt_level": "1"
     },
     {
       "id": "n054",
@@ -3627,7 +3807,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 54
+      "frequency_rank": 54,
+      "dlpt_level": "1"
     },
     {
       "id": "n055",
@@ -3648,7 +3829,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 55
+      "frequency_rank": 55,
+      "dlpt_level": "1"
     },
     {
       "id": "n056",
@@ -3669,7 +3851,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 56
+      "frequency_rank": 56,
+      "dlpt_level": "1"
     },
     {
       "id": "n057",
@@ -3690,7 +3873,8 @@
       "tags": [
         "body"
       ],
-      "frequency_rank": 57
+      "frequency_rank": 57,
+      "dlpt_level": "1"
     },
     {
       "id": "n058",
@@ -3712,7 +3896,8 @@
         "nature",
         "weather"
       ],
-      "frequency_rank": 58
+      "frequency_rank": 58,
+      "dlpt_level": "1"
     },
     {
       "id": "n059",
@@ -3733,7 +3918,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 59
+      "frequency_rank": 59,
+      "dlpt_level": "1"
     },
     {
       "id": "n060",
@@ -3754,7 +3940,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 60
+      "frequency_rank": 60,
+      "dlpt_level": "1"
     },
     {
       "id": "n061",
@@ -3775,7 +3962,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 61
+      "frequency_rank": 61,
+      "dlpt_level": "1"
     },
     {
       "id": "n062",
@@ -3796,7 +3984,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 62
+      "frequency_rank": 62,
+      "dlpt_level": "1"
     },
     {
       "id": "n063",
@@ -3817,7 +4006,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 63
+      "frequency_rank": 63,
+      "dlpt_level": "1"
     },
     {
       "id": "n064",
@@ -3838,7 +4028,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 64
+      "frequency_rank": 64,
+      "dlpt_level": "1"
     },
     {
       "id": "n065",
@@ -3859,7 +4050,8 @@
       "tags": [
         "nature"
       ],
-      "frequency_rank": 65
+      "frequency_rank": 65,
+      "dlpt_level": "1"
     },
     {
       "id": "n066",
@@ -3880,7 +4072,8 @@
       "tags": [
         "animals"
       ],
-      "frequency_rank": 66
+      "frequency_rank": 66,
+      "dlpt_level": "1"
     },
     {
       "id": "n067",
@@ -3901,7 +4094,8 @@
       "tags": [
         "animals"
       ],
-      "frequency_rank": 67
+      "frequency_rank": 67,
+      "dlpt_level": "1"
     },
     {
       "id": "n068",
@@ -3922,7 +4116,8 @@
       "tags": [
         "animals"
       ],
-      "frequency_rank": 68
+      "frequency_rank": 68,
+      "dlpt_level": "1"
     },
     {
       "id": "n069",
@@ -3944,7 +4139,8 @@
         "animals",
         "food"
       ],
-      "frequency_rank": 69
+      "frequency_rank": 69,
+      "dlpt_level": "1"
     },
     {
       "id": "n070",
@@ -3965,7 +4161,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 70
+      "frequency_rank": 70,
+      "dlpt_level": "1"
     },
     {
       "id": "n071",
@@ -3986,7 +4183,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 71
+      "frequency_rank": 71,
+      "dlpt_level": "1+"
     },
     {
       "id": "n072",
@@ -4007,7 +4205,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 72
+      "frequency_rank": 72,
+      "dlpt_level": "1+"
     },
     {
       "id": "n073",
@@ -4028,7 +4227,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 73
+      "frequency_rank": 73,
+      "dlpt_level": "1+"
     },
     {
       "id": "n074",
@@ -4049,7 +4249,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 74
+      "frequency_rank": 74,
+      "dlpt_level": "1+"
     },
     {
       "id": "n075",
@@ -4070,7 +4271,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 75
+      "frequency_rank": 75,
+      "dlpt_level": "1+"
     },
     {
       "id": "n076",
@@ -4092,7 +4294,8 @@
         "adjective",
         "daily"
       ],
-      "frequency_rank": 76
+      "frequency_rank": 76,
+      "dlpt_level": "1+"
     },
     {
       "id": "n077",
@@ -4113,7 +4316,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 77
+      "frequency_rank": 77,
+      "dlpt_level": "1+"
     },
     {
       "id": "n078",
@@ -4135,7 +4339,8 @@
         "adjective",
         "daily"
       ],
-      "frequency_rank": 78
+      "frequency_rank": 78,
+      "dlpt_level": "1+"
     },
     {
       "id": "n079",
@@ -4156,7 +4361,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 79
+      "frequency_rank": 79,
+      "dlpt_level": "1+"
     },
     {
       "id": "n080",
@@ -4177,7 +4383,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 80
+      "frequency_rank": 80,
+      "dlpt_level": "1+"
     },
     {
       "id": "n081",
@@ -4198,7 +4405,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 81
+      "frequency_rank": 81,
+      "dlpt_level": "1+"
     },
     {
       "id": "n082",
@@ -4220,7 +4428,8 @@
         "adjective",
         "daily"
       ],
-      "frequency_rank": 82
+      "frequency_rank": 82,
+      "dlpt_level": "1+"
     },
     {
       "id": "n083",
@@ -4241,7 +4450,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 83
+      "frequency_rank": 83,
+      "dlpt_level": "1+"
     },
     {
       "id": "n084",
@@ -4262,7 +4472,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 84
+      "frequency_rank": 84,
+      "dlpt_level": "1+"
     },
     {
       "id": "n085",
@@ -4284,7 +4495,8 @@
         "adjective",
         "study"
       ],
-      "frequency_rank": 85
+      "frequency_rank": 85,
+      "dlpt_level": "1+"
     },
     {
       "id": "n086",
@@ -4305,7 +4517,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 86
+      "frequency_rank": 86,
+      "dlpt_level": "1+"
     },
     {
       "id": "n087",
@@ -4326,7 +4539,8 @@
       "tags": [
         "adjective"
       ],
-      "frequency_rank": 87
+      "frequency_rank": 87,
+      "dlpt_level": "1+"
     },
     {
       "id": "n088",
@@ -4347,7 +4561,8 @@
       "tags": [
         "daily"
       ],
-      "frequency_rank": 88
+      "frequency_rank": 88,
+      "dlpt_level": "1+"
     },
     {
       "id": "n089",
@@ -4369,7 +4584,8 @@
         "study",
         "communication"
       ],
-      "frequency_rank": 89
+      "frequency_rank": 89,
+      "dlpt_level": "1+"
     },
     {
       "id": "n090",
@@ -4391,7 +4607,8 @@
         "study",
         "communication"
       ],
-      "frequency_rank": 90
+      "frequency_rank": 90,
+      "dlpt_level": "1+"
     },
     {
       "id": "n091",
@@ -4413,7 +4630,8 @@
         "study",
         "language"
       ],
-      "frequency_rank": 91
+      "frequency_rank": 91,
+      "dlpt_level": "1+"
     },
     {
       "id": "n092",
@@ -4435,7 +4653,8 @@
         "study",
         "language"
       ],
-      "frequency_rank": 92
+      "frequency_rank": 92,
+      "dlpt_level": "1+"
     },
     {
       "id": "n093",
@@ -4456,7 +4675,8 @@
       "tags": [
         "military"
       ],
-      "frequency_rank": 93
+      "frequency_rank": 93,
+      "dlpt_level": "1+"
     },
     {
       "id": "n094",
@@ -4478,7 +4698,8 @@
         "military",
         "social"
       ],
-      "frequency_rank": 94
+      "frequency_rank": 94,
+      "dlpt_level": "1+"
     },
     {
       "id": "n095",
@@ -4499,7 +4720,8 @@
       "tags": [
         "military"
       ],
-      "frequency_rank": 95
+      "frequency_rank": 95,
+      "dlpt_level": "1+"
     },
     {
       "id": "n096",
@@ -4520,7 +4742,8 @@
       "tags": [
         "military"
       ],
-      "frequency_rank": 96
+      "frequency_rank": 96,
+      "dlpt_level": "1+"
     },
     {
       "id": "n097",
@@ -4541,7 +4764,8 @@
       "tags": [
         "military"
       ],
-      "frequency_rank": 97
+      "frequency_rank": 97,
+      "dlpt_level": "1+"
     },
     {
       "id": "n098",
@@ -4562,7 +4786,8 @@
       "tags": [
         "politics"
       ],
-      "frequency_rank": 98
+      "frequency_rank": 98,
+      "dlpt_level": "1+"
     },
     {
       "id": "n099",
@@ -4583,7 +4808,8 @@
       "tags": [
         "politics"
       ],
-      "frequency_rank": 99
+      "frequency_rank": 99,
+      "dlpt_level": "1+"
     },
     {
       "id": "n100",
@@ -4605,7 +4831,681 @@
         "daily",
         "health"
       ],
-      "frequency_rank": 100
+      "frequency_rank": 100,
+      "dlpt_level": "1+"
+    },
+    {
+      "id": "v116",
+      "type": "verb",
+      "english": "to negotiate",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "تَفَاوَضَ / يُفَاوِضُ",
+        "translit": "tafaawada / yufaawidu",
+        "root": "ف و ض",
+        "example": "تفاوض الطرفان على الاتفاق."
+      },
+      "lev": {
+        "form": "تفاوض / بيتفاوض",
+        "translit": "tifawad / beetfawad",
+        "notes": "Lev cognate.",
+        "example": "تفاوضوا عالالاتفاق."
+      },
+      "tags": [
+        "politics",
+        "military"
+      ],
+      "frequency_rank": 116
+    },
+    {
+      "id": "v117",
+      "type": "verb",
+      "english": "to implement / carry out",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "نَفَّذَ / يُنَفِّذُ",
+        "translit": "naffadha / yunaffidu",
+        "root": "ن ف ذ",
+        "example": "نفّذ الجيش الخطة."
+      },
+      "lev": {
+        "form": "نفّذ / بينفّذ",
+        "translit": "naffad / beenaffid",
+        "notes": "Same root.",
+        "example": "الجيش نفّذ الخطة."
+      },
+      "tags": [
+        "military",
+        "action"
+      ],
+      "frequency_rank": 117
+    },
+    {
+      "id": "v118",
+      "type": "verb",
+      "english": "to monitor / oversee",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "رَاقَبَ / يُرَاقِبُ",
+        "translit": "raaqaba / yuraaqibu",
+        "root": "ر ق ب",
+        "example": "راقبت الحدود عن كثب."
+      },
+      "lev": {
+        "form": "راقب / بيراقب",
+        "translit": "raaqab / biraqib",
+        "notes": "Cognate.",
+        "example": "راقبوا الحدود."
+      },
+      "tags": [
+        "military",
+        "perception"
+      ],
+      "frequency_rank": 118
+    },
+    {
+      "id": "v119",
+      "type": "verb",
+      "english": "to analyze",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "حَلَّلَ / يُحَلِّلُ",
+        "translit": "hallala / yuhallilu",
+        "root": "ح ل ل",
+        "example": "حلّل الخبراء التقرير."
+      },
+      "lev": {
+        "form": "حلّل / بيحلّل",
+        "translit": "hallal / bihallil",
+        "notes": "Cognate.",
+        "example": "الخبراء حلّلوا التقرير."
+      },
+      "tags": [
+        "cognition",
+        "study"
+      ],
+      "frequency_rank": 119
+    },
+    {
+      "id": "v120",
+      "type": "verb",
+      "english": "to coordinate",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "نَسَّقَ / يُنَسِّقُ",
+        "translit": "nassaqa / yunassiqu",
+        "root": "ن س ق",
+        "example": "نسّق الضباط العملية."
+      },
+      "lev": {
+        "form": "نسّق / بينسّق",
+        "translit": "nassa' / beenassa'",
+        "notes": "Cognate.",
+        "example": "الضباط نسّقوا العملية."
+      },
+      "tags": [
+        "military",
+        "action"
+      ],
+      "frequency_rank": 120
+    },
+    {
+      "id": "v121",
+      "type": "verb",
+      "english": "to evacuate",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "أَخْلَى / يُخْلِي",
+        "translit": "akhla / yukhlee",
+        "root": "خ ل و",
+        "example": "أخلى السكان المنطقة."
+      },
+      "lev": {
+        "form": "أخلى / بيخلي",
+        "translit": "akhla / bikhli",
+        "notes": "Cognate.",
+        "example": "أخلوا المنطقة."
+      },
+      "tags": [
+        "military",
+        "motion"
+      ],
+      "frequency_rank": 121
+    },
+    {
+      "id": "v122",
+      "type": "verb",
+      "english": "to deploy",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "نَشَرَ / يَنْشُرُ",
+        "translit": "nashara / yanshuru",
+        "root": "ن ش ر",
+        "example": "نشرت القوات على الحدود."
+      },
+      "lev": {
+        "form": "نشر / بينشر",
+        "translit": "nashar / beenshar",
+        "notes": "Also publish.",
+        "example": "نشرت القوات."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 122
+    },
+    {
+      "id": "v123",
+      "type": "verb",
+      "english": "to intercept",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "اعْتَرَضَ / يَعْتَرِضُ",
+        "translit": "i'tarada / ya'taridu",
+        "root": "ع ر ض",
+        "example": "اعترضت الدوريات الشاحنة."
+      },
+      "lev": {
+        "form": "اعترض / بيعترض",
+        "translit": "i'tarad / bee'tarid",
+        "notes": "Cognate.",
+        "example": "الدوريات اعترضت الشاحنة."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 123
+    },
+    {
+      "id": "v124",
+      "type": "verb",
+      "english": "to authorize",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "أَذِنَ / يَأْذَنُ",
+        "translit": "adhina / ya'dhanu",
+        "root": "أ ذ ن",
+        "example": "أذن القائد بالهجوم."
+      },
+      "lev": {
+        "form": "أذن / بيأذن",
+        "translit": "adhin / bi'dhan",
+        "notes": "Cognate.",
+        "example": "القائد أذن بالهجوم."
+      },
+      "tags": [
+        "military",
+        "politics"
+      ],
+      "frequency_rank": 124
+    },
+    {
+      "id": "v125",
+      "type": "verb",
+      "english": "to ratify",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "صَدَّقَ / يُصَدِّقُ",
+        "translit": "saddaqa / yusaddiqu",
+        "root": "ص د ق",
+        "example": "صدّق البرلمان المعاهدة."
+      },
+      "lev": {
+        "form": "صدّق / بيصدّق",
+        "translit": "sadda' / bisadda'",
+        "notes": "Cognate.",
+        "example": "البرلمان صدّق المعاهدة."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 125
+    },
+    {
+      "id": "n101",
+      "type": "noun",
+      "english": "agreement / treaty",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "اِتِّفَاق / مُعَاهَدَة",
+        "translit": "ittifaaq / mu'aahada",
+        "root": "و ف ق",
+        "example": "وقّع الطرفان اتفاقاً."
+      },
+      "lev": {
+        "form": "اتفاق / معاهدة",
+        "translit": "itifaa' / mu'ahade",
+        "notes": "Same.",
+        "example": "وقّعوا اتفاق."
+      },
+      "tags": [
+        "politics",
+        "military"
+      ],
+      "frequency_rank": 101
+    },
+    {
+      "id": "n102",
+      "type": "noun",
+      "english": "operation",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "عَمَلِيَّة",
+        "translit": "amaliyya",
+        "root": "ع م ل",
+        "example": "بدأت العملية العسكرية."
+      },
+      "lev": {
+        "form": "عملية",
+        "translit": "amaliyye",
+        "notes": "Same.",
+        "example": "بدأت العملية."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 102
+    },
+    {
+      "id": "n103",
+      "type": "noun",
+      "english": "border",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "حُدُود",
+        "translit": "huduud",
+        "root": "ح د د",
+        "example": "تأمين الحدود أولوية."
+      },
+      "lev": {
+        "form": "حدود",
+        "translit": "hduud",
+        "notes": "Same.",
+        "example": "تأمين الحدود أولوية."
+      },
+      "tags": [
+        "military",
+        "place"
+      ],
+      "frequency_rank": 103
+    },
+    {
+      "id": "n104",
+      "type": "noun",
+      "english": "intelligence",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "اسْتِخْبَارَات",
+        "translit": "istikhbaraat",
+        "root": "خ ب ر",
+        "example": "تلقت الاستخبارات معلومات."
+      },
+      "lev": {
+        "form": "استخبارات",
+        "translit": "istikhbáraat",
+        "notes": "Same.",
+        "example": "الاستخبارات وصلها معلومات."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 104
+    },
+    {
+      "id": "n105",
+      "type": "noun",
+      "english": "strategy",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "اِسْتِرَاتِيجِيَّة",
+        "translit": "istiraatiijiyya",
+        "root": "ر أ ت",
+        "example": "تغيّرت الاستراتيجية العسكرية."
+      },
+      "lev": {
+        "form": "استراتيجية",
+        "translit": "istiraatiijiyye",
+        "notes": "Same.",
+        "example": "تغيّرت الاستراتيجية."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 105
+    },
+    {
+      "id": "n106",
+      "type": "noun",
+      "english": "minister",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "وَزِير",
+        "translit": "wazeer",
+        "root": "و ز ر",
+        "example": "ألقى الوزير بياناً."
+      },
+      "lev": {
+        "form": "وزير",
+        "translit": "wazeer",
+        "notes": "Same.",
+        "example": "الوزير ألقى بيان."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 106
+    },
+    {
+      "id": "n107",
+      "type": "noun",
+      "english": "parliament",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "بَرْلَمَان / مَجْلِس",
+        "translit": "barlamaan / majlis",
+        "root": "م ج ل",
+        "example": "عقد البرلمان جلسة طارئة."
+      },
+      "lev": {
+        "form": "برلمان / مجلس",
+        "translit": "barlamaan / majlis",
+        "notes": "Same.",
+        "example": "البرلمان عقد جلسة."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 107
+    },
+    {
+      "id": "n108",
+      "type": "noun",
+      "english": "economy",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "اِقْتِصَاد",
+        "translit": "iqtisaad",
+        "root": "ق ص د",
+        "example": "تعافى الاقتصاد تدريجياً."
+      },
+      "lev": {
+        "form": "اقتصاد",
+        "translit": "i'tisaad",
+        "notes": "Same.",
+        "example": "الاقتصاد تعافى."
+      },
+      "tags": [
+        "politics",
+        "daily"
+      ],
+      "frequency_rank": 108
+    },
+    {
+      "id": "n109",
+      "type": "noun",
+      "english": "crisis",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "أَزْمَة",
+        "translit": "azma",
+        "root": "ز م م",
+        "example": "تفاقم الأزمة الإنسانية."
+      },
+      "lev": {
+        "form": "أزمة",
+        "translit": "azme",
+        "notes": "Same.",
+        "example": "الأزمة تفاقمت."
+      },
+      "tags": [
+        "politics",
+        "daily"
+      ],
+      "frequency_rank": 109
+    },
+    {
+      "id": "n110",
+      "type": "noun",
+      "english": "refugee",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "لَاجِئ",
+        "translit": "laaaji'",
+        "root": "ل ج أ",
+        "example": "وصل اللاجئون إلى المعبر."
+      },
+      "lev": {
+        "form": "لاجئ",
+        "translit": "laaji'",
+        "notes": "Same.",
+        "example": "اللاجئين وصلوا."
+      },
+      "tags": [
+        "politics",
+        "social"
+      ],
+      "frequency_rank": 110
+    },
+    {
+      "id": "n111",
+      "type": "noun",
+      "english": "infrastructure",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "بُنْيَة تَحْتِيَّة",
+        "translit": "bunya tahtiyya",
+        "root": "ب ن ي",
+        "example": "تضررت البنية التحتية."
+      },
+      "lev": {
+        "form": "بنية تحتية",
+        "translit": "bunye tahtiyye",
+        "notes": "Same.",
+        "example": "البنية التحتية تضررت."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 111
+    },
+    {
+      "id": "n112",
+      "type": "noun",
+      "english": "negotiation",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "تَفَاوُض",
+        "translit": "tafaawud",
+        "root": "ف و ض",
+        "example": "استؤنفت المفاوضات أمس."
+      },
+      "lev": {
+        "form": "مفاوضات",
+        "translit": "mufawadaat",
+        "notes": "Plural common.",
+        "example": "المفاوضات استؤنفت."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 112
+    },
+    {
+      "id": "n113",
+      "type": "noun",
+      "english": "ceasefire",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "وَقْف إِطْلَاق النَّار",
+        "translit": "waqf itlaaq annaar",
+        "root": "و ق ف",
+        "example": "أعلن وقف إطلاق النار."
+      },
+      "lev": {
+        "form": "وقف نار",
+        "translit": "wa'af naar",
+        "notes": "Short form.",
+        "example": "أعلنوا وقف النار."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 113
+    },
+    {
+      "id": "n114",
+      "type": "noun",
+      "english": "sovereignty",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "سِيَادَة",
+        "translit": "siyaada",
+        "root": "س و د",
+        "example": "احترام السيادة الوطنية."
+      },
+      "lev": {
+        "form": "سيادة",
+        "translit": "siyaade",
+        "notes": "Same.",
+        "example": "احترام السيادة."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 114
+    },
+    {
+      "id": "n115",
+      "type": "noun",
+      "english": "constitution",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "دُسْتُور",
+        "translit": "dustoor",
+        "root": "د س ر",
+        "example": "نصّ الدستور على الحقوق."
+      },
+      "lev": {
+        "form": "دستور",
+        "translit": "dostoor",
+        "notes": "Same.",
+        "example": "الدستور نصّ على الحقوق."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 115
+    },
+    {
+      "id": "n116",
+      "type": "noun",
+      "english": "ambassador",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "سَفِير",
+        "translit": "safeer",
+        "root": "س ف ر",
+        "example": "التقى السفيران في القاهرة."
+      },
+      "lev": {
+        "form": "سفير",
+        "translit": "safeer",
+        "notes": "Same.",
+        "example": "السفيران التقوا."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 116
+    },
+    {
+      "id": "n117",
+      "type": "noun",
+      "english": "resolution (UN)",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "قَرَار",
+        "translit": "qaraar",
+        "root": "ق ر ر",
+        "example": "صدر قرار مجلس الأمن."
+      },
+      "lev": {
+        "form": "قرار",
+        "translit": "'araar",
+        "notes": "Same.",
+        "example": "صدر القرار."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 117
+    },
+    {
+      "id": "n118",
+      "type": "noun",
+      "english": "humanitarian aid",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "مَسَاعَدَة إِنْسَانِيَّة",
+        "translit": "musaa'ada insaaniyya",
+        "root": "س ع د",
+        "example": "وصلت المساعدة الإنسانية."
+      },
+      "lev": {
+        "form": "مساعدة إنسانية",
+        "translit": "musa'ade insaaniyye",
+        "notes": "Same.",
+        "example": "وصلت المساعدة."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 118
+    },
+    {
+      "id": "n119",
+      "type": "noun",
+      "english": "election",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "اِنْتِخَابَات",
+        "translit": "intikhaabaat",
+        "root": "خ ي ب",
+        "example": "أُجريت الانتخابات العامة."
+      },
+      "lev": {
+        "form": "انتخابات",
+        "translit": "intikhaabaat",
+        "notes": "Same.",
+        "example": "الانتخابات أُجريت."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 119
+    },
+    {
+      "id": "n120",
+      "type": "noun",
+      "english": "demonstration / protest",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مُظَاهَرَة",
+        "translit": "muzhaahara",
+        "root": "ظ ه ر",
+        "example": "نظمت مظاهرة سلمية."
+      },
+      "lev": {
+        "form": "مظاهرة",
+        "translit": "muzahara",
+        "notes": "Same.",
+        "example": "نظموا مظاهرة."
+      },
+      "tags": [
+        "politics",
+        "social"
+      ],
+      "frequency_rank": 120
     }
   ]
 }

@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body class="bg-forge-950 text-gray-100 min-h-screen font-sans">
   <!-- Onboarding overlay -->
@@ -50,7 +50,7 @@
         <li><strong class="text-forge-300">Levantine</strong> — Palestinian/Lebanese spoken forms side-by-side.</li>
         <li><strong class="text-forge-300">Space</strong> — flip / continue &nbsp; <strong class="text-forge-300">Enter</strong> — submit &nbsp; <strong class="text-forge-300">1–4</strong> — multiple choice (vocab + conjugation)</li>
         <li><strong class="text-forge-300">Sentences</strong> tab — Arabic → English (typos accepted). Conjugation drill is multiple choice — no Arabic typing needed.</li>
-        <li>Progress saves automatically in your browser. Export anytime from the stats panel.</li>
+        <li>Progress saves automatically. Use <strong class="text-forge-300">Settings</strong> for DLPT level and backup.</li>
       </ul>
       <button id="onboarding-dismiss" class="w-full py-2 bg-forge-accent text-forge-950 font-semibold rounded hover:brightness-110">Start Drilling</button>
     </div>
@@ -74,8 +74,10 @@
           <button id="tab-lev" data-register="lev" class="register-tab px-5 py-2 text-sm font-semibold bg-forge-800 text-gray-300 hover:bg-forge-700" role="tab" aria-selected="false">Levantine</button>
         </div>
 
-        <!-- Stats toggle (mobile) -->
-        <button id="stats-toggle" class="lg:hidden px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded" aria-label="Toggle stats">Stats</button>
+        <div class="flex gap-2">
+          <button id="btn-settings" type="button" class="px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded hover:bg-forge-700" aria-label="Settings">⚙ Settings</button>
+          <button id="stats-toggle" class="lg:hidden px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded" aria-label="Toggle stats">Stats</button>
+        </div>
       </div>
 
       <!-- Content type tabs -->
@@ -84,7 +86,9 @@
         <button data-content="nouns" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Nouns</button>
         <button data-content="conjugation" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Conjugation</button>
         <button data-content="sentences" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Sentences</button>
+        <button data-content="reading" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Reading</button>
       </div>
+      <p id="dlpt-banner" class="text-xs text-forge-500 mt-2 hidden"></p>
     </div>
   </header>
 
@@ -212,6 +216,41 @@
         <div id="conj-drill-area" class="hidden mt-4 p-4 bg-forge-900 border border-forge-600 rounded-lg"></div>
       </div>
 
+      <!-- Reading view -->
+      <div id="reading-view" class="hidden">
+        <div class="flex flex-wrap gap-2 mb-4 items-center">
+          <span id="reading-status" class="text-xs text-forge-400"></span>
+          <select id="reading-count" class="px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm">
+            <option value="5">5 passages</option>
+            <option value="10" selected>10 passages</option>
+          </select>
+          <button id="reading-start" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Start Reading Drill</button>
+        </div>
+        <div id="reading-drill" class="hidden">
+          <div class="flex items-center justify-between mb-4 text-sm text-forge-400">
+            <span id="reading-progress">1 / 10</span>
+            <button id="reading-exit" type="button" class="text-forge-danger hover:underline">Exit</button>
+          </div>
+          <div class="p-4 bg-forge-900 border border-forge-600 rounded-lg mb-4">
+            <div id="reading-title" class="text-sm text-forge-accent font-semibold mb-2"></div>
+            <div id="reading-arabic" class="arabic text-forge-300 leading-loose mb-3"></div>
+            <button id="reading-tts" type="button" class="px-3 py-1 text-xs bg-forge-800 border border-forge-600 rounded">🔊 Listen</button>
+            <details class="mt-3 text-sm">
+              <summary class="text-forge-400 cursor-pointer">Show reference translation</summary>
+              <p id="reading-english-ref" class="text-gray-400 mt-2"></p>
+            </details>
+          </div>
+          <div id="reading-question-area"></div>
+          <div id="reading-feedback" class="hidden mt-4 p-4 rounded-lg border"></div>
+          <div id="reading-actions" class="flex gap-2 mt-4 justify-center"></div>
+        </div>
+        <div id="reading-idle" class="text-center text-forge-400 py-12">
+          <p class="mb-2">Article snippets — comprehension & translation</p>
+          <p class="text-sm">Multiple choice and typed answers. Filtered by your DLPT target in Settings.</p>
+        </div>
+        <div id="reading-summary" class="hidden mt-4 p-6 bg-forge-900 border border-forge-600 rounded-lg"></div>
+      </div>
+
       <!-- Session summary -->
       <div id="session-summary" class="hidden mt-4 p-6 bg-forge-900 border border-forge-600 rounded-lg">
         <h3 class="text-lg font-bold text-forge-accent mb-2">Session Complete</h3>
@@ -253,17 +292,45 @@
           <div class="h-2 bg-forge-800 rounded overflow-hidden"><div id="bar-lev" class="h-full bg-forge-success transition-all" style="width:0%"></div></div>
           <div id="bar-lev-label" class="text-xs text-forge-500 mt-1">0 / 0</div>
         </div>
-        <div class="border-t border-forge-700 pt-3 space-y-2">
-          <button id="btn-export" class="w-full px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded hover:bg-forge-700">Export Progress</button>
-          <label class="w-full block">
-            <span class="w-full px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded hover:bg-forge-700 text-center cursor-pointer block">Import Progress</span>
-            <input type="file" id="import-file" accept=".json" class="hidden">
-          </label>
-          <button id="btn-reset" class="w-full px-3 py-2 text-sm text-forge-danger border border-forge-danger/40 rounded hover:bg-forge-danger/10">Hard Reset</button>
-        </div>
-        <p class="text-xs text-forge-500">Keyboard: Space · Enter · ←→ · 1–4</p>
+        <p class="text-xs text-forge-500 border-t border-forge-700 pt-3">Keyboard: Space · Enter · 1–4</p>
       </div>
     </aside>
+  </div>
+
+  <!-- Settings modal -->
+  <div id="settings-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4" role="dialog" aria-modal="true">
+    <div class="max-w-md w-full bg-forge-900 border border-forge-600 rounded-lg p-5 max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-start mb-4">
+        <h2 class="text-lg font-bold text-forge-accent">Settings</h2>
+        <button id="settings-close" type="button" class="text-forge-400 hover:text-white text-xl leading-none" aria-label="Close">&times;</button>
+      </div>
+
+      <label class="block text-sm mb-4">
+        <span class="text-forge-400 block mb-1">DLPT Target Level</span>
+        <select id="setting-dlpt" class="w-full px-3 py-2 bg-forge-800 border border-forge-600 rounded">
+          <option value="0+">0+</option>
+          <option value="1">1</option>
+          <option value="1+">1+</option>
+          <option value="2" selected>2</option>
+          <option value="2+">2+</option>
+          <option value="3">3</option>
+          <option value="3+">3+</option>
+          <option value="4">4</option>
+          <option value="4+">4+</option>
+        </select>
+        <span class="text-xs text-forge-500 mt-1 block">Includes all content at or below this level (vocab, sentences, reading).</span>
+      </label>
+
+      <div class="border-t border-forge-700 pt-4 space-y-2">
+        <h3 class="text-sm font-semibold text-forge-300 mb-2">Progress Backup</h3>
+        <button id="btn-export" type="button" class="w-full px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded hover:bg-forge-700">Export Progress</button>
+        <label class="w-full block">
+          <span class="w-full px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded hover:bg-forge-700 text-center cursor-pointer block">Import Progress</span>
+          <input type="file" id="import-file" accept=".json" class="hidden">
+        </label>
+        <button id="btn-reset" type="button" class="w-full px-3 py-2 text-sm text-forge-danger border border-forge-danger/40 rounded hover:bg-forge-danger/10">Hard Reset</button>
+      </div>
+    </div>
   </div>
 
   <!-- Detail modal -->
@@ -281,6 +348,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=10"></script>
 </body>
 </html>
