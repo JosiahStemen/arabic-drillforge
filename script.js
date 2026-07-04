@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '14';
+  const APP_VERSION = '15';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -372,7 +372,6 @@
           ${esc(other.form)}
         </div>
         <div class="mt-1 flex flex-wrap gap-1 items-center">
-          ${item.dlpt_level ? `<span class="tag-pill text-forge-accent">${esc(item.dlpt_level)}</span>` : ''}
           ${(item.tags || []).slice(0, 2).map(t => `<span class="tag-pill">${esc(t)}</span>`).join('')}
         </div>
       `;
@@ -1468,6 +1467,28 @@
 
   // ─── Init ────────────────────────────────────────────────────
 
+  /** Strip DLPT controls from cached/old HTML until Pages CDN refreshes. */
+  function removeLegacyDlptUi() {
+    document.getElementById('dlpt-select')?.closest('label')?.remove();
+    document.getElementById('dlpt-banner')?.remove();
+    document.querySelector('label:has(#dlpt-select)')?.remove();
+    const settingDlpt = document.getElementById('setting-dlpt');
+    if (settingDlpt) settingDlpt.closest('label')?.remove();
+    const modal = document.getElementById('settings-modal');
+    if (modal) {
+      modal.querySelectorAll('p, span').forEach(el => {
+        const t = el.textContent || '';
+        if (t.includes('DLPT Target') || t.includes('Includes all content at or below') ||
+            t.includes('Difficulty (DLPT)') || t.includes('Change') && t.includes('dropdown in the header')) {
+          el.remove();
+        }
+      });
+    }
+    document.querySelectorAll('p').forEach(el => {
+      if ((el.textContent || '').includes('Difficulty shows that DLPT band')) el.remove();
+    });
+  }
+
   function bindClick(id, handler) {
     const el = document.getElementById(id);
     if (el) el.addEventListener('click', handler);
@@ -1553,6 +1574,7 @@
   }
 
   async function init() {
+    removeLegacyDlptUi();
     loadStorage();
     bindEvents();
     initTtsVoices();
