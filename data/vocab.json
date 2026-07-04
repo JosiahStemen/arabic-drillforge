@@ -1,11 +1,12 @@
 {
   "_meta": {
-    "description": "Arabic DrillForge vocabulary. Edit items below. Fields: id (unique), type (verb|noun), english, msa/lev objects, tags array, frequency_rank (lower=higher frequency).",
+    "description": "Arabic DrillForge vocabulary. Types: verb, noun, phrase. Fields: id, type, english, msa/lev objects, tags, dlpt_level, frequency_rank.",
     "version": "1.0",
     "counts": {
-      "verbs": 132,
-      "nouns": 136,
-      "total": 268
+      "verbs": 155,
+      "nouns": 178,
+      "phrases": 42,
+      "total": 375
     },
     "dlpt_levels": [
       "0+",
@@ -6028,6 +6029,2386 @@
         "diplomacy"
       ],
       "frequency_rank": 136
+    },
+    {
+      "id": "n137",
+      "type": "noun",
+      "english": "rain",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "مَطَر",
+        "translit": "matar",
+        "example": "هطل المطر بغزارة.",
+        "root": "م ط ر"
+      },
+      "lev": {
+        "form": "مطر",
+        "translit": "matar",
+        "notes": "Same.",
+        "example": "نزل مطر غزير."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 137
+    },
+    {
+      "id": "n138",
+      "type": "noun",
+      "english": "snow",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "ثَلْج",
+        "translit": "thalj",
+        "example": "غطى الثلج الجبال.",
+        "root": "ث ل ج"
+      },
+      "lev": {
+        "form": "تلفان / ثلج",
+        "translit": "talfaan / thalj",
+        "notes": "تلفان common in Lev.",
+        "example": "التلفان غطى الجبال."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 138
+    },
+    {
+      "id": "n139",
+      "type": "noun",
+      "english": "sun",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "شَمْس",
+        "translit": "shams",
+        "example": "أشرقت الشمس هذا الصباح.",
+        "root": "ش م س"
+      },
+      "lev": {
+        "form": "شمس",
+        "translit": "shams",
+        "notes": "Same.",
+        "example": "الشمس طلعت الصبح."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 139
+    },
+    {
+      "id": "n140",
+      "type": "noun",
+      "english": "cloud",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "سَحَابَة / غَيْم",
+        "translit": "sahaaba / ghaym",
+        "example": "ملأت الغيوم السماء.",
+        "root": "س ح ب"
+      },
+      "lev": {
+        "form": "غيم",
+        "translit": "ghaym",
+        "notes": "Same.",
+        "example": "الغيم ملّى السما."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 140
+    },
+    {
+      "id": "n141",
+      "type": "noun",
+      "english": "wind",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "رِيح",
+        "translit": "reeh",
+        "example": "هبت رياح قوية ليلاً.",
+        "root": "ر و ح"
+      },
+      "lev": {
+        "form": "ريح",
+        "translit": "reeh",
+        "notes": "Same.",
+        "example": "الريح كانت قوية."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 141
+    },
+    {
+      "id": "n142",
+      "type": "noun",
+      "english": "storm",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "عَاصِفَة",
+        "translit": "aasifa",
+        "example": "تسببت العاصفة بانقطاع الكهرباء.",
+        "root": "ع ص ف"
+      },
+      "lev": {
+        "form": "عاصفة",
+        "translit": "aasife",
+        "notes": "Same.",
+        "example": "العاصفة قطعت الكهربا."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 142
+    },
+    {
+      "id": "n143",
+      "type": "noun",
+      "english": "thunder",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "رَعْد",
+        "translit": "ra'd",
+        "example": "سمعنا الرعد من بعيد.",
+        "root": "ر ع د"
+      },
+      "lev": {
+        "form": "رعد",
+        "translit": "ra'd",
+        "notes": "Same.",
+        "example": "سمعنا رعد."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 143
+    },
+    {
+      "id": "n144",
+      "type": "noun",
+      "english": "lightning",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "بَرْق",
+        "translit": "barq",
+        "example": "أضاء البرق السماء.",
+        "root": "ب ر ق"
+      },
+      "lev": {
+        "form": "برق",
+        "translit": "bar'",
+        "notes": "Same.",
+        "example": "البرق لمع بالسما."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 144
+    },
+    {
+      "id": "n145",
+      "type": "noun",
+      "english": "fog",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "ضَبَاب",
+        "translit": "dabaab",
+        "example": "خفّ الضباب عند الظهر.",
+        "root": "ض ب ب"
+      },
+      "lev": {
+        "form": "ضباب",
+        "translit": "dabaab",
+        "notes": "Same.",
+        "example": "الضباب خفّ الظهر."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 145
+    },
+    {
+      "id": "n146",
+      "type": "noun",
+      "english": "humidity",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "رُطُوبَة",
+        "translit": "rutuba",
+        "example": "ارتفعت الرطوبة في المدينة.",
+        "root": "ر ط ب"
+      },
+      "lev": {
+        "form": "رطوبة",
+        "translit": "rutube",
+        "notes": "Same.",
+        "example": "الرطوبة عالية."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 146
+    },
+    {
+      "id": "n147",
+      "type": "noun",
+      "english": "temperature",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "دَرَجَة الحُرُورَة",
+        "translit": "darajat alhuruura",
+        "example": "ارتفعت درجة الحرارة.",
+        "root": "ح ر ر"
+      },
+      "lev": {
+        "form": "حرارة",
+        "translit": "harara",
+        "notes": "Short form.",
+        "example": "الحرارة طالعة."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 147
+    },
+    {
+      "id": "n148",
+      "type": "noun",
+      "english": "heatwave",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "مَوْجَة حَرّ",
+        "translit": "mawjat harr",
+        "example": "تسببت موجة الحر بإغلاق المدارس.",
+        "root": "ح ر ر"
+      },
+      "lev": {
+        "form": "موجة حر",
+        "translit": "mawjat har",
+        "notes": "Same.",
+        "example": "موجة الحر سكرت المدارس."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 148
+    },
+    {
+      "id": "n149",
+      "type": "noun",
+      "english": "drought",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "جَفَاف",
+        "translit": "jafaaf",
+        "example": "أدى الجفاف إلى نقص المياه.",
+        "root": "ج ف ف"
+      },
+      "lev": {
+        "form": "جفاف",
+        "translit": "jafaaf",
+        "notes": "Same.",
+        "example": "الجفاف نقص المي."
+      },
+      "tags": [
+        "weather",
+        "news"
+      ],
+      "frequency_rank": 149
+    },
+    {
+      "id": "n150",
+      "type": "noun",
+      "english": "flood",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "فَيَضَان",
+        "translit": "fayaDaan",
+        "example": "أغرق الفيضان الأحياء السكنية.",
+        "root": "ف ي ض"
+      },
+      "lev": {
+        "form": "فيضان",
+        "translit": "fayDaan",
+        "notes": "Same.",
+        "example": "الفيضان غمر البيوت."
+      },
+      "tags": [
+        "weather",
+        "news"
+      ],
+      "frequency_rank": 150
+    },
+    {
+      "id": "n151",
+      "type": "noun",
+      "english": "forecast (weather)",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تَوَقُّعَات الطَّقْس",
+        "translit": "tawaqqu'aat attaqas",
+        "example": "تشير توقعات الطقس إلى أمطار غداً.",
+        "root": "و ق ع"
+      },
+      "lev": {
+        "form": "توقعات الطقس",
+        "translit": "tawaqqu'at ett'as",
+        "notes": "Same.",
+        "example": "التوقعات بتقول مطر بكرا."
+      },
+      "tags": [
+        "weather",
+        "news"
+      ],
+      "frequency_rank": 151
+    },
+    {
+      "id": "v133",
+      "type": "verb",
+      "english": "to rain",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "هَطَلَ / يَهْطِلُ",
+        "translit": "hatala / yahtilu",
+        "example": "من المتوقع أن يهطل المطر.",
+        "root": "ه ط ل"
+      },
+      "lev": {
+        "form": "نزل مطر / بتمطر",
+        "translit": "nizil matar / bittmatir",
+        "notes": "Both used.",
+        "example": "يمكن يتمطر بكرا."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 133
+    },
+    {
+      "id": "v134",
+      "type": "verb",
+      "english": "to snow",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تَسَاقَطَ الثَّلْج",
+        "translit": "tasaaqata aththalj",
+        "example": "تساقط الثلج على المرتفعات.",
+        "root": "ث ل ج"
+      },
+      "lev": {
+        "form": "نزل تلفان",
+        "translit": "nizil talfaan",
+        "notes": "Phrase in Lev.",
+        "example": "نزل تلفان عالجبال."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 134
+    },
+    {
+      "id": "v135",
+      "type": "verb",
+      "english": "to shine (sun)",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "أَشْرَقَ / يُشْرِقُ",
+        "translit": "ashraqa / yushriqu",
+        "example": "أشرقت الشمس فجأة.",
+        "root": "ش ر ق"
+      },
+      "lev": {
+        "form": "طلعت الشمس",
+        "translit": "tala'at esshams",
+        "notes": "Phrase.",
+        "example": "الشمس طلعت فجأة."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 135
+    },
+    {
+      "id": "n152",
+      "type": "noun",
+      "english": "red",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "أَحْمَر",
+        "translit": "ahmar",
+        "example": "ارتدى معطفاً أحمر.",
+        "root": "ح م ر"
+      },
+      "lev": {
+        "form": "أحمر",
+        "translit": "ahmar",
+        "notes": "Same.",
+        "example": "لبس جاكيت أحمر."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 152
+    },
+    {
+      "id": "n153",
+      "type": "noun",
+      "english": "blue",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "أَزْرَق",
+        "translit": "azraq",
+        "example": "السماء زرقاء اليوم.",
+        "root": "ز ر ق"
+      },
+      "lev": {
+        "form": "أزرق",
+        "translit": "azra'",
+        "notes": "Same.",
+        "example": "السما زرقا اليوم."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 153
+    },
+    {
+      "id": "n154",
+      "type": "noun",
+      "english": "green",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "أَخْضَر",
+        "translit": "akhdar",
+        "example": "الحديقة خضراء.",
+        "root": "خ ض ر"
+      },
+      "lev": {
+        "form": "أخضر",
+        "translit": "akhDar",
+        "notes": "Same.",
+        "example": "الجنينة خضرا."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 154
+    },
+    {
+      "id": "n155",
+      "type": "noun",
+      "english": "yellow",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "أَصْفَر",
+        "translit": "asfar",
+        "example": "التاكسي أصفر.",
+        "root": "ص ف ر"
+      },
+      "lev": {
+        "form": "أصفر",
+        "translit": "aSfar",
+        "notes": "Same.",
+        "example": "التكسي أصفر."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 155
+    },
+    {
+      "id": "n156",
+      "type": "noun",
+      "english": "black",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "أَسْوَد",
+        "translit": "aswad",
+        "example": "السيارة سوداء.",
+        "root": "س و د"
+      },
+      "lev": {
+        "form": "أسود",
+        "translit": "aswad",
+        "notes": "Same.",
+        "example": "السيارة سودا."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 156
+    },
+    {
+      "id": "n157",
+      "type": "noun",
+      "english": "white",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "أَبْيَض",
+        "translit": "abyad",
+        "example": "الثلج أبيض.",
+        "root": "ب ي ض"
+      },
+      "lev": {
+        "form": "أبيض",
+        "translit": "abyaD",
+        "notes": "Same.",
+        "example": "التلفان أبيض."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 157
+    },
+    {
+      "id": "n158",
+      "type": "noun",
+      "english": "brown",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "بُنِّيّ",
+        "translit": "bunniyy",
+        "example": "الباب بني.",
+        "root": "ب ن ي"
+      },
+      "lev": {
+        "form": "بني",
+        "translit": "bunni",
+        "notes": "Same.",
+        "example": "الباب بني."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 158
+    },
+    {
+      "id": "n159",
+      "type": "noun",
+      "english": "orange (color)",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "بُرْتُقَالِيّ",
+        "translit": "burtuqaaliyy",
+        "example": "القميص برتقالي.",
+        "root": "ب ر ت"
+      },
+      "lev": {
+        "form": "برتقاني",
+        "translit": "burtu'aani",
+        "notes": "Same.",
+        "example": "التيشرت برتقاني."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 159
+    },
+    {
+      "id": "n160",
+      "type": "noun",
+      "english": "purple",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "بَنَفْسَجِيّ",
+        "translit": "banafsajiyy",
+        "example": "الزهرة بنفسجية.",
+        "root": "ن ف س"
+      },
+      "lev": {
+        "form": "بنفسجي",
+        "translit": "banafsaji",
+        "notes": "Same.",
+        "example": "الزهرة بنفسجية."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 160
+    },
+    {
+      "id": "n161",
+      "type": "noun",
+      "english": "gray",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "رَمَادِيّ",
+        "translit": "ramaadiyy",
+        "example": "السماء رمادية.",
+        "root": "ر م د"
+      },
+      "lev": {
+        "form": "رمادي / كحلي",
+        "translit": "ramaadi / kuhli",
+        "notes": "رمادي common.",
+        "example": "السما رمادية."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 161
+    },
+    {
+      "id": "n162",
+      "type": "noun",
+      "english": "pink",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "وَرْدِيّ",
+        "translit": "wardiyy",
+        "example": "الفستان وردي.",
+        "root": "و ر د"
+      },
+      "lev": {
+        "form": "وردي",
+        "translit": "wardi",
+        "notes": "Same.",
+        "example": "الفستان وردي."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 162
+    },
+    {
+      "id": "n163",
+      "type": "noun",
+      "english": "gold (color)",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "ذَهَبِيّ",
+        "translit": "dhahabiyy",
+        "example": "الإطار ذهبي.",
+        "root": "ذ ه ب"
+      },
+      "lev": {
+        "form": "ذهبي",
+        "translit": "dhahabi",
+        "notes": "Same.",
+        "example": "الإطار ذهبي."
+      },
+      "tags": [
+        "color"
+      ],
+      "frequency_rank": 163
+    },
+    {
+      "id": "v136",
+      "type": "verb",
+      "english": "to announce",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "أَعْلَنَ / يُعْلِنُ",
+        "translit": "a'lana / yu'linu",
+        "example": "أعلن الوزير النتائج في مؤتمر صحفي.",
+        "root": "أ ع ل ن"
+      },
+      "lev": {
+        "form": "أعلن / بيعلن",
+        "translit": "a'lan / bi'lin",
+        "notes": "Cognate.",
+        "example": "الوزير أعلن النتائج."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 136
+    },
+    {
+      "id": "v137",
+      "type": "verb",
+      "english": "to report (news)",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "أَفَادَ / يُفِيدُ",
+        "translit": "afada / yufeedu",
+        "example": "أفادت وكالة الأنباء بوقوع الحادث.",
+        "root": "ف ي د"
+      },
+      "lev": {
+        "form": "أفاد / بيفيد",
+        "translit": "afad / bifid",
+        "notes": "News register.",
+        "example": "الوكالة أفادت بالحادث."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 137
+    },
+    {
+      "id": "v138",
+      "type": "verb",
+      "english": "to confirm",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "أَكَّدَ / يُؤَكِّدُ",
+        "translit": "akkada / yu'akkidu",
+        "example": "أكد المتحدث المعلومات.",
+        "root": "ك د"
+      },
+      "lev": {
+        "form": "أكد / بيأكد",
+        "translit": "akkad / bi'akkid",
+        "notes": "Cognate.",
+        "example": "المتحدث أكد المعلومات."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 138
+    },
+    {
+      "id": "v139",
+      "type": "verb",
+      "english": "to deny",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "نَفَى / يَنْفِي",
+        "translit": "nafa / yanfee",
+        "example": "نفى مسؤول الحكومة التقارير.",
+        "root": "ن ف ي"
+      },
+      "lev": {
+        "form": "نفى / بينفي",
+        "translit": "nafa / binfi",
+        "notes": "Cognate.",
+        "example": "المسؤول نفى الخبر."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 139
+    },
+    {
+      "id": "v140",
+      "type": "verb",
+      "english": "to arrest",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "أَلْقَى القَبْضَ عَلَى",
+        "translit": "alqa alqabDa ala",
+        "example": "ألقت الشرطة القبض على المشتبه.",
+        "root": "ق ب ض"
+      },
+      "lev": {
+        "form": "قبضوا عليه",
+        "translit": "qabadu 'alaih",
+        "notes": "Phrase.",
+        "example": "الشرطة قبضت عليه."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 140
+    },
+    {
+      "id": "v141",
+      "type": "verb",
+      "english": "to attack",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "هَاجَمَ / يُهَاجِمُ",
+        "translit": "hajama / yuhaajimu",
+        "example": "هاجم مسلحون المبنى.",
+        "root": "ه ج م"
+      },
+      "lev": {
+        "form": "هاجم / بيهاجم",
+        "translit": "hajam / bihajim",
+        "notes": "Cognate.",
+        "example": "مسلحين هاجموا المبنى."
+      },
+      "tags": [
+        "news",
+        "military"
+      ],
+      "frequency_rank": 141
+    },
+    {
+      "id": "v142",
+      "type": "verb",
+      "english": "to resign",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "اِسْتَقَالَ / يَسْتَقِيلُ",
+        "translit": "istaqaala / yastaqeelu",
+        "example": "استقال الوزير من منصبه.",
+        "root": "ق و ل"
+      },
+      "lev": {
+        "form": "استقال",
+        "translit": "istaa'al",
+        "notes": "Same.",
+        "example": "الوزير استقال."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 142
+    },
+    {
+      "id": "v143",
+      "type": "verb",
+      "english": "to elect",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "اِنْتَخَبَ / يَنْتَخِبُ",
+        "translit": "intakhaba / yantakhibu",
+        "example": "انتخب الناخبون رئيساً جديداً.",
+        "root": "خ ي ب"
+      },
+      "lev": {
+        "form": "انتخبوا",
+        "translit": "intakhabu",
+        "notes": "Same.",
+        "example": "الناس انتخبوا رئيس جديد."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 143
+    },
+    {
+      "id": "v144",
+      "type": "verb",
+      "english": "to protest",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "اِحْتَجَّ / يَحْتَجُّ",
+        "translit": "ihtajja / yahtajju",
+        "example": "احتج المتظاهرون على القرار.",
+        "root": "ح ج ج"
+      },
+      "lev": {
+        "form": "احتجوا / بيحتجوا",
+        "translit": "ihtaju / biihtaju",
+        "notes": "Cognate.",
+        "example": "المتظاهرين احتجوا."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 144
+    },
+    {
+      "id": "v145",
+      "type": "verb",
+      "english": "to investigate",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "حَقَّقَ / يُحَقِّقُ",
+        "translit": "haqqaqa / yuhaqqiqu",
+        "example": "حققت الشرطة في الحادث.",
+        "root": "ح ق ق"
+      },
+      "lev": {
+        "form": "حققوا",
+        "translit": "haqqu",
+        "notes": "Same.",
+        "example": "الشرطة حققت بالحادث."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 145
+    },
+    {
+      "id": "v146",
+      "type": "verb",
+      "english": "to publish",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "نَشَرَ / يَنْشُرُ",
+        "translit": "nashara / yanshuru",
+        "example": "نشرت الصحيفة التقرير.",
+        "root": "ن ش ر"
+      },
+      "lev": {
+        "form": "نشر / بينشر",
+        "translit": "nashar / beenashar",
+        "notes": "Cognate.",
+        "example": "الصحيفة نشرت التقرير."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 146
+    },
+    {
+      "id": "v147",
+      "type": "verb",
+      "english": "to broadcast",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "بَثَّ / يَبُثُّ",
+        "translit": "baththa / yabuththu",
+        "example": "بث التلفزيون البيان مباشرة.",
+        "root": "ب ث ث"
+      },
+      "lev": {
+        "form": "بث / بيبث",
+        "translit": "bath / beebs",
+        "notes": "Cognate.",
+        "example": "التلفزيون بث الخبر."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 147
+    },
+    {
+      "id": "v148",
+      "type": "verb",
+      "english": "to call for",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "دَعَا إِلَى",
+        "translit": "da'a ila",
+        "example": "دعا الناشطون إلى إصلاحات.",
+        "root": "د ع و"
+      },
+      "lev": {
+        "form": "دعوا لـ",
+        "translit": "da'u la",
+        "notes": "Phrase.",
+        "example": "الناشطين دعوا لإصلاحات."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 148
+    },
+    {
+      "id": "n164",
+      "type": "noun",
+      "english": "statement (official)",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "بَيَان",
+        "translit": "bayaan",
+        "example": "أصدرت الوزارة بياناً رسمياً.",
+        "root": "ب ي ن"
+      },
+      "lev": {
+        "form": "بيان",
+        "translit": "beyaan",
+        "notes": "Same.",
+        "example": "الوزارة أصدرت بيان."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 164
+    },
+    {
+      "id": "n165",
+      "type": "noun",
+      "english": "spokesman",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مُتَحَدِّث",
+        "translit": "mutahaddith",
+        "example": "قال المتحدث إن التحقيق مستمر.",
+        "root": "ح د ث"
+      },
+      "lev": {
+        "form": "متحدث",
+        "translit": "mutahaddis",
+        "notes": "Same.",
+        "example": "المتحدث قال التحقيق مستمر."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 165
+    },
+    {
+      "id": "n166",
+      "type": "noun",
+      "english": "witness",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "شَاهِد",
+        "translit": "shaahid",
+        "example": "أدلى الشاهد بشهادته.",
+        "root": "ش ه د"
+      },
+      "lev": {
+        "form": "شاهد",
+        "translit": "shaahid",
+        "notes": "Same.",
+        "example": "الشاهد أدلى بشهادته."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 166
+    },
+    {
+      "id": "n167",
+      "type": "noun",
+      "english": "casualty",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "ضَحِيَّة",
+        "translit": "dahiiyya",
+        "example": "وقعت ضحايا في الحادث.",
+        "root": "ض ح ي"
+      },
+      "lev": {
+        "form": "ضحية",
+        "translit": "dahiiyye",
+        "notes": "Same.",
+        "example": "في ضحايا بالحادث."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 167
+    },
+    {
+      "id": "n168",
+      "type": "noun",
+      "english": "victim",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "مَجْنِيّ عَلَيْه",
+        "translit": "majniyy alayh",
+        "example": "أُصيب المجنى عليه بجروح.",
+        "root": "ج ن ي"
+      },
+      "lev": {
+        "form": "ضحية / مجني عليه",
+        "translit": "dahiiyye",
+        "notes": "ضحية common.",
+        "example": "الضحية انجرح."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 168
+    },
+    {
+      "id": "n169",
+      "type": "noun",
+      "english": "suspect",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مُشْتَبَه",
+        "translit": "mushtabah",
+        "example": "ألقي القبض على المشتبه به.",
+        "root": "ش ب ه"
+      },
+      "lev": {
+        "form": "مشتبه فيه",
+        "translit": "mushtaba fih",
+        "notes": "Same.",
+        "example": "قبضوا على المشتبه."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 169
+    },
+    {
+      "id": "n170",
+      "type": "noun",
+      "english": "press conference",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مُؤْتَمَر صَحَفِيّ",
+        "translit": "mu'tamar sahafiyy",
+        "example": "عُقد مؤتمر صحفي في الظهر.",
+        "root": "م ر"
+      },
+      "lev": {
+        "form": "مؤتمر صحفي",
+        "translit": "mu'tamar Sahafi",
+        "notes": "Same.",
+        "example": "عملوا مؤتمر صحفي."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 170
+    },
+    {
+      "id": "n171",
+      "type": "noun",
+      "english": "headline",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "عُنْوَان",
+        "translit": "unwaan",
+        "example": "تصدر العنوان الصفحات الأولى.",
+        "root": "ع ن و"
+      },
+      "lev": {
+        "form": "عنوان",
+        "translit": "'unwaan",
+        "notes": "Same.",
+        "example": "العنوان على الأول."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 171
+    },
+    {
+      "id": "n172",
+      "type": "noun",
+      "english": "source (news)",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مَصْدَر",
+        "translit": "masdar",
+        "example": "أفادت مصادر مطلعة بذلك.",
+        "root": "ص د ر"
+      },
+      "lev": {
+        "form": "مصدر",
+        "translit": "maSdar",
+        "notes": "Same.",
+        "example": "مصادر قالت."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 172
+    },
+    {
+      "id": "n173",
+      "type": "noun",
+      "english": "evidence",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "دَلِيل / بُرْهَان",
+        "translit": "daleel / burhaan",
+        "example": "قدّمت النيابة أدلة جديدة.",
+        "root": "د ل ل"
+      },
+      "lev": {
+        "form": "دليل / برهان",
+        "translit": "daleel",
+        "notes": "Same.",
+        "example": "النيابة قدمت أدلة."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 173
+    },
+    {
+      "id": "n174",
+      "type": "noun",
+      "english": "verdict",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "حُكْم",
+        "translit": "hukm",
+        "example": "أصدر القاضي حكمه.",
+        "root": "ح ك م"
+      },
+      "lev": {
+        "form": "حكم",
+        "translit": "hukm",
+        "notes": "Same.",
+        "example": "القاضي أصدر الحكم."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 174
+    },
+    {
+      "id": "n175",
+      "type": "noun",
+      "english": "trial",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مَحْكَمَة / مُحَاكَمَة",
+        "translit": "mahkama / muhaakama",
+        "example": "بدأت المحاكمة أمس.",
+        "root": "ح ك م"
+      },
+      "lev": {
+        "form": "محاكمة",
+        "translit": "muhaakame",
+        "notes": "Same.",
+        "example": "المحاكمة بلشت امبارح."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 175
+    },
+    {
+      "id": "n176",
+      "type": "noun",
+      "english": "unrest",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "اِضْطِرَاب",
+        "translit": "idtiraab",
+        "example": "شهدت المدينة اضطرابات.",
+        "root": "ض ر ب"
+      },
+      "lev": {
+        "form": "اضطرابات",
+        "translit": "idtirabaat",
+        "notes": "Same.",
+        "example": "المدينة شهدت اضطرابات."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 176
+    },
+    {
+      "id": "n177",
+      "type": "noun",
+      "english": "cabinet (government)",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "حُكُومَة / وَزَارَة",
+        "translit": "hukuma / wazaara",
+        "example": "اجتمعت الحكومة في جلسة طارئة.",
+        "root": "ح ك م"
+      },
+      "lev": {
+        "form": "حكومة / وزارة",
+        "translit": "hukume",
+        "notes": "Same.",
+        "example": "الحكومة اجتمعت."
+      },
+      "tags": [
+        "news",
+        "politics"
+      ],
+      "frequency_rank": 177
+    },
+    {
+      "id": "n178",
+      "type": "noun",
+      "english": "breaking news",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "خَبَر عاجِل",
+        "translit": "khabar aajil",
+        "example": "نقلت القناة خبراً عاجلاً.",
+        "root": "خ ب ر"
+      },
+      "lev": {
+        "form": "خبر عاجل",
+        "translit": "khabar 'aajil",
+        "notes": "Same.",
+        "example": "القناة نقلت خبر عاجل."
+      },
+      "tags": [
+        "news"
+      ],
+      "frequency_rank": 178
+    },
+    {
+      "id": "v149",
+      "type": "verb",
+      "english": "to die",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "مَاتَ / يَمُوتُ",
+        "translit": "mata / yamootu",
+        "example": "توفي الرئيس مساءً.",
+        "root": "م و ت"
+      },
+      "lev": {
+        "form": "مات / بيموت",
+        "translit": "maat / bimoot",
+        "notes": "Cognate.",
+        "example": "الرئيس مات بالليل."
+      },
+      "tags": [
+        "death",
+        "news"
+      ],
+      "frequency_rank": 149
+    },
+    {
+      "id": "v150",
+      "type": "verb",
+      "english": "to pass away (formal)",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "وَفَى / يَفِي",
+        "translit": "wafa / yafee",
+        "example": "وُفّيَ الوزير السابق فجر اليوم.",
+        "root": "و ف ي"
+      },
+      "lev": {
+        "form": "وفى",
+        "translit": "wafa",
+        "notes": "Formal.",
+        "example": "الوزير وفى الفجر."
+      },
+      "tags": [
+        "death",
+        "news"
+      ],
+      "frequency_rank": 150
+    },
+    {
+      "id": "v151",
+      "type": "verb",
+      "english": "to depart this life",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "فَارَقَ الحَياة",
+        "translit": "fariqa alhayaat",
+        "example": "فارق الحياة بعد معاناة طويلة.",
+        "root": "ف ر ق"
+      },
+      "lev": {
+        "form": "فارق الحياة",
+        "translit": "fari' alhaya",
+        "notes": "Same.",
+        "example": "فارق الحياة."
+      },
+      "tags": [
+        "death",
+        "news"
+      ],
+      "frequency_rank": 151
+    },
+    {
+      "id": "v152",
+      "type": "verb",
+      "english": "to be martyred",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "اِسْتُشْهِدَ",
+        "translit": "istushhida",
+        "example": "استشهد ثلاثة جنود في المعركة.",
+        "root": "ش ه د"
+      },
+      "lev": {
+        "form": "استشهد",
+        "translit": "istushhid",
+        "notes": "Same.",
+        "example": "ثلاثة جنود استشهدوا."
+      },
+      "tags": [
+        "death",
+        "news",
+        "military"
+      ],
+      "frequency_rank": 152
+    },
+    {
+      "id": "v153",
+      "type": "verb",
+      "english": "to be killed",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "قُتِلَ",
+        "translit": "qutila",
+        "example": "قُتل مدنيان في الانفجار.",
+        "root": "ق ت ل"
+      },
+      "lev": {
+        "form": "انقتل / قُتل",
+        "translit": "in'atil",
+        "notes": "Passive.",
+        "example": "مدنيين انقتلوا."
+      },
+      "tags": [
+        "death",
+        "news"
+      ],
+      "frequency_rank": 153
+    },
+    {
+      "id": "v154",
+      "type": "verb",
+      "english": "to lose one's life",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "فَقَدَ حَياتَه",
+        "translit": "faqada hayaatahu",
+        "example": "فقد حياته إثر الحادث.",
+        "root": "ف ق د"
+      },
+      "lev": {
+        "form": "فقد حياته",
+        "translit": "fa'ad hayaatu",
+        "notes": "Same.",
+        "example": "فقد حياته بالحادث."
+      },
+      "tags": [
+        "death",
+        "news"
+      ],
+      "frequency_rank": 154
+    },
+    {
+      "id": "v155",
+      "type": "verb",
+      "english": "to drown",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "غَرِقَ / يَغْرَقُ",
+        "translit": "ghariqa / yaghraqu",
+        "example": "غرق طفلان في النهر.",
+        "root": "غ ر ق"
+      },
+      "lev": {
+        "form": "غرق / بيغرق",
+        "translit": "ghari' / bighri'",
+        "notes": "Cognate.",
+        "example": "طفلين غرقوا بالنهر."
+      },
+      "tags": [
+        "death",
+        "news"
+      ],
+      "frequency_rank": 155
+    },
+    {
+      "id": "p001",
+      "type": "phrase",
+      "english": "may God have mercy on him/her",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "رَحِمَهُ الله / رَحِمَهَا الله",
+        "translit": "rahimahu allah / rahimaha allah",
+        "example": "رحمه الله، كان من خيرة العلماء."
+      },
+      "lev": {
+        "form": "الله يرحمه / الله يرحمها",
+        "translit": "allah yirhamu",
+        "notes": "Common obit.",
+        "example": "الله يرحمه، كان من أحسن الناس."
+      },
+      "tags": [
+        "death",
+        "phrase"
+      ],
+      "frequency_rank": 201
+    },
+    {
+      "id": "p002",
+      "type": "phrase",
+      "english": "passed away (euphemism)",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "فَقَدَ الأَسْرَة فَقِيدَهَا",
+        "translit": "faqadat al'usra faqeedaha",
+        "example": "فقدت الأسرة فقيدها بعد صراع مع المرض."
+      },
+      "lev": {
+        "form": "فقدوا غالي",
+        "translit": "fa'adu ghali",
+        "notes": "Lev obit.",
+        "example": "العيلة فقدت غاليها."
+      },
+      "tags": [
+        "death",
+        "phrase",
+        "news"
+      ],
+      "frequency_rank": 202
+    },
+    {
+      "id": "p003",
+      "type": "phrase",
+      "english": "tragic death / painful loss",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "وَفَاةٌ مُؤْلِمَة",
+        "translit": "wafaatun mu'lima",
+        "example": "بعد وفاة مؤلمة، نعى المسؤولون الضحية."
+      },
+      "lev": {
+        "form": "وفاة مؤلمة",
+        "translit": "wafa m'lima",
+        "notes": "Same.",
+        "example": "بعد وفاة مؤلمة نعوا الضحية."
+      },
+      "tags": [
+        "death",
+        "phrase",
+        "news"
+      ],
+      "frequency_rank": 203
+    },
+    {
+      "id": "p004",
+      "type": "phrase",
+      "english": "martyrdom (news)",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "اِسْتِشْهَاد",
+        "translit": "istishhaad",
+        "example": "أعلنت الوزارة استشهاد أربعة من أفرادها."
+      },
+      "lev": {
+        "form": "استشهاد",
+        "translit": "istishhaad",
+        "notes": "Same.",
+        "example": "الوزارة أعلنت استشهاد أربعة."
+      },
+      "tags": [
+        "death",
+        "phrase",
+        "news"
+      ],
+      "frequency_rank": 204
+    },
+    {
+      "id": "p005",
+      "type": "phrase",
+      "english": "funeral / burial",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "دَفْن / تَشْيِيع",
+        "translit": "dafn / tashyee'",
+        "example": "شُيّع الجثمان بعد صلاة الجنازة."
+      },
+      "lev": {
+        "form": "تشييع / دفن",
+        "translit": "tashyee'",
+        "notes": "Same.",
+        "example": "شيعوا الجثمان."
+      },
+      "tags": [
+        "death",
+        "phrase"
+      ],
+      "frequency_rank": 205
+    },
+    {
+      "id": "p006",
+      "type": "phrase",
+      "english": "cause of death",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "سَبَب الوَفَاة",
+        "translit": "sabab alwafaat",
+        "example": "أعلن الطبيب الشرعي سبب الوفاة."
+      },
+      "lev": {
+        "form": "سبب الوفاة",
+        "translit": "sabab elwafa",
+        "notes": "Same.",
+        "example": "الطبيب أعلن سبب الوفاة."
+      },
+      "tags": [
+        "death",
+        "phrase",
+        "news"
+      ],
+      "frequency_rank": 206
+    },
+    {
+      "id": "p007",
+      "type": "phrase",
+      "english": "also / as well",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَيْضاً / كَذٰلِك",
+        "translit": "aydan / kadhalik",
+        "example": "حضر الوزير، وأيضاً مستشاروه."
+      },
+      "lev": {
+        "form": "كمان / كذلك",
+        "translit": "kamaan / kadhalik",
+        "notes": "كمان very common.",
+        "example": "الوزير حضر وكمان مستشارينه."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 207
+    },
+    {
+      "id": "p008",
+      "type": "phrase",
+      "english": "as well as",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "إِضَافَةً إِلَى / بِالإِضَافَة إِلَى",
+        "translit": "idafatan ila",
+        "example": "شارك الوفد، بالإضافة إلى مراقبين دوليين."
+      },
+      "lev": {
+        "form": "بالإضافة لـ",
+        "translit": "bil'idafe la",
+        "notes": "Same.",
+        "example": "الوفد حضر بالإضافة لمراقبين."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 208
+    },
+    {
+      "id": "p009",
+      "type": "phrase",
+      "english": "finally / lastly",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَخِيراً / أَخِيرَةً",
+        "translit": "akhiran / akhiratan",
+        "example": "أخيراً، أعلن الرئيس النتائج."
+      },
+      "lev": {
+        "form": "أخيراً / بالأخير",
+        "translit": "akhiran / bil'akhir",
+        "notes": "Same.",
+        "example": "أخيراً الرئيس أعلن."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 209
+    },
+    {
+      "id": "p010",
+      "type": "phrase",
+      "english": "from time to time",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "مِنْ وَقْتٍ لِآخَر",
+        "translit": "min waqtin li'aakhar",
+        "example": "يزورنا من وقت لآخر."
+      },
+      "lev": {
+        "form": "من وقت لآخر",
+        "translit": "min wa't la'akhar",
+        "notes": "Same.",
+        "example": "بيزورنا من وقت لآخر."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 210
+    },
+    {
+      "id": "p011",
+      "type": "phrase",
+      "english": "however",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "مِعْذَلَةً / لَكِنَّ / غَيْرَ أَنَّ",
+        "translit": "mi'dhalatan / lakinna",
+        "example": "كان التقرير دقيقاً، لكن النتائج مفاجئة."
+      },
+      "lev": {
+        "form": "بس / لكن",
+        "translit": "bas / lakin",
+        "notes": "بس colloquial.",
+        "example": "التقرير دقيق بس النتيجة مفاجئة."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 211
+    },
+    {
+      "id": "p012",
+      "type": "phrase",
+      "english": "moreover / furthermore",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "فَضْلاً عَنْ ذٰلِك / إِضَافَةً لِذٰلِك",
+        "translit": "fadlan an dhalik",
+        "example": "ارتفعت الأسعار، فضلاً عن نقص الإمدادات."
+      },
+      "lev": {
+        "form": "كمان / بالإضافة",
+        "translit": "kamaan",
+        "notes": "Same.",
+        "example": "الأسعار طالعة كمان في نقص."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 212
+    },
+    {
+      "id": "p013",
+      "type": "phrase",
+      "english": "therefore",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "لِذٰلِكَ / وَعْلَيْهِ",
+        "translit": "lidhalika / wa'alayhi",
+        "example": "تأخرت الطائرة، ولذلك غادرنا متأخرين."
+      },
+      "lev": {
+        "form": "لهيك / عشان هيك",
+        "translit": "laheik / 'ashaan heik",
+        "notes": "Lev causal.",
+        "example": "الطيارة تأخرت عشان هيك."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 213
+    },
+    {
+      "id": "p014",
+      "type": "phrase",
+      "english": "nevertheless",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "عَلَى أَيِّ حَال / مَعَ ذٰلِك",
+        "translit": "ala ayyi haal / ma'a dhalik",
+        "example": "على أي حال، سنواصل المفاوضات."
+      },
+      "lev": {
+        "form": "مع هيك / على كل حال",
+        "translit": "ma' heik",
+        "notes": "Lev.",
+        "example": "مع هيك رح نكمل."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 214
+    },
+    {
+      "id": "p015",
+      "type": "phrase",
+      "english": "meanwhile",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "فِي ذٰلِكَ الوَقْت / فِي المُقَابِل",
+        "translit": "fee dhalika alwaqt",
+        "example": "في الوقت نفسه، اجتمع الوزراء."
+      },
+      "lev": {
+        "form": "بنفس الوقت",
+        "translit": "bnafs ilwa't",
+        "notes": "Same.",
+        "example": "بنفس الوقت الوزراء اجتمعوا."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 215
+    },
+    {
+      "id": "p016",
+      "type": "phrase",
+      "english": "subsequently / after that",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "بَعْدَ ذٰلِك / لَاحِقاً",
+        "translit": "ba'da dhalik / laahiqan",
+        "example": "بعد ذلك، أُعلن الاتفاق."
+      },
+      "lev": {
+        "form": "بعدها / لاحقاً",
+        "translit": "ba'dha",
+        "notes": "Same.",
+        "example": "بعدها أعلنوا الاتفاق."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 216
+    },
+    {
+      "id": "p017",
+      "type": "phrase",
+      "english": "previously / earlier",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "سَابِقاً / قَبْلَ ذٰلِك",
+        "translit": "saabiqan / qabla dhalik",
+        "example": "سبق أن ناقشنا الموضوع."
+      },
+      "lev": {
+        "form": "قبل هيك / سابقاً",
+        "translit": "'abbl heik",
+        "notes": "Lev.",
+        "example": "ناقشنا الموضوع قبل هيك."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 217
+    },
+    {
+      "id": "p018",
+      "type": "phrase",
+      "english": "currently / at present",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "حَالِيّاً / فِي الوَقْت الحَالِي",
+        "translit": "haaliyyan",
+        "example": "الوضع حالياً تحت السيطرة."
+      },
+      "lev": {
+        "form": "هلأ / حالياً",
+        "translit": "halla' / haaliyyan",
+        "notes": "هلأ common.",
+        "example": "الوضع هلأ تحت السيطرة."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 218
+    },
+    {
+      "id": "p019",
+      "type": "phrase",
+      "english": "recently",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "مُؤَخَّراً / فِي الآوَانِ الأَخِيرَة",
+        "translit": "mu'akhkharan",
+        "example": "شهدت المنطقة مؤخراً تصعيداً."
+      },
+      "lev": {
+        "form": "مؤخراً / هالأيام",
+        "translit": "mu'akhkharan",
+        "notes": "Same.",
+        "example": "المنطقة شهدت تصعيد هالأيام."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 219
+    },
+    {
+      "id": "p020",
+      "type": "phrase",
+      "english": "often / frequently",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "كَثِيراً / مِرَّاتٍ عَدِيدَة",
+        "translit": "kathiran",
+        "example": "كثيراً ما نسمع هذا التعبير."
+      },
+      "lev": {
+        "form": "كتير / مرات كتيرة",
+        "translit": "kteer",
+        "notes": "Same.",
+        "example": "كتير منسمع هالحكي."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 220
+    },
+    {
+      "id": "p021",
+      "type": "phrase",
+      "english": "rarely / seldom",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "نَادِراً",
+        "translit": "naadiran",
+        "example": "نادراً ما يحدث مثل هذا."
+      },
+      "lev": {
+        "form": "نادراً / نادر",
+        "translit": "naadir",
+        "notes": "Same.",
+        "example": "نادر بصير هيك."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 221
+    },
+    {
+      "id": "p022",
+      "type": "phrase",
+      "english": "approximately / about",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تَقْرِيباً / حَوَالَي",
+        "translit": "taqreeban / hawaalay",
+        "example": "بلغ عدد الضحايا تقريباً عشرين."
+      },
+      "lev": {
+        "form": "تقريباً / حوالي",
+        "translit": "taqreeban / hawaali",
+        "notes": "Same.",
+        "example": "الضحايا تقريباً عشرين."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 222
+    },
+    {
+      "id": "p023",
+      "type": "phrase",
+      "english": "especially / in particular",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "خُصُوصاً / بِشَكْل خَاص",
+        "translit": "khususan",
+        "example": "تأثرت المدن الساحلية خصوصاً."
+      },
+      "lev": {
+        "form": "خصوصاً / بشكل خاص",
+        "translit": "khususan",
+        "notes": "Same.",
+        "example": "المدن الساحلية تأثرت خصوصاً."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 223
+    },
+    {
+      "id": "p024",
+      "type": "phrase",
+      "english": "for example",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "مِثلاً / عَلَى سَبِيل المِثَال",
+        "translit": "mithlan",
+        "example": "توجد عدة خيارات، مثلاً التأجيل."
+      },
+      "lev": {
+        "form": "مثلاً / على سبيل المثال",
+        "translit": "masalan",
+        "notes": "Same.",
+        "example": "في خيارات مثلاً التأجيل."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 224
+    },
+    {
+      "id": "p025",
+      "type": "phrase",
+      "english": "that is to say / i.e.",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "أَي / يُقَال لَه",
+        "translit": "ay / yuqaal lahu",
+        "example": "الاجتماع غداً، أي يوم الثلاثاء."
+      },
+      "lev": {
+        "form": "يعني / أي",
+        "translit": "ya'ni / ay",
+        "notes": "يعني in speech.",
+        "example": "الاجتماع بكرا يعني يوم الثلاثاء."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 225
+    },
+    {
+      "id": "p026",
+      "type": "phrase",
+      "english": "on the other hand",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مِن نَاحِيَةٍ أُخْرَى",
+        "translit": "min naahiyatin ukhra",
+        "example": "من ناحية أخرى، الوضع الأمني هادئ."
+      },
+      "lev": {
+        "form": "من ناحية تانية",
+        "translit": "min naahi tanya",
+        "notes": "Same.",
+        "example": "من ناحية تانية الوضع هادي."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 226
+    },
+    {
+      "id": "p027",
+      "type": "phrase",
+      "english": "in conclusion",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "خِتاماً / لِلخَتَام",
+        "translit": "khitaaman",
+        "example": "ختاماً، نؤكد التزامنا بالاتفاق."
+      },
+      "lev": {
+        "form": "بالختام / ختاماً",
+        "translit": "bilkhtam",
+        "notes": "Same.",
+        "example": "بالختام منأكد التزامنا."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 227
+    },
+    {
+      "id": "p028",
+      "type": "phrase",
+      "english": "first of all",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَوَّلاً / قَبْلَ كُلِّ شَيْء",
+        "translit": "awwalan",
+        "example": "أولاً، نشكر الحضور."
+      },
+      "lev": {
+        "form": "أول شي / أولاً",
+        "translit": "awwal shi",
+        "notes": "Lev.",
+        "example": "أول شي منشكر الحضور."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 228
+    },
+    {
+      "id": "p029",
+      "type": "phrase",
+      "english": "then / next",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "ثُمَّ / بَعْدَ ذٰلِك",
+        "translit": "thumma",
+        "example": "ناقشوا الموضوع، ثم اتخذوا القرار."
+      },
+      "lev": {
+        "form": "بعدين / ثم",
+        "translit": "ba'deen",
+        "notes": "Same.",
+        "example": "ناقشوا وبعدين قرروا."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 229
+    },
+    {
+      "id": "p030",
+      "type": "phrase",
+      "english": "at the same time",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "فِي الوَقْت نَفْسِه",
+        "translit": "fee alwaqt nafsihi",
+        "example": "في الوقت نفسه، بدأ التصعيد."
+      },
+      "lev": {
+        "form": "بنفس الوقت",
+        "translit": "bnafs ilwa't",
+        "notes": "Same.",
+        "example": "بنفس الوقت بلش التصعيد."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 230
+    },
+    {
+      "id": "p031",
+      "type": "phrase",
+      "english": "despite / in spite of",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "عَلَى الرَّغْم مِن / رَغْمَ",
+        "translit": "ala arraghm min",
+        "example": "على الرغم من التحذيرات، استمرت الاحتجاجات."
+      },
+      "lev": {
+        "form": "رغم / على رغم",
+        "translit": "raghm",
+        "notes": "Same.",
+        "example": "رغم التحذيرات الاحتجاجات استمرت."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 231
+    },
+    {
+      "id": "p032",
+      "type": "phrase",
+      "english": "because of / due to",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "بِسَبَب / نَتِيجَةً لِ",
+        "translit": "bisabab / natijatan li",
+        "example": "أُلغيت الرحلة بسبب العاصفة."
+      },
+      "lev": {
+        "form": "بسبب / عشان",
+        "translit": "bsabab / 'ashaan",
+        "notes": "Same.",
+        "example": "الرحلة انلغت بسبب العاصفة."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 232
+    },
+    {
+      "id": "p033",
+      "type": "phrase",
+      "english": "regarding / concerning",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "بِخُصُوص / فِيما يَتَعَلَّق بِ",
+        "translit": "bikhusus",
+        "example": "فيما يتعلق بالاقتصاد، الوضع صعب."
+      },
+      "lev": {
+        "form": "بخصوص / فيما يخص",
+        "translit": "bikhusus",
+        "notes": "Same.",
+        "example": "بخصوص الاقتصاد الوضع صعب."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 233
+    },
+    {
+      "id": "p034",
+      "type": "phrase",
+      "english": "according to",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "وَفْقاً لِ / حَسَبَ",
+        "translit": "wafqan li / hasaba",
+        "example": "وفقاً للتقرير، ارتفعت الأسعار."
+      },
+      "lev": {
+        "form": "حسب / وفقاً لـ",
+        "translit": "hasab / waf'an la",
+        "notes": "Same.",
+        "example": "حسب التقرير الأسعار طالعة."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 234
+    },
+    {
+      "id": "p035",
+      "type": "phrase",
+      "english": "it should be noted that",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "يَجِب الإِشَارَة إِلَى أَنَّ",
+        "translit": "yajibu al'ishaarat ila anna",
+        "example": "يجب الإشارة إلى أن الأرقام أولية."
+      },
+      "lev": {
+        "form": "لازم ننوه إنه",
+        "translit": "laazim ninnawih",
+        "notes": "News style.",
+        "example": "لازم ننوه إنو الأرقام أولية."
+      },
+      "tags": [
+        "phrase",
+        "discourse",
+        "news"
+      ],
+      "frequency_rank": 235
+    },
+    {
+      "id": "p036",
+      "type": "phrase",
+      "english": "reportedly / according to reports",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "حَسَبَ ما يُنْشَر / يُقَال",
+        "translit": "hasaba ma yunshar",
+        "example": "حسب ما ينشر، وقع اشتباك جديد."
+      },
+      "lev": {
+        "form": "حسب ما بيقولوا / يقال",
+        "translit": "hasab ma bi'ulu",
+        "notes": "Same.",
+        "example": "حسب ما بيقولوا صار اشتباك."
+      },
+      "tags": [
+        "phrase",
+        "discourse",
+        "news"
+      ],
+      "frequency_rank": 236
+    },
+    {
+      "id": "p037",
+      "type": "phrase",
+      "english": "sources said",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "أَفَادَت مَصَادِر",
+        "translit": "afadat masaadir",
+        "example": "أفادت مصادر أن الاجتماع تأجل."
+      },
+      "lev": {
+        "form": "مصادر أفادت",
+        "translit": "masadir afadat",
+        "notes": "Same.",
+        "example": "مصادر أفادت إنو الاجتماع تأجل."
+      },
+      "tags": [
+        "phrase",
+        "discourse",
+        "news"
+      ],
+      "frequency_rank": 237
+    },
+    {
+      "id": "p038",
+      "type": "phrase",
+      "english": "in addition",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "إِضَافَةً لِذٰلِك",
+        "translit": "idafatan lidhalik",
+        "example": "إضافة لذلك، فرضت عقوبات جديدة."
+      },
+      "lev": {
+        "form": "بالإضافة لذلك",
+        "translit": "bil'idafe lidhalik",
+        "notes": "Same.",
+        "example": "بالإضافة لذلك فرضوا عقوبات."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 238
+    },
+    {
+      "id": "p039",
+      "type": "phrase",
+      "english": "in fact / actually",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "فِعْلاً / في الحَقِيقَة",
+        "translit": "fi'lan / filhaqiqa",
+        "example": "في الحقيقة، الأمر أعقد مما يبدو."
+      },
+      "lev": {
+        "form": "بالحقيقة / فعلاً",
+        "translit": "bilha'ii'a",
+        "notes": "Same.",
+        "example": "بالحقيقة الموضوع أعقد."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 239
+    },
+    {
+      "id": "p040",
+      "type": "phrase",
+      "english": "in general",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "بِشَكْل عَام / عُمُوماً",
+        "translit": "bishakl aam",
+        "example": "بشكل عام، الوضع مستقر."
+      },
+      "lev": {
+        "form": "بشكل عام / عموماً",
+        "translit": "bishakl 'aam",
+        "notes": "Same.",
+        "example": "بشكل عام الوضع مستقر."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 240
+    },
+    {
+      "id": "p041",
+      "type": "phrase",
+      "english": "suddenly",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "فَجْأَةً",
+        "translit": "faj'atan",
+        "example": "فجأة، انقطع التيار الكهربائي."
+      },
+      "lev": {
+        "form": "فجأة / بفجأة",
+        "translit": "faj'a / bfaj'a",
+        "notes": "Same.",
+        "example": "فجأة انقطع الكهربا."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 241
+    },
+    {
+      "id": "p042",
+      "type": "phrase",
+      "english": "immediately",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "فَوْراً / حَالاً",
+        "translit": "fawran / haalan",
+        "example": "تم إرسال الفرق فوراً."
+      },
+      "lev": {
+        "form": "فوراً / على طول",
+        "translit": "fawran / 'ala Tul",
+        "notes": "Same.",
+        "example": "بعثوا الفرق فوراً."
+      },
+      "tags": [
+        "phrase",
+        "discourse"
+      ],
+      "frequency_rank": 242
     }
   ]
 }

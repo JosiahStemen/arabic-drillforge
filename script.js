@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '15';
+  const APP_VERSION = '16';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -180,6 +180,9 @@
   }
 
   function getItems() {
+    if (settings.contentType === 'phrases') {
+      return vocabData.items.filter(i => i.type === 'phrase');
+    }
     const type = settings.contentType === 'nouns' ? 'noun' : 'verb';
     if (settings.contentType === 'conjugation') {
       return vocabData.items.filter(i => i.type === 'verb');
@@ -1199,7 +1202,7 @@
 
   function refreshAfterDataChange() {
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
+    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns' || settings.contentType === 'phrases') renderBrowse();
     else if (settings.contentType === 'conjugation') renderConjugation();
   }
 
@@ -1288,7 +1291,7 @@
       btn.setAttribute('aria-selected', active);
     });
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
+    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns' || settings.contentType === 'phrases') renderBrowse();
     updateStats();
   }
 
