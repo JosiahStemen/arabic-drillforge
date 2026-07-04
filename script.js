@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '10';
+  const APP_VERSION = '11';
 
   const DLPT_LEVELS = ['0+', '1', '1+', '2', '2+', '3', '3+', '4', '4+'];
   const DLPT_ORDER = { '0+': 0, '1': 1, '1+': 2, '2': 3, '2+': 4, '3': 5, '3+': 6, '4': 7, '4+': 8 };
@@ -23,7 +23,6 @@
   let vocabData = { items: [] };
   let conjData = { tables: {}, _meta: {} };
   let sentencesData = { sentences: [] };
-  let passagesData = { passages: [] };
   let progress = {};
   let stats = {};
   let settings = { register: 'msa', contentType: 'verbs', dlptTarget: '2' };
@@ -33,7 +32,6 @@
   let conjDrill = null;
   let conjSession = null;
   let sentenceSession = null;
-  let readingSession = null;
 
   // ─── Storage ───────────────────────────────────────────────
 
@@ -46,6 +44,7 @@
     } catch { stats = {}; }
     try {
       settings = { register: 'msa', contentType: 'verbs', dlptTarget: '2', ...JSON.parse(localStorage.getItem(STORAGE.settings) || '{}') };
+      if (settings.contentType === 'reading') settings.contentType = 'verbs';
     } catch { /* keep defaults */ }
 
     if (!stats.today) stats.today = todayKey();
@@ -172,12 +171,6 @@
       sentencesData = { sentences: [] };
     }
     ensureSentences();
-    try {
-      passagesData = await fetchJson(`data/passages.json?v=${APP_VERSION}`);
-    } catch (err) {
-      console.warn('Could not load passages.json:', err);
-      passagesData = { passages: [] };
-    }
     tagSentencesWithDlpt();
   }
 
@@ -1213,245 +1206,6 @@
     document.getElementById('sentence-idle').classList.remove('hidden');
   }
 
-  // ─── Reading drill ───────────────────────────────────────────
-
-  function getReadingPool() {
-    return (passagesData.passages || []).filter(p =>
-      p.register === settings.register && passesDlptFilter(p)
-    );
-  }
-
-  function updateReadingStatus() {
-    const el = document.getElementById('reading-status');
-    if (!el) return;
-    const pool = getReadingPool();
-    const n = pool.length;
-    const qCount = pool.reduce((sum, p) => sum + (p.questions?.length || 0), 0);
-    el.textContent = n
-      ? `${n} passages · ${qCount} questions (${settings.register.toUpperCase()}, DLPT ≤ ${settings.dlptTarget || '2'})`
-      : 'No passages for current register / DLPT level';
-  }
-
-  function renderReadingView() {
-    updateReadingStatus();
-    const pool = getReadingPool();
-    const idle = document.getElementById('reading-idle');
-    if (!idle || readingSession) return;
-    if (!pool.length) {
-      idle.innerHTML = `
-        <p class="text-forge-danger mb-2">No reading passages match your settings.</p>
-        <p class="text-sm">Raise DLPT target in Settings or switch MSA/Levantine.</p>
-      `;
-      return;
-    }
-    idle.innerHTML = `
-      <p class="mb-2">Article snippets — comprehension & translation</p>
-      <p class="text-sm">Multiple choice and typed answers. Filtered by your DLPT target in Settings.</p>
-    `;
-  }
-
-  function buildReadingQueue(passageCount) {
-    const pool = getReadingPool();
-    if (!pool.length) return [];
-    const passages = shuffle([...pool]).slice(0, Math.min(passageCount, pool.length));
-    const queue = [];
-    passages.forEach(p => {
-      (p.questions || []).forEach((q, qi) => {
-        queue.push({ passage: p, question: q, qIndex: qi });
-      });
-    });
-    return shuffle(queue);
-  }
-
-  function startReadingDrill() {
-    const count = parseInt(document.getElementById('reading-count')?.value || '10', 10);
-    const queue = buildReadingQueue(count);
-    if (!queue.length) {
-      alert(`No reading passages for ${settings.register.toUpperCase()} at DLPT ≤ ${settings.dlptTarget || '2'}. Adjust Settings.`);
-      updateReadingStatus();
-      return;
-    }
-
-    readingSession = {
-      queue,
-      index: 0,
-      results: [],
-      answered: false,
-      mcPick: null,
-    };
-
-    document.getElementById('reading-idle')?.classList.add('hidden');
-    document.getElementById('reading-summary')?.classList.add('hidden');
-    document.getElementById('reading-drill')?.classList.remove('hidden');
-    renderReadingItem();
-  }
-
-  function currentReadingStep() {
-    return readingSession?.queue[readingSession.index];
-  }
-
-  function renderReadingItem() {
-    if (!readingSession) return;
-    const step = currentReadingStep();
-    if (!step) return endReadingSession();
-
-    const { passage, question } = step;
-    readingSession.answered = false;
-    readingSession.mcPick = null;
-
-    document.getElementById('reading-progress').textContent =
-      `${readingSession.index + 1} / ${readingSession.queue.length}`;
-    document.getElementById('reading-title').textContent =
-      `${passage.title} · DLPT ${passage.dlpt_level || '—'}`;
-    document.getElementById('reading-arabic').textContent = passage.arabic;
-    document.getElementById('reading-english-ref').textContent = passage.english;
-    document.getElementById('reading-feedback').classList.add('hidden');
-
-    const qArea = document.getElementById('reading-question-area');
-    const typeLabel = question.type === 'translation' ? 'Translation' : 'Comprehension';
-
-    if (question.type === 'comprehension') {
-      qArea.innerHTML = `
-        <div class="p-4 bg-forge-900 border border-forge-600 rounded-lg">
-          <div class="text-xs text-forge-500 uppercase tracking-wide mb-2">${typeLabel}</div>
-          <p class="text-sm mb-4">${esc(question.question)}</p>
-          <div class="grid gap-2" id="reading-mc-options">
-            ${(question.options || []).map((opt, i) => `
-              <button type="button" data-mc="${i}" class="reading-mc-btn text-left px-4 py-3 bg-forge-800 border border-forge-600 rounded hover:border-forge-accent text-sm">
-                <span class="text-forge-accent font-mono mr-2">${i + 1}.</span>${esc(opt)}
-              </button>
-            `).join('')}
-          </div>
-        </div>
-      `;
-      qArea.querySelectorAll('.reading-mc-btn').forEach(btn => {
-        btn.addEventListener('click', () => pickReadingMC(parseInt(btn.dataset.mc, 10)));
-      });
-      document.getElementById('reading-actions').innerHTML = '';
-    } else {
-      qArea.innerHTML = `
-        <div class="p-4 bg-forge-900 border border-forge-600 rounded-lg">
-          <div class="text-xs text-forge-500 uppercase tracking-wide mb-2">${typeLabel}</div>
-          <p class="text-sm mb-3">${esc(question.question)}</p>
-          <input id="reading-input" type="text" autocomplete="off" placeholder="Type English translation…"
-            class="w-full px-4 py-3 bg-forge-800 border border-forge-600 rounded text-sm focus:border-forge-accent outline-none">
-        </div>
-      `;
-      document.getElementById('reading-actions').innerHTML =
-        `<button id="reading-submit" type="button" class="px-6 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Submit (Enter)</button>`;
-      document.getElementById('reading-submit').onclick = submitReadingTranslation;
-      setTimeout(() => document.getElementById('reading-input')?.focus(), 50);
-    }
-  }
-
-  function pickReadingMC(choice) {
-    if (!readingSession || readingSession.answered) return;
-    readingSession.mcPick = choice;
-    document.querySelectorAll('.reading-mc-btn').forEach((btn, i) => {
-      btn.classList.toggle('border-forge-accent', i === choice);
-      btn.disabled = true;
-    });
-    finishReadingAnswer(choice === readingSession.queue[readingSession.index].question.correct);
-  }
-
-  function submitReadingTranslation() {
-    if (!readingSession || readingSession.answered) return;
-    const step = currentReadingStep();
-    const input = document.getElementById('reading-input')?.value || '';
-    const q = step.question;
-    const correct = fuzzyMatchEnglish(input, { english: q.english, keywords: q.keywords || [], accept: q.accept || [] });
-    finishReadingAnswer(correct, input);
-  }
-
-  function finishReadingAnswer(correct, input) {
-    if (!readingSession || readingSession.answered) return;
-    readingSession.answered = true;
-
-    const step = currentReadingStep();
-    const { passage, question } = step;
-    const progressId = `read-${passage.id}`;
-
-    recordAnswer(progressId, settings.register, correct);
-    readingSession.results.push({
-      passageId: passage.id,
-      title: passage.title,
-      question: question.question,
-      type: question.type,
-      correct,
-      input: input ?? null,
-    });
-
-    const fb = document.getElementById('reading-feedback');
-    fb.classList.remove('hidden', 'feedback-correct', 'feedback-wrong');
-    fb.classList.add(correct ? 'feedback-correct' : 'feedback-wrong');
-
-    if (question.type === 'comprehension') {
-      const expected = question.options?.[question.correct] || '—';
-      const picked = readingSession.mcPick != null ? question.options?.[readingSession.mcPick] : '';
-      fb.innerHTML = `
-        <div class="font-semibold ${correct ? 'text-forge-success' : 'text-forge-danger'}">${correct ? '✓ Correct' : '✗ Incorrect'}</div>
-        <div class="text-sm mt-1"><strong>Answer:</strong> ${esc(expected)}</div>
-        ${!correct && picked ? `<div class="text-sm text-forge-400">You chose: ${esc(picked)}</div>` : ''}
-      `;
-    } else {
-      fb.innerHTML = `
-        <div class="font-semibold ${correct ? 'text-forge-success' : 'text-forge-danger'}">${correct ? '✓ Correct' : '✗ See expected translation'}</div>
-        <div class="text-sm mt-1"><strong>Expected:</strong> ${esc(question.english)}</div>
-        ${!correct && input ? `<div class="text-sm text-forge-400">You wrote: ${esc(input)}</div>` : ''}
-      `;
-    }
-
-    document.getElementById('reading-actions').innerHTML =
-      `<button id="reading-next" type="button" class="px-6 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Continue (Space)</button>`;
-    document.getElementById('reading-next').onclick = nextReading;
-    updateStats();
-  }
-
-  function nextReading() {
-    if (!readingSession) return;
-    readingSession.index++;
-    if (readingSession.index >= readingSession.queue.length) endReadingSession();
-    else renderReadingItem();
-  }
-
-  function endReadingSession() {
-    const correct = readingSession.results.filter(r => r.correct).length;
-    const total = readingSession.results.length;
-    const acc = total ? Math.round((correct / total) * 100) : 0;
-    const weak = readingSession.results.filter(r => !r.correct);
-
-    document.getElementById('reading-drill')?.classList.add('hidden');
-    const summary = document.getElementById('reading-summary');
-    summary.classList.remove('hidden');
-    summary.innerHTML = `
-      <h3 class="text-lg font-bold text-forge-accent mb-2">Reading Drill Complete</h3>
-      <div class="grid sm:grid-cols-3 gap-4 mb-4">
-        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Accuracy</div><div class="text-3xl font-bold text-forge-accent">${acc}%</div></div>
-        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Correct</div><div class="text-3xl font-bold text-forge-success">${correct}</div></div>
-        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Total</div><div class="text-3xl font-bold">${total}</div></div>
-      </div>
-      ${weak.length ? `<div class="mb-4 text-sm"><h4 class="text-forge-danger font-semibold mb-1">Review:</h4><ul class="space-y-1">${weak.map(w => `<li>• ${esc(w.title)} — ${esc(w.question)}</li>`).join('')}</ul></div>` : '<p class="text-forge-success text-sm mb-4">Perfect session.</p>'}
-      <button id="reading-done" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Done</button>
-    `;
-    document.getElementById('reading-done').onclick = () => {
-      readingSession = null;
-      summary.classList.add('hidden');
-      document.getElementById('reading-idle')?.classList.remove('hidden');
-      renderReadingView();
-    };
-    readingSession = null;
-    updateStats();
-  }
-
-  function exitReadingDrill() {
-    if (readingSession && !confirm('Exit reading drill? Progress for answered items is saved.')) return;
-    readingSession = null;
-    document.getElementById('reading-drill')?.classList.add('hidden');
-    document.getElementById('reading-summary')?.classList.add('hidden');
-    document.getElementById('reading-idle')?.classList.remove('hidden');
-    renderReadingView();
-  }
-
   // ─── Settings ────────────────────────────────────────────────
 
   function syncSettingsUi() {
@@ -1480,7 +1234,6 @@
     saveProgress();
     updateDlptBanner();
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'reading') renderReadingView();
     else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
     else if (settings.contentType === 'conjugation') renderConjugation();
   }
@@ -1489,7 +1242,6 @@
     syncSettingsUi();
     updateDlptBanner();
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'reading') renderReadingView();
     else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
     else if (settings.contentType === 'conjugation') renderConjugation();
   }
@@ -1579,12 +1331,12 @@
       btn.setAttribute('aria-selected', active);
     });
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'reading') renderReadingView();
     else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
     updateStats();
   }
 
   function setContentType(type) {
+    if (type === 'reading') type = 'verbs';
     settings.contentType = type;
     saveProgress();
     document.querySelectorAll('.content-tab').forEach(btn => {
@@ -1597,17 +1349,14 @@
 
     const isConj = type === 'conjugation';
     const isSentences = type === 'sentences';
-    const isReading = type === 'reading';
-    const hideBrowse = isConj || isSentences || isReading;
+    const hideBrowse = isConj || isSentences;
     document.getElementById('browse-view').classList.toggle('hidden', hideBrowse);
     document.getElementById('browse-toolbar').classList.toggle('hidden', hideBrowse);
     document.getElementById('conjugation-view').classList.toggle('hidden', !isConj);
     document.getElementById('sentences-view').classList.toggle('hidden', !isSentences);
-    document.getElementById('reading-view').classList.toggle('hidden', !isReading);
 
     if (isConj) renderConjugation();
     else if (isSentences) renderSentencesView();
-    else if (isReading) renderReadingView();
     else renderBrowse();
   }
 
@@ -1707,32 +1456,8 @@
 
   function onKeydown(e) {
     const inSentenceInput = document.activeElement?.id === 'sentence-input';
-    const inReadingInput = document.activeElement?.id === 'reading-input';
-    if (e.target.matches('input, textarea, select') && e.key !== 'Enter' && e.key !== ' ' && !inSentenceInput && !inReadingInput) return;
+    if (e.target.matches('input, textarea, select') && e.key !== 'Enter' && e.key !== ' ' && !inSentenceInput) return;
     if (inSentenceInput && e.key !== 'Enter') return;
-    if (inReadingInput && e.key !== 'Enter') return;
-
-    if (readingSession && !readingSession.answered) {
-      const step = currentReadingStep();
-      if (step?.question.type === 'comprehension' && e.key >= '1' && e.key <= '4') {
-        const idx = parseInt(e.key, 10) - 1;
-        if (idx < (step.question.options?.length || 0)) {
-          e.preventDefault();
-          pickReadingMC(idx);
-          return;
-        }
-      }
-      if (step?.question.type === 'translation' && e.key === 'Enter' && inReadingInput) {
-        e.preventDefault();
-        submitReadingTranslation();
-        return;
-      }
-    }
-    if (readingSession && readingSession.answered && (e.code === 'Space' || e.key === 'Enter')) {
-      e.preventDefault();
-      nextReading();
-      return;
-    }
 
     if (conjDrill && !conjDrill.answered && e.key >= '1' && e.key <= '4') {
       e.preventDefault();
@@ -1830,13 +1555,6 @@
     bindClick('conj-drill-btn', startConjDrill);
     bindClick('sentence-start', startSentenceDrill);
     bindClick('sentence-exit', exitSentenceDrill);
-
-    bindClick('reading-start', startReadingDrill);
-    bindClick('reading-exit', exitReadingDrill);
-    bindClick('reading-tts', (e) => {
-      const ar = document.getElementById('reading-arabic')?.textContent;
-      speakArabic(ar, e.currentTarget);
-    });
 
     bindClick('btn-settings', openSettings);
     bindClick('settings-close', closeSettings);

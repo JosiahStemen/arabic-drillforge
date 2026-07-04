@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body class="bg-forge-950 text-gray-100 min-h-screen font-sans">
   <!-- Onboarding overlay -->
@@ -86,7 +86,6 @@
         <button data-content="nouns" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Nouns</button>
         <button data-content="conjugation" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Conjugation</button>
         <button data-content="sentences" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Sentences</button>
-        <button data-content="reading" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Reading</button>
       </div>
       <p id="dlpt-banner" class="text-xs text-forge-500 mt-2 hidden"></p>
     </div>
@@ -216,41 +215,6 @@
         <div id="conj-drill-area" class="hidden mt-4 p-4 bg-forge-900 border border-forge-600 rounded-lg"></div>
       </div>
 
-      <!-- Reading view -->
-      <div id="reading-view" class="hidden">
-        <div class="flex flex-wrap gap-2 mb-4 items-center">
-          <span id="reading-status" class="text-xs text-forge-400"></span>
-          <select id="reading-count" class="px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm">
-            <option value="5">5 passages</option>
-            <option value="10" selected>10 passages</option>
-          </select>
-          <button id="reading-start" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Start Reading Drill</button>
-        </div>
-        <div id="reading-drill" class="hidden">
-          <div class="flex items-center justify-between mb-4 text-sm text-forge-400">
-            <span id="reading-progress">1 / 10</span>
-            <button id="reading-exit" type="button" class="text-forge-danger hover:underline">Exit</button>
-          </div>
-          <div class="p-4 bg-forge-900 border border-forge-600 rounded-lg mb-4">
-            <div id="reading-title" class="text-sm text-forge-accent font-semibold mb-2"></div>
-            <div id="reading-arabic" class="arabic text-forge-300 leading-loose mb-3"></div>
-            <button id="reading-tts" type="button" class="px-3 py-1 text-xs bg-forge-800 border border-forge-600 rounded">🔊 Listen</button>
-            <details class="mt-3 text-sm">
-              <summary class="text-forge-400 cursor-pointer">Show reference translation</summary>
-              <p id="reading-english-ref" class="text-gray-400 mt-2"></p>
-            </details>
-          </div>
-          <div id="reading-question-area"></div>
-          <div id="reading-feedback" class="hidden mt-4 p-4 rounded-lg border"></div>
-          <div id="reading-actions" class="flex gap-2 mt-4 justify-center"></div>
-        </div>
-        <div id="reading-idle" class="text-center text-forge-400 py-12">
-          <p class="mb-2">Article snippets — comprehension & translation</p>
-          <p class="text-sm">Multiple choice and typed answers. Filtered by your DLPT target in Settings.</p>
-        </div>
-        <div id="reading-summary" class="hidden mt-4 p-6 bg-forge-900 border border-forge-600 rounded-lg"></div>
-      </div>
-
       <!-- Session summary -->
       <div id="session-summary" class="hidden mt-4 p-6 bg-forge-900 border border-forge-600 rounded-lg">
         <h3 class="text-lg font-bold text-forge-accent mb-2">Session Complete</h3>
@@ -318,7 +282,7 @@
           <option value="4">4</option>
           <option value="4+">4+</option>
         </select>
-        <span class="text-xs text-forge-500 mt-1 block">Includes all content at or below this level (vocab, sentences, reading).</span>
+        <span class="text-xs text-forge-500 mt-1 block">Includes all content at or below this level (vocab, sentences, conjugation).</span>
       </label>
 
       <div class="border-t border-forge-700 pt-4 space-y-2">
@@ -348,6 +312,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=10"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>
