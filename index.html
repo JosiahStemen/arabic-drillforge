@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body class="bg-forge-950 text-gray-100 min-h-screen font-sans">
   <!-- Onboarding overlay -->
@@ -50,7 +50,7 @@
         <li><strong class="text-forge-300">Levantine</strong> — Palestinian/Lebanese spoken forms side-by-side.</li>
         <li><strong class="text-forge-300">Space</strong> — flip / continue &nbsp; <strong class="text-forge-300">Enter</strong> — submit &nbsp; <strong class="text-forge-300">1–4</strong> — multiple choice (vocab + conjugation)</li>
         <li><strong class="text-forge-300">Sentences</strong> tab — Arabic → English (typos accepted). Conjugation drill is multiple choice — no Arabic typing needed.</li>
-        <li>Use the <strong class="text-forge-300">Difficulty (DLPT)</strong> dropdown in the header to filter content. <strong class="text-forge-300">Settings</strong> has export/backup.</li>
+        <li>Progress saves automatically. <strong class="text-forge-300">Settings</strong> has export/backup.</li>
       </ul>
       <button id="onboarding-dismiss" class="w-full py-2 bg-forge-accent text-forge-950 font-semibold rounded hover:brightness-110">Start Drilling</button>
     </div>
@@ -80,31 +80,13 @@
         </div>
       </div>
 
-      <!-- Content type tabs + difficulty -->
-      <div class="flex flex-wrap items-center justify-between gap-2 mt-3">
-        <div class="flex gap-1" role="tablist" aria-label="Content type">
-          <button data-content="verbs" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-700 text-white">Verbs</button>
-          <button data-content="nouns" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Nouns</button>
-          <button data-content="conjugation" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Conjugation</button>
-          <button data-content="sentences" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Sentences</button>
-        </div>
-        <label class="flex items-center gap-2 text-sm shrink-0">
-          <span class="text-forge-400 whitespace-nowrap">Difficulty (DLPT)</span>
-          <select id="dlpt-select" class="px-3 py-1.5 bg-forge-800 border border-forge-600 rounded text-sm font-mono" aria-label="DLPT difficulty level">
-            <option value="0+">0+</option>
-            <option value="1">1</option>
-            <option value="1+">1+</option>
-            <option value="2" selected>2</option>
-            <option value="2+">2+</option>
-            <option value="3">3</option>
-            <option value="3+">3+</option>
-            <option value="4">4</option>
-            <option value="4+">4+</option>
-          </select>
-        </label>
+      <!-- Content type tabs -->
+      <div class="flex gap-1 mt-3" role="tablist" aria-label="Content type">
+        <button data-content="verbs" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-700 text-white">Verbs</button>
+        <button data-content="nouns" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Nouns</button>
+        <button data-content="conjugation" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Conjugation</button>
+        <button data-content="sentences" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Sentences</button>
       </div>
-      <p id="dlpt-banner" class="text-xs text-forge-500 mt-2"></p>
-      <p class="text-xs text-forge-600 mt-0.5 hidden sm:block">Difficulty shows that DLPT band only — 4+ uses formal military/diplomatic vocab (3+ through 4+).</p>
     </div>
   </header>
 
@@ -286,8 +268,6 @@
         <button id="settings-close" type="button" class="text-forge-400 hover:text-white text-xl leading-none" aria-label="Close">&times;</button>
       </div>
 
-      <p class="text-sm text-forge-400 mb-4">Change <strong class="text-forge-300">Difficulty (DLPT)</strong> from the dropdown in the header.</p>
-
       <div class="space-y-2">
         <h3 class="text-sm font-semibold text-forge-300 mb-2">Progress Backup</h3>
         <button id="btn-export" type="button" class="w-full px-3 py-2 text-sm bg-forge-800 border border-forge-600 rounded hover:bg-forge-700">Export Progress</button>
@@ -315,6 +295,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=13"></script>
+  <script src="script.js?v=14"></script>
 </body>
 </html>

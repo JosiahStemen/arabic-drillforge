@@ -5,10 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '13';
-
-  const DLPT_LEVELS = ['0+', '1', '1+', '2', '2+', '3', '3+', '4', '4+'];
-  const DLPT_ORDER = { '0+': 0, '1': 1, '1+': 2, '2': 3, '2+': 4, '3': 5, '3+': 6, '4': 7, '4+': 8 };
+  const APP_VERSION = '14';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -25,7 +22,7 @@
   let sentencesData = { sentences: [] };
   let progress = {};
   let stats = {};
-  let settings = { register: 'msa', contentType: 'verbs', dlptTarget: '2' };
+  let settings = { register: 'msa', contentType: 'verbs' };
 
   let session = null;
   let selectedItem = null;
@@ -43,7 +40,7 @@
       stats = JSON.parse(localStorage.getItem(STORAGE.stats) || '{}');
     } catch { stats = {}; }
     try {
-      settings = { register: 'msa', contentType: 'verbs', dlptTarget: '2', ...JSON.parse(localStorage.getItem(STORAGE.settings) || '{}') };
+      settings = { register: 'msa', contentType: 'verbs', ...JSON.parse(localStorage.getItem(STORAGE.settings) || '{}') };
       if (settings.contentType === 'reading') settings.contentType = 'verbs';
     } catch { /* keep defaults */ }
 
@@ -180,41 +177,6 @@
       const item = vocabData.items.find(i => i.id === s.vocab_id);
       if (item) s.dlpt_level = item.dlpt_level || '2';
     });
-  }
-
-  function dlptValue(level) {
-    return DLPT_ORDER[level] ?? DLPT_ORDER['2'];
-  }
-
-  /** Focus band for selected difficulty (not cumulative — avoids flooding 4+ with 0+ basics). */
-  function getDlptFilterRange(target) {
-    const tv = dlptValue(target);
-    if (target === '4+') return { min: 5, max: 8, label: '3+ – 4+' };
-    if (target === '4') return { min: 7, max: 7, label: '4' };
-    if (target.endsWith('+')) {
-      const base = target.slice(0, -1);
-      return { min: dlptValue(base), max: tv, label: `${base} – ${target}` };
-    }
-    return { min: tv, max: tv, label: target };
-  }
-
-  function passesDlptFilter(item) {
-    const target = settings.dlptTarget || '2';
-    const itemLevel = item.dlpt_level || '2';
-    const iv = dlptValue(itemLevel);
-    const { min, max } = getDlptFilterRange(target);
-    return iv >= min && iv <= max;
-  }
-
-  function updateDlptBanner() {
-    const el = document.getElementById('dlpt-banner');
-    if (!el) return;
-    const target = settings.dlptTarget || '2';
-    const { label } = getDlptFilterRange(target);
-    const vocabCount = vocabData.items.filter(i => passesDlptFilter(i)).length;
-    el.textContent = vocabCount
-      ? `DLPT ${label}: ${vocabCount} vocab items · sentences & drills use this level only`
-      : `DLPT ${label}: no vocab yet — try a nearby level`;
   }
 
   function getItems() {
@@ -359,7 +321,6 @@
     return getItems().filter(item => {
       const reg = getRegister(item);
       const other = getOtherRegister(item);
-      if (!passesDlptFilter(item)) return false;
       if (tag && !(item.tags || []).includes(tag)) return false;
 
       if (filter === 'known' && !isKnown(item.id, settings.register)) return false;
@@ -879,7 +840,7 @@
   }
 
   function getConjVerbPool() {
-    return vocabData.items.filter(i => i.type === 'verb' && conjData.tables[i.id] && passesDlptFilter(i));
+    return vocabData.items.filter(i => i.type === 'verb' && conjData.tables[i.id]);
   }
 
   function buildConjQueue(count) {
@@ -1073,7 +1034,7 @@
   function getSentencePool() {
     ensureSentences();
     return (sentencesData.sentences || []).filter(s =>
-      s.register === settings.register && passesDlptFilter(s)
+      s.register === settings.register
     );
   }
 
@@ -1223,13 +1184,7 @@
 
   // ─── Settings ────────────────────────────────────────────────
 
-  function syncSettingsUi() {
-    const dlpt = document.getElementById('dlpt-select');
-    if (dlpt) dlpt.value = settings.dlptTarget || '2';
-  }
-
   function openSettings() {
-    syncSettingsUi();
     const modal = document.getElementById('settings-modal');
     if (!modal) return;
     modal.classList.remove('hidden');
@@ -1243,19 +1198,7 @@
     modal.classList.remove('flex');
   }
 
-  function applyDlptTarget(level) {
-    if (!DLPT_LEVELS.includes(level)) return;
-    settings.dlptTarget = level;
-    saveProgress();
-    updateDlptBanner();
-    if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
-    else if (settings.contentType === 'conjugation') renderConjugation();
-  }
-
   function refreshAfterDataChange() {
-    syncSettingsUi();
-    updateDlptBanner();
     if (settings.contentType === 'sentences') renderSentencesView();
     else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
     else if (settings.contentType === 'conjugation') renderConjugation();
@@ -1579,11 +1522,6 @@
         if (e.target.id === 'settings-modal') closeSettings();
       });
     }
-    const dlptSelect = document.getElementById('dlpt-select');
-    if (dlptSelect) {
-      dlptSelect.addEventListener('change', (e) => applyDlptTarget(e.target.value));
-    }
-
     bindClick('sentence-tts', (e) => {
       const ar = document.getElementById('sentence-arabic')?.textContent;
       speakArabic(ar, e.currentTarget);
@@ -1621,10 +1559,8 @@
     try {
       await loadData();
       populateTags();
-      syncSettingsUi();
       setRegister(settings.register || 'msa');
       setContentType(settings.contentType || 'verbs');
-      updateDlptBanner();
       updateStats();
     } catch (err) {
       console.error(err);
