@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '11';
+  const APP_VERSION = '12';
 
   const DLPT_LEVELS = ['0+', '1', '1+', '2', '2+', '3', '3+', '4', '4+'];
   const DLPT_ORDER = { '0+': 0, '1': 1, '1+': 2, '2': 3, '2+': 4, '3': 5, '3+': 6, '4': 7, '4+': 8 };
@@ -198,8 +198,9 @@
     const target = settings.dlptTarget || '2';
     const vocabCount = vocabData.items.filter(i => passesDlptFilter(i)).length;
     const total = vocabData.items.length;
-    el.textContent = `DLPT ≤ ${target}: ${vocabCount} / ${total} vocab items`;
-    el.classList.remove('hidden');
+    el.textContent = total
+      ? `Showing DLPT ≤ ${target}: ${vocabCount} of ${total} vocab items`
+      : `Difficulty: DLPT ≤ ${target}`;
   }
 
   function getItems() {
@@ -1209,7 +1210,7 @@
   // ─── Settings ────────────────────────────────────────────────
 
   function syncSettingsUi() {
-    const dlpt = document.getElementById('setting-dlpt');
+    const dlpt = document.getElementById('dlpt-select');
     if (dlpt) dlpt.value = settings.dlptTarget || '2';
   }
 
@@ -1564,9 +1565,9 @@
         if (e.target.id === 'settings-modal') closeSettings();
       });
     }
-    const settingDlpt = document.getElementById('setting-dlpt');
-    if (settingDlpt) {
-      settingDlpt.addEventListener('change', (e) => applyDlptTarget(e.target.value));
+    const dlptSelect = document.getElementById('dlpt-select');
+    if (dlptSelect) {
+      dlptSelect.addEventListener('change', (e) => applyDlptTarget(e.target.value));
     }
 
     bindClick('sentence-tts', (e) => {
