@@ -5,6 +5,8 @@
 (function () {
   'use strict';
 
+  const APP_VERSION = '3';
+
   const STORAGE = {
     progress: 'adf_progress',
     stats: 'adf_stats',
@@ -119,15 +121,50 @@
 
   // ─── Data helpers ──────────────────────────────────────────
 
+  async function fetchJson(url) {
+    const r = await fetch(url, { cache: 'no-store' });
+    if (!r.ok) throw new Error(`${url} returned ${r.status}`);
+    return r.json();
+  }
+
+  function buildSentencesFromVocab() {
+    const sentences = [];
+    vocabData.items.forEach(item => {
+      ['msa', 'lev'].forEach(reg => {
+        const ar = item[reg]?.example?.trim();
+        if (!ar) return;
+        const gloss = item.english.split('/')[0].replace(/^to /, '').trim().toLowerCase();
+        const keywords = gloss.split(/\s+/).filter(w => w.length > 2);
+        sentences.push({
+          id: `${item.id}-${reg}`,
+          vocab_id: item.id,
+          register: reg,
+          arabic: ar,
+          english: item[reg]?.example_en || `(${item.english})`,
+          keywords,
+          tags: item.tags || [],
+        });
+      });
+    });
+    return sentences;
+  }
+
+  function ensureSentences() {
+    if (sentencesData.sentences?.length) return sentencesData.sentences.length;
+    sentencesData.sentences = buildSentencesFromVocab();
+    return sentencesData.sentences.length;
+  }
+
   async function loadData() {
-    const [v, c, s] = await Promise.all([
-      fetch('data/vocab.json').then(r => r.json()),
-      fetch('data/conjugations.json').then(r => r.json()),
-      fetch('data/sentences.json').then(r => r.json()),
-    ]);
-    vocabData = v;
-    conjData = c;
-    sentencesData = s;
+    vocabData = await fetchJson(`data/vocab.json?v=${APP_VERSION}`);
+    conjData = await fetchJson(`data/conjugations.json?v=${APP_VERSION}`);
+    try {
+      sentencesData = await fetchJson(`data/sentences.json?v=${APP_VERSION}`);
+    } catch (err) {
+      console.warn('Could not load sentences.json, using vocab fallback:', err);
+      sentencesData = { sentences: [] };
+    }
+    ensureSentences();
   }
 
   function getItems() {
@@ -727,6 +764,13 @@
   // ─── Conjugation ───────────────────────────────────────────
 
   function renderConjugation() {
+    conjDrill = null;
+    const drillArea = document.getElementById('conj-drill-area');
+    if (drillArea) {
+      drillArea.classList.add('hidden');
+      drillArea.innerHTML = '';
+    }
+
     const select = document.getElementById('conj-verb-select');
     const verbs = vocabData.items.filter(i => i.type === 'verb' && conjData.tables[i.id]);
     select.innerHTML = verbs.map(v =>
@@ -795,15 +839,22 @@
   }
 
   function startConjDrill() {
-    const verbId = document.getElementById('conj-verb-select').value;
+    const verbId = document.getElementById('conj-verb-select')?.value;
     const conj = conjData.tables[verbId];
-    if (!conj) return;
+    const area = document.getElementById('conj-drill-area');
+    if (!conj || !area) {
+      alert('Select a verb with conjugation data first.');
+      return;
+    }
 
     const tense = Math.random() < 0.5 ? 'past' : 'present';
     const pronoun = PRONOUNS[Math.floor(Math.random() * PRONOUNS.length)];
     const reg = settings.register;
     const expected = conj[reg]?.[tense]?.[pronoun];
-    if (!expected) return;
+    if (!expected) {
+      alert('No conjugation form found for this combination. Try another verb.');
+      return;
+    }
 
     const labels = conjData._meta?.pronoun_labels || {};
     const wrongPool = gatherConjWrongOptions(conj, reg, tense, pronoun, expected);
@@ -820,7 +871,6 @@
 
     conjDrill = { verbId, tense, pronoun, reg, expected, options, answered: false };
 
-    const area = document.getElementById('conj-drill-area');
     area.classList.remove('hidden');
     area.innerHTML = `
       <h4 class="font-semibold text-forge-accent mb-2">Conjugation Drill</h4>
@@ -873,7 +923,28 @@
   // ─── Sentence drill ─────────────────────────────────────────
 
   function getSentencePool() {
+    ensureSentences();
     return (sentencesData.sentences || []).filter(s => s.register === settings.register);
+  }
+
+  function updateSentenceStatus() {
+    const el = document.getElementById('sentence-status');
+    if (!el) return;
+    const n = getSentencePool().length;
+    el.textContent = n ? `${n} sentences ready (${settings.register.toUpperCase()})` : 'Loading sentences…';
+  }
+
+  function renderSentencesView() {
+    updateSentenceStatus();
+    if (!getSentencePool().length) {
+      document.getElementById('sentence-idle').innerHTML =
+        '<p class="text-forge-danger mb-2">Could not load sentences.</p><p class="text-sm">Hard-refresh the page (Ctrl+Shift+R).</p>';
+      return;
+    }
+    document.getElementById('sentence-idle').innerHTML = `
+      <p class="mb-2">Arabic sentence → English translation drill</p>
+      <p class="text-sm">Click Start or press the button above. Typos are accepted.</p>
+    `;
   }
 
   function buildSentenceQueue(count) {
@@ -887,10 +958,12 @@
   }
 
   function startSentenceDrill() {
-    const count = parseInt(document.getElementById('sentence-count').value, 10);
+    ensureSentences();
+    const count = parseInt(document.getElementById('sentence-count')?.value || '20', 10);
     const queue = buildSentenceQueue(count);
     if (!queue.length) {
-      alert('No sentences for this register.');
+      alert(`No sentences for ${settings.register.toUpperCase()}. Try switching MSA/Levantine toggle.`);
+      updateSentenceStatus();
       return;
     }
 
@@ -1083,7 +1156,8 @@
       btn.classList.toggle('text-gray-300', !active);
       btn.setAttribute('aria-selected', active);
     });
-    if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
+    if (settings.contentType === 'sentences') renderSentencesView();
+    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
     updateStats();
   }
 
@@ -1107,7 +1181,7 @@
     document.getElementById('sentences-view').classList.toggle('hidden', !isSentences);
 
     if (isConj) renderConjugation();
-    else if (isSentences) { /* idle state */ }
+    else if (isSentences) renderSentencesView();
     else renderBrowse();
   }
 
@@ -1186,6 +1260,16 @@
   // ─── Init ────────────────────────────────────────────────────
 
   function bindEvents() {
+    // Delegated clicks — survives partial init failures & cache mismatches
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-action]');
+      if (!btn) return;
+      e.preventDefault();
+      const action = btn.dataset.action;
+      if (action === 'conj-drill') startConjDrill();
+      if (action === 'sentence-start') startSentenceDrill();
+    });
+
     document.getElementById('tab-msa').onclick = () => setRegister('msa');
     document.getElementById('tab-lev').onclick = () => setRegister('lev');
 
@@ -1220,9 +1304,7 @@
       document.getElementById('drill-setup').classList.remove('hidden');
     };
 
-    document.getElementById('conj-drill-btn').onclick = startConjDrill;
-    document.getElementById('sentence-start').onclick = startSentenceDrill;
-    document.getElementById('sentence-exit').onclick = exitSentenceDrill;
+    document.getElementById('sentence-exit')?.onclick = exitSentenceDrill;
 
     document.getElementById('btn-export').onclick = exportProgress;
     document.getElementById('import-file').onchange = (e) => {
@@ -1247,12 +1329,21 @@
 
   async function init() {
     loadStorage();
-    await loadData();
-    populateTags();
     bindEvents();
-    setRegister(settings.register || 'msa');
-    setContentType(settings.contentType || 'verbs');
-    updateStats();
+    try {
+      await loadData();
+      populateTags();
+      setRegister(settings.register || 'msa');
+      setContentType(settings.contentType || 'verbs');
+      updateStats();
+    } catch (err) {
+      console.error(err);
+      const mc = document.getElementById('main-content');
+      if (mc) {
+        mc.insertAdjacentHTML('afterbegin',
+          `<p class="text-forge-danger p-4 mb-4 border border-forge-danger/40 rounded">Failed to load vocab data. Hard-refresh (Ctrl+Shift+R). Error: ${esc(String(err))}</p>`);
+      }
+    }
 
     if (!localStorage.getItem(STORAGE.onboarded)) {
       const ob = document.getElementById('onboarding');
@@ -1261,9 +1352,9 @@
     }
   }
 
-  init().catch(err => {
-    console.error(err);
-    document.getElementById('main-content').innerHTML =
-      `<p class="text-forge-danger p-4">Failed to load data. Serve via HTTP (e.g. GitHub Pages), not file://. Error: ${esc(String(err))}</p>`;
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => init());
+  } else {
+    init();
+  }
 })();

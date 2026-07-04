@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arabic DrillForge</title>
   <meta name="description" content="Rapid Arabic vocab & conjugation drill — MSA + Levantine">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -37,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body class="bg-forge-950 text-gray-100 min-h-screen font-sans">
   <!-- Onboarding overlay -->
@@ -162,7 +163,8 @@
       <!-- Sentences view -->
       <div id="sentences-view" class="hidden">
         <div class="flex flex-wrap gap-2 mb-4 items-center">
-          <button id="sentence-start" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm hover:brightness-110">Start Sentence Drill</button>
+          <span id="sentence-status" class="text-xs text-forge-400"></span>
+          <button id="sentence-start" data-action="sentence-start" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm hover:brightness-110">Start Sentence Drill</button>
           <select id="sentence-count" class="px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm">
             <option value="10">10 sentences</option>
             <option value="20" selected>20 sentences</option>
@@ -196,7 +198,7 @@
       <div id="conjugation-view" class="hidden">
         <div class="flex flex-wrap gap-2 mb-4">
           <select id="conj-verb-select" class="flex-1 min-w-[200px] px-3 py-2 bg-forge-800 border border-forge-600 rounded text-sm"></select>
-          <button id="conj-drill-btn" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Drill Conjugation</button>
+          <button id="conj-drill-btn" data-action="conj-drill" type="button" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm">Drill Conjugation (Multiple Choice)</button>
         </div>
         <div id="conj-tables" class="overflow-x-auto"></div>
         <div id="conj-drill-area" class="hidden mt-4 p-4 bg-forge-900 border border-forge-600 rounded-lg"></div>
@@ -271,6 +273,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
