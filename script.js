@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '4';
+  const APP_VERSION = '5';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -1002,8 +1002,6 @@
     document.getElementById('sentence-actions').innerHTML =
       `<button id="sentence-submit" class="px-6 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Submit (Enter)</button>`;
     document.getElementById('sentence-submit').onclick = submitSentence;
-    const ttsBtn = document.getElementById('sentence-tts');
-    if (ttsBtn) ttsBtn.onclick = () => speakArabic(s.arabic, ttsBtn);
     setTimeout(() => document.getElementById('sentence-input')?.focus(), 50);
   }
 
@@ -1197,10 +1195,18 @@
   let ttsVoices = [];
 
   function initTtsVoices() {
-    if (!window.speechSynthesis) return;
-    const load = () => { ttsVoices = speechSynthesis.getVoices() || []; };
-    load();
-    speechSynthesis.addEventListener('voiceschanged', load);
+    try {
+      if (!window.speechSynthesis) return;
+      const load = () => { ttsVoices = speechSynthesis.getVoices() || []; };
+      load();
+      if (typeof speechSynthesis.addEventListener === 'function') {
+        speechSynthesis.addEventListener('voiceschanged', load);
+      } else {
+        speechSynthesis.onvoiceschanged = load;
+      }
+    } catch (err) {
+      console.warn('TTS voice init failed:', err);
+    }
   }
 
   function pickArabicVoice() {
@@ -1329,89 +1335,86 @@
 
   // ─── Init ────────────────────────────────────────────────────
 
+  function bindClick(id, handler) {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', handler);
+  }
+
   function bindEvents() {
-    // Delegated clicks — survives partial init failures & cache mismatches
-    document.addEventListener('click', (e) => {
-      const ttsBtn = e.target.closest('#sentence-tts, #modal-tts');
-      if (ttsBtn) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (ttsBtn.id === 'sentence-tts') {
-          const ar = document.getElementById('sentence-arabic')?.textContent;
-          speakArabic(ar, ttsBtn);
-        } else if (selectedItem) {
-          speakArabic(getRegister(selectedItem).form, ttsBtn);
-        }
-        return;
-      }
-
-      const btn = e.target.closest('[data-action]');
-      if (!btn) return;
-      e.preventDefault();
-      const action = btn.dataset.action;
-      if (action === 'conj-drill') startConjDrill();
-      if (action === 'sentence-start') startSentenceDrill();
-    });
-
-    document.getElementById('tab-msa').onclick = () => setRegister('msa');
-    document.getElementById('tab-lev').onclick = () => setRegister('lev');
+    bindClick('tab-msa', () => setRegister('msa'));
+    bindClick('tab-lev', () => setRegister('lev'));
 
     document.querySelectorAll('.content-tab').forEach(btn => {
-      btn.onclick = () => setContentType(btn.dataset.content);
+      btn.addEventListener('click', () => setContentType(btn.dataset.content));
     });
 
-    document.getElementById('search-input').oninput = renderBrowse;
-    document.getElementById('filter-select').onchange = renderBrowse;
-    document.getElementById('tag-select').onchange = renderBrowse;
+    const search = document.getElementById('search-input');
+    if (search) search.addEventListener('input', renderBrowse);
+    const filter = document.getElementById('filter-select');
+    if (filter) filter.addEventListener('change', renderBrowse);
+    const tag = document.getElementById('tag-select');
+    if (tag) tag.addEventListener('change', renderBrowse);
 
-    document.getElementById('btn-start-drill').onclick = () => {
-      document.getElementById('drill-setup').classList.remove('hidden');
-    };
-    document.getElementById('drill-begin').onclick = startDrill;
-    document.getElementById('drill-cancel').onclick = () => {
-      document.getElementById('drill-setup').classList.add('hidden');
-    };
-    document.getElementById('drill-exit').onclick = exitDrill;
-    document.getElementById('summary-close').onclick = showBrowse;
+    bindClick('btn-start-drill', () => {
+      document.getElementById('drill-setup')?.classList.remove('hidden');
+    });
+    bindClick('drill-begin', startDrill);
+    bindClick('drill-cancel', () => {
+      document.getElementById('drill-setup')?.classList.add('hidden');
+    });
+    bindClick('drill-exit', exitDrill);
+    bindClick('summary-close', showBrowse);
 
-    document.getElementById('modal-close').onclick = closeDetail;
-    document.getElementById('detail-modal').onclick = (e) => {
+    bindClick('modal-close', closeDetail);
+    const modal = document.getElementById('detail-modal');
+    if (modal) modal.addEventListener('click', (e) => {
       if (e.target.id === 'detail-modal') closeDetail();
-    };
+    });
 
-    document.getElementById('modal-drill').onclick = () => {
+    bindClick('modal-drill', () => {
       if (!selectedItem) return;
       closeDetail();
-      document.getElementById('drill-setup').classList.remove('hidden');
-    };
-
-    document.getElementById('sentence-exit')?.onclick = exitSentenceDrill;
-
-    document.getElementById('btn-export').onclick = exportProgress;
-    document.getElementById('import-file').onchange = (e) => {
-      if (e.target.files[0]) importProgress(e.target.files[0]);
-    };
-    document.getElementById('btn-reset').onclick = hardReset;
-
-    document.getElementById('stats-toggle')?.addEventListener('click', () => {
-      const panel = document.getElementById('stats-panel');
-      panel.classList.toggle('mobile-open');
-      panel.classList.toggle('hidden');
+      document.getElementById('drill-setup')?.classList.remove('hidden');
     });
 
-    document.getElementById('onboarding-dismiss').onclick = () => {
-      document.getElementById('onboarding').classList.add('hidden');
-      document.getElementById('onboarding').classList.remove('flex');
+    bindClick('conj-drill-btn', startConjDrill);
+    bindClick('sentence-start', startSentenceDrill);
+    bindClick('sentence-exit', exitSentenceDrill);
+
+    bindClick('sentence-tts', (e) => {
+      const ar = document.getElementById('sentence-arabic')?.textContent;
+      speakArabic(ar, e.currentTarget);
+    });
+    bindClick('modal-tts', (e) => {
+      if (selectedItem) speakArabic(getRegister(selectedItem).form, e.currentTarget);
+    });
+
+    bindClick('btn-export', exportProgress);
+    const importFile = document.getElementById('import-file');
+    if (importFile) importFile.addEventListener('change', (e) => {
+      if (e.target.files[0]) importProgress(e.target.files[0]);
+    });
+    bindClick('btn-reset', hardReset);
+
+    bindClick('stats-toggle', () => {
+      const panel = document.getElementById('stats-panel');
+      panel?.classList.toggle('mobile-open');
+      panel?.classList.toggle('hidden');
+    });
+
+    bindClick('onboarding-dismiss', () => {
+      document.getElementById('onboarding')?.classList.add('hidden');
+      document.getElementById('onboarding')?.classList.remove('flex');
       localStorage.setItem(STORAGE.onboarded, '1');
-    };
+    });
 
     document.addEventListener('keydown', onKeydown);
   }
 
   async function init() {
     loadStorage();
-    initTtsVoices();
     bindEvents();
+    initTtsVoices();
     try {
       await loadData();
       populateTags();
