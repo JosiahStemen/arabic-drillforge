@@ -1,0 +1,6453 @@
+{
+  "_meta": {
+    "description": "Arabic example sentences with English translations.",
+    "count": 430
+  },
+  "sentences": [
+    {
+      "id": "v001-msa",
+      "vocab_id": "v001",
+      "register": "msa",
+      "arabic": "ذهبت إلى السوق.",
+      "english": "I went to the market.",
+      "keywords": [
+        "went",
+        "market"
+      ],
+      "tags": [
+        "motion",
+        "daily"
+      ]
+    },
+    {
+      "id": "v001-lev",
+      "vocab_id": "v001",
+      "register": "lev",
+      "arabic": "راح عالسوق.",
+      "english": "He went to the market.",
+      "keywords": [
+        "went",
+        "market"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "daily"
+      ]
+    },
+    {
+      "id": "v002-msa",
+      "vocab_id": "v002",
+      "register": "msa",
+      "arabic": "جاء أخي من العمل.",
+      "english": "My brother came from work.",
+      "keywords": [
+        "brother",
+        "came",
+        "from",
+        "work"
+      ],
+      "tags": [
+        "motion",
+        "daily"
+      ]
+    },
+    {
+      "id": "v002-lev",
+      "vocab_id": "v002",
+      "register": "lev",
+      "arabic": "إجا أخوي من الشغل.",
+      "english": "My brother came from work.",
+      "keywords": [
+        "brother",
+        "came",
+        "from",
+        "work"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "daily"
+      ]
+    },
+    {
+      "id": "v003-msa",
+      "vocab_id": "v003",
+      "register": "msa",
+      "arabic": "أكلتُ الغداء.",
+      "english": "I ate lunch.",
+      "keywords": [
+        "ate",
+        "lunch"
+      ],
+      "tags": [
+        "daily",
+        "food"
+      ]
+    },
+    {
+      "id": "v003-lev",
+      "vocab_id": "v003",
+      "register": "lev",
+      "arabic": "أكلت الغدا.",
+      "english": "I ate lunch.",
+      "keywords": [
+        "ate",
+        "lunch"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "food"
+      ]
+    },
+    {
+      "id": "v004-msa",
+      "vocab_id": "v004",
+      "register": "msa",
+      "arabic": "شربتُ ماءً.",
+      "english": "I drank water.",
+      "keywords": [
+        "drank",
+        "water"
+      ],
+      "tags": [
+        "daily",
+        "food"
+      ]
+    },
+    {
+      "id": "v004-lev",
+      "vocab_id": "v004",
+      "register": "lev",
+      "arabic": "شربت مي.",
+      "english": "I drank water.",
+      "keywords": [
+        "drank",
+        "water"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "food"
+      ]
+    },
+    {
+      "id": "v005-msa",
+      "vocab_id": "v005",
+      "register": "msa",
+      "arabic": "أخذتُ الكتاب.",
+      "english": "I took the book.",
+      "keywords": [
+        "took",
+        "book"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v005-lev",
+      "vocab_id": "v005",
+      "register": "lev",
+      "arabic": "أخذت الكتاب.",
+      "english": "I took the book.",
+      "keywords": [
+        "took",
+        "book"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v006-msa",
+      "vocab_id": "v006",
+      "register": "msa",
+      "arabic": "أعطاني المفتاح.",
+      "english": "He gave me the key.",
+      "keywords": [
+        "gave",
+        "key"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v006-lev",
+      "vocab_id": "v006",
+      "register": "lev",
+      "arabic": "أعطاني المفتاح.",
+      "english": "He gave me the key.",
+      "keywords": [
+        "gave",
+        "key"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v007-msa",
+      "vocab_id": "v007",
+      "register": "msa",
+      "arabic": "أريدُ أن أذهب.",
+      "english": "I want to go.",
+      "keywords": [
+        "want"
+      ],
+      "tags": [
+        "daily",
+        "modal"
+      ]
+    },
+    {
+      "id": "v007-lev",
+      "vocab_id": "v007",
+      "register": "lev",
+      "arabic": "بدي روح عالسوق.",
+      "english": "I want to go to the market.",
+      "keywords": [
+        "want",
+        "market"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "modal"
+      ]
+    },
+    {
+      "id": "v008-msa",
+      "vocab_id": "v008",
+      "register": "msa",
+      "arabic": "رأيتُ الطائرة.",
+      "english": "I saw the airplane.",
+      "keywords": [
+        "saw",
+        "airplane"
+      ],
+      "tags": [
+        "perception",
+        "daily"
+      ]
+    },
+    {
+      "id": "v008-lev",
+      "vocab_id": "v008",
+      "register": "lev",
+      "arabic": "شاف الطيارة.",
+      "english": "He saw the airplane.",
+      "keywords": [
+        "saw",
+        "airplane"
+      ],
+      "accept": [],
+      "tags": [
+        "perception",
+        "daily"
+      ]
+    },
+    {
+      "id": "v009-msa",
+      "vocab_id": "v009",
+      "register": "msa",
+      "arabic": "سمعتُ الخبر.",
+      "english": "I heard the news.",
+      "keywords": [
+        "heard",
+        "news"
+      ],
+      "tags": [
+        "perception"
+      ]
+    },
+    {
+      "id": "v009-lev",
+      "vocab_id": "v009",
+      "register": "lev",
+      "arabic": "سمعت الخبر.",
+      "english": "I heard the news.",
+      "keywords": [
+        "heard",
+        "news"
+      ],
+      "accept": [],
+      "tags": [
+        "perception"
+      ]
+    },
+    {
+      "id": "v010-msa",
+      "vocab_id": "v010",
+      "register": "msa",
+      "arabic": "علمتُ الجواب.",
+      "english": "I knew the answer.",
+      "keywords": [
+        "knew",
+        "answer"
+      ],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v010-lev",
+      "vocab_id": "v010",
+      "register": "lev",
+      "arabic": "بعرف الجواب.",
+      "english": "I know the answer.",
+      "keywords": [
+        "know",
+        "answer"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v011-msa",
+      "vocab_id": "v011",
+      "register": "msa",
+      "arabic": "أعرفُ هذا الرجل.",
+      "english": "I know this man.",
+      "keywords": [
+        "know",
+        "this",
+        "man"
+      ],
+      "tags": [
+        "cognition",
+        "social"
+      ]
+    },
+    {
+      "id": "v011-lev",
+      "vocab_id": "v011",
+      "register": "lev",
+      "arabic": "بعرف هالرجل.",
+      "english": "I know this man.",
+      "keywords": [
+        "know",
+        "this",
+        "man"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition",
+        "social"
+      ]
+    },
+    {
+      "id": "v012-msa",
+      "vocab_id": "v012",
+      "register": "msa",
+      "arabic": "فهمتُ الدرس.",
+      "english": "I understood the lesson.",
+      "keywords": [
+        "understood",
+        "lesson"
+      ],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v012-lev",
+      "vocab_id": "v012",
+      "register": "lev",
+      "arabic": "فهمت الدرس.",
+      "english": "I understood the lesson.",
+      "keywords": [
+        "understood",
+        "lesson"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v013-msa",
+      "vocab_id": "v013",
+      "register": "msa",
+      "arabic": "قال لي الحقيقة.",
+      "english": "He told me the truth.",
+      "keywords": [
+        "told",
+        "truth"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v013-lev",
+      "vocab_id": "v013",
+      "register": "lev",
+      "arabic": "قالي الحقيقة.",
+      "english": "He told me the truth.",
+      "keywords": [
+        "told",
+        "truth"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v014-msa",
+      "vocab_id": "v014",
+      "register": "msa",
+      "arabic": "تكلمنا بالعربية.",
+      "english": "We spoke in Arabic.",
+      "keywords": [
+        "spoke",
+        "arabic"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v014-lev",
+      "vocab_id": "v014",
+      "register": "lev",
+      "arabic": "حكينا بالعربي.",
+      "english": "We spoke in Arabic.",
+      "keywords": [
+        "spoke",
+        "arabic"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v015-msa",
+      "vocab_id": "v015",
+      "register": "msa",
+      "arabic": "سألتُ عن السعر.",
+      "english": "I asked about the price.",
+      "keywords": [
+        "asked",
+        "about",
+        "price"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v015-lev",
+      "vocab_id": "v015",
+      "register": "lev",
+      "arabic": "سألت عن السعر.",
+      "english": "I asked about the price.",
+      "keywords": [
+        "asked",
+        "about",
+        "price"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v016-msa",
+      "vocab_id": "v016",
+      "register": "msa",
+      "arabic": "أجاب على السؤال.",
+      "english": "He answered the question.",
+      "keywords": [
+        "answered",
+        "question"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v016-lev",
+      "vocab_id": "v016",
+      "register": "lev",
+      "arabic": "رد على السؤال.",
+      "english": "He replied to the question.",
+      "keywords": [
+        "replied",
+        "question"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v017-msa",
+      "vocab_id": "v017",
+      "register": "msa",
+      "arabic": "عملتُ واجبي.",
+      "english": "I did my homework.",
+      "keywords": [
+        "did",
+        "homework"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v017-lev",
+      "vocab_id": "v017",
+      "register": "lev",
+      "arabic": "سوى الواجب.",
+      "english": "He did the homework.",
+      "keywords": [
+        "did",
+        "homework"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v018-msa",
+      "vocab_id": "v018",
+      "register": "msa",
+      "arabic": "اشتغل في الشركة.",
+      "english": "He works at the company.",
+      "keywords": [
+        "works",
+        "company"
+      ],
+      "tags": [
+        "daily",
+        "work"
+      ]
+    },
+    {
+      "id": "v018-lev",
+      "vocab_id": "v018",
+      "register": "lev",
+      "arabic": "بيشتغل بالشركة.",
+      "english": "He works at the company.",
+      "keywords": [
+        "works",
+        "company"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "work"
+      ]
+    },
+    {
+      "id": "v019-msa",
+      "vocab_id": "v019",
+      "register": "msa",
+      "arabic": "كتبتُ رسالة.",
+      "english": "I wrote a letter.",
+      "keywords": [
+        "wrote",
+        "letter"
+      ],
+      "tags": [
+        "action",
+        "study"
+      ]
+    },
+    {
+      "id": "v019-lev",
+      "vocab_id": "v019",
+      "register": "lev",
+      "arabic": "كتبت رسالة.",
+      "english": "I wrote a letter.",
+      "keywords": [
+        "wrote",
+        "letter"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "study"
+      ]
+    },
+    {
+      "id": "v020-msa",
+      "vocab_id": "v020",
+      "register": "msa",
+      "arabic": "قرأتُ الكتاب.",
+      "english": "I read the book.",
+      "keywords": [
+        "read",
+        "book"
+      ],
+      "tags": [
+        "action",
+        "study"
+      ]
+    },
+    {
+      "id": "v020-lev",
+      "vocab_id": "v020",
+      "register": "lev",
+      "arabic": "قرأت الكتاب.",
+      "english": "I read the book.",
+      "keywords": [
+        "read",
+        "book"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "study"
+      ]
+    },
+    {
+      "id": "v021-msa",
+      "vocab_id": "v021",
+      "register": "msa",
+      "arabic": "درستُ اللغة.",
+      "english": "I studied the language.",
+      "keywords": [
+        "studied",
+        "language"
+      ],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "v021-lev",
+      "vocab_id": "v021",
+      "register": "lev",
+      "arabic": "درست اللغة.",
+      "english": "I studied the language.",
+      "keywords": [
+        "studied",
+        "language"
+      ],
+      "accept": [],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "v022-msa",
+      "vocab_id": "v022",
+      "register": "msa",
+      "arabic": "تعلمتُ القيادة.",
+      "english": "I learned to drive.",
+      "keywords": [
+        "learned",
+        "drive"
+      ],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "v022-lev",
+      "vocab_id": "v022",
+      "register": "lev",
+      "arabic": "تعلمت السواقة.",
+      "english": "I learned to drive.",
+      "keywords": [
+        "learned",
+        "drive"
+      ],
+      "accept": [],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "v023-msa",
+      "vocab_id": "v023",
+      "register": "msa",
+      "arabic": "علّمنا الأستاذ.",
+      "english": "The teacher taught us.",
+      "keywords": [
+        "teacher",
+        "taught"
+      ],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "v023-lev",
+      "vocab_id": "v023",
+      "register": "lev",
+      "arabic": "الأستاذ علّمنا.",
+      "english": "The teacher taught us.",
+      "keywords": [
+        "teacher",
+        "taught"
+      ],
+      "accept": [],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "v024-msa",
+      "vocab_id": "v024",
+      "register": "msa",
+      "arabic": "فتحتُ الباب.",
+      "english": "I opened the door.",
+      "keywords": [
+        "opened",
+        "door"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v024-lev",
+      "vocab_id": "v024",
+      "register": "lev",
+      "arabic": "فتحت الباب.",
+      "english": "I opened the door.",
+      "keywords": [
+        "opened",
+        "door"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v025-msa",
+      "vocab_id": "v025",
+      "register": "msa",
+      "arabic": "أغلقتُ النافذة.",
+      "english": "I closed the window.",
+      "keywords": [
+        "closed",
+        "window"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v025-lev",
+      "vocab_id": "v025",
+      "register": "lev",
+      "arabic": "سكّرت الشباك.",
+      "english": "I closed the window.",
+      "keywords": [
+        "closed",
+        "window"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v026-msa",
+      "vocab_id": "v026",
+      "register": "msa",
+      "arabic": "دخلتُ البيت.",
+      "english": "I entered the house.",
+      "keywords": [
+        "entered",
+        "house"
+      ],
+      "tags": [
+        "motion"
+      ]
+    },
+    {
+      "id": "v026-lev",
+      "vocab_id": "v026",
+      "register": "lev",
+      "arabic": "دخلت البيت.",
+      "english": "I entered the house.",
+      "keywords": [
+        "entered",
+        "house"
+      ],
+      "accept": [],
+      "tags": [
+        "motion"
+      ]
+    },
+    {
+      "id": "v027-msa",
+      "vocab_id": "v027",
+      "register": "msa",
+      "arabic": "خرجتُ من الغرفة.",
+      "english": "I left the room.",
+      "keywords": [
+        "left",
+        "room"
+      ],
+      "tags": [
+        "motion"
+      ]
+    },
+    {
+      "id": "v027-lev",
+      "vocab_id": "v027",
+      "register": "lev",
+      "arabic": "طلعت من الغرفة.",
+      "english": "I left the room.",
+      "keywords": [
+        "left",
+        "room"
+      ],
+      "accept": [],
+      "tags": [
+        "motion"
+      ]
+    },
+    {
+      "id": "v028-msa",
+      "vocab_id": "v028",
+      "register": "msa",
+      "arabic": "جلستُ على الكرسي.",
+      "english": "I sat on the chair.",
+      "keywords": [
+        "sat",
+        "chair"
+      ],
+      "tags": [
+        "daily",
+        "posture"
+      ]
+    },
+    {
+      "id": "v028-lev",
+      "vocab_id": "v028",
+      "register": "lev",
+      "arabic": "قعدت عالكرسي.",
+      "english": "I sat on the chair.",
+      "keywords": [
+        "sat",
+        "chair"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "posture"
+      ]
+    },
+    {
+      "id": "v029-msa",
+      "vocab_id": "v029",
+      "register": "msa",
+      "arabic": "وقفتُ عند الباب.",
+      "english": "I stood at the door.",
+      "keywords": [
+        "stood",
+        "door"
+      ],
+      "tags": [
+        "daily",
+        "posture"
+      ]
+    },
+    {
+      "id": "v029-lev",
+      "vocab_id": "v029",
+      "register": "lev",
+      "arabic": "وقفت عند الباب.",
+      "english": "I stood at the door.",
+      "keywords": [
+        "stood",
+        "door"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "posture"
+      ]
+    },
+    {
+      "id": "v030-msa",
+      "vocab_id": "v030",
+      "register": "msa",
+      "arabic": "نامتُ مبكراً.",
+      "english": "I slept early.",
+      "keywords": [
+        "slept",
+        "early"
+      ],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v030-lev",
+      "vocab_id": "v030",
+      "register": "lev",
+      "arabic": "نمت بكير.",
+      "english": "I slept early.",
+      "keywords": [
+        "slept",
+        "early"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v031-msa",
+      "vocab_id": "v031",
+      "register": "msa",
+      "arabic": "استيقظتُ الساعة ست.",
+      "english": "I woke up at six o'clock.",
+      "keywords": [
+        "woke",
+        "six",
+        "o'clock"
+      ],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v031-lev",
+      "vocab_id": "v031",
+      "register": "lev",
+      "arabic": "صحيت الساعة ست.",
+      "english": "I woke up at six.",
+      "keywords": [
+        "woke",
+        "six"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v032-msa",
+      "vocab_id": "v032",
+      "register": "msa",
+      "arabic": "أسكنُ في بيروت.",
+      "english": "I live in Beirut.",
+      "keywords": [
+        "live",
+        "beirut"
+      ],
+      "tags": [
+        "daily",
+        "home"
+      ]
+    },
+    {
+      "id": "v032-lev",
+      "vocab_id": "v032",
+      "register": "lev",
+      "arabic": "ساكن ببيروت.",
+      "english": "I live in Beirut.",
+      "keywords": [
+        "live",
+        "beirut"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "home"
+      ]
+    },
+    {
+      "id": "v033-msa",
+      "vocab_id": "v033",
+      "register": "msa",
+      "arabic": "مات الجد.",
+      "english": "The grandfather died.",
+      "keywords": [
+        "grandfather",
+        "died"
+      ],
+      "tags": [
+        "life"
+      ]
+    },
+    {
+      "id": "v033-lev",
+      "vocab_id": "v033",
+      "register": "lev",
+      "arabic": "مات الجد.",
+      "english": "The grandfather died.",
+      "keywords": [
+        "grandfather",
+        "died"
+      ],
+      "accept": [],
+      "tags": [
+        "life"
+      ]
+    },
+    {
+      "id": "v034-msa",
+      "vocab_id": "v034",
+      "register": "msa",
+      "arabic": "وُلد الطفل.",
+      "english": "The child was born.",
+      "keywords": [
+        "child",
+        "born"
+      ],
+      "tags": [
+        "life"
+      ]
+    },
+    {
+      "id": "v034-lev",
+      "vocab_id": "v034",
+      "register": "lev",
+      "arabic": "انولد الولد.",
+      "english": "The child was born.",
+      "keywords": [
+        "child",
+        "born"
+      ],
+      "accept": [],
+      "tags": [
+        "life"
+      ]
+    },
+    {
+      "id": "v035-msa",
+      "vocab_id": "v035",
+      "register": "msa",
+      "arabic": "أحبُّ القهوة.",
+      "english": "I love coffee.",
+      "keywords": [
+        "love",
+        "coffee"
+      ],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v035-lev",
+      "vocab_id": "v035",
+      "register": "lev",
+      "arabic": "بحب القهوة.",
+      "english": "I love coffee.",
+      "keywords": [
+        "love",
+        "coffee"
+      ],
+      "accept": [],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v036-msa",
+      "vocab_id": "v036",
+      "register": "msa",
+      "arabic": "كرهتُ الطقس.",
+      "english": "I hated the weather.",
+      "keywords": [
+        "hated",
+        "weather"
+      ],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v036-lev",
+      "vocab_id": "v036",
+      "register": "lev",
+      "arabic": "كرهت الجو.",
+      "english": "I hated the weather.",
+      "keywords": [
+        "hated",
+        "weather"
+      ],
+      "accept": [],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v037-msa",
+      "vocab_id": "v037",
+      "register": "msa",
+      "arabic": "ساعدني صديقي.",
+      "english": "My friend helped me.",
+      "keywords": [
+        "friend",
+        "helped"
+      ],
+      "tags": [
+        "social",
+        "action"
+      ]
+    },
+    {
+      "id": "v037-lev",
+      "vocab_id": "v037",
+      "register": "lev",
+      "arabic": "صديقي ساعدني.",
+      "english": "My friend helped me.",
+      "keywords": [
+        "friend",
+        "helped"
+      ],
+      "accept": [],
+      "tags": [
+        "social",
+        "action"
+      ]
+    },
+    {
+      "id": "v038-msa",
+      "vocab_id": "v038",
+      "register": "msa",
+      "arabic": "انتظرتُ الحافلة.",
+      "english": "I waited for the bus.",
+      "keywords": [
+        "waited",
+        "for",
+        "bus"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "v038-lev",
+      "vocab_id": "v038",
+      "register": "lev",
+      "arabic": "استنيت الباص.",
+      "english": "I waited for the bus.",
+      "keywords": [
+        "waited",
+        "for",
+        "bus"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "v039-msa",
+      "vocab_id": "v039",
+      "register": "msa",
+      "arabic": "بحثتُ عن المفتاح.",
+      "english": "I looked for the key.",
+      "keywords": [
+        "looked",
+        "for",
+        "key"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v039-lev",
+      "vocab_id": "v039",
+      "register": "lev",
+      "arabic": "بدور عالمفتاح.",
+      "english": "I'm looking for the key.",
+      "keywords": [
+        "i'm",
+        "looking",
+        "for",
+        "key"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v040-msa",
+      "vocab_id": "v040",
+      "register": "msa",
+      "arabic": "وجدتُ المحفظة.",
+      "english": "I found the wallet.",
+      "keywords": [
+        "found",
+        "wallet"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v040-lev",
+      "vocab_id": "v040",
+      "register": "lev",
+      "arabic": "لقيت المحفظة.",
+      "english": "I found the wallet.",
+      "keywords": [
+        "found",
+        "wallet"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v041-msa",
+      "vocab_id": "v041",
+      "register": "msa",
+      "arabic": "اشتريتُ خبزاً.",
+      "english": "I bought bread.",
+      "keywords": [
+        "bought",
+        "bread"
+      ],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "v041-lev",
+      "vocab_id": "v041",
+      "register": "lev",
+      "arabic": "اشتريت خبز.",
+      "english": "I bought bread.",
+      "keywords": [
+        "bought",
+        "bread"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "v042-msa",
+      "vocab_id": "v042",
+      "register": "msa",
+      "arabic": "باعَ التاجر السلع.",
+      "english": "The merchant sold the goods.",
+      "keywords": [
+        "merchant",
+        "sold",
+        "goods"
+      ],
+      "tags": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "v042-lev",
+      "vocab_id": "v042",
+      "register": "lev",
+      "arabic": "التاجر باع السلع.",
+      "english": "The merchant sold the goods.",
+      "keywords": [
+        "merchant",
+        "sold",
+        "goods"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "v043-msa",
+      "vocab_id": "v043",
+      "register": "msa",
+      "arabic": "دفعتُ الفاتورة.",
+      "english": "I paid the bill.",
+      "keywords": [
+        "paid",
+        "bill"
+      ],
+      "tags": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "v043-lev",
+      "vocab_id": "v043",
+      "register": "lev",
+      "arabic": "دفعت الفاتورة.",
+      "english": "I paid the bill.",
+      "keywords": [
+        "paid",
+        "bill"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "v044-msa",
+      "vocab_id": "v044",
+      "register": "msa",
+      "arabic": "طلبتُ طعاماً.",
+      "english": "I ordered food.",
+      "keywords": [
+        "ordered",
+        "food"
+      ],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "v044-lev",
+      "vocab_id": "v044",
+      "register": "lev",
+      "arabic": "طلبت أكل.",
+      "english": "I ordered food.",
+      "keywords": [
+        "ordered",
+        "food"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "v045-msa",
+      "vocab_id": "v045",
+      "register": "msa",
+      "arabic": "طبختُ العشاء.",
+      "english": "I cooked dinner.",
+      "keywords": [
+        "cooked",
+        "dinner"
+      ],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "v045-lev",
+      "vocab_id": "v045",
+      "register": "lev",
+      "arabic": "طبخت العشا.",
+      "english": "I cooked dinner.",
+      "keywords": [
+        "cooked",
+        "dinner"
+      ],
+      "accept": [],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "v046-msa",
+      "vocab_id": "v046",
+      "register": "msa",
+      "arabic": "غسلتُ الصحون.",
+      "english": "I washed the dishes.",
+      "keywords": [
+        "washed",
+        "dishes"
+      ],
+      "tags": [
+        "daily",
+        "home"
+      ]
+    },
+    {
+      "id": "v046-lev",
+      "vocab_id": "v046",
+      "register": "lev",
+      "arabic": "غسلت الصحون.",
+      "english": "I washed the dishes.",
+      "keywords": [
+        "washed",
+        "dishes"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "home"
+      ]
+    },
+    {
+      "id": "v047-msa",
+      "vocab_id": "v047",
+      "register": "msa",
+      "arabic": "لبستُ المعطف.",
+      "english": "I wore the coat.",
+      "keywords": [
+        "wore",
+        "coat"
+      ],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v047-lev",
+      "vocab_id": "v047",
+      "register": "lev",
+      "arabic": "لبست المعطف.",
+      "english": "I wore the coat.",
+      "keywords": [
+        "wore",
+        "coat"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v048-msa",
+      "vocab_id": "v048",
+      "register": "msa",
+      "arabic": "خلعتُ الحذاء.",
+      "english": "I took off my shoes.",
+      "keywords": [
+        "took",
+        "off",
+        "shoes"
+      ],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v048-lev",
+      "vocab_id": "v048",
+      "register": "lev",
+      "arabic": "خلعت الشباح.",
+      "english": "I took off my shoes.",
+      "keywords": [
+        "took",
+        "off",
+        "shoes"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "body"
+      ]
+    },
+    {
+      "id": "v049-msa",
+      "vocab_id": "v049",
+      "register": "msa",
+      "arabic": "سافرتُ إلى الأردن.",
+      "english": "I traveled to Jordan.",
+      "keywords": [
+        "traveled",
+        "jordan"
+      ],
+      "tags": [
+        "motion",
+        "travel"
+      ]
+    },
+    {
+      "id": "v049-lev",
+      "vocab_id": "v049",
+      "register": "lev",
+      "arabic": "سافرت عالأردن.",
+      "english": "I traveled to Jordan.",
+      "keywords": [
+        "traveled",
+        "jordan"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "travel"
+      ]
+    },
+    {
+      "id": "v050-msa",
+      "vocab_id": "v050",
+      "register": "msa",
+      "arabic": "رجعتُ إلى البيت.",
+      "english": "I returned home.",
+      "keywords": [
+        "returned",
+        "home"
+      ],
+      "tags": [
+        "motion"
+      ]
+    },
+    {
+      "id": "v050-lev",
+      "vocab_id": "v050",
+      "register": "lev",
+      "arabic": "رجعت عالبيت.",
+      "english": "I returned home.",
+      "keywords": [
+        "returned",
+        "home"
+      ],
+      "accept": [],
+      "tags": [
+        "motion"
+      ]
+    },
+    {
+      "id": "v051-msa",
+      "vocab_id": "v051",
+      "register": "msa",
+      "arabic": "بقيتُ في الفندق.",
+      "english": "I stayed at the hotel.",
+      "keywords": [
+        "stayed",
+        "hotel"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "v051-lev",
+      "vocab_id": "v051",
+      "register": "lev",
+      "arabic": "ضليت بالفندق.",
+      "english": "I stayed at the hotel.",
+      "keywords": [
+        "stayed",
+        "hotel"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "v052-msa",
+      "vocab_id": "v052",
+      "register": "msa",
+      "arabic": "تركتُ السيارة.",
+      "english": "I left the car.",
+      "keywords": [
+        "left",
+        "car"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v052-lev",
+      "vocab_id": "v052",
+      "register": "lev",
+      "arabic": "تركت السيارة.",
+      "english": "I left the car.",
+      "keywords": [
+        "left",
+        "car"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v053-msa",
+      "vocab_id": "v053",
+      "register": "msa",
+      "arabic": "أحضرتُ الطعام.",
+      "english": "He brought the food.",
+      "keywords": [
+        "brought",
+        "food"
+      ],
+      "tags": [
+        "action",
+        "motion"
+      ]
+    },
+    {
+      "id": "v053-lev",
+      "vocab_id": "v053",
+      "register": "lev",
+      "arabic": "جاب الأكل.",
+      "english": "He brought the food.",
+      "keywords": [
+        "brought",
+        "food"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "motion"
+      ]
+    },
+    {
+      "id": "v054-msa",
+      "vocab_id": "v054",
+      "register": "msa",
+      "arabic": "حملتُ الحقيبة.",
+      "english": "I carried the bag.",
+      "keywords": [
+        "carried",
+        "bag"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v054-lev",
+      "vocab_id": "v054",
+      "register": "lev",
+      "arabic": "حملت الشنطة.",
+      "english": "I carried the bag.",
+      "keywords": [
+        "carried",
+        "bag"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v055-msa",
+      "vocab_id": "v055",
+      "register": "msa",
+      "arabic": "وضعتُ الكتاب على الطاولة.",
+      "english": "I put the book on the table.",
+      "keywords": [
+        "put",
+        "book",
+        "table"
+      ],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v055-lev",
+      "vocab_id": "v055",
+      "register": "lev",
+      "arabic": "حطّيت الكتاب عالطاولة.",
+      "english": "I put the book on the table.",
+      "keywords": [
+        "put",
+        "book",
+        "table"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v056-msa",
+      "vocab_id": "v056",
+      "register": "msa",
+      "arabic": "رمى الكرة.",
+      "english": "He threw the ball.",
+      "keywords": [
+        "threw",
+        "ball"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v056-lev",
+      "vocab_id": "v056",
+      "register": "lev",
+      "arabic": "رمى الكرة.",
+      "english": "He threw the ball.",
+      "keywords": [
+        "threw",
+        "ball"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v057-msa",
+      "vocab_id": "v057",
+      "register": "msa",
+      "arabic": "أمسكتُ الكرة.",
+      "english": "I caught the ball.",
+      "keywords": [
+        "caught",
+        "ball"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v057-lev",
+      "vocab_id": "v057",
+      "register": "lev",
+      "arabic": "مسكت الكرة.",
+      "english": "I caught the ball.",
+      "keywords": [
+        "caught",
+        "ball"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v058-msa",
+      "vocab_id": "v058",
+      "register": "msa",
+      "arabic": "ضرب الكرة.",
+      "english": "He hit the ball.",
+      "keywords": [
+        "hit",
+        "ball"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v058-lev",
+      "vocab_id": "v058",
+      "register": "lev",
+      "arabic": "ضرب الكرة.",
+      "english": "He hit the ball.",
+      "keywords": [
+        "hit",
+        "ball"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v059-msa",
+      "vocab_id": "v059",
+      "register": "msa",
+      "arabic": "قتل العدو.",
+      "english": "He killed the enemy.",
+      "keywords": [
+        "killed",
+        "enemy"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v059-lev",
+      "vocab_id": "v059",
+      "register": "lev",
+      "arabic": "قتل العدو.",
+      "english": "He killed the enemy.",
+      "keywords": [
+        "killed",
+        "enemy"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v060-msa",
+      "vocab_id": "v060",
+      "register": "msa",
+      "arabic": "قاتل الجنود.",
+      "english": "The soldiers fought.",
+      "keywords": [
+        "soldiers",
+        "fought"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v060-lev",
+      "vocab_id": "v060",
+      "register": "lev",
+      "arabic": "الجنود قاتلوا.",
+      "english": "The soldiers fought.",
+      "keywords": [
+        "soldiers",
+        "fought"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v061-msa",
+      "vocab_id": "v061",
+      "register": "msa",
+      "arabic": "فاز الفريق.",
+      "english": "The team won.",
+      "keywords": [
+        "team",
+        "won"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v061-lev",
+      "vocab_id": "v061",
+      "register": "lev",
+      "arabic": "الفريق ربح.",
+      "english": "The team won.",
+      "keywords": [
+        "team",
+        "won"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v062-msa",
+      "vocab_id": "v062",
+      "register": "msa",
+      "arabic": "خسر الفريق.",
+      "english": "The team lost.",
+      "keywords": [
+        "team",
+        "lost"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v062-lev",
+      "vocab_id": "v062",
+      "register": "lev",
+      "arabic": "الفريق خسر.",
+      "english": "The team lost.",
+      "keywords": [
+        "team",
+        "lost"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v063-msa",
+      "vocab_id": "v063",
+      "register": "msa",
+      "arabic": "لعب الأطفال.",
+      "english": "The children played.",
+      "keywords": [
+        "children",
+        "played"
+      ],
+      "tags": [
+        "daily",
+        "leisure"
+      ]
+    },
+    {
+      "id": "v063-lev",
+      "vocab_id": "v063",
+      "register": "lev",
+      "arabic": "الولاد لعبوا.",
+      "english": "The kids played.",
+      "keywords": [
+        "kids",
+        "played"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "leisure"
+      ]
+    },
+    {
+      "id": "v064-msa",
+      "vocab_id": "v064",
+      "register": "msa",
+      "arabic": "جرى بسرعة.",
+      "english": "He ran quickly.",
+      "keywords": [
+        "ran",
+        "quickly"
+      ],
+      "tags": [
+        "motion",
+        "body"
+      ]
+    },
+    {
+      "id": "v064-lev",
+      "vocab_id": "v064",
+      "register": "lev",
+      "arabic": "ركض بسرعة.",
+      "english": "He ran quickly.",
+      "keywords": [
+        "ran",
+        "quickly"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "body"
+      ]
+    },
+    {
+      "id": "v065-msa",
+      "vocab_id": "v065",
+      "register": "msa",
+      "arabic": "مشيتُ في الحديقة.",
+      "english": "I walked in the garden.",
+      "keywords": [
+        "walked",
+        "garden"
+      ],
+      "tags": [
+        "motion",
+        "body"
+      ]
+    },
+    {
+      "id": "v065-lev",
+      "vocab_id": "v065",
+      "register": "lev",
+      "arabic": "مشيت بالحديقة.",
+      "english": "I walked in the garden.",
+      "keywords": [
+        "walked",
+        "garden"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "body"
+      ]
+    },
+    {
+      "id": "v066-msa",
+      "vocab_id": "v066",
+      "register": "msa",
+      "arabic": "قاد السيارة.",
+      "english": "He drove the car.",
+      "keywords": [
+        "drove",
+        "car"
+      ],
+      "tags": [
+        "motion",
+        "travel"
+      ]
+    },
+    {
+      "id": "v066-lev",
+      "vocab_id": "v066",
+      "register": "lev",
+      "arabic": "ساق السيارة.",
+      "english": "He drove the car.",
+      "keywords": [
+        "drove",
+        "car"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "travel"
+      ]
+    },
+    {
+      "id": "v067-msa",
+      "vocab_id": "v067",
+      "register": "msa",
+      "arabic": "طارت الطائرة.",
+      "english": "The airplane flew.",
+      "keywords": [
+        "airplane",
+        "flew"
+      ],
+      "tags": [
+        "motion",
+        "travel"
+      ]
+    },
+    {
+      "id": "v067-lev",
+      "vocab_id": "v067",
+      "register": "lev",
+      "arabic": "الطيارة طارت.",
+      "english": "The plane flew.",
+      "keywords": [
+        "plane",
+        "flew"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "travel"
+      ]
+    },
+    {
+      "id": "v068-msa",
+      "vocab_id": "v068",
+      "register": "msa",
+      "arabic": "سبح في البحر.",
+      "english": "He swam in the sea.",
+      "keywords": [
+        "swam",
+        "sea"
+      ],
+      "tags": [
+        "motion",
+        "body"
+      ]
+    },
+    {
+      "id": "v068-lev",
+      "vocab_id": "v068",
+      "register": "lev",
+      "arabic": "سبح بالبحر.",
+      "english": "He swam in the sea.",
+      "keywords": [
+        "swam",
+        "sea"
+      ],
+      "accept": [],
+      "tags": [
+        "motion",
+        "body"
+      ]
+    },
+    {
+      "id": "v069-msa",
+      "vocab_id": "v069",
+      "register": "msa",
+      "arabic": "فكرتُ في المشكلة.",
+      "english": "I thought about the problem.",
+      "keywords": [
+        "thought",
+        "about",
+        "problem"
+      ],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v069-lev",
+      "vocab_id": "v069",
+      "register": "lev",
+      "arabic": "فكرت بالمشكلة.",
+      "english": "I thought about the problem.",
+      "keywords": [
+        "thought",
+        "about",
+        "problem"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v070-msa",
+      "vocab_id": "v070",
+      "register": "msa",
+      "arabic": "آمن بالله.",
+      "english": "He believed in God.",
+      "keywords": [
+        "believed",
+        "god"
+      ],
+      "tags": [
+        "cognition",
+        "religion"
+      ]
+    },
+    {
+      "id": "v070-lev",
+      "vocab_id": "v070",
+      "register": "lev",
+      "arabic": "آمن بالله.",
+      "english": "He believed in God.",
+      "keywords": [
+        "believed",
+        "god"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition",
+        "religion"
+      ]
+    },
+    {
+      "id": "v071-msa",
+      "vocab_id": "v071",
+      "register": "msa",
+      "arabic": "تذكرتُ اسمه.",
+      "english": "I remembered his name.",
+      "keywords": [
+        "remembered",
+        "name"
+      ],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v071-lev",
+      "vocab_id": "v071",
+      "register": "lev",
+      "arabic": "تذكرت اسمه.",
+      "english": "I remembered his name.",
+      "keywords": [
+        "remembered",
+        "name"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v072-msa",
+      "vocab_id": "v072",
+      "register": "msa",
+      "arabic": "نسيتُ المفتاح.",
+      "english": "I forgot the key.",
+      "keywords": [
+        "forgot",
+        "key"
+      ],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v072-lev",
+      "vocab_id": "v072",
+      "register": "lev",
+      "arabic": "نسيت المفتاح.",
+      "english": "I forgot the key.",
+      "keywords": [
+        "forgot",
+        "key"
+      ],
+      "accept": [],
+      "tags": [
+        "cognition"
+      ]
+    },
+    {
+      "id": "v073-msa",
+      "vocab_id": "v073",
+      "register": "msa",
+      "arabic": "شعرتُ بالتعب.",
+      "english": "I felt tired.",
+      "keywords": [
+        "felt",
+        "tired"
+      ],
+      "tags": [
+        "emotion",
+        "body"
+      ]
+    },
+    {
+      "id": "v073-lev",
+      "vocab_id": "v073",
+      "register": "lev",
+      "arabic": "حسّيت بالتعب.",
+      "english": "I felt tired.",
+      "keywords": [
+        "felt",
+        "tired"
+      ],
+      "accept": [],
+      "tags": [
+        "emotion",
+        "body"
+      ]
+    },
+    {
+      "id": "v074-msa",
+      "vocab_id": "v074",
+      "register": "msa",
+      "arabic": "ضحكتُ كثيراً.",
+      "english": "I laughed a lot.",
+      "keywords": [
+        "laughed",
+        "lot"
+      ],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v074-lev",
+      "vocab_id": "v074",
+      "register": "lev",
+      "arabic": "ضحكت كتير.",
+      "english": "I laughed a lot.",
+      "keywords": [
+        "laughed",
+        "lot"
+      ],
+      "accept": [],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v075-msa",
+      "vocab_id": "v075",
+      "register": "msa",
+      "arabic": "بكت الطفلة.",
+      "english": "The girl cried.",
+      "keywords": [
+        "girl",
+        "cried"
+      ],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v075-lev",
+      "vocab_id": "v075",
+      "register": "lev",
+      "arabic": "البنت بكت.",
+      "english": "The girl cried.",
+      "keywords": [
+        "girl",
+        "cried"
+      ],
+      "accept": [],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v076-msa",
+      "vocab_id": "v076",
+      "register": "msa",
+      "arabic": "ابتسم الوجه.",
+      "english": "He smiled.",
+      "keywords": [
+        "smiled"
+      ],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v076-lev",
+      "vocab_id": "v076",
+      "register": "lev",
+      "arabic": "ابتسم.",
+      "english": "He smiled.",
+      "keywords": [
+        "smiled"
+      ],
+      "accept": [],
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "v077-msa",
+      "vocab_id": "v077",
+      "register": "msa",
+      "arabic": "اتصلتُ بأمي.",
+      "english": "I called my mother.",
+      "keywords": [
+        "called",
+        "mother"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v077-lev",
+      "vocab_id": "v077",
+      "register": "lev",
+      "arabic": "تلفنت لإمي.",
+      "english": "I called my mom.",
+      "keywords": [
+        "called",
+        "mom"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v078-msa",
+      "vocab_id": "v078",
+      "register": "msa",
+      "arabic": "أرسلتُ الرسالة.",
+      "english": "I sent the message.",
+      "keywords": [
+        "sent",
+        "message"
+      ],
+      "tags": [
+        "communication",
+        "action"
+      ]
+    },
+    {
+      "id": "v078-lev",
+      "vocab_id": "v078",
+      "register": "lev",
+      "arabic": "بعتت الرسالة.",
+      "english": "I sent the message.",
+      "keywords": [
+        "sent",
+        "message"
+      ],
+      "accept": [],
+      "tags": [
+        "communication",
+        "action"
+      ]
+    },
+    {
+      "id": "v079-msa",
+      "vocab_id": "v079",
+      "register": "msa",
+      "arabic": "استلمتُ الطرد.",
+      "english": "I received the package.",
+      "keywords": [
+        "received",
+        "package"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v079-lev",
+      "vocab_id": "v079",
+      "register": "lev",
+      "arabic": "استلمت الطرد.",
+      "english": "I received the package.",
+      "keywords": [
+        "received",
+        "package"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v080-msa",
+      "vocab_id": "v080",
+      "register": "msa",
+      "arabic": "بدأ الدرس.",
+      "english": "The lesson began.",
+      "keywords": [
+        "lesson",
+        "began"
+      ],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v080-lev",
+      "vocab_id": "v080",
+      "register": "lev",
+      "arabic": "بلّش الدرس.",
+      "english": "The lesson started.",
+      "keywords": [
+        "lesson",
+        "started"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v081-msa",
+      "vocab_id": "v081",
+      "register": "msa",
+      "arabic": "انتهى الفيلم.",
+      "english": "The movie ended.",
+      "keywords": [
+        "movie",
+        "ended"
+      ],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v081-lev",
+      "vocab_id": "v081",
+      "register": "lev",
+      "arabic": "الفيلم خلّص.",
+      "english": "The movie ended.",
+      "keywords": [
+        "movie",
+        "ended"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v082-msa",
+      "vocab_id": "v082",
+      "register": "msa",
+      "arabic": "استمر المطر.",
+      "english": "The rain continued.",
+      "keywords": [
+        "rain",
+        "continued"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v082-lev",
+      "vocab_id": "v082",
+      "register": "lev",
+      "arabic": "المطر كمل.",
+      "english": "The rain continued.",
+      "keywords": [
+        "rain",
+        "continued"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v083-msa",
+      "vocab_id": "v083",
+      "register": "msa",
+      "arabic": "توقفت السيارة.",
+      "english": "The car stopped.",
+      "keywords": [
+        "car",
+        "stopped"
+      ],
+      "tags": [
+        "action",
+        "motion"
+      ]
+    },
+    {
+      "id": "v083-lev",
+      "vocab_id": "v083",
+      "register": "lev",
+      "arabic": "السيارة وقفت.",
+      "english": "The car stopped.",
+      "keywords": [
+        "car",
+        "stopped"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "motion"
+      ]
+    },
+    {
+      "id": "v084-msa",
+      "vocab_id": "v084",
+      "register": "msa",
+      "arabic": "حاولتُ مرة أخرى.",
+      "english": "I tried again.",
+      "keywords": [
+        "tried",
+        "again"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v084-lev",
+      "vocab_id": "v084",
+      "register": "lev",
+      "arabic": "حاولت مرة تانية.",
+      "english": "I tried again.",
+      "keywords": [
+        "tried",
+        "again"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v085-msa",
+      "vocab_id": "v085",
+      "register": "msa",
+      "arabic": "نجح الطالب.",
+      "english": "The student succeeded.",
+      "keywords": [
+        "student",
+        "succeeded"
+      ],
+      "tags": [
+        "study",
+        "action"
+      ]
+    },
+    {
+      "id": "v085-lev",
+      "vocab_id": "v085",
+      "register": "lev",
+      "arabic": "الطالب نجح.",
+      "english": "The student passed.",
+      "keywords": [
+        "student",
+        "passed"
+      ],
+      "accept": [],
+      "tags": [
+        "study",
+        "action"
+      ]
+    },
+    {
+      "id": "v086-msa",
+      "vocab_id": "v086",
+      "register": "msa",
+      "arabic": "فشل الامتحان.",
+      "english": "The exam failed.",
+      "keywords": [
+        "exam",
+        "failed"
+      ],
+      "tags": [
+        "study",
+        "action"
+      ]
+    },
+    {
+      "id": "v086-lev",
+      "vocab_id": "v086",
+      "register": "lev",
+      "arabic": "الامتحان فشل.",
+      "english": "The exam failed.",
+      "keywords": [
+        "exam",
+        "failed"
+      ],
+      "accept": [],
+      "tags": [
+        "study",
+        "action"
+      ]
+    },
+    {
+      "id": "v087-msa",
+      "vocab_id": "v087",
+      "register": "msa",
+      "arabic": "غيّرتُ الرأي.",
+      "english": "I changed my mind.",
+      "keywords": [
+        "changed",
+        "mind"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v087-lev",
+      "vocab_id": "v087",
+      "register": "lev",
+      "arabic": "غيّرت رأيي.",
+      "english": "I changed my mind.",
+      "keywords": [
+        "changed",
+        "mind"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v088-msa",
+      "vocab_id": "v088",
+      "register": "msa",
+      "arabic": "استخدمتُ الحاسوب.",
+      "english": "I used the computer.",
+      "keywords": [
+        "used",
+        "computer"
+      ],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v088-lev",
+      "vocab_id": "v088",
+      "register": "lev",
+      "arabic": "استخدمت الكمبيوتر.",
+      "english": "I used the computer.",
+      "keywords": [
+        "used",
+        "computer"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "action"
+      ]
+    },
+    {
+      "id": "v089-msa",
+      "vocab_id": "v089",
+      "register": "msa",
+      "arabic": "احتجتُ إلى مساعدة.",
+      "english": "I need help.",
+      "keywords": [
+        "need",
+        "help"
+      ],
+      "tags": [
+        "modal",
+        "daily"
+      ]
+    },
+    {
+      "id": "v089-lev",
+      "vocab_id": "v089",
+      "register": "lev",
+      "arabic": "أنا محتاج مساعدة.",
+      "english": "I need help.",
+      "keywords": [
+        "need",
+        "help"
+      ],
+      "accept": [],
+      "tags": [
+        "modal",
+        "daily"
+      ]
+    },
+    {
+      "id": "v090-msa",
+      "vocab_id": "v090",
+      "register": "msa",
+      "arabic": "استطعتُ أن أفعل.",
+      "english": "I was able to do it.",
+      "keywords": [
+        "able"
+      ],
+      "tags": [
+        "modal"
+      ]
+    },
+    {
+      "id": "v090-lev",
+      "vocab_id": "v090",
+      "register": "lev",
+      "arabic": "بقدر عمل هيك.",
+      "english": "I can do it like that.",
+      "keywords": [
+        "can",
+        "like",
+        "that"
+      ],
+      "accept": [],
+      "tags": [
+        "modal"
+      ]
+    },
+    {
+      "id": "v091-msa",
+      "vocab_id": "v091",
+      "register": "msa",
+      "arabic": "يجب أن أذهب.",
+      "english": "I must go.",
+      "keywords": [
+        "must"
+      ],
+      "tags": [
+        "modal"
+      ]
+    },
+    {
+      "id": "v091-lev",
+      "vocab_id": "v091",
+      "register": "lev",
+      "arabic": "لازم روح.",
+      "english": "I have to go.",
+      "keywords": [
+        "have"
+      ],
+      "accept": [],
+      "tags": [
+        "modal"
+      ]
+    },
+    {
+      "id": "v092-msa",
+      "vocab_id": "v092",
+      "register": "msa",
+      "arabic": "يملك بيتاً.",
+      "english": "He owns a house.",
+      "keywords": [
+        "owns",
+        "house"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "v092-lev",
+      "vocab_id": "v092",
+      "register": "lev",
+      "arabic": "عنده بيت.",
+      "english": "He has a house.",
+      "keywords": [
+        "has",
+        "house"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "v093-msa",
+      "vocab_id": "v093",
+      "register": "msa",
+      "arabic": "استعرتُ كتاباً.",
+      "english": "I borrowed a book.",
+      "keywords": [
+        "borrowed",
+        "book"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v093-lev",
+      "vocab_id": "v093",
+      "register": "lev",
+      "arabic": "استعرت كتاب.",
+      "english": "I borrowed a book.",
+      "keywords": [
+        "borrowed",
+        "book"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v094-msa",
+      "vocab_id": "v094",
+      "register": "msa",
+      "arabic": "أقرضته مالاً.",
+      "english": "I lent him money.",
+      "keywords": [
+        "lent",
+        "money"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v094-lev",
+      "vocab_id": "v094",
+      "register": "lev",
+      "arabic": "أقرضته مصاري.",
+      "english": "I lent him money.",
+      "keywords": [
+        "lent",
+        "money"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v095-msa",
+      "vocab_id": "v095",
+      "register": "msa",
+      "arabic": "سرق اللص المحفظة.",
+      "english": "The thief stole the wallet.",
+      "keywords": [
+        "thief",
+        "stole",
+        "wallet"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v095-lev",
+      "vocab_id": "v095",
+      "register": "lev",
+      "arabic": "الحرامي سرق المحفظة.",
+      "english": "The thief stole the wallet.",
+      "keywords": [
+        "thief",
+        "stole",
+        "wallet"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v096-msa",
+      "vocab_id": "v096",
+      "register": "msa",
+      "arabic": "كسرتُ الكأس.",
+      "english": "I broke the glass.",
+      "keywords": [
+        "broke",
+        "glass"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v096-lev",
+      "vocab_id": "v096",
+      "register": "lev",
+      "arabic": "كسرت الكاس.",
+      "english": "I broke the glass.",
+      "keywords": [
+        "broke",
+        "glass"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v097-msa",
+      "vocab_id": "v097",
+      "register": "msa",
+      "arabic": "أصلحتُ السيارة.",
+      "english": "I fixed the car.",
+      "keywords": [
+        "fixed",
+        "car"
+      ],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v097-lev",
+      "vocab_id": "v097",
+      "register": "lev",
+      "arabic": "صلّحت السيارة.",
+      "english": "I fixed the car.",
+      "keywords": [
+        "fixed",
+        "car"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "daily"
+      ]
+    },
+    {
+      "id": "v098-msa",
+      "vocab_id": "v098",
+      "register": "msa",
+      "arabic": "بنى الجدار.",
+      "english": "They built the wall.",
+      "keywords": [
+        "built",
+        "wall"
+      ],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v098-lev",
+      "vocab_id": "v098",
+      "register": "lev",
+      "arabic": "بنوا الجدار.",
+      "english": "They built the wall.",
+      "keywords": [
+        "built",
+        "wall"
+      ],
+      "accept": [],
+      "tags": [
+        "action"
+      ]
+    },
+    {
+      "id": "v099-msa",
+      "vocab_id": "v099",
+      "register": "msa",
+      "arabic": "قطعتُ الخبز.",
+      "english": "I cut the bread.",
+      "keywords": [
+        "cut",
+        "bread"
+      ],
+      "tags": [
+        "action",
+        "food"
+      ]
+    },
+    {
+      "id": "v099-lev",
+      "vocab_id": "v099",
+      "register": "lev",
+      "arabic": "قطعت الخبز.",
+      "english": "I cut the bread.",
+      "keywords": [
+        "cut",
+        "bread"
+      ],
+      "accept": [],
+      "tags": [
+        "action",
+        "food"
+      ]
+    },
+    {
+      "id": "v100-msa",
+      "vocab_id": "v100",
+      "register": "msa",
+      "arabic": "نبتت الزراعة.",
+      "english": "The crops grew.",
+      "keywords": [
+        "crops",
+        "grew"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "v100-lev",
+      "vocab_id": "v100",
+      "register": "lev",
+      "arabic": "الزرع كبر.",
+      "english": "The crops grew.",
+      "keywords": [
+        "crops",
+        "grew"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "v101-msa",
+      "vocab_id": "v101",
+      "register": "msa",
+      "arabic": "مطر اليوم.",
+      "english": "It rained today.",
+      "keywords": [
+        "rained",
+        "today"
+      ],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "v101-lev",
+      "vocab_id": "v101",
+      "register": "lev",
+      "arabic": "اليوم بتمطر.",
+      "english": "It's raining today.",
+      "keywords": [
+        "it's",
+        "raining",
+        "today"
+      ],
+      "accept": [],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "v102-msa",
+      "vocab_id": "v102",
+      "register": "msa",
+      "arabic": "تساقط الثلج.",
+      "english": "It snowed.",
+      "keywords": [
+        "snowed"
+      ],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "v102-lev",
+      "vocab_id": "v102",
+      "register": "lev",
+      "arabic": "اليوم بتلج.",
+      "english": "It's snowing today.",
+      "keywords": [
+        "it's",
+        "snowing",
+        "today"
+      ],
+      "accept": [],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "v103-msa",
+      "vocab_id": "v103",
+      "register": "msa",
+      "arabic": "أشرقت الشمس.",
+      "english": "The sun rose.",
+      "keywords": [
+        "sun",
+        "rose"
+      ],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "v103-lev",
+      "vocab_id": "v103",
+      "register": "lev",
+      "arabic": "الشمس طلعت.",
+      "english": "The sun came up.",
+      "keywords": [
+        "sun",
+        "came"
+      ],
+      "accept": [],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "v104-msa",
+      "vocab_id": "v104",
+      "register": "msa",
+      "arabic": "تزوجا العام الماضي.",
+      "english": "They got married last year.",
+      "keywords": [
+        "got",
+        "married",
+        "last",
+        "year"
+      ],
+      "tags": [
+        "social",
+        "life"
+      ]
+    },
+    {
+      "id": "v104-lev",
+      "vocab_id": "v104",
+      "register": "lev",
+      "arabic": "تجوّزوا السنة الماضية.",
+      "english": "They got married last year.",
+      "keywords": [
+        "got",
+        "married",
+        "last",
+        "year"
+      ],
+      "accept": [],
+      "tags": [
+        "social",
+        "life"
+      ]
+    },
+    {
+      "id": "v105-msa",
+      "vocab_id": "v105",
+      "register": "msa",
+      "arabic": "طلّق بعد سنوات.",
+      "english": "He divorced after years.",
+      "keywords": [
+        "divorced",
+        "after",
+        "years"
+      ],
+      "tags": [
+        "social",
+        "life"
+      ]
+    },
+    {
+      "id": "v105-lev",
+      "vocab_id": "v105",
+      "register": "lev",
+      "arabic": "طلّق بعد سنين.",
+      "english": "He divorced after years.",
+      "keywords": [
+        "divorced",
+        "after",
+        "years"
+      ],
+      "accept": [],
+      "tags": [
+        "social",
+        "life"
+      ]
+    },
+    {
+      "id": "v106-msa",
+      "vocab_id": "v106",
+      "register": "msa",
+      "arabic": "دعوتُ الأصدقاء.",
+      "english": "I invited my friends.",
+      "keywords": [
+        "invited",
+        "friends"
+      ],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v106-lev",
+      "vocab_id": "v106",
+      "register": "lev",
+      "arabic": "عزمت الصحاب.",
+      "english": "I invited my friends.",
+      "keywords": [
+        "invited",
+        "friends"
+      ],
+      "accept": [],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v107-msa",
+      "vocab_id": "v107",
+      "register": "msa",
+      "arabic": "زار المريض.",
+      "english": "He visited the patient.",
+      "keywords": [
+        "visited",
+        "patient"
+      ],
+      "tags": [
+        "social",
+        "motion"
+      ]
+    },
+    {
+      "id": "v107-lev",
+      "vocab_id": "v107",
+      "register": "lev",
+      "arabic": "زار المريض.",
+      "english": "He visited the patient.",
+      "keywords": [
+        "visited",
+        "patient"
+      ],
+      "accept": [],
+      "tags": [
+        "social",
+        "motion"
+      ]
+    },
+    {
+      "id": "v108-msa",
+      "vocab_id": "v108",
+      "register": "msa",
+      "arabic": "التقينا في المقهى.",
+      "english": "We met at the café.",
+      "keywords": [
+        "met",
+        "caf"
+      ],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v108-lev",
+      "vocab_id": "v108",
+      "register": "lev",
+      "arabic": "تقابلنا بالقهوة.",
+      "english": "We met at the café.",
+      "keywords": [
+        "met",
+        "caf"
+      ],
+      "accept": [],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v109-msa",
+      "vocab_id": "v109",
+      "register": "msa",
+      "arabic": "حيّاهم المدير.",
+      "english": "The manager greeted them.",
+      "keywords": [
+        "manager",
+        "greeted",
+        "them"
+      ],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v109-lev",
+      "vocab_id": "v109",
+      "register": "lev",
+      "arabic": "المدير حيّاهم.",
+      "english": "The manager greeted them.",
+      "keywords": [
+        "manager",
+        "greeted",
+        "them"
+      ],
+      "accept": [],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v110-msa",
+      "vocab_id": "v110",
+      "register": "msa",
+      "arabic": "شكرتُ المساعدة.",
+      "english": "I thanked him for the help.",
+      "keywords": [
+        "thanked",
+        "for",
+        "help"
+      ],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v110-lev",
+      "vocab_id": "v110",
+      "register": "lev",
+      "arabic": "شكرت عالمساعدة.",
+      "english": "I thanked him for the help.",
+      "keywords": [
+        "thanked",
+        "for",
+        "help"
+      ],
+      "accept": [],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v111-msa",
+      "vocab_id": "v111",
+      "register": "msa",
+      "arabic": "اعتذرتُ عن التأخير.",
+      "english": "I apologized for being late.",
+      "keywords": [
+        "apologized",
+        "for",
+        "being",
+        "late"
+      ],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v111-lev",
+      "vocab_id": "v111",
+      "register": "lev",
+      "arabic": "اعتذرت عالتأخير.",
+      "english": "I apologized for being late.",
+      "keywords": [
+        "apologized",
+        "for",
+        "being",
+        "late"
+      ],
+      "accept": [],
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "v112-msa",
+      "vocab_id": "v112",
+      "register": "msa",
+      "arabic": "وعد بأن يأتي.",
+      "english": "He promised to come.",
+      "keywords": [
+        "promised",
+        "come"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v112-lev",
+      "vocab_id": "v112",
+      "register": "lev",
+      "arabic": "وعد يجي.",
+      "english": "He promised to come.",
+      "keywords": [
+        "promised",
+        "come"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v113-msa",
+      "vocab_id": "v113",
+      "register": "msa",
+      "arabic": "كذب على أمه.",
+      "english": "He lied to his mother.",
+      "keywords": [
+        "lied",
+        "mother"
+      ],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v113-lev",
+      "vocab_id": "v113",
+      "register": "lev",
+      "arabic": "كذب عإمه.",
+      "english": "He lied to his mother.",
+      "keywords": [
+        "lied",
+        "mother"
+      ],
+      "accept": [],
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "id": "v114-msa",
+      "vocab_id": "v114",
+      "register": "msa",
+      "arabic": "شرح الدرس.",
+      "english": "He explained the lesson.",
+      "keywords": [
+        "explained",
+        "lesson"
+      ],
+      "tags": [
+        "communication",
+        "study"
+      ]
+    },
+    {
+      "id": "v114-lev",
+      "vocab_id": "v114",
+      "register": "lev",
+      "arabic": "شرح الدرس.",
+      "english": "He explained the lesson.",
+      "keywords": [
+        "explained",
+        "lesson"
+      ],
+      "accept": [],
+      "tags": [
+        "communication",
+        "study"
+      ]
+    },
+    {
+      "id": "v115-msa",
+      "vocab_id": "v115",
+      "register": "msa",
+      "arabic": "أراني الصورة.",
+      "english": "He showed me the picture.",
+      "keywords": [
+        "showed",
+        "picture"
+      ],
+      "tags": [
+        "communication",
+        "action"
+      ]
+    },
+    {
+      "id": "v115-lev",
+      "vocab_id": "v115",
+      "register": "lev",
+      "arabic": "ورّاني الصورة.",
+      "english": "He showed me the picture.",
+      "keywords": [
+        "showed",
+        "picture"
+      ],
+      "accept": [],
+      "tags": [
+        "communication",
+        "action"
+      ]
+    },
+    {
+      "id": "n001-msa",
+      "vocab_id": "n001",
+      "register": "msa",
+      "arabic": "البيت كبير.",
+      "english": "The house is big.",
+      "keywords": [
+        "house",
+        "big"
+      ],
+      "tags": [
+        "home",
+        "daily"
+      ]
+    },
+    {
+      "id": "n001-lev",
+      "vocab_id": "n001",
+      "register": "lev",
+      "arabic": "البيت كبير.",
+      "english": "The house is big.",
+      "keywords": [
+        "house",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "home",
+        "daily"
+      ]
+    },
+    {
+      "id": "n002-msa",
+      "vocab_id": "n002",
+      "register": "msa",
+      "arabic": "الغرفة نظيفة.",
+      "english": "The room is clean.",
+      "keywords": [
+        "room",
+        "clean"
+      ],
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "n002-lev",
+      "vocab_id": "n002",
+      "register": "lev",
+      "arabic": "الغرفة نظيفة.",
+      "english": "The room is clean.",
+      "keywords": [
+        "room",
+        "clean"
+      ],
+      "accept": [],
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "n003-msa",
+      "vocab_id": "n003",
+      "register": "msa",
+      "arabic": "الباب مفتوح.",
+      "english": "The door is open.",
+      "keywords": [
+        "door",
+        "open"
+      ],
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "n003-lev",
+      "vocab_id": "n003",
+      "register": "lev",
+      "arabic": "الباب مفتوح.",
+      "english": "The door is open.",
+      "keywords": [
+        "door",
+        "open"
+      ],
+      "accept": [],
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "n004-msa",
+      "vocab_id": "n004",
+      "register": "msa",
+      "arabic": "النافذة مكسورة.",
+      "english": "The window is broken.",
+      "keywords": [
+        "window",
+        "broken"
+      ],
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "n004-lev",
+      "vocab_id": "n004",
+      "register": "lev",
+      "arabic": "الشباك مكسور.",
+      "english": "The window is broken.",
+      "keywords": [
+        "window",
+        "broken"
+      ],
+      "accept": [],
+      "tags": [
+        "home"
+      ]
+    },
+    {
+      "id": "n005-msa",
+      "vocab_id": "n005",
+      "register": "msa",
+      "arabic": "الماء بارد.",
+      "english": "The water is cold.",
+      "keywords": [
+        "water",
+        "cold"
+      ],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "n005-lev",
+      "vocab_id": "n005",
+      "register": "lev",
+      "arabic": "المي باردة.",
+      "english": "The water is cold.",
+      "keywords": [
+        "water",
+        "cold"
+      ],
+      "accept": [],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "n006-msa",
+      "vocab_id": "n006",
+      "register": "msa",
+      "arabic": "الطعام لذيذ.",
+      "english": "The food is delicious.",
+      "keywords": [
+        "food",
+        "delicious"
+      ],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "n006-lev",
+      "vocab_id": "n006",
+      "register": "lev",
+      "arabic": "الأكل طيب.",
+      "english": "The food is good.",
+      "keywords": [
+        "food",
+        "good"
+      ],
+      "accept": [],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "n007-msa",
+      "vocab_id": "n007",
+      "register": "msa",
+      "arabic": "الخبز طازج.",
+      "english": "The bread is fresh.",
+      "keywords": [
+        "bread",
+        "fresh"
+      ],
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "n007-lev",
+      "vocab_id": "n007",
+      "register": "lev",
+      "arabic": "الخبز طازج.",
+      "english": "The bread is fresh.",
+      "keywords": [
+        "bread",
+        "fresh"
+      ],
+      "accept": [],
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "n008-msa",
+      "vocab_id": "n008",
+      "register": "msa",
+      "arabic": "القهوة ساخنة.",
+      "english": "The coffee is hot.",
+      "keywords": [
+        "coffee",
+        "hot"
+      ],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "n008-lev",
+      "vocab_id": "n008",
+      "register": "lev",
+      "arabic": "القهوة سخنة.",
+      "english": "The coffee is hot.",
+      "keywords": [
+        "coffee",
+        "hot"
+      ],
+      "accept": [],
+      "tags": [
+        "food",
+        "daily"
+      ]
+    },
+    {
+      "id": "n009-msa",
+      "vocab_id": "n009",
+      "register": "msa",
+      "arabic": "الشاي بالنعناع.",
+      "english": "The tea is with mint.",
+      "keywords": [
+        "tea",
+        "with",
+        "mint"
+      ],
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "n009-lev",
+      "vocab_id": "n009",
+      "register": "lev",
+      "arabic": "الشاي بالنعناع.",
+      "english": "The tea has mint.",
+      "keywords": [
+        "tea",
+        "has",
+        "mint"
+      ],
+      "accept": [],
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "n010-msa",
+      "vocab_id": "n010",
+      "register": "msa",
+      "arabic": "الرجل طويل.",
+      "english": "The man is tall.",
+      "keywords": [
+        "man",
+        "tall"
+      ],
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "n010-lev",
+      "vocab_id": "n010",
+      "register": "lev",
+      "arabic": "الرجل طويل.",
+      "english": "The man is tall.",
+      "keywords": [
+        "man",
+        "tall"
+      ],
+      "accept": [],
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "n011-msa",
+      "vocab_id": "n011",
+      "register": "msa",
+      "arabic": "المرأة ذكية.",
+      "english": "The woman is smart.",
+      "keywords": [
+        "woman",
+        "smart"
+      ],
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "n011-lev",
+      "vocab_id": "n011",
+      "register": "lev",
+      "arabic": "المرة ذكية.",
+      "english": "The woman is smart.",
+      "keywords": [
+        "woman",
+        "smart"
+      ],
+      "accept": [],
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "n012-msa",
+      "vocab_id": "n012",
+      "register": "msa",
+      "arabic": "الولد يلعب.",
+      "english": "The boy is playing.",
+      "keywords": [
+        "boy",
+        "playing"
+      ],
+      "tags": [
+        "people",
+        "family"
+      ]
+    },
+    {
+      "id": "n012-lev",
+      "vocab_id": "n012",
+      "register": "lev",
+      "arabic": "الولد بيلعب.",
+      "english": "The boy is playing.",
+      "keywords": [
+        "boy",
+        "playing"
+      ],
+      "accept": [],
+      "tags": [
+        "people",
+        "family"
+      ]
+    },
+    {
+      "id": "n013-msa",
+      "vocab_id": "n013",
+      "register": "msa",
+      "arabic": "البنت تدرس.",
+      "english": "The girl is studying.",
+      "keywords": [
+        "girl",
+        "studying"
+      ],
+      "tags": [
+        "people",
+        "family"
+      ]
+    },
+    {
+      "id": "n013-lev",
+      "vocab_id": "n013",
+      "register": "lev",
+      "arabic": "البنت بتدرس.",
+      "english": "The girl is studying.",
+      "keywords": [
+        "girl",
+        "studying"
+      ],
+      "accept": [],
+      "tags": [
+        "people",
+        "family"
+      ]
+    },
+    {
+      "id": "n014-msa",
+      "vocab_id": "n014",
+      "register": "msa",
+      "arabic": "شخص غريب.",
+      "english": "A strange person.",
+      "keywords": [
+        "strange",
+        "person"
+      ],
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "n014-lev",
+      "vocab_id": "n014",
+      "register": "lev",
+      "arabic": "واحد غريب.",
+      "english": "A strange guy.",
+      "keywords": [
+        "strange",
+        "guy"
+      ],
+      "accept": [],
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "id": "n015-msa",
+      "vocab_id": "n015",
+      "register": "msa",
+      "arabic": "الناس كثيرون.",
+      "english": "There are many people.",
+      "keywords": [
+        "there",
+        "many",
+        "people"
+      ],
+      "tags": [
+        "people",
+        "social"
+      ]
+    },
+    {
+      "id": "n015-lev",
+      "vocab_id": "n015",
+      "register": "lev",
+      "arabic": "الناس كتار.",
+      "english": "There are a lot of people.",
+      "keywords": [
+        "there",
+        "lot",
+        "people"
+      ],
+      "accept": [],
+      "tags": [
+        "people",
+        "social"
+      ]
+    },
+    {
+      "id": "n016-msa",
+      "vocab_id": "n016",
+      "register": "msa",
+      "arabic": "صديقي طيب.",
+      "english": "My friend is kind.",
+      "keywords": [
+        "friend",
+        "kind"
+      ],
+      "tags": [
+        "people",
+        "social"
+      ]
+    },
+    {
+      "id": "n016-lev",
+      "vocab_id": "n016",
+      "register": "lev",
+      "arabic": "صاحبي طيب.",
+      "english": "My friend is kind.",
+      "keywords": [
+        "friend",
+        "kind"
+      ],
+      "accept": [],
+      "tags": [
+        "people",
+        "social"
+      ]
+    },
+    {
+      "id": "n017-msa",
+      "vocab_id": "n017",
+      "register": "msa",
+      "arabic": "العائلة كبيرة.",
+      "english": "The family is large.",
+      "keywords": [
+        "family",
+        "large"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n017-lev",
+      "vocab_id": "n017",
+      "register": "lev",
+      "arabic": "العيلة كبيرة.",
+      "english": "The family is big.",
+      "keywords": [
+        "family",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n018-msa",
+      "vocab_id": "n018",
+      "register": "msa",
+      "arabic": "أبي مهندس.",
+      "english": "My father is an engineer.",
+      "keywords": [
+        "father",
+        "engineer"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n018-lev",
+      "vocab_id": "n018",
+      "register": "lev",
+      "arabic": "أبوي مهندس.",
+      "english": "My dad is an engineer.",
+      "keywords": [
+        "dad",
+        "engineer"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n019-msa",
+      "vocab_id": "n019",
+      "register": "msa",
+      "arabic": "أمي طباخة.",
+      "english": "My mother is a cook.",
+      "keywords": [
+        "mother",
+        "cook"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n019-lev",
+      "vocab_id": "n019",
+      "register": "lev",
+      "arabic": "إمّي بتطبخ.",
+      "english": "My mom cooks.",
+      "keywords": [
+        "mom",
+        "cooks"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n020-msa",
+      "vocab_id": "n020",
+      "register": "msa",
+      "arabic": "أخي في الجامعة.",
+      "english": "My brother is at the university.",
+      "keywords": [
+        "brother",
+        "university"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n020-lev",
+      "vocab_id": "n020",
+      "register": "lev",
+      "arabic": "أخوي بالجامعة.",
+      "english": "My brother is at university.",
+      "keywords": [
+        "brother",
+        "university"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n021-msa",
+      "vocab_id": "n021",
+      "register": "msa",
+      "arabic": "أختي معلمة.",
+      "english": "My sister is a teacher.",
+      "keywords": [
+        "sister",
+        "teacher"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n021-lev",
+      "vocab_id": "n021",
+      "register": "lev",
+      "arabic": "أختي معلمة.",
+      "english": "My sister is a teacher.",
+      "keywords": [
+        "sister",
+        "teacher"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n022-msa",
+      "vocab_id": "n022",
+      "register": "msa",
+      "arabic": "ابنه طبيب.",
+      "english": "His son is a doctor.",
+      "keywords": [
+        "son",
+        "doctor"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n022-lev",
+      "vocab_id": "n022",
+      "register": "lev",
+      "arabic": "ابنه دكتور.",
+      "english": "His son is a doctor.",
+      "keywords": [
+        "son",
+        "doctor"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n023-msa",
+      "vocab_id": "n023",
+      "register": "msa",
+      "arabic": "ابنتها جميلة.",
+      "english": "His daughter is beautiful.",
+      "keywords": [
+        "daughter",
+        "beautiful"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n023-lev",
+      "vocab_id": "n023",
+      "register": "lev",
+      "arabic": "بنته حلوة.",
+      "english": "His daughter is pretty.",
+      "keywords": [
+        "daughter",
+        "pretty"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n024-msa",
+      "vocab_id": "n024",
+      "register": "msa",
+      "arabic": "زوجها كريم.",
+      "english": "Her husband is generous.",
+      "keywords": [
+        "husband",
+        "generous"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n024-lev",
+      "vocab_id": "n024",
+      "register": "lev",
+      "arabic": "جوزها كريم.",
+      "english": "Her husband is generous.",
+      "keywords": [
+        "husband",
+        "generous"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n025-msa",
+      "vocab_id": "n025",
+      "register": "msa",
+      "arabic": "زوجته نشيطة.",
+      "english": "His wife is active.",
+      "keywords": [
+        "wife",
+        "active"
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n025-lev",
+      "vocab_id": "n025",
+      "register": "lev",
+      "arabic": "مرته نشيطة.",
+      "english": "His wife is active.",
+      "keywords": [
+        "wife",
+        "active"
+      ],
+      "accept": [],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "n026-msa",
+      "vocab_id": "n026",
+      "register": "msa",
+      "arabic": "ما اسمك؟",
+      "english": "What is your name?",
+      "keywords": [
+        "what",
+        "your",
+        "name"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n026-lev",
+      "vocab_id": "n026",
+      "register": "lev",
+      "arabic": "شو اسمك؟",
+      "english": "What's your name?",
+      "keywords": [
+        "what's",
+        "your",
+        "name"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n027-msa",
+      "vocab_id": "n027",
+      "register": "msa",
+      "arabic": "الكتاب مفيد.",
+      "english": "The book is useful.",
+      "keywords": [
+        "book",
+        "useful"
+      ],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "n027-lev",
+      "vocab_id": "n027",
+      "register": "lev",
+      "arabic": "الكتاب مفيد.",
+      "english": "The book is useful.",
+      "keywords": [
+        "book",
+        "useful"
+      ],
+      "accept": [],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "n028-msa",
+      "vocab_id": "n028",
+      "register": "msa",
+      "arabic": "المدرسة قريبة.",
+      "english": "The school is nearby.",
+      "keywords": [
+        "school",
+        "nearby"
+      ],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "n028-lev",
+      "vocab_id": "n028",
+      "register": "lev",
+      "arabic": "المدرسة قريبة.",
+      "english": "The school is nearby.",
+      "keywords": [
+        "school",
+        "nearby"
+      ],
+      "accept": [],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "n029-msa",
+      "vocab_id": "n029",
+      "register": "msa",
+      "arabic": "الجامعة كبيرة.",
+      "english": "The university is large.",
+      "keywords": [
+        "university",
+        "large"
+      ],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "n029-lev",
+      "vocab_id": "n029",
+      "register": "lev",
+      "arabic": "الجامعة كبيرة.",
+      "english": "The university is big.",
+      "keywords": [
+        "university",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "study"
+      ]
+    },
+    {
+      "id": "n030-msa",
+      "vocab_id": "n030",
+      "register": "msa",
+      "arabic": "العمل صعب.",
+      "english": "The work is hard.",
+      "keywords": [
+        "work",
+        "hard"
+      ],
+      "tags": [
+        "work",
+        "daily"
+      ]
+    },
+    {
+      "id": "n030-lev",
+      "vocab_id": "n030",
+      "register": "lev",
+      "arabic": "الشغل صعب.",
+      "english": "The job is hard.",
+      "keywords": [
+        "job",
+        "hard"
+      ],
+      "accept": [],
+      "tags": [
+        "work",
+        "daily"
+      ]
+    },
+    {
+      "id": "n031-msa",
+      "vocab_id": "n031",
+      "register": "msa",
+      "arabic": "المكتب في الطابق الثاني.",
+      "english": "The office is on the second floor.",
+      "keywords": [
+        "office",
+        "second",
+        "floor"
+      ],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "n031-lev",
+      "vocab_id": "n031",
+      "register": "lev",
+      "arabic": "المكتب بالطابق التاني.",
+      "english": "The office is on the second floor.",
+      "keywords": [
+        "office",
+        "second",
+        "floor"
+      ],
+      "accept": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "id": "n032-msa",
+      "vocab_id": "n032",
+      "register": "msa",
+      "arabic": "المال قليل.",
+      "english": "The money is little.",
+      "keywords": [
+        "money",
+        "little"
+      ],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "n032-lev",
+      "vocab_id": "n032",
+      "register": "lev",
+      "arabic": "المصاري قليلة.",
+      "english": "There isn't much money.",
+      "keywords": [
+        "there",
+        "isn't",
+        "much",
+        "money"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "n033-msa",
+      "vocab_id": "n033",
+      "register": "msa",
+      "arabic": "السعر مرتفع.",
+      "english": "The price is high.",
+      "keywords": [
+        "price",
+        "high"
+      ],
+      "tags": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "n033-lev",
+      "vocab_id": "n033",
+      "register": "lev",
+      "arabic": "السعر غالي.",
+      "english": "The price is expensive.",
+      "keywords": [
+        "price",
+        "expensive"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce"
+      ]
+    },
+    {
+      "id": "n034-msa",
+      "vocab_id": "n034",
+      "register": "msa",
+      "arabic": "السوق مزدحم.",
+      "english": "The market is crowded.",
+      "keywords": [
+        "market",
+        "crowded"
+      ],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "n034-lev",
+      "vocab_id": "n034",
+      "register": "lev",
+      "arabic": "السوق زحمة.",
+      "english": "The market is crowded.",
+      "keywords": [
+        "market",
+        "crowded"
+      ],
+      "accept": [],
+      "tags": [
+        "commerce",
+        "daily"
+      ]
+    },
+    {
+      "id": "n035-msa",
+      "vocab_id": "n035",
+      "register": "msa",
+      "arabic": "السيارة جديدة.",
+      "english": "The car is new.",
+      "keywords": [
+        "car",
+        "new"
+      ],
+      "tags": [
+        "travel",
+        "daily"
+      ]
+    },
+    {
+      "id": "n035-lev",
+      "vocab_id": "n035",
+      "register": "lev",
+      "arabic": "السيارة جديدة.",
+      "english": "The car is new.",
+      "keywords": [
+        "car",
+        "new"
+      ],
+      "accept": [],
+      "tags": [
+        "travel",
+        "daily"
+      ]
+    },
+    {
+      "id": "n036-msa",
+      "vocab_id": "n036",
+      "register": "msa",
+      "arabic": "الشارع واسع.",
+      "english": "The street is wide.",
+      "keywords": [
+        "street",
+        "wide"
+      ],
+      "tags": [
+        "place",
+        "daily"
+      ]
+    },
+    {
+      "id": "n036-lev",
+      "vocab_id": "n036",
+      "register": "lev",
+      "arabic": "الشارع واسع.",
+      "english": "The street is wide.",
+      "keywords": [
+        "street",
+        "wide"
+      ],
+      "accept": [],
+      "tags": [
+        "place",
+        "daily"
+      ]
+    },
+    {
+      "id": "n037-msa",
+      "vocab_id": "n037",
+      "register": "msa",
+      "arabic": "المدينة جميلة.",
+      "english": "The city is beautiful.",
+      "keywords": [
+        "city",
+        "beautiful"
+      ],
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "n037-lev",
+      "vocab_id": "n037",
+      "register": "lev",
+      "arabic": "المدينة حلوة.",
+      "english": "The city is pretty.",
+      "keywords": [
+        "city",
+        "pretty"
+      ],
+      "accept": [],
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "n038-msa",
+      "vocab_id": "n038",
+      "register": "msa",
+      "arabic": "البلد كبير.",
+      "english": "The country is large.",
+      "keywords": [
+        "country",
+        "large"
+      ],
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "n038-lev",
+      "vocab_id": "n038",
+      "register": "lev",
+      "arabic": "البلد كبير.",
+      "english": "The country is big.",
+      "keywords": [
+        "country",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "n039-msa",
+      "vocab_id": "n039",
+      "register": "msa",
+      "arabic": "العالم واسع.",
+      "english": "The world is vast.",
+      "keywords": [
+        "world",
+        "vast"
+      ],
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "n039-lev",
+      "vocab_id": "n039",
+      "register": "lev",
+      "arabic": "العالم واسع.",
+      "english": "The world is vast.",
+      "keywords": [
+        "world",
+        "vast"
+      ],
+      "accept": [],
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "n040-msa",
+      "vocab_id": "n040",
+      "register": "msa",
+      "arabic": "اليوم جميل.",
+      "english": "Today is beautiful.",
+      "keywords": [
+        "today",
+        "beautiful"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n040-lev",
+      "vocab_id": "n040",
+      "register": "lev",
+      "arabic": "اليوم حلو.",
+      "english": "Today is nice.",
+      "keywords": [
+        "today",
+        "nice"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n041-msa",
+      "vocab_id": "n041",
+      "register": "msa",
+      "arabic": "الليل هادئ.",
+      "english": "The night is quiet.",
+      "keywords": [
+        "night",
+        "quiet"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n041-lev",
+      "vocab_id": "n041",
+      "register": "lev",
+      "arabic": "الليل هادي.",
+      "english": "The night is quiet.",
+      "keywords": [
+        "night",
+        "quiet"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n042-msa",
+      "vocab_id": "n042",
+      "register": "msa",
+      "arabic": "الصباح بارد.",
+      "english": "The morning is cold.",
+      "keywords": [
+        "morning",
+        "cold"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n042-lev",
+      "vocab_id": "n042",
+      "register": "lev",
+      "arabic": "الصبح بارد.",
+      "english": "The morning is cold.",
+      "keywords": [
+        "morning",
+        "cold"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n043-msa",
+      "vocab_id": "n043",
+      "register": "msa",
+      "arabic": "المساء جميل.",
+      "english": "The evening is beautiful.",
+      "keywords": [
+        "evening",
+        "beautiful"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n043-lev",
+      "vocab_id": "n043",
+      "register": "lev",
+      "arabic": "المسا حلو.",
+      "english": "The evening is nice.",
+      "keywords": [
+        "evening",
+        "nice"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n044-msa",
+      "vocab_id": "n044",
+      "register": "msa",
+      "arabic": "الساعة الثالثة.",
+      "english": "It's three o'clock.",
+      "keywords": [
+        "it's",
+        "three",
+        "o'clock"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n044-lev",
+      "vocab_id": "n044",
+      "register": "lev",
+      "arabic": "الساعة التالتة.",
+      "english": "It's three o'clock.",
+      "keywords": [
+        "it's",
+        "three",
+        "o'clock"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n045-msa",
+      "vocab_id": "n045",
+      "register": "msa",
+      "arabic": "الأسبوع طويل.",
+      "english": "The week is long.",
+      "keywords": [
+        "week",
+        "long"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n045-lev",
+      "vocab_id": "n045",
+      "register": "lev",
+      "arabic": "الأسبوع طويل.",
+      "english": "The week is long.",
+      "keywords": [
+        "week",
+        "long"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n046-msa",
+      "vocab_id": "n046",
+      "register": "msa",
+      "arabic": "الشهر الجديد.",
+      "english": "The new month.",
+      "keywords": [
+        "new",
+        "month"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n046-lev",
+      "vocab_id": "n046",
+      "register": "lev",
+      "arabic": "الشهر الجديد.",
+      "english": "The new month.",
+      "keywords": [
+        "new",
+        "month"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n047-msa",
+      "vocab_id": "n047",
+      "register": "msa",
+      "arabic": "السنة الجديدة.",
+      "english": "The new year.",
+      "keywords": [
+        "new",
+        "year"
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n047-lev",
+      "vocab_id": "n047",
+      "register": "lev",
+      "arabic": "السنة الجديدة.",
+      "english": "The new year.",
+      "keywords": [
+        "new",
+        "year"
+      ],
+      "accept": [],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "n048-msa",
+      "vocab_id": "n048",
+      "register": "msa",
+      "arabic": "اليوم الجمعة.",
+      "english": "Today is Friday.",
+      "keywords": [
+        "today",
+        "friday"
+      ],
+      "tags": [
+        "time",
+        "daily"
+      ]
+    },
+    {
+      "id": "n048-lev",
+      "vocab_id": "n048",
+      "register": "lev",
+      "arabic": "اليوم الجمعة.",
+      "english": "Today is Friday.",
+      "keywords": [
+        "today",
+        "friday"
+      ],
+      "accept": [],
+      "tags": [
+        "time",
+        "daily"
+      ]
+    },
+    {
+      "id": "n049-msa",
+      "vocab_id": "n049",
+      "register": "msa",
+      "arabic": "غداً سأسافر.",
+      "english": "Tomorrow I will travel.",
+      "keywords": [
+        "tomorrow",
+        "will",
+        "travel"
+      ],
+      "tags": [
+        "time",
+        "daily"
+      ]
+    },
+    {
+      "id": "n049-lev",
+      "vocab_id": "n049",
+      "register": "lev",
+      "arabic": "بكرا بسافر.",
+      "english": "Tomorrow I'll travel.",
+      "keywords": [
+        "tomorrow",
+        "i'll",
+        "travel"
+      ],
+      "accept": [],
+      "tags": [
+        "time",
+        "daily"
+      ]
+    },
+    {
+      "id": "n050-msa",
+      "vocab_id": "n050",
+      "register": "msa",
+      "arabic": "أمس ذهبت.",
+      "english": "Yesterday I went.",
+      "keywords": [
+        "yesterday",
+        "went"
+      ],
+      "tags": [
+        "time",
+        "daily"
+      ]
+    },
+    {
+      "id": "n050-lev",
+      "vocab_id": "n050",
+      "register": "lev",
+      "arabic": "مبارح رحت.",
+      "english": "Yesterday I went.",
+      "keywords": [
+        "yesterday",
+        "went"
+      ],
+      "accept": [],
+      "tags": [
+        "time",
+        "daily"
+      ]
+    },
+    {
+      "id": "n051-msa",
+      "vocab_id": "n051",
+      "register": "msa",
+      "arabic": "يدي تؤلمني.",
+      "english": "My hand hurts.",
+      "keywords": [
+        "hand",
+        "hurts"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n051-lev",
+      "vocab_id": "n051",
+      "register": "lev",
+      "arabic": "إيدي بتوجعني.",
+      "english": "My hand hurts.",
+      "keywords": [
+        "hand",
+        "hurts"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n052-msa",
+      "vocab_id": "n052",
+      "register": "msa",
+      "arabic": "رأسي يؤلمني.",
+      "english": "My head hurts.",
+      "keywords": [
+        "head",
+        "hurts"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n052-lev",
+      "vocab_id": "n052",
+      "register": "lev",
+      "arabic": "راسي بيوجعني.",
+      "english": "My head hurts.",
+      "keywords": [
+        "head",
+        "hurts"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n053-msa",
+      "vocab_id": "n053",
+      "register": "msa",
+      "arabic": "عينها جميلة.",
+      "english": "Her eye is beautiful.",
+      "keywords": [
+        "eye",
+        "beautiful"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n053-lev",
+      "vocab_id": "n053",
+      "register": "lev",
+      "arabic": "عينها حلوة.",
+      "english": "Her eye is pretty.",
+      "keywords": [
+        "eye",
+        "pretty"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n054-msa",
+      "vocab_id": "n054",
+      "register": "msa",
+      "arabic": "أذني تؤلمني.",
+      "english": "My ear hurts.",
+      "keywords": [
+        "ear",
+        "hurts"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n054-lev",
+      "vocab_id": "n054",
+      "register": "lev",
+      "arabic": "ودني بتوجعني.",
+      "english": "My ear hurts.",
+      "keywords": [
+        "ear",
+        "hurts"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n055-msa",
+      "vocab_id": "n055",
+      "register": "msa",
+      "arabic": "فمه مفتوح.",
+      "english": "His mouth is open.",
+      "keywords": [
+        "mouth",
+        "open"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n055-lev",
+      "vocab_id": "n055",
+      "register": "lev",
+      "arabic": "تمّه مفتوح.",
+      "english": "His mouth is open.",
+      "keywords": [
+        "mouth",
+        "open"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n056-msa",
+      "vocab_id": "n056",
+      "register": "msa",
+      "arabic": "قلبي ينبض.",
+      "english": "My heart beats.",
+      "keywords": [
+        "heart",
+        "beats"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n056-lev",
+      "vocab_id": "n056",
+      "register": "lev",
+      "arabic": "قلبي بيدق.",
+      "english": "My heart is beating.",
+      "keywords": [
+        "heart",
+        "beating"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n057-msa",
+      "vocab_id": "n057",
+      "register": "msa",
+      "arabic": "وجهه جميل.",
+      "english": "His face is beautiful.",
+      "keywords": [
+        "face",
+        "beautiful"
+      ],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n057-lev",
+      "vocab_id": "n057",
+      "register": "lev",
+      "arabic": "وشه حلو.",
+      "english": "His face is handsome.",
+      "keywords": [
+        "face",
+        "handsome"
+      ],
+      "accept": [],
+      "tags": [
+        "body"
+      ]
+    },
+    {
+      "id": "n058-msa",
+      "vocab_id": "n058",
+      "register": "msa",
+      "arabic": "الشمس ساطعة.",
+      "english": "The sun is bright.",
+      "keywords": [
+        "sun",
+        "bright"
+      ],
+      "tags": [
+        "nature",
+        "weather"
+      ]
+    },
+    {
+      "id": "n058-lev",
+      "vocab_id": "n058",
+      "register": "lev",
+      "arabic": "الشمس طالعة.",
+      "english": "The sun is out.",
+      "keywords": [
+        "sun",
+        "out"
+      ],
+      "accept": [],
+      "tags": [
+        "nature",
+        "weather"
+      ]
+    },
+    {
+      "id": "n059-msa",
+      "vocab_id": "n059",
+      "register": "msa",
+      "arabic": "القمر مكتمل.",
+      "english": "The moon is full.",
+      "keywords": [
+        "moon",
+        "full"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n059-lev",
+      "vocab_id": "n059",
+      "register": "lev",
+      "arabic": "القمر مكتمل.",
+      "english": "The moon is full.",
+      "keywords": [
+        "moon",
+        "full"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n060-msa",
+      "vocab_id": "n060",
+      "register": "msa",
+      "arabic": "السماء صافية.",
+      "english": "The sky is clear.",
+      "keywords": [
+        "sky",
+        "clear"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n060-lev",
+      "vocab_id": "n060",
+      "register": "lev",
+      "arabic": "السماء صافية.",
+      "english": "The sky is clear.",
+      "keywords": [
+        "sky",
+        "clear"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n061-msa",
+      "vocab_id": "n061",
+      "register": "msa",
+      "arabic": "الأرض جافة.",
+      "english": "The land is dry.",
+      "keywords": [
+        "land",
+        "dry"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n061-lev",
+      "vocab_id": "n061",
+      "register": "lev",
+      "arabic": "الأرض يابسة.",
+      "english": "The land is dry.",
+      "keywords": [
+        "land",
+        "dry"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n062-msa",
+      "vocab_id": "n062",
+      "register": "msa",
+      "arabic": "البحر هادئ.",
+      "english": "The sea is calm.",
+      "keywords": [
+        "sea",
+        "calm"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n062-lev",
+      "vocab_id": "n062",
+      "register": "lev",
+      "arabic": "البحر هادي.",
+      "english": "The sea is calm.",
+      "keywords": [
+        "sea",
+        "calm"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n063-msa",
+      "vocab_id": "n063",
+      "register": "msa",
+      "arabic": "النهر طويل.",
+      "english": "The river is long.",
+      "keywords": [
+        "river",
+        "long"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n063-lev",
+      "vocab_id": "n063",
+      "register": "lev",
+      "arabic": "النهر طويل.",
+      "english": "The river is long.",
+      "keywords": [
+        "river",
+        "long"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n064-msa",
+      "vocab_id": "n064",
+      "register": "msa",
+      "arabic": "الجبل عالٍ.",
+      "english": "The mountain is high.",
+      "keywords": [
+        "mountain",
+        "high"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n064-lev",
+      "vocab_id": "n064",
+      "register": "lev",
+      "arabic": "الجبل عالي.",
+      "english": "The mountain is tall.",
+      "keywords": [
+        "mountain",
+        "tall"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n065-msa",
+      "vocab_id": "n065",
+      "register": "msa",
+      "arabic": "الشجرة كبيرة.",
+      "english": "The tree is big.",
+      "keywords": [
+        "tree",
+        "big"
+      ],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n065-lev",
+      "vocab_id": "n065",
+      "register": "lev",
+      "arabic": "الشجرة كبيرة.",
+      "english": "The tree is big.",
+      "keywords": [
+        "tree",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "id": "n066-msa",
+      "vocab_id": "n066",
+      "register": "msa",
+      "arabic": "الكلب ينبح.",
+      "english": "The dog is barking.",
+      "keywords": [
+        "dog",
+        "barking"
+      ],
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "n066-lev",
+      "vocab_id": "n066",
+      "register": "lev",
+      "arabic": "الكلب بيعوع.",
+      "english": "The dog is barking.",
+      "keywords": [
+        "dog",
+        "barking"
+      ],
+      "accept": [],
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "n067-msa",
+      "vocab_id": "n067",
+      "register": "msa",
+      "arabic": "القط نائم.",
+      "english": "The cat is sleeping.",
+      "keywords": [
+        "cat",
+        "sleeping"
+      ],
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "n067-lev",
+      "vocab_id": "n067",
+      "register": "lev",
+      "arabic": "القطّة نايمة.",
+      "english": "The cat is sleeping.",
+      "keywords": [
+        "cat",
+        "sleeping"
+      ],
+      "accept": [],
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "n068-msa",
+      "vocab_id": "n068",
+      "register": "msa",
+      "arabic": "الطير يطير.",
+      "english": "The bird is flying.",
+      "keywords": [
+        "bird",
+        "flying"
+      ],
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "n068-lev",
+      "vocab_id": "n068",
+      "register": "lev",
+      "arabic": "الطير بيطير.",
+      "english": "The bird is flying.",
+      "keywords": [
+        "bird",
+        "flying"
+      ],
+      "accept": [],
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "id": "n069-msa",
+      "vocab_id": "n069",
+      "register": "msa",
+      "arabic": "السمك طازج.",
+      "english": "The fish is fresh.",
+      "keywords": [
+        "fish",
+        "fresh"
+      ],
+      "tags": [
+        "animals",
+        "food"
+      ]
+    },
+    {
+      "id": "n069-lev",
+      "vocab_id": "n069",
+      "register": "lev",
+      "arabic": "السمك طازج.",
+      "english": "The fish is fresh.",
+      "keywords": [
+        "fish",
+        "fresh"
+      ],
+      "accept": [],
+      "tags": [
+        "animals",
+        "food"
+      ]
+    },
+    {
+      "id": "n070-msa",
+      "vocab_id": "n070",
+      "register": "msa",
+      "arabic": "اللون أحمر.",
+      "english": "The color is red.",
+      "keywords": [
+        "color",
+        "red"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n070-lev",
+      "vocab_id": "n070",
+      "register": "lev",
+      "arabic": "اللون أحمر.",
+      "english": "The color is red.",
+      "keywords": [
+        "color",
+        "red"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n071-msa",
+      "vocab_id": "n071",
+      "register": "msa",
+      "arabic": "اللون أحمر.",
+      "english": "Red.",
+      "keywords": [
+        "red"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n071-lev",
+      "vocab_id": "n071",
+      "register": "lev",
+      "arabic": "أحمر.",
+      "english": "Red.",
+      "keywords": [
+        "red"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n072-msa",
+      "vocab_id": "n072",
+      "register": "msa",
+      "arabic": "السماء زرقاء.",
+      "english": "The sky is blue.",
+      "keywords": [
+        "sky",
+        "blue"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n072-lev",
+      "vocab_id": "n072",
+      "register": "lev",
+      "arabic": "أزرق.",
+      "english": "Blue.",
+      "keywords": [
+        "blue"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n073-msa",
+      "vocab_id": "n073",
+      "register": "msa",
+      "arabic": "العشب أخضر.",
+      "english": "The grass is green.",
+      "keywords": [
+        "grass",
+        "green"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n073-lev",
+      "vocab_id": "n073",
+      "register": "lev",
+      "arabic": "أخضر.",
+      "english": "Green.",
+      "keywords": [
+        "green"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n074-msa",
+      "vocab_id": "n074",
+      "register": "msa",
+      "arabic": "الثلج أبيض.",
+      "english": "The snow is white.",
+      "keywords": [
+        "snow",
+        "white"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n074-lev",
+      "vocab_id": "n074",
+      "register": "lev",
+      "arabic": "أبيض.",
+      "english": "White.",
+      "keywords": [
+        "white"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n075-msa",
+      "vocab_id": "n075",
+      "register": "msa",
+      "arabic": "الليل أسود.",
+      "english": "The night is black.",
+      "keywords": [
+        "night",
+        "black"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n075-lev",
+      "vocab_id": "n075",
+      "register": "lev",
+      "arabic": "أسود.",
+      "english": "Black.",
+      "keywords": [
+        "black"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n076-msa",
+      "vocab_id": "n076",
+      "register": "msa",
+      "arabic": "البيت كبير.",
+      "english": "The house is big.",
+      "keywords": [
+        "house",
+        "big"
+      ],
+      "tags": [
+        "adjective",
+        "daily"
+      ]
+    },
+    {
+      "id": "n076-lev",
+      "vocab_id": "n076",
+      "register": "lev",
+      "arabic": "البيت كبير.",
+      "english": "The house is big.",
+      "keywords": [
+        "house",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective",
+        "daily"
+      ]
+    },
+    {
+      "id": "n077-msa",
+      "vocab_id": "n077",
+      "register": "msa",
+      "arabic": "الكلب صغير.",
+      "english": "The dog is small.",
+      "keywords": [
+        "dog",
+        "small"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n077-lev",
+      "vocab_id": "n077",
+      "register": "lev",
+      "arabic": "الكلب صغير.",
+      "english": "The dog is small.",
+      "keywords": [
+        "dog",
+        "small"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n078-msa",
+      "vocab_id": "n078",
+      "register": "msa",
+      "arabic": "الطعام جيد.",
+      "english": "The food is good.",
+      "keywords": [
+        "food",
+        "good"
+      ],
+      "tags": [
+        "adjective",
+        "daily"
+      ]
+    },
+    {
+      "id": "n078-lev",
+      "vocab_id": "n078",
+      "register": "lev",
+      "arabic": "الأكل منيح.",
+      "english": "The food is good.",
+      "keywords": [
+        "food",
+        "good"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective",
+        "daily"
+      ]
+    },
+    {
+      "id": "n079-msa",
+      "vocab_id": "n079",
+      "register": "msa",
+      "arabic": "الجو سيء.",
+      "english": "The weather is bad.",
+      "keywords": [
+        "weather",
+        "bad"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n079-lev",
+      "vocab_id": "n079",
+      "register": "lev",
+      "arabic": "الجو وحش.",
+      "english": "The weather is bad.",
+      "keywords": [
+        "weather",
+        "bad"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n080-msa",
+      "vocab_id": "n080",
+      "register": "msa",
+      "arabic": "السيارة جديدة.",
+      "english": "The car is new.",
+      "keywords": [
+        "car",
+        "new"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n080-lev",
+      "vocab_id": "n080",
+      "register": "lev",
+      "arabic": "السيارة جديدة.",
+      "english": "The car is new.",
+      "keywords": [
+        "car",
+        "new"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n081-msa",
+      "vocab_id": "n081",
+      "register": "msa",
+      "arabic": "البيت قديم.",
+      "english": "The house is old.",
+      "keywords": [
+        "house",
+        "old"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n081-lev",
+      "vocab_id": "n081",
+      "register": "lev",
+      "arabic": "البيت قديم.",
+      "english": "The house is old.",
+      "keywords": [
+        "house",
+        "old"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n082-msa",
+      "vocab_id": "n082",
+      "register": "msa",
+      "arabic": "الشاي حار.",
+      "english": "The tea is hot.",
+      "keywords": [
+        "tea",
+        "hot"
+      ],
+      "tags": [
+        "adjective",
+        "daily"
+      ]
+    },
+    {
+      "id": "n082-lev",
+      "vocab_id": "n082",
+      "register": "lev",
+      "arabic": "الشاي سخن.",
+      "english": "The tea is hot.",
+      "keywords": [
+        "tea",
+        "hot"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective",
+        "daily"
+      ]
+    },
+    {
+      "id": "n083-msa",
+      "vocab_id": "n083",
+      "register": "msa",
+      "arabic": "الماء بارد.",
+      "english": "The water is cold.",
+      "keywords": [
+        "water",
+        "cold"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n083-lev",
+      "vocab_id": "n083",
+      "register": "lev",
+      "arabic": "المي باردة.",
+      "english": "The water is cold.",
+      "keywords": [
+        "water",
+        "cold"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n084-msa",
+      "vocab_id": "n084",
+      "register": "msa",
+      "arabic": "المدينة جميلة.",
+      "english": "The city is beautiful.",
+      "keywords": [
+        "city",
+        "beautiful"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n084-lev",
+      "vocab_id": "n084",
+      "register": "lev",
+      "arabic": "المدينة حلوة.",
+      "english": "The city is pretty.",
+      "keywords": [
+        "city",
+        "pretty"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n085-msa",
+      "vocab_id": "n085",
+      "register": "msa",
+      "arabic": "الامتحان صعب.",
+      "english": "The exam is difficult.",
+      "keywords": [
+        "exam",
+        "difficult"
+      ],
+      "tags": [
+        "adjective",
+        "study"
+      ]
+    },
+    {
+      "id": "n085-lev",
+      "vocab_id": "n085",
+      "register": "lev",
+      "arabic": "الامتحان صعب.",
+      "english": "The exam is hard.",
+      "keywords": [
+        "exam",
+        "hard"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective",
+        "study"
+      ]
+    },
+    {
+      "id": "n086-msa",
+      "vocab_id": "n086",
+      "register": "msa",
+      "arabic": "السؤال سهل.",
+      "english": "The question is easy.",
+      "keywords": [
+        "question",
+        "easy"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n086-lev",
+      "vocab_id": "n086",
+      "register": "lev",
+      "arabic": "السؤال سهل.",
+      "english": "The question is easy.",
+      "keywords": [
+        "question",
+        "easy"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n087-msa",
+      "vocab_id": "n087",
+      "register": "msa",
+      "arabic": "الموضوع مهم.",
+      "english": "The topic is important.",
+      "keywords": [
+        "topic",
+        "important"
+      ],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n087-lev",
+      "vocab_id": "n087",
+      "register": "lev",
+      "arabic": "الموضوع مهم.",
+      "english": "The topic is important.",
+      "keywords": [
+        "topic",
+        "important"
+      ],
+      "accept": [],
+      "tags": [
+        "adjective"
+      ]
+    },
+    {
+      "id": "n088-msa",
+      "vocab_id": "n088",
+      "register": "msa",
+      "arabic": "المشكلة كبيرة.",
+      "english": "The problem is big.",
+      "keywords": [
+        "problem",
+        "big"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n088-lev",
+      "vocab_id": "n088",
+      "register": "lev",
+      "arabic": "المشكلة كبيرة.",
+      "english": "The problem is big.",
+      "keywords": [
+        "problem",
+        "big"
+      ],
+      "accept": [],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "n089-msa",
+      "vocab_id": "n089",
+      "register": "msa",
+      "arabic": "السؤال صعب.",
+      "english": "The question is difficult.",
+      "keywords": [
+        "question",
+        "difficult"
+      ],
+      "tags": [
+        "study",
+        "communication"
+      ]
+    },
+    {
+      "id": "n089-lev",
+      "vocab_id": "n089",
+      "register": "lev",
+      "arabic": "السؤال صعب.",
+      "english": "The question is hard.",
+      "keywords": [
+        "question",
+        "hard"
+      ],
+      "accept": [],
+      "tags": [
+        "study",
+        "communication"
+      ]
+    },
+    {
+      "id": "n090-msa",
+      "vocab_id": "n090",
+      "register": "msa",
+      "arabic": "الجواب صحيح.",
+      "english": "The answer is correct.",
+      "keywords": [
+        "answer",
+        "correct"
+      ],
+      "tags": [
+        "study",
+        "communication"
+      ]
+    },
+    {
+      "id": "n090-lev",
+      "vocab_id": "n090",
+      "register": "lev",
+      "arabic": "الجواب صح.",
+      "english": "The answer is right.",
+      "keywords": [
+        "answer",
+        "right"
+      ],
+      "accept": [],
+      "tags": [
+        "study",
+        "communication"
+      ]
+    },
+    {
+      "id": "n091-msa",
+      "vocab_id": "n091",
+      "register": "msa",
+      "arabic": "الكلمة جديدة.",
+      "english": "The word is new.",
+      "keywords": [
+        "word",
+        "new"
+      ],
+      "tags": [
+        "study",
+        "language"
+      ]
+    },
+    {
+      "id": "n091-lev",
+      "vocab_id": "n091",
+      "register": "lev",
+      "arabic": "الكلمة جديدة.",
+      "english": "The word is new.",
+      "keywords": [
+        "word",
+        "new"
+      ],
+      "accept": [],
+      "tags": [
+        "study",
+        "language"
+      ]
+    },
+    {
+      "id": "n092-msa",
+      "vocab_id": "n092",
+      "register": "msa",
+      "arabic": "اللغة العربية.",
+      "english": "The Arabic language.",
+      "keywords": [
+        "arabic",
+        "language"
+      ],
+      "tags": [
+        "study",
+        "language"
+      ]
+    },
+    {
+      "id": "n092-lev",
+      "vocab_id": "n092",
+      "register": "lev",
+      "arabic": "اللغة العربية.",
+      "english": "The Arabic language.",
+      "keywords": [
+        "arabic",
+        "language"
+      ],
+      "accept": [],
+      "tags": [
+        "study",
+        "language"
+      ]
+    },
+    {
+      "id": "n093-msa",
+      "vocab_id": "n093",
+      "register": "msa",
+      "arabic": "الحرب طويلة.",
+      "english": "The war is long.",
+      "keywords": [
+        "war",
+        "long"
+      ],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n093-lev",
+      "vocab_id": "n093",
+      "register": "lev",
+      "arabic": "الحرب طويلة.",
+      "english": "The war is long.",
+      "keywords": [
+        "war",
+        "long"
+      ],
+      "accept": [],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n094-msa",
+      "vocab_id": "n094",
+      "register": "msa",
+      "arabic": "السلام مهم.",
+      "english": "Peace is important.",
+      "keywords": [
+        "peace",
+        "important"
+      ],
+      "tags": [
+        "military",
+        "social"
+      ]
+    },
+    {
+      "id": "n094-lev",
+      "vocab_id": "n094",
+      "register": "lev",
+      "arabic": "السلام مهم.",
+      "english": "Peace is important.",
+      "keywords": [
+        "peace",
+        "important"
+      ],
+      "accept": [],
+      "tags": [
+        "military",
+        "social"
+      ]
+    },
+    {
+      "id": "n095-msa",
+      "vocab_id": "n095",
+      "register": "msa",
+      "arabic": "الجيش قوي.",
+      "english": "The army is strong.",
+      "keywords": [
+        "army",
+        "strong"
+      ],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n095-lev",
+      "vocab_id": "n095",
+      "register": "lev",
+      "arabic": "الجيش قوي.",
+      "english": "The army is strong.",
+      "keywords": [
+        "army",
+        "strong"
+      ],
+      "accept": [],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n096-msa",
+      "vocab_id": "n096",
+      "register": "msa",
+      "arabic": "الجندي شجاع.",
+      "english": "The soldier is brave.",
+      "keywords": [
+        "soldier",
+        "brave"
+      ],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n096-lev",
+      "vocab_id": "n096",
+      "register": "lev",
+      "arabic": "الجندي شجاع.",
+      "english": "The soldier is brave.",
+      "keywords": [
+        "soldier",
+        "brave"
+      ],
+      "accept": [],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n097-msa",
+      "vocab_id": "n097",
+      "register": "msa",
+      "arabic": "السلاح خطير.",
+      "english": "The weapon is dangerous.",
+      "keywords": [
+        "weapon",
+        "dangerous"
+      ],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n097-lev",
+      "vocab_id": "n097",
+      "register": "lev",
+      "arabic": "السلاح خطير.",
+      "english": "The weapon is dangerous.",
+      "keywords": [
+        "weapon",
+        "dangerous"
+      ],
+      "accept": [],
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "n098-msa",
+      "vocab_id": "n098",
+      "register": "msa",
+      "arabic": "الحكومة جديدة.",
+      "english": "The government is new.",
+      "keywords": [
+        "government",
+        "new"
+      ],
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "id": "n098-lev",
+      "vocab_id": "n098",
+      "register": "lev",
+      "arabic": "الحكومة جديدة.",
+      "english": "The government is new.",
+      "keywords": [
+        "government",
+        "new"
+      ],
+      "accept": [],
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "id": "n099-msa",
+      "vocab_id": "n099",
+      "register": "msa",
+      "arabic": "الرئيس يتكلم.",
+      "english": "The president is speaking.",
+      "keywords": [
+        "president",
+        "speaking"
+      ],
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "id": "n099-lev",
+      "vocab_id": "n099",
+      "register": "lev",
+      "arabic": "الرئيس بحكي.",
+      "english": "The president is talking.",
+      "keywords": [
+        "president",
+        "talking"
+      ],
+      "accept": [],
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "id": "n100-msa",
+      "vocab_id": "n100",
+      "register": "msa",
+      "arabic": "المستشفى قريب.",
+      "english": "The hospital is nearby.",
+      "keywords": [
+        "hospital",
+        "nearby"
+      ],
+      "tags": [
+        "daily",
+        "health"
+      ]
+    },
+    {
+      "id": "n100-lev",
+      "vocab_id": "n100",
+      "register": "lev",
+      "arabic": "المستشفى قريب.",
+      "english": "The hospital is nearby.",
+      "keywords": [
+        "hospital",
+        "nearby"
+      ],
+      "accept": [],
+      "tags": [
+        "daily",
+        "health"
+      ]
+    }
+  ]
+}

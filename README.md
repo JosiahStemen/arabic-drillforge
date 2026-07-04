@@ -19,7 +19,8 @@ Open `http://localhost:8080` — do **not** open `index.html` directly (`file://
 3. **Browse** — search by English, Arabic, translit, or root. Filter by Known / Needs Work.
 4. **Start Drill** — choose Flashcard, Multiple Choice, or Typing. Sessions prioritize weak items.
 5. **After each answer** — see the other register (MSA ↔ Lev mapping).
-6. **Conjugation tab** — full past/present tables + drill mode for random pronoun/tense.
+6. **Sentences tab** — Arabic example sentence → type English translation (typos OK).
+7. **Conjugation tab** — full past/present tables + multiple-choice conjugation drill (no Arabic typing).
 7. **Stats panel** — today's count, accuracy, streak, mastery bars. Export progress as JSON.
 
 ### Keyboard Shortcuts

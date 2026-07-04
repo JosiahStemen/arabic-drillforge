@@ -17,6 +17,7 @@
 
   let vocabData = { items: [] };
   let conjData = { tables: {}, _meta: {} };
+  let sentencesData = { sentences: [] };
   let progress = {};
   let stats = {};
   let settings = { register: 'msa', contentType: 'verbs' };
@@ -24,6 +25,7 @@
   let session = null;
   let selectedItem = null;
   let conjDrill = null;
+  let sentenceSession = null;
 
   // ─── Storage ───────────────────────────────────────────────
 
@@ -118,12 +120,14 @@
   // ─── Data helpers ──────────────────────────────────────────
 
   async function loadData() {
-    const [v, c] = await Promise.all([
+    const [v, c, s] = await Promise.all([
       fetch('data/vocab.json').then(r => r.json()),
       fetch('data/conjugations.json').then(r => r.json()),
+      fetch('data/sentences.json').then(r => r.json()),
     ]);
     vocabData = v;
     conjData = c;
+    sentencesData = s;
   }
 
   function getItems() {
@@ -164,6 +168,66 @@
       const e = isArabic ? normalizeArabic(exp) : normalizeAnswer(exp);
       return a === e || a.includes(e) || e.includes(a);
     });
+  }
+
+  function normalizeEnglish(s) {
+    return (s || '')
+      .toLowerCase()
+      .replace(/[^\w\s'?]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function levenshtein(a, b) {
+    if (a === b) return 0;
+    if (!a.length) return b.length;
+    if (!b.length) return a.length;
+    const row = Array.from({ length: b.length + 1 }, (_, i) => i);
+    for (let i = 1; i <= a.length; i++) {
+      let prev = i;
+      for (let j = 1; j <= b.length; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        const val = Math.min(row[j] + 1, prev + 1, row[j - 1] + cost);
+        row[j - 1] = prev;
+        prev = val;
+      }
+      row[b.length] = prev;
+    }
+    return row[b.length];
+  }
+
+  function similarity(a, b) {
+    const x = normalizeEnglish(a);
+    const y = normalizeEnglish(b);
+    if (!x && !y) return 1;
+    const maxLen = Math.max(x.length, y.length);
+    if (!maxLen) return 1;
+    return 1 - levenshtein(x, y) / maxLen;
+  }
+
+  function fuzzyMatchEnglish(input, sentence) {
+    const norm = normalizeEnglish(input);
+    if (!norm) return false;
+
+    const targets = [sentence.english, ...(sentence.accept || [])];
+    for (const target of targets) {
+      const t = normalizeEnglish(target);
+      if (!t) continue;
+      if (norm === t) return true;
+      if (similarity(norm, t) >= 0.82) return true;
+      if (t.includes(norm) || norm.includes(t)) return true;
+    }
+
+    const keywords = sentence.keywords || [];
+    if (keywords.length >= 2) {
+      const words = norm.split(' ').filter(Boolean);
+      const hit = keywords.filter(kw =>
+        norm.includes(kw) || words.some(w => w === kw || similarity(w, kw) >= 0.8 || levenshtein(w, kw) <= 1)
+      );
+      if (hit.length / keywords.length >= 0.65 && hit.length >= 2) return true;
+    }
+
+    return false;
   }
 
   function masteryStars(level) {
@@ -391,6 +455,7 @@
     document.getElementById('browse-view').classList.add('hidden');
     document.getElementById('browse-toolbar').classList.add('hidden');
     document.getElementById('conjugation-view').classList.add('hidden');
+    document.getElementById('sentences-view').classList.add('hidden');
     document.getElementById('session-summary').classList.add('hidden');
     document.getElementById('drill-view').classList.remove('hidden');
     document.getElementById('drill-mode-label').textContent =
@@ -656,10 +721,7 @@
     document.getElementById('drill-view').classList.add('hidden');
     document.getElementById('drill-setup').classList.add('hidden');
     document.getElementById('session-summary').classList.add('hidden');
-    document.getElementById('conjugation-view').classList.add('hidden');
-    document.getElementById('browse-toolbar').classList.remove('hidden');
-    document.getElementById('browse-view').classList.remove('hidden');
-    renderBrowse();
+    setContentType(settings.contentType || 'verbs');
   }
 
   // ─── Conjugation ───────────────────────────────────────────
@@ -716,6 +778,22 @@
     `;
   }
 
+  function gatherConjWrongOptions(conj, reg, tense, pronoun, expected) {
+    const pool = new Set();
+    ['past', 'present'].forEach(t => {
+      PRONOUNS.forEach(p => {
+        const form = conj[reg]?.[t]?.[p];
+        if (form && form !== expected) pool.add(form);
+      });
+      const otherReg = reg === 'msa' ? 'lev' : 'msa';
+      PRONOUNS.forEach(p => {
+        const form = conj[otherReg]?.[t]?.[p];
+        if (form && form !== expected) pool.add(form);
+      });
+    });
+    return shuffle([...pool]).slice(0, 8);
+  }
+
   function startConjDrill() {
     const verbId = document.getElementById('conj-verb-select').value;
     const conj = conjData.tables[verbId];
@@ -728,38 +806,197 @@
     if (!expected) return;
 
     const labels = conjData._meta?.pronoun_labels || {};
-    conjDrill = { verbId, tense, pronoun, reg, expected, answered: false };
+    const wrongPool = gatherConjWrongOptions(conj, reg, tense, pronoun, expected);
+    const distractors = wrongPool.slice(0, 3);
+    while (distractors.length < 3) {
+      const fallback = wrongPool[distractors.length] || expected;
+      if (!distractors.includes(fallback)) distractors.push(fallback);
+      else break;
+    }
+    const options = shuffle([
+      { text: expected, correct: true },
+      ...distractors.map(text => ({ text, correct: false })),
+    ]).slice(0, 4);
+
+    conjDrill = { verbId, tense, pronoun, reg, expected, options, answered: false };
 
     const area = document.getElementById('conj-drill-area');
     area.classList.remove('hidden');
     area.innerHTML = `
       <h4 class="font-semibold text-forge-accent mb-2">Conjugation Drill</h4>
-      <p class="text-sm mb-3">Conjugate <strong>${esc(conj.english)}</strong> — ${reg === 'lev' ? 'Levantine' : 'MSA'} <strong>${tense}</strong> for <strong>${esc(labels[pronoun] || pronoun)}</strong></p>
-      <input type="text" id="conj-input" class="w-full px-4 py-3 bg-forge-800 border border-forge-600 rounded arabic text-xl mb-3" dir="rtl" autocomplete="off" placeholder="Type conjugated form…">
-      <button id="conj-submit" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Check (Enter)</button>
+      <p class="text-sm mb-3">Pick the correct form: <strong>${esc(conj.english)}</strong> — ${reg === 'lev' ? 'Levantine' : 'MSA'} <strong>${tense}</strong> for <strong>${esc(labels[pronoun] || pronoun)}</strong></p>
+      <div class="grid sm:grid-cols-2 gap-2" id="conj-mc-options">
+        ${options.map((o, i) => `
+          <button class="mc-option p-3 text-left bg-forge-800 border border-forge-600 rounded arabic arabic-sm" data-idx="${i}">
+            <span class="text-forge-500 text-xs mr-2">${i + 1}</span>
+            ${esc(o.text)}
+          </button>
+        `).join('')}
+      </div>
       <div id="conj-result" class="mt-3 hidden"></div>
       <button id="conj-show-table" class="mt-2 text-sm text-forge-400 hover:text-white hidden">Show full table</button>
+      <button id="conj-next" class="mt-2 ml-2 px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded text-sm hidden">Next (Space)</button>
+      <p class="text-xs text-forge-500 mt-2">Press 1–4 to choose</p>
     `;
-    document.getElementById('conj-submit').onclick = checkConjDrill;
-    document.getElementById('conj-input').focus();
+    document.querySelectorAll('#conj-mc-options .mc-option').forEach(btn => {
+      btn.addEventListener('click', () => pickConjMC(parseInt(btn.dataset.idx, 10)));
+    });
   }
 
-  function checkConjDrill() {
+  function pickConjMC(idx) {
     if (!conjDrill || conjDrill.answered) return;
     conjDrill.answered = true;
-    const input = document.getElementById('conj-input').value;
-    const correct = matchesAnswer(input, conjDrill.expected, true);
+    const correct = conjDrill.options[idx]?.correct;
+    const picked = conjDrill.options[idx]?.text;
+
+    document.querySelectorAll('#conj-mc-options .mc-option').forEach((btn, i) => {
+      btn.disabled = true;
+      if (conjDrill.options[i].correct) btn.classList.add('correct');
+      else if (i === idx) btn.classList.add('wrong');
+    });
+
     const result = document.getElementById('conj-result');
     result.classList.remove('hidden');
     result.className = `mt-3 p-3 rounded border ${correct ? 'feedback-correct' : 'feedback-wrong'}`;
     result.innerHTML = correct
-      ? `<span class="text-forge-success font-semibold">✓ Correct: ${esc(conjDrill.expected)}</span>`
-      : `<span class="text-forge-danger font-semibold">✗ Expected: ${esc(conjDrill.expected)}</span>${input ? ` — You: ${esc(input)}` : ''}`;
+      ? `<span class="text-forge-success font-semibold">✓ Correct: <span class="arabic arabic-sm">${esc(conjDrill.expected)}</span></span>`
+      : `<span class="text-forge-danger font-semibold">✗ Expected: <span class="arabic arabic-sm">${esc(conjDrill.expected)}</span></span>${picked ? ` — You: <span class="arabic arabic-sm">${esc(picked)}</span>` : ''}`;
 
     document.getElementById('conj-show-table').classList.remove('hidden');
     document.getElementById('conj-show-table').onclick = () => renderConjTable(conjDrill.verbId);
+    document.getElementById('conj-next').classList.remove('hidden');
+    document.getElementById('conj-next').onclick = () => { conjDrill = null; startConjDrill(); };
     recordAnswer(conjDrill.verbId, conjDrill.reg, correct);
     updateStats();
+  }
+
+  // ─── Sentence drill ─────────────────────────────────────────
+
+  function getSentencePool() {
+    return (sentencesData.sentences || []).filter(s => s.register === settings.register);
+  }
+
+  function buildSentenceQueue(count) {
+    const pool = getSentencePool();
+    if (!pool.length) return [];
+    const sorted = [...pool].sort((a, b) => priorityScore({ id: b.vocab_id }) - priorityScore({ id: a.vocab_id }));
+    const nw = Math.ceil(count * 0.6);
+    const priority = sorted.slice(0, nw);
+    const rest = sorted.slice(nw);
+    return shuffle([...priority, ...rest]).slice(0, Math.min(count, pool.length));
+  }
+
+  function startSentenceDrill() {
+    const count = parseInt(document.getElementById('sentence-count').value, 10);
+    const queue = buildSentenceQueue(count);
+    if (!queue.length) {
+      alert('No sentences for this register.');
+      return;
+    }
+
+    sentenceSession = {
+      queue,
+      index: 0,
+      results: [],
+      answered: false,
+    };
+
+    document.getElementById('sentence-idle').classList.add('hidden');
+    document.getElementById('sentence-summary').classList.add('hidden');
+    document.getElementById('sentence-drill').classList.remove('hidden');
+    renderSentenceItem();
+  }
+
+  function currentSentence() {
+    return sentenceSession?.queue[sentenceSession.index];
+  }
+
+  function renderSentenceItem() {
+    if (!sentenceSession) return;
+    const s = currentSentence();
+    if (!s) return endSentenceSession();
+
+    sentenceSession.answered = false;
+    const item = vocabData.items.find(i => i.id === s.vocab_id);
+    const hint = item ? getRegister(item).translit : '';
+
+    document.getElementById('sentence-progress').textContent =
+      `${sentenceSession.index + 1} / ${sentenceSession.queue.length}`;
+    document.getElementById('sentence-arabic').textContent = s.arabic;
+    document.getElementById('sentence-hint').textContent = hint ? `Hint: ${hint}` : '';
+    document.getElementById('sentence-input').value = '';
+    document.getElementById('sentence-feedback').classList.add('hidden');
+    document.getElementById('sentence-actions').innerHTML =
+      `<button id="sentence-submit" class="px-6 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Submit (Enter)</button>`;
+    document.getElementById('sentence-submit').onclick = submitSentence;
+    document.getElementById('sentence-tts').onclick = () => speakArabic(s.arabic);
+    setTimeout(() => document.getElementById('sentence-input')?.focus(), 50);
+  }
+
+  function submitSentence() {
+    if (!sentenceSession || sentenceSession.answered) return;
+    sentenceSession.answered = true;
+    const s = currentSentence();
+    const input = document.getElementById('sentence-input').value;
+    const correct = fuzzyMatchEnglish(input, s);
+
+    recordAnswer(s.vocab_id, settings.register, correct);
+    sentenceSession.results.push({ id: s.vocab_id, arabic: s.arabic, english: s.english, correct, input });
+
+    const fb = document.getElementById('sentence-feedback');
+    fb.classList.remove('hidden', 'feedback-correct', 'feedback-wrong');
+    fb.classList.add(correct ? 'feedback-correct' : 'feedback-wrong');
+    fb.innerHTML = `
+      <div class="font-semibold ${correct ? 'text-forge-success' : 'text-forge-danger'}">${correct ? '✓ Correct' : '✗ Close — see expected answer'}</div>
+      <div class="text-sm mt-1"><strong>Expected:</strong> ${esc(s.english)}</div>
+      ${!correct && input ? `<div class="text-sm text-forge-400">You wrote: ${esc(input)}</div>` : ''}
+      <div class="mt-2 text-sm text-forge-400"><span class="arabic arabic-sm">${esc(s.arabic)}</span></div>
+    `;
+
+    document.getElementById('sentence-actions').innerHTML =
+      `<button id="sentence-next" class="px-6 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Continue (Space)</button>`;
+    document.getElementById('sentence-next').onclick = nextSentence;
+    updateStats();
+  }
+
+  function nextSentence() {
+    sentenceSession.index++;
+    if (sentenceSession.index >= sentenceSession.queue.length) endSentenceSession();
+    else renderSentenceItem();
+  }
+
+  function endSentenceSession() {
+    const correct = sentenceSession.results.filter(r => r.correct).length;
+    const total = sentenceSession.results.length;
+    const acc = total ? Math.round((correct / total) * 100) : 0;
+
+    document.getElementById('sentence-drill').classList.add('hidden');
+    const summary = document.getElementById('sentence-summary');
+    summary.classList.remove('hidden');
+    summary.innerHTML = `
+      <h3 class="text-lg font-bold text-forge-accent mb-2">Sentence Drill Complete</h3>
+      <div class="grid sm:grid-cols-3 gap-4 mb-4">
+        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Accuracy</div><div class="text-3xl font-bold text-forge-accent">${acc}%</div></div>
+        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Correct</div><div class="text-3xl font-bold text-forge-success">${correct}</div></div>
+        <div class="bg-forge-800 rounded p-4 text-center"><div class="text-forge-400 text-xs">Total</div><div class="text-3xl font-bold">${total}</div></div>
+      </div>
+      <button id="sentence-done" class="px-4 py-2 bg-forge-accent text-forge-950 font-semibold rounded">Done</button>
+    `;
+    document.getElementById('sentence-done').onclick = () => {
+      sentenceSession = null;
+      summary.classList.add('hidden');
+      document.getElementById('sentence-idle').classList.remove('hidden');
+    };
+    sentenceSession = null;
+    updateStats();
+  }
+
+  function exitSentenceDrill() {
+    if (sentenceSession && !confirm('Exit sentence drill? Progress for answered items is saved.')) return;
+    sentenceSession = null;
+    document.getElementById('sentence-drill').classList.add('hidden');
+    document.getElementById('sentence-summary').classList.add('hidden');
+    document.getElementById('sentence-idle').classList.remove('hidden');
   }
 
   // ─── Stats ─────────────────────────────────────────────────
@@ -846,7 +1083,7 @@
       btn.classList.toggle('text-gray-300', !active);
       btn.setAttribute('aria-selected', active);
     });
-    renderBrowse();
+    if (settings.contentType === 'verbs' || settings.contentType === 'nouns') renderBrowse();
     updateStats();
   }
 
@@ -862,11 +1099,15 @@
     });
 
     const isConj = type === 'conjugation';
-    document.getElementById('browse-view').classList.toggle('hidden', isConj);
-    document.getElementById('browse-toolbar').classList.toggle('hidden', isConj);
+    const isSentences = type === 'sentences';
+    const hideBrowse = isConj || isSentences;
+    document.getElementById('browse-view').classList.toggle('hidden', hideBrowse);
+    document.getElementById('browse-toolbar').classList.toggle('hidden', hideBrowse);
     document.getElementById('conjugation-view').classList.toggle('hidden', !isConj);
+    document.getElementById('sentences-view').classList.toggle('hidden', !isSentences);
 
     if (isConj) renderConjugation();
+    else if (isSentences) { /* idle state */ }
     else renderBrowse();
   }
 
@@ -888,7 +1129,32 @@
   // ─── Keyboard ────────────────────────────────────────────────
 
   function onKeydown(e) {
-    if (e.target.matches('input, textarea, select') && e.key !== 'Enter' && e.key !== ' ') return;
+    const inSentenceInput = document.activeElement?.id === 'sentence-input';
+    if (e.target.matches('input, textarea, select') && e.key !== 'Enter' && e.key !== ' ' && !inSentenceInput) return;
+    if (inSentenceInput && e.key !== 'Enter') return;
+
+    if (conjDrill && !conjDrill.answered && e.key >= '1' && e.key <= '4') {
+      e.preventDefault();
+      pickConjMC(parseInt(e.key, 10) - 1);
+      return;
+    }
+    if (conjDrill && conjDrill.answered && e.code === 'Space') {
+      e.preventDefault();
+      conjDrill = null;
+      startConjDrill();
+      return;
+    }
+
+    if (sentenceSession && !sentenceSession.answered && e.key === 'Enter' && inSentenceInput) {
+      e.preventDefault();
+      submitSentence();
+      return;
+    }
+    if (sentenceSession && sentenceSession.answered && (e.code === 'Space' || e.key === 'Enter')) {
+      e.preventDefault();
+      nextSentence();
+      return;
+    }
 
     if (session && !session.answered) {
       if (session.mode === 'flashcard' && e.code === 'Space') {
@@ -915,10 +1181,6 @@
       return;
     }
 
-    if (conjDrill && !conjDrill.answered && e.key === 'Enter' && document.activeElement?.id === 'conj-input') {
-      e.preventDefault();
-      checkConjDrill();
-    }
   }
 
   // ─── Init ────────────────────────────────────────────────────
@@ -959,6 +1221,8 @@
     };
 
     document.getElementById('conj-drill-btn').onclick = startConjDrill;
+    document.getElementById('sentence-start').onclick = startSentenceDrill;
+    document.getElementById('sentence-exit').onclick = exitSentenceDrill;
 
     document.getElementById('btn-export').onclick = exportProgress;
     document.getElementById('import-file').onchange = (e) => {
