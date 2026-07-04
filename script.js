@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '12';
+  const APP_VERSION = '13';
 
   const DLPT_LEVELS = ['0+', '1', '1+', '2', '2+', '3', '3+', '4', '4+'];
   const DLPT_ORDER = { '0+': 0, '1': 1, '1+': 2, '2': 3, '2+': 4, '3': 5, '3+': 6, '4': 7, '4+': 8 };
@@ -186,21 +186,35 @@
     return DLPT_ORDER[level] ?? DLPT_ORDER['2'];
   }
 
+  /** Focus band for selected difficulty (not cumulative — avoids flooding 4+ with 0+ basics). */
+  function getDlptFilterRange(target) {
+    const tv = dlptValue(target);
+    if (target === '4+') return { min: 5, max: 8, label: '3+ – 4+' };
+    if (target === '4') return { min: 7, max: 7, label: '4' };
+    if (target.endsWith('+')) {
+      const base = target.slice(0, -1);
+      return { min: dlptValue(base), max: tv, label: `${base} – ${target}` };
+    }
+    return { min: tv, max: tv, label: target };
+  }
+
   function passesDlptFilter(item) {
     const target = settings.dlptTarget || '2';
     const itemLevel = item.dlpt_level || '2';
-    return dlptValue(itemLevel) <= dlptValue(target);
+    const iv = dlptValue(itemLevel);
+    const { min, max } = getDlptFilterRange(target);
+    return iv >= min && iv <= max;
   }
 
   function updateDlptBanner() {
     const el = document.getElementById('dlpt-banner');
     if (!el) return;
     const target = settings.dlptTarget || '2';
+    const { label } = getDlptFilterRange(target);
     const vocabCount = vocabData.items.filter(i => passesDlptFilter(i)).length;
-    const total = vocabData.items.length;
-    el.textContent = total
-      ? `Showing DLPT ≤ ${target}: ${vocabCount} of ${total} vocab items`
-      : `Difficulty: DLPT ≤ ${target}`;
+    el.textContent = vocabCount
+      ? `DLPT ${label}: ${vocabCount} vocab items · sentences & drills use this level only`
+      : `DLPT ${label}: no vocab yet — try a nearby level`;
   }
 
   function getItems() {

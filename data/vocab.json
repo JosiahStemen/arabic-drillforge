@@ -3,9 +3,9 @@
     "description": "Arabic DrillForge vocabulary. Edit items below. Fields: id (unique), type (verb|noun), english, msa/lev objects, tags array, frequency_rank (lower=higher frequency).",
     "version": "1.0",
     "counts": {
-      "verbs": 125,
-      "nouns": 120,
-      "total": 245
+      "verbs": 132,
+      "nouns": 136,
+      "total": 268
     },
     "dlpt_levels": [
       "0+",
@@ -5506,6 +5506,528 @@
         "social"
       ],
       "frequency_rank": 120
+    },
+    {
+      "id": "v126",
+      "type": "verb",
+      "english": "to escalate",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "صَعَّدَ / يُصَعِّدُ",
+        "translit": "sa'ada / yusa'idu",
+        "root": "ص ع د",
+        "example": "صعّد الطرفان التصعيد العسكري بعد انهيار المحادثات."
+      },
+      "lev": {
+        "form": "صعّد / بيصعّد",
+        "translit": "sa'ad / bisa'id",
+        "notes": "Cognate.",
+        "example": "صعّدوا التصعيد بعد المحادثات."
+      },
+      "tags": [
+        "military",
+        "politics"
+      ],
+      "frequency_rank": 126
+    },
+    {
+      "id": "v127",
+      "type": "verb",
+      "english": "to withdraw (troops)",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "اِنْسَحَبَ / يَنْسَحِبُ",
+        "translit": "insahaba / yansahibu",
+        "root": "س ح ب",
+        "example": "انسحبت القوات من المنطقة العازلة وفق الاتفاق."
+      },
+      "lev": {
+        "form": "انسحب / بينسحب",
+        "translit": "insahab / byinsahib",
+        "notes": "Cognate.",
+        "example": "القوات انسحبت من المنطقة."
+      },
+      "tags": [
+        "military",
+        "motion"
+      ],
+      "frequency_rank": 127
+    },
+    {
+      "id": "v128",
+      "type": "verb",
+      "english": "to mobilize",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "حَشَدَ / يَحْشُدُ",
+        "translit": "hashada / yahshudu",
+        "root": "ح ش د",
+        "example": "حشدت القيادة قوات الاحتياط على الحدود الشمالية."
+      },
+      "lev": {
+        "form": "حشد / بيحشد",
+        "translit": "hashad / bihshid",
+        "notes": "Cognate.",
+        "example": "القيادة حشدت قوات الاحتياط."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 128
+    },
+    {
+      "id": "v129",
+      "type": "verb",
+      "english": "to impose sanctions",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "فَرَضَ عُقُوبَات",
+        "translit": "farada uqubat",
+        "root": "ف ر ض",
+        "example": "فرض مجلس الأمن عقوبات اقتصادية شاملة."
+      },
+      "lev": {
+        "form": "فرض عقوبات",
+        "translit": "farad u'ubat",
+        "notes": "MSA phrase.",
+        "example": "فرضوا عقوبات اقتصادية."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 129
+    },
+    {
+      "id": "v130",
+      "type": "verb",
+      "english": "to mediate",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "تَوَسَّطَ / يَتَوَسَّطُ",
+        "translit": "tawassata / yatawassatu",
+        "root": "و س ط",
+        "example": "توسّطت الدولة في النزاع الإقليمي لوقف إطلاق النار."
+      },
+      "lev": {
+        "form": "توسّط / بيتوسّط",
+        "translit": "tawassat / beetwassat",
+        "notes": "Cognate.",
+        "example": "توسّطوا في النزاع."
+      },
+      "tags": [
+        "politics",
+        "diplomacy"
+      ],
+      "frequency_rank": 130
+    },
+    {
+      "id": "v131",
+      "type": "verb",
+      "english": "to condemn (politically)",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "اِسْتَنْكَرَ / يَسْتَنْكِرُ",
+        "translit": "istankara / yastankiru",
+        "root": "ن ك ر",
+        "example": "استنكر الوزراء التصعيد وأدانوا الهجوم على المدنيين."
+      },
+      "lev": {
+        "form": "استنكر / بيستنكر",
+        "translit": "istankar / byistankir",
+        "notes": "Cognate.",
+        "example": "استنكروا التصعيد."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 131
+    },
+    {
+      "id": "v132",
+      "type": "verb",
+      "english": "to reconvene (talks)",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "اِسْتَأْنَفَ / يَسْتَأْنِفُ",
+        "translit": "ista'nafa / yasta'nifu",
+        "root": "أ ن ف",
+        "example": "استأنف الوفدان المفاوضات بعد هدنة مؤقتة."
+      },
+      "lev": {
+        "form": "استأنف / بيستأنف",
+        "translit": "ista'naf / byista'nif",
+        "notes": "Cognate.",
+        "example": "الوفدان استأنفوا المفاوضات."
+      },
+      "tags": [
+        "politics",
+        "diplomacy"
+      ],
+      "frequency_rank": 132
+    },
+    {
+      "id": "n121",
+      "type": "noun",
+      "english": "sanctions",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "عُقُوبَات",
+        "translit": "uqubat",
+        "root": "ق و ب",
+        "example": "أدت العقوبات إلى تراجع الصادرات بشكل حاد."
+      },
+      "lev": {
+        "form": "عقوبات",
+        "translit": "'uqubat",
+        "notes": "Same.",
+        "example": "العقوبات أثّرت على الصادرات."
+      },
+      "tags": [
+        "politics",
+        "economy"
+      ],
+      "frequency_rank": 121
+    },
+    {
+      "id": "n122",
+      "type": "noun",
+      "english": "alliance",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "تَحَالُف",
+        "translit": "tahaluf",
+        "root": "ح ل ف",
+        "example": "أعلنت الدول الثلاث تحالفاً دفاعياً مشتركاً."
+      },
+      "lev": {
+        "form": "تحالف",
+        "translit": "tahaluf",
+        "notes": "Same.",
+        "example": "أعلنوا تحالفاً دفاعياً."
+      },
+      "tags": [
+        "military",
+        "politics"
+      ],
+      "frequency_rank": 122
+    },
+    {
+      "id": "n123",
+      "type": "noun",
+      "english": "aggression",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "عُدْوَان",
+        "translit": "udwaan",
+        "root": "ع د و",
+        "example": "أدان المجتمع الدولي العدوان على السيادة الوطنية."
+      },
+      "lev": {
+        "form": "عدوان",
+        "translit": "'udwaan",
+        "notes": "Same.",
+        "example": "أدانوا العدوان."
+      },
+      "tags": [
+        "politics",
+        "military"
+      ],
+      "frequency_rank": 123
+    },
+    {
+      "id": "n124",
+      "type": "noun",
+      "english": "front (military)",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "جَبْهَة",
+        "translit": "jabha",
+        "root": "ج ب ه",
+        "example": "تشتد المعارك على الجبهة الشمالية منذ الفجر."
+      },
+      "lev": {
+        "form": "جبهة",
+        "translit": "jabhe",
+        "notes": "Same.",
+        "example": "المعارك على الجبهة الشمالية."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 124
+    },
+    {
+      "id": "n125",
+      "type": "noun",
+      "english": "mobilization",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "تَعْبِئَة / حَشْد",
+        "translit": "tabi'a / hashd",
+        "root": "ع ب أ",
+        "example": "أعلنت القيادة تعبئة عامة لقوات الاحتياط."
+      },
+      "lev": {
+        "form": "تعبئة / حشد",
+        "translit": "tabi'e / hashd",
+        "notes": "Both used.",
+        "example": "أعلنوا تعبئة عامة."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 125
+    },
+    {
+      "id": "n126",
+      "type": "noun",
+      "english": "diplomat",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "دِبْلُومَاسِي",
+        "translit": "diplomaasiy",
+        "root": "د ب ل",
+        "example": "التقى الدبلوماسيون في مقر الأمم المتحدة."
+      },
+      "lev": {
+        "form": "دبلوماسي",
+        "translit": "diplomasi",
+        "notes": "Same.",
+        "example": "الدبلوماسيون التقوا."
+      },
+      "tags": [
+        "diplomacy",
+        "politics"
+      ],
+      "frequency_rank": 126
+    },
+    {
+      "id": "n127",
+      "type": "noun",
+      "english": "envoy / delegate",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "وَفْد",
+        "translit": "wafd",
+        "root": "و ف د",
+        "example": "وصل الوفد إلى العاصمة لاستئناف المفاوضات."
+      },
+      "lev": {
+        "form": "وفد",
+        "translit": "wafd",
+        "notes": "Same.",
+        "example": "الوفد وصل لاستئناف المفاوضات."
+      },
+      "tags": [
+        "diplomacy",
+        "politics"
+      ],
+      "frequency_rank": 127
+    },
+    {
+      "id": "n128",
+      "type": "noun",
+      "english": "ceasefire violation",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "خَرْقِ وَقْفِ النَّار",
+        "translit": "kharq waqf annaar",
+        "root": "خ ر ق",
+        "example": "اتهم الطرفان بعضهما بخرق وقف إطلاق النار."
+      },
+      "lev": {
+        "form": "خرق وقف النار",
+        "translit": "khar' wa'af naar",
+        "notes": "Short form.",
+        "example": "اتهموا بعض بخرق وقف النار."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 128
+    },
+    {
+      "id": "n129",
+      "type": "noun",
+      "english": "humanitarian corridor",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "مَمَرٌّ إِنْسَانِي",
+        "translit": "mamar insaani",
+        "root": "م ر ر",
+        "example": "فُتح ممر إنساني لإيصال المساعدات إلى المدنيين."
+      },
+      "lev": {
+        "form": "ممر إنساني",
+        "translit": "mammar insaani",
+        "notes": "Same.",
+        "example": "فتحوا ممراً إنسانياً."
+      },
+      "tags": [
+        "politics",
+        "military"
+      ],
+      "frequency_rank": 129
+    },
+    {
+      "id": "n130",
+      "type": "noun",
+      "english": "regional security",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "أَمْنٌ إِقْلِيمِيّ",
+        "translit": "amn iqlimee",
+        "root": "أ م ن",
+        "example": "ناقش القادة الأمن الإقليمي في القمة الطارئة."
+      },
+      "lev": {
+        "form": "أمن إقليمي",
+        "translit": "amn i'limi",
+        "notes": "Same.",
+        "example": "ناقشوا الأمن الإقليمي."
+      },
+      "tags": [
+        "politics",
+        "military"
+      ],
+      "frequency_rank": 130
+    },
+    {
+      "id": "n131",
+      "type": "noun",
+      "english": "field assessment",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "تَقْيِيمٌ مَيْدَانِيّ",
+        "translit": "taqyeem maydani",
+        "root": "ق ي م",
+        "example": "بُني القرار على تقييم ميداني للوضع الأمني."
+      },
+      "lev": {
+        "form": "تقييم ميداني",
+        "translit": "taqyeem maydani",
+        "notes": "Same.",
+        "example": "القرار مبني على تقييم ميداني."
+      },
+      "tags": [
+        "military",
+        "cognition"
+      ],
+      "frequency_rank": 131
+    },
+    {
+      "id": "n132",
+      "type": "noun",
+      "english": "defense policy",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "سِيَاسَةٌ دِفَاعِيَّة",
+        "translit": "siyaasa difaa'iyya",
+        "root": "د ف ع",
+        "example": "دعت الدراسة إلى إعادة تقييم السياسة الدفاعية."
+      },
+      "lev": {
+        "form": "سياسة دفاعية",
+        "translit": "siyase difaa'iyye",
+        "notes": "Same.",
+        "example": "دعوا لإعادة تقييم السياسة الدفاعية."
+      },
+      "tags": [
+        "military",
+        "politics"
+      ],
+      "frequency_rank": 132
+    },
+    {
+      "id": "n133",
+      "type": "noun",
+      "english": "multilateral talks",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "مُفَاوَمَاتٌ مُتَعَدِّدَةُ الأَطْرَاف",
+        "translit": "mufawamaat muta'addidat al'atraf",
+        "root": "ف و ض",
+        "example": "تستأنف المفاوضات متعددة الأطراف الأسبوع المقبل."
+      },
+      "lev": {
+        "form": "مفاوضات متعددة الأطراف",
+        "translit": "mufawadaat muta'addidit l'atrāf",
+        "notes": "Formal.",
+        "example": "المفاوضات متعددة الأطراف تستأنف."
+      },
+      "tags": [
+        "diplomacy",
+        "politics"
+      ],
+      "frequency_rank": 133
+    },
+    {
+      "id": "n134",
+      "type": "noun",
+      "english": "national sovereignty",
+      "dlpt_level": "4+",
+      "msa": {
+        "form": "سِيَادَةٌ وَطَنِيَّة",
+        "translit": "siyaada wataniyya",
+        "root": "س و د",
+        "example": "أكد البيان احترام السيادة الوطنية لجميع الدول."
+      },
+      "lev": {
+        "form": "سيادة وطنية",
+        "translit": "siyade wataniyye",
+        "notes": "Same.",
+        "example": "أكدوا احترام السيادة الوطنية."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 134
+    },
+    {
+      "id": "n135",
+      "type": "noun",
+      "english": "armed faction",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "فَصِيلٌ مُسَلَّح",
+        "translit": "faseel musallah",
+        "root": "ف ص ل",
+        "example": "طالبت الفصائل المسلحة بوقف إطلاق النار فوراً."
+      },
+      "lev": {
+        "form": "فصيل مسلح",
+        "translit": "faseel musallah",
+        "notes": "Same.",
+        "example": "الفصائل المسلحة طالبت بوقف النار."
+      },
+      "tags": [
+        "military",
+        "politics"
+      ],
+      "frequency_rank": 135
+    },
+    {
+      "id": "n136",
+      "type": "noun",
+      "english": "peacekeeping force",
+      "dlpt_level": "4",
+      "msa": {
+        "form": "قُوَّاتُ حِفْظِ السَّلام",
+        "translit": "quwwat hifz assalaam",
+        "root": "ح ف ظ",
+        "example": "انتشرت قوات حفظ السلام في المنطقة العازلة."
+      },
+      "lev": {
+        "form": "قوات حفظ السلام",
+        "translit": "'uwwat hifz essalaam",
+        "notes": "Same.",
+        "example": "قوات حفظ السلام انتشرت."
+      },
+      "tags": [
+        "military",
+        "diplomacy"
+      ],
+      "frequency_rank": 136
     }
   ]
 }
