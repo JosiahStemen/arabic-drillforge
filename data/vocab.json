@@ -1,0 +1,4611 @@
+{
+  "_meta": {
+    "description": "Arabic DrillForge vocabulary. Edit items below. Fields: id (unique), type (verb|noun), english, msa/lev objects, tags array, frequency_rank (lower=higher frequency).",
+    "version": "1.0",
+    "counts": {
+      "verbs": 115,
+      "nouns": 100
+    }
+  },
+  "items": [
+    {
+      "id": "v001",
+      "type": "verb",
+      "english": "to go",
+      "msa": {
+        "form": "ذَهَبَ / يَذْهَبُ",
+        "translit": "dhahaba / yadhhabu",
+        "root": "ذ ه ب",
+        "example": "ذهبت إلى السوق."
+      },
+      "lev": {
+        "form": "راح / بروح",
+        "translit": "raa7 / baroo7",
+        "notes": "راح past, بروح present.",
+        "example": "راح عالسوق."
+      },
+      "tags": [
+        "motion",
+        "daily"
+      ],
+      "frequency_rank": 1
+    },
+    {
+      "id": "v002",
+      "type": "verb",
+      "english": "to come",
+      "msa": {
+        "form": "جَاءَ / يَجِيءُ",
+        "translit": "jaa'a / yajee'u",
+        "root": "ج ي ء",
+        "example": "جاء أخي من العمل."
+      },
+      "lev": {
+        "form": "إجا / بيجي",
+        "translit": "ijaa / beeji",
+        "notes": "إجا past, بيجي present.",
+        "example": "إجا أخوي من الشغل."
+      },
+      "tags": [
+        "motion",
+        "daily"
+      ],
+      "frequency_rank": 2
+    },
+    {
+      "id": "v003",
+      "type": "verb",
+      "english": "to eat",
+      "msa": {
+        "form": "أَكَلَ / يَأْكُلُ",
+        "translit": "akala / ya'kulu",
+        "root": "أ ك ل",
+        "example": "أكلتُ الغداء."
+      },
+      "lev": {
+        "form": "أكل / بآكل",
+        "translit": "akal / baakol",
+        "notes": "Same root, b- present.",
+        "example": "أكلت الغدا."
+      },
+      "tags": [
+        "daily",
+        "food"
+      ],
+      "frequency_rank": 3
+    },
+    {
+      "id": "v004",
+      "type": "verb",
+      "english": "to drink",
+      "msa": {
+        "form": "شَرِبَ / يَشْرَبُ",
+        "translit": "shariba / yashrabu",
+        "root": "ش ر ب",
+        "example": "شربتُ ماءً."
+      },
+      "lev": {
+        "form": "شرب / بشرب",
+        "translit": "sharab / bishrab",
+        "notes": "Direct cognate.",
+        "example": "شربت مي."
+      },
+      "tags": [
+        "daily",
+        "food"
+      ],
+      "frequency_rank": 4
+    },
+    {
+      "id": "v005",
+      "type": "verb",
+      "english": "to take / get",
+      "msa": {
+        "form": "أَخَذَ / يَأْخُذُ",
+        "translit": "akhadha / ya'khudhu",
+        "root": "أ خ ذ",
+        "example": "أخذتُ الكتاب."
+      },
+      "lev": {
+        "form": "أخذ / بآخذ",
+        "translit": "akhad / baakhod",
+        "notes": "Common in both.",
+        "example": "أخذت الكتاب."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 5
+    },
+    {
+      "id": "v006",
+      "type": "verb",
+      "english": "to give",
+      "msa": {
+        "form": "أَعْطَى / يُعْطِي",
+        "translit": "a'taa / yu'tee",
+        "root": "ع ط ي",
+        "example": "أعطاني المفتاح."
+      },
+      "lev": {
+        "form": "أعطى / بيعطي",
+        "translit": "a'taa / bee'ti",
+        "notes": "MSA يُعْطِي, Lev بيعطي.",
+        "example": "أعطاني المفتاح."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 6
+    },
+    {
+      "id": "v007",
+      "type": "verb",
+      "english": "to want",
+      "msa": {
+        "form": "أَرَادَ / يُرِيدُ",
+        "translit": "araada / yureedu",
+        "root": "ر و د",
+        "example": "أريدُ أن أذهب."
+      },
+      "lev": {
+        "form": "بدي / بده",
+        "translit": "biddi / biddo",
+        "notes": "بدي=I want, بده=he wants.",
+        "example": "بدي روح عالسوق."
+      },
+      "tags": [
+        "daily",
+        "modal"
+      ],
+      "frequency_rank": 7
+    },
+    {
+      "id": "v008",
+      "type": "verb",
+      "english": "to see",
+      "msa": {
+        "form": "رَأَى / يَرَى",
+        "translit": "ra'aa / yaraa",
+        "root": "ر أ ي",
+        "example": "رأيتُ الطائرة."
+      },
+      "lev": {
+        "form": "شاف / بيشوف",
+        "translit": "shaaf / bishoof",
+        "notes": "شاف very common in Lev.",
+        "example": "شاف الطيارة."
+      },
+      "tags": [
+        "perception",
+        "daily"
+      ],
+      "frequency_rank": 8
+    },
+    {
+      "id": "v009",
+      "type": "verb",
+      "english": "to hear",
+      "msa": {
+        "form": "سَمِعَ / يَسْمَعُ",
+        "translit": "sami'a / yasma'u",
+        "root": "س م ع",
+        "example": "سمعتُ الخبر."
+      },
+      "lev": {
+        "form": "سمع / بسمع",
+        "translit": "sama' / bisma'",
+        "notes": "Cognate.",
+        "example": "سمعت الخبر."
+      },
+      "tags": [
+        "perception"
+      ],
+      "frequency_rank": 9
+    },
+    {
+      "id": "v010",
+      "type": "verb",
+      "english": "to know (facts)",
+      "msa": {
+        "form": "عَلِمَ / يَعْلَمُ",
+        "translit": "'alima / ya'lamu",
+        "root": "ع ل م",
+        "example": "علمتُ الجواب."
+      },
+      "lev": {
+        "form": "عرف / بيعرف",
+        "translit": "'araf / bee'rif",
+        "notes": "Lev often uses عرف for knowing.",
+        "example": "بعرف الجواب."
+      },
+      "tags": [
+        "cognition"
+      ],
+      "frequency_rank": 10
+    },
+    {
+      "id": "v011",
+      "type": "verb",
+      "english": "to know (person/place)",
+      "msa": {
+        "form": "عَرَفَ / يَعْرِفُ",
+        "translit": "'arafa / ya'rifu",
+        "root": "ع ر ف",
+        "example": "أعرفُ هذا الرجل."
+      },
+      "lev": {
+        "form": "عرف / بيعرف",
+        "translit": "'araf / bee'rif",
+        "notes": "Same verb in Lev.",
+        "example": "بعرف هالرجل."
+      },
+      "tags": [
+        "cognition",
+        "social"
+      ],
+      "frequency_rank": 11
+    },
+    {
+      "id": "v012",
+      "type": "verb",
+      "english": "to understand",
+      "msa": {
+        "form": "فَهِمَ / يَفْهَمُ",
+        "translit": "fahima / yafhamu",
+        "root": "ف ه م",
+        "example": "فهمتُ الدرس."
+      },
+      "lev": {
+        "form": "فهم / بيفهم",
+        "translit": "faham / beefham",
+        "notes": "Cognate.",
+        "example": "فهمت الدرس."
+      },
+      "tags": [
+        "cognition"
+      ],
+      "frequency_rank": 12
+    },
+    {
+      "id": "v013",
+      "type": "verb",
+      "english": "to say / tell",
+      "msa": {
+        "form": "قَالَ / يَقُولُ",
+        "translit": "qaala / yaqoolu",
+        "root": "ق و ل",
+        "example": "قال لي الحقيقة."
+      },
+      "lev": {
+        "form": "قال / بيقول",
+        "translit": "aal / bee'ool",
+        "notes": "قال same, بيقول present.",
+        "example": "قالي الحقيقة."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 13
+    },
+    {
+      "id": "v014",
+      "type": "verb",
+      "english": "to speak / talk",
+      "msa": {
+        "form": "تَكَلَّمَ / يَتَكَلَّمُ",
+        "translit": "takallama / yatakallamu",
+        "root": "ك ل م",
+        "example": "تكلمنا بالعربية."
+      },
+      "lev": {
+        "form": "حكى / بحكي",
+        "translit": "haka / bihki",
+        "notes": "حكى=spoke, very Levantine.",
+        "example": "حكينا بالعربي."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 14
+    },
+    {
+      "id": "v015",
+      "type": "verb",
+      "english": "to ask",
+      "msa": {
+        "form": "سَأَلَ / يَسْأَلُ",
+        "translit": "sa'ala / yas'alu",
+        "root": "س أ ل",
+        "example": "سألتُ عن السعر."
+      },
+      "lev": {
+        "form": "سأل / بسأل",
+        "translit": "sa'al / bisa'al",
+        "notes": "Cognate.",
+        "example": "سألت عن السعر."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 15
+    },
+    {
+      "id": "v016",
+      "type": "verb",
+      "english": "to answer / reply",
+      "msa": {
+        "form": "أَجَابَ / يُجِيبُ",
+        "translit": "ajaaba / yujeebu",
+        "root": "ج و ب",
+        "example": "أجاب على السؤال."
+      },
+      "lev": {
+        "form": "رد / بيرد",
+        "translit": "rad / beerid",
+        "notes": "رد very common in speech.",
+        "example": "رد على السؤال."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 16
+    },
+    {
+      "id": "v017",
+      "type": "verb",
+      "english": "to do / make",
+      "msa": {
+        "form": "عَمِلَ / يَعْمَلُ",
+        "translit": "'amila / ya'malu",
+        "root": "ع م ل",
+        "example": "عملتُ واجبي."
+      },
+      "lev": {
+        "form": "سوى / بيسوي",
+        "translit": "sawaa / beesawi",
+        "notes": "سوى=made/did in Lev.",
+        "example": "سوى الواجب."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 17
+    },
+    {
+      "id": "v018",
+      "type": "verb",
+      "english": "to work",
+      "msa": {
+        "form": "اِشْتَغَلَ / يَشْتَغِلُ",
+        "translit": "ishtaghala / yashtaghilu",
+        "root": "ش غ ل",
+        "example": "اشتغل في الشركة."
+      },
+      "lev": {
+        "form": "اشتغل / بيشتغل",
+        "translit": "ishtaghil / beeshtaghil",
+        "notes": "Same in Lev.",
+        "example": "بيشتغل بالشركة."
+      },
+      "tags": [
+        "daily",
+        "work"
+      ],
+      "frequency_rank": 18
+    },
+    {
+      "id": "v019",
+      "type": "verb",
+      "english": "to write",
+      "msa": {
+        "form": "كَتَبَ / يَكْتُبُ",
+        "translit": "kataba / yaktubu",
+        "root": "ك ت ب",
+        "example": "كتبتُ رسالة."
+      },
+      "lev": {
+        "form": "كتب / بكتب",
+        "translit": "katab / biktob",
+        "notes": "Cognate.",
+        "example": "كتبت رسالة."
+      },
+      "tags": [
+        "action",
+        "study"
+      ],
+      "frequency_rank": 19
+    },
+    {
+      "id": "v020",
+      "type": "verb",
+      "english": "to read",
+      "msa": {
+        "form": "قَرَأَ / يَقْرَأُ",
+        "translit": "qara'a / yaqra'u",
+        "root": "ق ر أ",
+        "example": "قرأتُ الكتاب."
+      },
+      "lev": {
+        "form": "قرأ / بقرأ",
+        "translit": "'ara / bi'ra",
+        "notes": "Same root.",
+        "example": "قرأت الكتاب."
+      },
+      "tags": [
+        "action",
+        "study"
+      ],
+      "frequency_rank": 20
+    },
+    {
+      "id": "v021",
+      "type": "verb",
+      "english": "to study / learn",
+      "msa": {
+        "form": "دَرَسَ / يَدْرُسُ",
+        "translit": "darasa / yadrusu",
+        "root": "د ر س",
+        "example": "درستُ اللغة."
+      },
+      "lev": {
+        "form": "درس / بيدرس",
+        "translit": "daras / bidras",
+        "notes": "Also تعلم for learn.",
+        "example": "درست اللغة."
+      },
+      "tags": [
+        "study"
+      ],
+      "frequency_rank": 21
+    },
+    {
+      "id": "v022",
+      "type": "verb",
+      "english": "to learn",
+      "msa": {
+        "form": "تَعَلَّمَ / يَتَعَلَّمُ",
+        "translit": "ta'allama / yata'allamu",
+        "root": "ع ل م",
+        "example": "تعلمتُ القيادة."
+      },
+      "lev": {
+        "form": "تعلم / بيتعلم",
+        "translit": "ta'allam / beet'allam",
+        "notes": "Cognate.",
+        "example": "تعلمت السواقة."
+      },
+      "tags": [
+        "study"
+      ],
+      "frequency_rank": 22
+    },
+    {
+      "id": "v023",
+      "type": "verb",
+      "english": "to teach",
+      "msa": {
+        "form": "عَلَّمَ / يُعَلِّمُ",
+        "translit": "'allama / yu'allimu",
+        "root": "ع ل م",
+        "example": "علّمنا الأستاذ."
+      },
+      "lev": {
+        "form": "علّم / بيعلّم",
+        "translit": "'allam / bee'allim",
+        "notes": "Same.",
+        "example": "الأستاذ علّمنا."
+      },
+      "tags": [
+        "study"
+      ],
+      "frequency_rank": 23
+    },
+    {
+      "id": "v024",
+      "type": "verb",
+      "english": "to open",
+      "msa": {
+        "form": "فَتَحَ / يَفْتَحُ",
+        "translit": "fataha / yaftahu",
+        "root": "ف ت ح",
+        "example": "فتحتُ الباب."
+      },
+      "lev": {
+        "form": "فتح / بفتح",
+        "translit": "fatah / bifteh",
+        "notes": "Cognate.",
+        "example": "فتحت الباب."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 24
+    },
+    {
+      "id": "v025",
+      "type": "verb",
+      "english": "to close",
+      "msa": {
+        "form": "أَغْلَقَ / يُغْلِقُ",
+        "translit": "aghlaqa / yughliqu",
+        "root": "غ ل ق",
+        "example": "أغلقتُ النافذة."
+      },
+      "lev": {
+        "form": "سكّر / بسكّر",
+        "translit": "sakkar / bisakkar",
+        "notes": "سكّر very Levantine.",
+        "example": "سكّرت الشباك."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 25
+    },
+    {
+      "id": "v026",
+      "type": "verb",
+      "english": "to enter",
+      "msa": {
+        "form": "دَخَلَ / يَدْخُلُ",
+        "translit": "dakhala / yadkhulu",
+        "root": "د خ ل",
+        "example": "دخلتُ البيت."
+      },
+      "lev": {
+        "form": "دخل / بدخل",
+        "translit": "dakhal / bidkhol",
+        "notes": "Cognate.",
+        "example": "دخلت البيت."
+      },
+      "tags": [
+        "motion"
+      ],
+      "frequency_rank": 26
+    },
+    {
+      "id": "v027",
+      "type": "verb",
+      "english": "to exit / go out",
+      "msa": {
+        "form": "خَرَجَ / يَخْرُجُ",
+        "translit": "kharaja / yakhruju",
+        "root": "خ ر ج",
+        "example": "خرجتُ من الغرفة."
+      },
+      "lev": {
+        "form": "طلع / بطلع",
+        "translit": "tala' / bitla'",
+        "notes": "طلع=went out in Lev.",
+        "example": "طلعت من الغرفة."
+      },
+      "tags": [
+        "motion"
+      ],
+      "frequency_rank": 27
+    },
+    {
+      "id": "v028",
+      "type": "verb",
+      "english": "to sit",
+      "msa": {
+        "form": "جَلَسَ / يَجْلِسُ",
+        "translit": "jalasa / yajlisu",
+        "root": "ج ل س",
+        "example": "جلستُ على الكرسي."
+      },
+      "lev": {
+        "form": "قعد / بقعد",
+        "translit": "'a'ad / bi'ood",
+        "notes": "قعد preferred in speech.",
+        "example": "قعدت عالكرسي."
+      },
+      "tags": [
+        "daily",
+        "posture"
+      ],
+      "frequency_rank": 28
+    },
+    {
+      "id": "v029",
+      "type": "verb",
+      "english": "to stand",
+      "msa": {
+        "form": "وَقَفَ / يَقِفُ",
+        "translit": "waqafa / yaqifu",
+        "root": "ق و ف",
+        "example": "وقفتُ عند الباب."
+      },
+      "lev": {
+        "form": "وقف / بوقف",
+        "translit": "wa'af / bi'oof",
+        "notes": "Cognate.",
+        "example": "وقفت عند الباب."
+      },
+      "tags": [
+        "daily",
+        "posture"
+      ],
+      "frequency_rank": 29
+    },
+    {
+      "id": "v030",
+      "type": "verb",
+      "english": "to sleep",
+      "msa": {
+        "form": "نَامَ / يَنَامُ",
+        "translit": "nama / yanamu",
+        "root": "ن و م",
+        "example": "نامتُ مبكراً."
+      },
+      "lev": {
+        "form": "نام / بنام",
+        "translit": "nam / binam",
+        "notes": "Cognate.",
+        "example": "نمت بكير."
+      },
+      "tags": [
+        "daily",
+        "body"
+      ],
+      "frequency_rank": 30
+    },
+    {
+      "id": "v031",
+      "type": "verb",
+      "english": "to wake up",
+      "msa": {
+        "form": "اِسْتَيْقَظَ / يَسْتَيْقِظُ",
+        "translit": "istayqaza / yastayqizu",
+        "root": "ي ق ظ",
+        "example": "استيقظتُ الساعة ست."
+      },
+      "lev": {
+        "form": "صحى / بصحى",
+        "translit": "saha / bisehi",
+        "notes": "صحى very common.",
+        "example": "صحيت الساعة ست."
+      },
+      "tags": [
+        "daily",
+        "body"
+      ],
+      "frequency_rank": 31
+    },
+    {
+      "id": "v032",
+      "type": "verb",
+      "english": "to live / reside",
+      "msa": {
+        "form": "سَكَنَ / يَسْكُنُ",
+        "translit": "sakana / yaskunu",
+        "root": "س ك ن",
+        "example": "أسكنُ في بيروت."
+      },
+      "lev": {
+        "form": "سكن / بسكن",
+        "translit": "sakan / bisgon",
+        "notes": "Also عايش for live/be alive.",
+        "example": "ساكن ببيروت."
+      },
+      "tags": [
+        "daily",
+        "home"
+      ],
+      "frequency_rank": 32
+    },
+    {
+      "id": "v033",
+      "type": "verb",
+      "english": "to die",
+      "msa": {
+        "form": "مَاتَ / يَمُوتُ",
+        "translit": "maata / yamootu",
+        "root": "م و ت",
+        "example": "مات الجد."
+      },
+      "lev": {
+        "form": "مات / بيموت",
+        "translit": "maat / bimoot",
+        "notes": "Cognate.",
+        "example": "مات الجد."
+      },
+      "tags": [
+        "life"
+      ],
+      "frequency_rank": 33
+    },
+    {
+      "id": "v034",
+      "type": "verb",
+      "english": "to be born",
+      "msa": {
+        "form": "وُلِدَ / يُولَدُ",
+        "translit": "wulida / yooladu",
+        "root": "و ل د",
+        "example": "وُلد الطفل."
+      },
+      "lev": {
+        "form": "انولد / بينولد",
+        "translit": "inwalad / beenwalad",
+        "notes": "Lev passive pattern.",
+        "example": "انولد الولد."
+      },
+      "tags": [
+        "life"
+      ],
+      "frequency_rank": 34
+    },
+    {
+      "id": "v035",
+      "type": "verb",
+      "english": "to love / like",
+      "msa": {
+        "form": "أَحَبَّ / يُحِبُّ",
+        "translit": "ahabba / yuhibbu",
+        "root": "ح ب ب",
+        "example": "أحبُّ القهوة."
+      },
+      "lev": {
+        "form": "حب / بحب",
+        "translit": "habb / bihobb",
+        "notes": "حبّ same root.",
+        "example": "بحب القهوة."
+      },
+      "tags": [
+        "emotion"
+      ],
+      "frequency_rank": 35
+    },
+    {
+      "id": "v036",
+      "type": "verb",
+      "english": "to hate",
+      "msa": {
+        "form": "كَرِهَ / يَكْرَهُ",
+        "translit": "kariha / yakrahu",
+        "root": "ك ر ه",
+        "example": "كرهتُ الطقس."
+      },
+      "lev": {
+        "form": "كره / بكره",
+        "translit": "kareh / bikrah",
+        "notes": "Cognate.",
+        "example": "كرهت الجو."
+      },
+      "tags": [
+        "emotion"
+      ],
+      "frequency_rank": 36
+    },
+    {
+      "id": "v037",
+      "type": "verb",
+      "english": "to help",
+      "msa": {
+        "form": "سَاعَدَ / يُسَاعِدُ",
+        "translit": "saa'ada / yusaa'idu",
+        "root": "س ع د",
+        "example": "ساعدني صديقي."
+      },
+      "lev": {
+        "form": "ساعد / بيساعد",
+        "translit": "saa'ad / beesaa'ad",
+        "notes": "Cognate.",
+        "example": "صديقي ساعدني."
+      },
+      "tags": [
+        "social",
+        "action"
+      ],
+      "frequency_rank": 37
+    },
+    {
+      "id": "v038",
+      "type": "verb",
+      "english": "to wait",
+      "msa": {
+        "form": "اِنْتَظَرَ / يَنْتَظِرُ",
+        "translit": "intazara / yantaziru",
+        "root": "ن ظ ر",
+        "example": "انتظرتُ الحافلة."
+      },
+      "lev": {
+        "form": "استنى / بستنى",
+        "translit": "istanna / bistanna",
+        "notes": "استنى very Levantine.",
+        "example": "استنيت الباص."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 38
+    },
+    {
+      "id": "v039",
+      "type": "verb",
+      "english": "to search / look for",
+      "msa": {
+        "form": "بَحَثَ / يَبْحَثُ",
+        "translit": "bahatha / yabhathu",
+        "root": "ب ح ث",
+        "example": "بحثتُ عن المفتاح."
+      },
+      "lev": {
+        "form": "دور / بدور",
+        "translit": "door / bidoor",
+        "notes": "دور على=look for.",
+        "example": "بدور عالمفتاح."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 39
+    },
+    {
+      "id": "v040",
+      "type": "verb",
+      "english": "to find",
+      "msa": {
+        "form": "وَجَدَ / يَجِدُ",
+        "translit": "wajada / yajidu",
+        "root": "و ج د",
+        "example": "وجدتُ المحفظة."
+      },
+      "lev": {
+        "form": "لقى / بلاقي",
+        "translit": "la'aa / bilaa'i",
+        "notes": "لقى very common.",
+        "example": "لقيت المحفظة."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 40
+    },
+    {
+      "id": "v041",
+      "type": "verb",
+      "english": "to buy",
+      "msa": {
+        "form": "اِشْتَرَى / يَشْتَرِي",
+        "translit": "ishtaraa / yashtaree",
+        "root": "ش ر ي",
+        "example": "اشتريتُ خبزاً."
+      },
+      "lev": {
+        "form": "اشترى / بيشتري",
+        "translit": "ishtara / beeshtari",
+        "notes": "Cognate.",
+        "example": "اشتريت خبز."
+      },
+      "tags": [
+        "commerce",
+        "daily"
+      ],
+      "frequency_rank": 41
+    },
+    {
+      "id": "v042",
+      "type": "verb",
+      "english": "to sell",
+      "msa": {
+        "form": "بَاعَ / يَبِيعُ",
+        "translit": "baa'a / yabee'u",
+        "root": "ب ي ع",
+        "example": "باعَ التاجر السلع."
+      },
+      "lev": {
+        "form": "باع / بيبيع",
+        "translit": "baa' / beeba'",
+        "notes": "Cognate.",
+        "example": "التاجر باع السلع."
+      },
+      "tags": [
+        "commerce"
+      ],
+      "frequency_rank": 42
+    },
+    {
+      "id": "v043",
+      "type": "verb",
+      "english": "to pay",
+      "msa": {
+        "form": "دَفَعَ / يَدْفَعُ",
+        "translit": "dafa'a / yadfa'u",
+        "root": "د ف ع",
+        "example": "دفعتُ الفاتورة."
+      },
+      "lev": {
+        "form": "دفع / بدفع",
+        "translit": "dafa' / bidfa'",
+        "notes": "Cognate.",
+        "example": "دفعت الفاتورة."
+      },
+      "tags": [
+        "commerce"
+      ],
+      "frequency_rank": 43
+    },
+    {
+      "id": "v044",
+      "type": "verb",
+      "english": "to order / request",
+      "msa": {
+        "form": "طَلَبَ / يَطْلُبُ",
+        "translit": "talaba / yatlubu",
+        "root": "ط ل ب",
+        "example": "طلبتُ طعاماً."
+      },
+      "lev": {
+        "form": "طلب / بطلب",
+        "translit": "talab / bitlob",
+        "notes": "Also بدي for want.",
+        "example": "طلبت أكل."
+      },
+      "tags": [
+        "commerce",
+        "daily"
+      ],
+      "frequency_rank": 44
+    },
+    {
+      "id": "v045",
+      "type": "verb",
+      "english": "to cook",
+      "msa": {
+        "form": "طَبَخَ / يَطْبُخُ",
+        "translit": "tabakha / yatbukhu",
+        "root": "ط ب خ",
+        "example": "طبختُ العشاء."
+      },
+      "lev": {
+        "form": "طبخ / بطبخ",
+        "translit": "tabakh / bitbokh",
+        "notes": "Cognate.",
+        "example": "طبخت العشا."
+      },
+      "tags": [
+        "food",
+        "daily"
+      ],
+      "frequency_rank": 45
+    },
+    {
+      "id": "v046",
+      "type": "verb",
+      "english": "to wash",
+      "msa": {
+        "form": "غَسَلَ / يَغْسِلُ",
+        "translit": "ghasala / yaghsilu",
+        "root": "غ س ل",
+        "example": "غسلتُ الصحون."
+      },
+      "lev": {
+        "form": "غسل / بغسل",
+        "translit": "ghasal / bighsol",
+        "notes": "Cognate.",
+        "example": "غسلت الصحون."
+      },
+      "tags": [
+        "daily",
+        "home"
+      ],
+      "frequency_rank": 46
+    },
+    {
+      "id": "v047",
+      "type": "verb",
+      "english": "to wear / put on",
+      "msa": {
+        "form": "لَبِسَ / يَلْبَسُ",
+        "translit": "labisa / yalbasu",
+        "root": "ل ب س",
+        "example": "لبستُ المعطف."
+      },
+      "lev": {
+        "form": "لبس / بلبس",
+        "translit": "labas / bilbos",
+        "notes": "Cognate.",
+        "example": "لبست المعطف."
+      },
+      "tags": [
+        "daily",
+        "body"
+      ],
+      "frequency_rank": 47
+    },
+    {
+      "id": "v048",
+      "type": "verb",
+      "english": "to take off (clothes)",
+      "msa": {
+        "form": "خَلَعَ / يَخْلَعُ",
+        "translit": "khala'a / yakhla'u",
+        "root": "خ ل ع",
+        "example": "خلعتُ الحذاء."
+      },
+      "lev": {
+        "form": "خلع / بخلع",
+        "translit": "khala' / bikhla'",
+        "notes": "Cognate.",
+        "example": "خلعت الشباح."
+      },
+      "tags": [
+        "daily",
+        "body"
+      ],
+      "frequency_rank": 48
+    },
+    {
+      "id": "v049",
+      "type": "verb",
+      "english": "to travel",
+      "msa": {
+        "form": "سَافَرَ / يُسَافِرُ",
+        "translit": "saafara / yusaafiru",
+        "root": "س ف ر",
+        "example": "سافرتُ إلى الأردن."
+      },
+      "lev": {
+        "form": "سافر / بيسافر",
+        "translit": "saafir / bisaafir",
+        "notes": "Cognate.",
+        "example": "سافرت عالأردن."
+      },
+      "tags": [
+        "motion",
+        "travel"
+      ],
+      "frequency_rank": 49
+    },
+    {
+      "id": "v050",
+      "type": "verb",
+      "english": "to return / come back",
+      "msa": {
+        "form": "رَجَعَ / يَرْجِعُ",
+        "translit": "raja'a / yarji'u",
+        "root": "ر ج ع",
+        "example": "رجعتُ إلى البيت."
+      },
+      "lev": {
+        "form": "رجع / برجع",
+        "translit": "raja' / birja'",
+        "notes": "Cognate.",
+        "example": "رجعت عالبيت."
+      },
+      "tags": [
+        "motion"
+      ],
+      "frequency_rank": 50
+    },
+    {
+      "id": "v051",
+      "type": "verb",
+      "english": "to stay / remain",
+      "msa": {
+        "form": "بَقِيَ / يَبْقَى",
+        "translit": "baqiya / yabqaa",
+        "root": "ب ق ي",
+        "example": "بقيتُ في الفندق."
+      },
+      "lev": {
+        "form": "ضل / بضل",
+        "translit": "dall / bidall",
+        "notes": "ضل=remained in Lev.",
+        "example": "ضليت بالفندق."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 51
+    },
+    {
+      "id": "v052",
+      "type": "verb",
+      "english": "to leave / let go",
+      "msa": {
+        "form": "تَرَكَ / يَتْرُكُ",
+        "translit": "taraka / yatruku",
+        "root": "ت ر ك",
+        "example": "تركتُ السيارة."
+      },
+      "lev": {
+        "form": "ترك / بترك",
+        "translit": "tarak / bitrok",
+        "notes": "Cognate.",
+        "example": "تركت السيارة."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 52
+    },
+    {
+      "id": "v053",
+      "type": "verb",
+      "english": "to bring",
+      "msa": {
+        "form": "أَحْضَرَ / يُحْضِرُ",
+        "translit": "ahdara / yuhdiru",
+        "root": "ح ض ر",
+        "example": "أحضرتُ الطعام."
+      },
+      "lev": {
+        "form": "جاب / بيجيب",
+        "translit": "jaab / beejeeb",
+        "notes": "جاب=he brought.",
+        "example": "جاب الأكل."
+      },
+      "tags": [
+        "action",
+        "motion"
+      ],
+      "frequency_rank": 53
+    },
+    {
+      "id": "v054",
+      "type": "verb",
+      "english": "to carry",
+      "msa": {
+        "form": "حَمَلَ / يَحْمِلُ",
+        "translit": "hamala / yahmilu",
+        "root": "ح م ل",
+        "example": "حملتُ الحقيبة."
+      },
+      "lev": {
+        "form": "حمل / بحمل",
+        "translit": "hamal / bihmol",
+        "notes": "Cognate.",
+        "example": "حملت الشنطة."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 54
+    },
+    {
+      "id": "v055",
+      "type": "verb",
+      "english": "to put / place",
+      "msa": {
+        "form": "وَضَعَ / يَضَعُ",
+        "translit": "wada'a / yada'u",
+        "root": "و ض ع",
+        "example": "وضعتُ الكتاب على الطاولة."
+      },
+      "lev": {
+        "form": "حطّ / بحطّ",
+        "translit": "hatt / bihtt",
+        "notes": "حطّ very Levantine.",
+        "example": "حطّيت الكتاب عالطاولة."
+      },
+      "tags": [
+        "action",
+        "daily"
+      ],
+      "frequency_rank": 55
+    },
+    {
+      "id": "v056",
+      "type": "verb",
+      "english": "to throw",
+      "msa": {
+        "form": "رَمَى / يَرْمِي",
+        "translit": "ramaa / yarmee",
+        "root": "ر م ي",
+        "example": "رمى الكرة."
+      },
+      "lev": {
+        "form": "رمى / برمي",
+        "translit": "rama / birme",
+        "notes": "Cognate.",
+        "example": "رمى الكرة."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 56
+    },
+    {
+      "id": "v057",
+      "type": "verb",
+      "english": "to catch",
+      "msa": {
+        "form": "أَمْسَكَ / يُمْسِكُ",
+        "translit": "amsaka / yumsiku",
+        "root": "م س ك",
+        "example": "أمسكتُ الكرة."
+      },
+      "lev": {
+        "form": "مسك / بمسك",
+        "translit": "masak / bimsok",
+        "notes": "Cognate.",
+        "example": "مسكت الكرة."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 57
+    },
+    {
+      "id": "v058",
+      "type": "verb",
+      "english": "to hit / strike",
+      "msa": {
+        "form": "ضَرَبَ / يَضْرِبُ",
+        "translit": "daraba / yadribu",
+        "root": "ض ر ب",
+        "example": "ضرب الكرة."
+      },
+      "lev": {
+        "form": "ضرب / بضرب",
+        "translit": "darab / bidrob",
+        "notes": "Also means play instrument.",
+        "example": "ضرب الكرة."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 58
+    },
+    {
+      "id": "v059",
+      "type": "verb",
+      "english": "to kill",
+      "msa": {
+        "form": "قَتَلَ / يَقْتُلُ",
+        "translit": "qatala / yaqtulu",
+        "root": "ق ت ل",
+        "example": "قتل العدو."
+      },
+      "lev": {
+        "form": "قتل / بقتل",
+        "translit": "atal / bi'tol",
+        "notes": "Cognate.",
+        "example": "قتل العدو."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 59
+    },
+    {
+      "id": "v060",
+      "type": "verb",
+      "english": "to fight",
+      "msa": {
+        "form": "قَاتَلَ / يُقَاتِلُ",
+        "translit": "qaatala / yuqaatilu",
+        "root": "ق ت ل",
+        "example": "قاتل الجنود."
+      },
+      "lev": {
+        "form": "قاتل / بقاتل",
+        "translit": "aatal / bi'aatel",
+        "notes": "Cognate.",
+        "example": "الجنود قاتلوا."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 60
+    },
+    {
+      "id": "v061",
+      "type": "verb",
+      "english": "to win",
+      "msa": {
+        "form": "فَازَ / يَفُوزُ",
+        "translit": "faaza / yafuzu",
+        "root": "ف و ز",
+        "example": "فاز الفريق."
+      },
+      "lev": {
+        "form": "ربح / بربح",
+        "translit": "rabah / birbah",
+        "notes": "ربح also=profit.",
+        "example": "الفريق ربح."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 61
+    },
+    {
+      "id": "v062",
+      "type": "verb",
+      "english": "to lose",
+      "msa": {
+        "form": "خَسِرَ / يَخْسَرُ",
+        "translit": "khasira / yakhsaru",
+        "root": "خ س ر",
+        "example": "خسر الفريق."
+      },
+      "lev": {
+        "form": "خسر / بخسر",
+        "translit": "khasar / bikhsar",
+        "notes": "Cognate.",
+        "example": "الفريق خسر."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 62
+    },
+    {
+      "id": "v063",
+      "type": "verb",
+      "english": "to play",
+      "msa": {
+        "form": "لَعِبَ / يَلْعَبُ",
+        "translit": "la'iba / yal'abu",
+        "root": "ل ع ب",
+        "example": "لعب الأطفال."
+      },
+      "lev": {
+        "form": "لعب / بلعب",
+        "translit": "la'ab / bil'ab",
+        "notes": "Cognate.",
+        "example": "الولاد لعبوا."
+      },
+      "tags": [
+        "daily",
+        "leisure"
+      ],
+      "frequency_rank": 63
+    },
+    {
+      "id": "v064",
+      "type": "verb",
+      "english": "to run",
+      "msa": {
+        "form": "جَرَى / يَجْرِي",
+        "translit": "jaraa / yajree",
+        "root": "ج ر ي",
+        "example": "جرى بسرعة."
+      },
+      "lev": {
+        "form": "ركض / بركض",
+        "translit": "rakad / birkod",
+        "notes": "ركض more common for run.",
+        "example": "ركض بسرعة."
+      },
+      "tags": [
+        "motion",
+        "body"
+      ],
+      "frequency_rank": 64
+    },
+    {
+      "id": "v065",
+      "type": "verb",
+      "english": "to walk",
+      "msa": {
+        "form": "مَشَى / يَمْشِي",
+        "translit": "mashaa / yamshi",
+        "root": "م ش ي",
+        "example": "مشيتُ في الحديقة."
+      },
+      "lev": {
+        "form": "مشى / بيمشي",
+        "translit": "masha / beymshi",
+        "notes": "Cognate.",
+        "example": "مشيت بالحديقة."
+      },
+      "tags": [
+        "motion",
+        "body"
+      ],
+      "frequency_rank": 65
+    },
+    {
+      "id": "v066",
+      "type": "verb",
+      "english": "to drive",
+      "msa": {
+        "form": "قَادَ / يَقُودُ",
+        "translit": "qaada / yaqoodu",
+        "root": "ق و د",
+        "example": "قاد السيارة."
+      },
+      "lev": {
+        "form": "ساق / بسوق",
+        "translit": "saa' / biso'",
+        "notes": "ساق very common.",
+        "example": "ساق السيارة."
+      },
+      "tags": [
+        "motion",
+        "travel"
+      ],
+      "frequency_rank": 66
+    },
+    {
+      "id": "v067",
+      "type": "verb",
+      "english": "to fly",
+      "msa": {
+        "form": "طَارَ / يَطِيرُ",
+        "translit": "taara / yateeru",
+        "root": "ط و ر",
+        "example": "طارت الطائرة."
+      },
+      "lev": {
+        "form": "طار / بيطير",
+        "translit": "taar / biteer",
+        "notes": "Cognate.",
+        "example": "الطيارة طارت."
+      },
+      "tags": [
+        "motion",
+        "travel"
+      ],
+      "frequency_rank": 67
+    },
+    {
+      "id": "v068",
+      "type": "verb",
+      "english": "to swim",
+      "msa": {
+        "form": "سَبَحَ / يَسْبَحُ",
+        "translit": "sabaha / yasbahu",
+        "root": "س ب ح",
+        "example": "سبح في البحر."
+      },
+      "lev": {
+        "form": "سبح / بسبح",
+        "translit": "sabah / bisbah",
+        "notes": "Cognate.",
+        "example": "سبح بالبحر."
+      },
+      "tags": [
+        "motion",
+        "body"
+      ],
+      "frequency_rank": 68
+    },
+    {
+      "id": "v069",
+      "type": "verb",
+      "english": "to think",
+      "msa": {
+        "form": "فَكَّرَ / يُفَكِّرُ",
+        "translit": "fakkara / yufakkiru",
+        "root": "ف ك ر",
+        "example": "فكرتُ في المشكلة."
+      },
+      "lev": {
+        "form": "فكّر / بفكّر",
+        "translit": "fakkar / bifakkar",
+        "notes": "Cognate.",
+        "example": "فكرت بالمشكلة."
+      },
+      "tags": [
+        "cognition"
+      ],
+      "frequency_rank": 69
+    },
+    {
+      "id": "v070",
+      "type": "verb",
+      "english": "to believe",
+      "msa": {
+        "form": "آمَنَ / يُؤْمِنُ",
+        "translit": "aamana / yu'minu",
+        "root": "أ م ن",
+        "example": "آمن بالله."
+      },
+      "lev": {
+        "form": "آمن / بيآمن",
+        "translit": "aaman / biaamen",
+        "notes": "Cognate.",
+        "example": "آمن بالله."
+      },
+      "tags": [
+        "cognition",
+        "religion"
+      ],
+      "frequency_rank": 70
+    },
+    {
+      "id": "v071",
+      "type": "verb",
+      "english": "to remember",
+      "msa": {
+        "form": "تَذَكَّرَ / يَتَذَكَّرُ",
+        "translit": "tadhakkara / yatadhakkaru",
+        "root": "ذ ك ر",
+        "example": "تذكرتُ اسمه."
+      },
+      "lev": {
+        "form": "تذكّر / بتذكّر",
+        "translit": "tadhakkar / bitdhakkar",
+        "notes": "Cognate.",
+        "example": "تذكرت اسمه."
+      },
+      "tags": [
+        "cognition"
+      ],
+      "frequency_rank": 71
+    },
+    {
+      "id": "v072",
+      "type": "verb",
+      "english": "to forget",
+      "msa": {
+        "form": "نَسِيَ / يَنْسَى",
+        "translit": "nasiya / yansaa",
+        "root": "ن س ي",
+        "example": "نسيتُ المفتاح."
+      },
+      "lev": {
+        "form": "نسي / بنسى",
+        "translit": "nasi / binse",
+        "notes": "Cognate.",
+        "example": "نسيت المفتاح."
+      },
+      "tags": [
+        "cognition"
+      ],
+      "frequency_rank": 72
+    },
+    {
+      "id": "v073",
+      "type": "verb",
+      "english": "to feel",
+      "msa": {
+        "form": "شَعَرَ / يَشْعُرُ",
+        "translit": "sha'ara / yash'uru",
+        "root": "ش ع ر",
+        "example": "شعرتُ بالتعب."
+      },
+      "lev": {
+        "form": "حسّ / بحسّ",
+        "translit": "hass / bihoss",
+        "notes": "حسّ more spoken.",
+        "example": "حسّيت بالتعب."
+      },
+      "tags": [
+        "emotion",
+        "body"
+      ],
+      "frequency_rank": 73
+    },
+    {
+      "id": "v074",
+      "type": "verb",
+      "english": "to laugh",
+      "msa": {
+        "form": "ضَحِكَ / يَضْحَكُ",
+        "translit": "dahika / yadhaku",
+        "root": "ض ح ك",
+        "example": "ضحكتُ كثيراً."
+      },
+      "lev": {
+        "form": "ضحك / بضحك",
+        "translit": "dahak / bidhak",
+        "notes": "Cognate.",
+        "example": "ضحكت كتير."
+      },
+      "tags": [
+        "emotion"
+      ],
+      "frequency_rank": 74
+    },
+    {
+      "id": "v075",
+      "type": "verb",
+      "english": "to cry",
+      "msa": {
+        "form": "بَكَى / يَبْكِي",
+        "translit": "baka / yabkee",
+        "root": "ب ك ي",
+        "example": "بكت الطفلة."
+      },
+      "lev": {
+        "form": "بكى / بيبكي",
+        "translit": "baka / beeke",
+        "notes": "Cognate.",
+        "example": "البنت بكت."
+      },
+      "tags": [
+        "emotion"
+      ],
+      "frequency_rank": 75
+    },
+    {
+      "id": "v076",
+      "type": "verb",
+      "english": "to smile",
+      "msa": {
+        "form": "اِبْتَسَمَ / يَبْتَسِمُ",
+        "translit": "ibtasama / yabtasimu",
+        "root": "ب س م",
+        "example": "ابتسم الوجه."
+      },
+      "lev": {
+        "form": "بتسم / ببتسم",
+        "translit": "batasam / bibtasam",
+        "notes": "Cognate.",
+        "example": "ابتسم."
+      },
+      "tags": [
+        "emotion"
+      ],
+      "frequency_rank": 76
+    },
+    {
+      "id": "v077",
+      "type": "verb",
+      "english": "to call (phone)",
+      "msa": {
+        "form": "اِتَّصَلَ / يَتَّصِلُ",
+        "translit": "ittasala / yattasilu",
+        "root": "و ص ل",
+        "example": "اتصلتُ بأمي."
+      },
+      "lev": {
+        "form": "تلفن / بيتلفن",
+        "translit": "talafan / beetalfan",
+        "notes": "Also اتصل.",
+        "example": "تلفنت لإمي."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 77
+    },
+    {
+      "id": "v078",
+      "type": "verb",
+      "english": "to send",
+      "msa": {
+        "form": "أَرْسَلَ / يُرْسِلُ",
+        "translit": "arsala / yursilu",
+        "root": "ر س ل",
+        "example": "أرسلتُ الرسالة."
+      },
+      "lev": {
+        "form": "بعت / ببعت",
+        "translit": "ba'at / biba'at",
+        "notes": "بعت very Levantine.",
+        "example": "بعتت الرسالة."
+      },
+      "tags": [
+        "communication",
+        "action"
+      ],
+      "frequency_rank": 78
+    },
+    {
+      "id": "v079",
+      "type": "verb",
+      "english": "to receive",
+      "msa": {
+        "form": "اِسْتَلَمَ / يَسْتَلِمُ",
+        "translit": "istalama / yastalimu",
+        "root": "ل م م",
+        "example": "استلمتُ الطرد."
+      },
+      "lev": {
+        "form": "استلم / بيستلم",
+        "translit": "istalam / beesatalam",
+        "notes": "Cognate.",
+        "example": "استلمت الطرد."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 79
+    },
+    {
+      "id": "v080",
+      "type": "verb",
+      "english": "to begin / start",
+      "msa": {
+        "form": "بَدَأَ / يَبْدَأُ",
+        "translit": "bada'a / yabda'u",
+        "root": "ب د أ",
+        "example": "بدأ الدرس."
+      },
+      "lev": {
+        "form": "بلّش / ببلّش",
+        "translit": "ballash / biballash",
+        "notes": "بلّش very Levantine.",
+        "example": "بلّش الدرس."
+      },
+      "tags": [
+        "action",
+        "daily"
+      ],
+      "frequency_rank": 80
+    },
+    {
+      "id": "v081",
+      "type": "verb",
+      "english": "to finish / end",
+      "msa": {
+        "form": "اِنْتَهَى / يَنْتَهِي",
+        "translit": "intahaa / yantahi",
+        "root": "ن ه ي",
+        "example": "انتهى الفيلم."
+      },
+      "lev": {
+        "form": "خلّص / بخلّص",
+        "translit": "khallas / bikhallas",
+        "notes": "خلّص=finished/done.",
+        "example": "الفيلم خلّص."
+      },
+      "tags": [
+        "action",
+        "daily"
+      ],
+      "frequency_rank": 81
+    },
+    {
+      "id": "v082",
+      "type": "verb",
+      "english": "to continue",
+      "msa": {
+        "form": "اِسْتَمَرَّ / يَسْتَمِرُّ",
+        "translit": "istamarra / yastamirru",
+        "root": "م ر ر",
+        "example": "استمر المطر."
+      },
+      "lev": {
+        "form": "كمل / بكمل",
+        "translit": "kammal / bikammel",
+        "notes": "كمل=continued/completed.",
+        "example": "المطر كمل."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 82
+    },
+    {
+      "id": "v083",
+      "type": "verb",
+      "english": "to stop",
+      "msa": {
+        "form": "تَوَقَّفَ / يَتَوَقَّفُ",
+        "translit": "tawaqqafa / yatawaqqafu",
+        "root": "و ق ف",
+        "example": "توقفت السيارة."
+      },
+      "lev": {
+        "form": "وقف / بوقف",
+        "translit": "wa'af / bi'oof",
+        "notes": "Same as stand.",
+        "example": "السيارة وقفت."
+      },
+      "tags": [
+        "action",
+        "motion"
+      ],
+      "frequency_rank": 83
+    },
+    {
+      "id": "v084",
+      "type": "verb",
+      "english": "to try / attempt",
+      "msa": {
+        "form": "حَاوَلَ / يُحَاوِلُ",
+        "translit": "haawala / yuhaawilu",
+        "root": "ح و ل",
+        "example": "حاولتُ مرة أخرى."
+      },
+      "lev": {
+        "form": "حاول / بحاول",
+        "translit": "haawal / bihaawel",
+        "notes": "Cognate.",
+        "example": "حاولت مرة تانية."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 84
+    },
+    {
+      "id": "v085",
+      "type": "verb",
+      "english": "to succeed",
+      "msa": {
+        "form": "نَجَحَ / يَنْجَحُ",
+        "translit": "najaha / yanjahu",
+        "root": "ن ج ح",
+        "example": "نجح الطالب."
+      },
+      "lev": {
+        "form": "نجح / بنجح",
+        "translit": "najah / binjah",
+        "notes": "Cognate.",
+        "example": "الطالب نجح."
+      },
+      "tags": [
+        "study",
+        "action"
+      ],
+      "frequency_rank": 85
+    },
+    {
+      "id": "v086",
+      "type": "verb",
+      "english": "to fail",
+      "msa": {
+        "form": "فَشِلَ / يَفْشَلُ",
+        "translit": "fashila / yafshalu",
+        "root": "ف ش ل",
+        "example": "فشل الامتحان."
+      },
+      "lev": {
+        "form": "فشل / بفشل",
+        "translit": "fashal / bifshal",
+        "notes": "Cognate.",
+        "example": "الامتحان فشل."
+      },
+      "tags": [
+        "study",
+        "action"
+      ],
+      "frequency_rank": 86
+    },
+    {
+      "id": "v087",
+      "type": "verb",
+      "english": "to change",
+      "msa": {
+        "form": "غَيَّرَ / يُغَيِّرُ",
+        "translit": "ghayyara / yughayyiru",
+        "root": "غ ي ر",
+        "example": "غيّرتُ الرأي."
+      },
+      "lev": {
+        "form": "غيّر / بغيّر",
+        "translit": "ghayyar / bighayyer",
+        "notes": "Cognate.",
+        "example": "غيّرت رأيي."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 87
+    },
+    {
+      "id": "v088",
+      "type": "verb",
+      "english": "to use",
+      "msa": {
+        "form": "اِسْتَخْدَمَ / يَسْتَخْدِمُ",
+        "translit": "istakhdama / yastakhdimu",
+        "root": "خ د م",
+        "example": "استخدمتُ الحاسوب."
+      },
+      "lev": {
+        "form": "استخدم / بيستخدم",
+        "translit": "istakhdam / beesatakhdam",
+        "notes": "Cognate.",
+        "example": "استخدمت الكمبيوتر."
+      },
+      "tags": [
+        "daily",
+        "action"
+      ],
+      "frequency_rank": 88
+    },
+    {
+      "id": "v089",
+      "type": "verb",
+      "english": "to need",
+      "msa": {
+        "form": "اِحْتَاجَ / يَحْتَاجُ",
+        "translit": "ihtaaja / yahtaaju",
+        "root": "ح و ج",
+        "example": "احتجتُ إلى مساعدة."
+      },
+      "lev": {
+        "form": "محتاج / محتاج",
+        "translit": "muhtaaj / muhtaaj",
+        "notes": "Adjective form common.",
+        "example": "أنا محتاج مساعدة."
+      },
+      "tags": [
+        "modal",
+        "daily"
+      ],
+      "frequency_rank": 89
+    },
+    {
+      "id": "v090",
+      "type": "verb",
+      "english": "to can / be able",
+      "msa": {
+        "form": "اِسْتَطَاعَ / يَسْتَطِيعُ",
+        "translit": "istataa'a / yastatee'u",
+        "root": "ط و ع",
+        "example": "استطعتُ أن أفعل."
+      },
+      "lev": {
+        "form": "قدر / بقدر",
+        "translit": "'adar / bi'dar",
+        "notes": "بقدر=I can in Lev.",
+        "example": "بقدر عمل هيك."
+      },
+      "tags": [
+        "modal"
+      ],
+      "frequency_rank": 90
+    },
+    {
+      "id": "v091",
+      "type": "verb",
+      "english": "to must / have to",
+      "msa": {
+        "form": "يَجِبُ / يَجِبُ",
+        "translit": "yajibu",
+        "root": "ج و ب",
+        "example": "يجب أن أذهب."
+      },
+      "lev": {
+        "form": "لازم",
+        "translit": "laazim",
+        "notes": "لازم+I must.",
+        "example": "لازم روح."
+      },
+      "tags": [
+        "modal"
+      ],
+      "frequency_rank": 91
+    },
+    {
+      "id": "v092",
+      "type": "verb",
+      "english": "to own / possess",
+      "msa": {
+        "form": "مَلَكَ / يَمْلِكُ",
+        "translit": "malaka / yamliku",
+        "root": "م ل ك",
+        "example": "يملك بيتاً."
+      },
+      "lev": {
+        "form": "معه / عنده",
+        "translit": "ma'aa / 'ando",
+        "notes": "عنده=he has (possession).",
+        "example": "عنده بيت."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 92
+    },
+    {
+      "id": "v093",
+      "type": "verb",
+      "english": "to borrow",
+      "msa": {
+        "form": "اِسْتَعَارَ / يَسْتَعِيرُ",
+        "translit": "ista'aara / yasta'eeru",
+        "root": "ع ر ض",
+        "example": "استعرتُ كتاباً."
+      },
+      "lev": {
+        "form": "استعار / بيستعار",
+        "translit": "ista'ar / beesata'ar",
+        "notes": "Cognate.",
+        "example": "استعرت كتاب."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 93
+    },
+    {
+      "id": "v094",
+      "type": "verb",
+      "english": "to lend",
+      "msa": {
+        "form": "أَقْرَضَ / يُقْرِضُ",
+        "translit": "aqrada / yuqridu",
+        "root": "ق ر ض",
+        "example": "أقرضته مالاً."
+      },
+      "lev": {
+        "form": "أقرض / بأقرض",
+        "translit": "a'rad / ba'rid",
+        "notes": "Cognate.",
+        "example": "أقرضته مصاري."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 94
+    },
+    {
+      "id": "v095",
+      "type": "verb",
+      "english": "to steal",
+      "msa": {
+        "form": "سَرَقَ / يَسْرِقُ",
+        "translit": "saraqa / yasriqu",
+        "root": "س ر ق",
+        "example": "سرق اللص المحفظة."
+      },
+      "lev": {
+        "form": "سرق / بسرق",
+        "translit": "saraq / bisra'",
+        "notes": "Cognate.",
+        "example": "الحرامي سرق المحفظة."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 95
+    },
+    {
+      "id": "v096",
+      "type": "verb",
+      "english": "to break",
+      "msa": {
+        "form": "كَسَرَ / يَكْسِرُ",
+        "translit": "kasara / yaksiri",
+        "root": "ك س ر",
+        "example": "كسرتُ الكأس."
+      },
+      "lev": {
+        "form": "كسر / بكسر",
+        "translit": "kasar / bikser",
+        "notes": "Cognate.",
+        "example": "كسرت الكاس."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 96
+    },
+    {
+      "id": "v097",
+      "type": "verb",
+      "english": "to fix / repair",
+      "msa": {
+        "form": "أَصْلَحَ / يُصْلِحُ",
+        "translit": "aslaha / yuslihu",
+        "root": "ص ل ح",
+        "example": "أصلحتُ السيارة."
+      },
+      "lev": {
+        "form": "صلّح / بصلّح",
+        "translit": "sallah / bisallah",
+        "notes": "صلّح very common.",
+        "example": "صلّحت السيارة."
+      },
+      "tags": [
+        "action",
+        "daily"
+      ],
+      "frequency_rank": 97
+    },
+    {
+      "id": "v098",
+      "type": "verb",
+      "english": "to build",
+      "msa": {
+        "form": "بَنَى / يَبْنِي",
+        "translit": "banaa / yabnee",
+        "root": "ب ن ي",
+        "example": "بنى الجدار."
+      },
+      "lev": {
+        "form": "بنى / بيبني",
+        "translit": "bana / beebani",
+        "notes": "Cognate.",
+        "example": "بنوا الجدار."
+      },
+      "tags": [
+        "action"
+      ],
+      "frequency_rank": 98
+    },
+    {
+      "id": "v099",
+      "type": "verb",
+      "english": "to cut",
+      "msa": {
+        "form": "قَطَعَ / يَقْطَعُ",
+        "translit": "qata'a / yaqta'u",
+        "root": "ق ط ع",
+        "example": "قطعتُ الخبز."
+      },
+      "lev": {
+        "form": "قطع / بقطع",
+        "translit": "'ata' / bi'ta'",
+        "notes": "Cognate.",
+        "example": "قطعت الخبز."
+      },
+      "tags": [
+        "action",
+        "food"
+      ],
+      "frequency_rank": 99
+    },
+    {
+      "id": "v100",
+      "type": "verb",
+      "english": "to grow (plants)",
+      "msa": {
+        "form": "نَبَتَ / يَنْبُتُ",
+        "translit": "nabata / yanbutu",
+        "root": "ن ب ت",
+        "example": "نبتت الزراعة."
+      },
+      "lev": {
+        "form": "كبر / بكبر",
+        "translit": "kabar / bikbar",
+        "notes": "كبر=grow bigger.",
+        "example": "الزرع كبر."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 100
+    },
+    {
+      "id": "v101",
+      "type": "verb",
+      "english": "to rain",
+      "msa": {
+        "form": "مَطَرَ / يَمْطُرُ",
+        "translit": "matara / yamturu",
+        "root": "م ط ر",
+        "example": "مطر اليوم."
+      },
+      "lev": {
+        "form": "مطر / بتمطر",
+        "translit": "matar / bitemtar",
+        "notes": "Impersonal in Arabic.",
+        "example": "اليوم بتمطر."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 101
+    },
+    {
+      "id": "v102",
+      "type": "verb",
+      "english": "to snow",
+      "msa": {
+        "form": "تَسَاقَطَ الثَّلْجُ",
+        "translit": "tasaaqata",
+        "root": "ث ل ج",
+        "example": "تساقط الثلج."
+      },
+      "lev": {
+        "form": "تثلج / بتلج",
+        "translit": "tathalaj / bitlaj",
+        "notes": "Weather verb.",
+        "example": "اليوم بتلج."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 102
+    },
+    {
+      "id": "v103",
+      "type": "verb",
+      "english": "to shine (sun)",
+      "msa": {
+        "form": "أَشْرَقَ / يُشْرِقُ",
+        "translit": "ashraqa / yushriqu",
+        "root": "ش ر ق",
+        "example": "أشرقت الشمس."
+      },
+      "lev": {
+        "form": "طلع / بطلع",
+        "translit": "tala' / bitla'",
+        "notes": "طلع الشمس=sunrise.",
+        "example": "الشمس طلعت."
+      },
+      "tags": [
+        "weather"
+      ],
+      "frequency_rank": 103
+    },
+    {
+      "id": "v104",
+      "type": "verb",
+      "english": "to marry",
+      "msa": {
+        "form": "تَزَوَّجَ / يَتَزَوَّجُ",
+        "translit": "tazawwaja / yatazawwaju",
+        "root": "ز و ج",
+        "example": "تزوجا العام الماضي."
+      },
+      "lev": {
+        "form": "تجوّز / بيتجوّز",
+        "translit": "tajawwaz / beetjawwaz",
+        "notes": "Cognate.",
+        "example": "تجوّزوا السنة الماضية."
+      },
+      "tags": [
+        "social",
+        "life"
+      ],
+      "frequency_rank": 104
+    },
+    {
+      "id": "v105",
+      "type": "verb",
+      "english": "to divorce",
+      "msa": {
+        "form": "طَلَّقَ / يُطَلِّقُ",
+        "translit": "tallaqa / yutalliqu",
+        "root": "ط ل ق",
+        "example": "طلّق بعد سنوات."
+      },
+      "lev": {
+        "form": "طلّق / بيطلّق",
+        "translit": "talla' / bitalla'",
+        "notes": "Cognate.",
+        "example": "طلّق بعد سنين."
+      },
+      "tags": [
+        "social",
+        "life"
+      ],
+      "frequency_rank": 105
+    },
+    {
+      "id": "v106",
+      "type": "verb",
+      "english": "to invite",
+      "msa": {
+        "form": "دَعَا / يَدْعُو",
+        "translit": "da'aa / yad'oo",
+        "root": "د ع و",
+        "example": "دعوتُ الأصدقاء."
+      },
+      "lev": {
+        "form": "عزم / بعزم",
+        "translit": "'azam / bi'zom",
+        "notes": "عزم=invited in Lev.",
+        "example": "عزمت الصحاب."
+      },
+      "tags": [
+        "social"
+      ],
+      "frequency_rank": 106
+    },
+    {
+      "id": "v107",
+      "type": "verb",
+      "english": "to visit",
+      "msa": {
+        "form": "زَارَ / يَزُورُ",
+        "translit": "zaara / yazooru",
+        "root": "ز و ر",
+        "example": "زار المريض."
+      },
+      "lev": {
+        "form": "زور / بزور",
+        "translit": "zoor / bizoor",
+        "notes": "Cognate.",
+        "example": "زار المريض."
+      },
+      "tags": [
+        "social",
+        "motion"
+      ],
+      "frequency_rank": 107
+    },
+    {
+      "id": "v108",
+      "type": "verb",
+      "english": "to meet",
+      "msa": {
+        "form": "اِلْتَقَى / يَلْتَقِي",
+        "translit": "iltaqaa / yaltaqee",
+        "root": "ل ق ي",
+        "example": "التقينا في المقهى."
+      },
+      "lev": {
+        "form": "تقابل / بتقابل",
+        "translit": "ta'aabal / bit'aabel",
+        "notes": "تقابل very common.",
+        "example": "تقابلنا بالقهوة."
+      },
+      "tags": [
+        "social"
+      ],
+      "frequency_rank": 108
+    },
+    {
+      "id": "v109",
+      "type": "verb",
+      "english": "to greet",
+      "msa": {
+        "form": "حَيَّا / يُحَيِّي",
+        "translit": "hayyaa / yuhayyee",
+        "root": "ح ي ي",
+        "example": "حيّاهم المدير."
+      },
+      "lev": {
+        "form": "حيّى / بحيّي",
+        "translit": "hayya / bihayyi",
+        "notes": "Cognate.",
+        "example": "المدير حيّاهم."
+      },
+      "tags": [
+        "social"
+      ],
+      "frequency_rank": 109
+    },
+    {
+      "id": "v110",
+      "type": "verb",
+      "english": "to thank",
+      "msa": {
+        "form": "شَكَرَ / يَشْكُرُ",
+        "translit": "shakara / yashkuru",
+        "root": "ش ك ر",
+        "example": "شكرتُ المساعدة."
+      },
+      "lev": {
+        "form": "شكر / بشكر",
+        "translit": "shakar / bishkor",
+        "notes": "Cognate.",
+        "example": "شكرت عالمساعدة."
+      },
+      "tags": [
+        "social"
+      ],
+      "frequency_rank": 110
+    },
+    {
+      "id": "v111",
+      "type": "verb",
+      "english": "to apologize",
+      "msa": {
+        "form": "اِعْتَذَرَ / يَعْتَذِرُ",
+        "translit": "i'tadhara / ya'tadhiru",
+        "root": "ع ذ ر",
+        "example": "اعتذرتُ عن التأخير."
+      },
+      "lev": {
+        "form": "اعتذر / بعتذر",
+        "translit": "i'tadhar / bi'tadher",
+        "notes": "Cognate.",
+        "example": "اعتذرت عالتأخير."
+      },
+      "tags": [
+        "social"
+      ],
+      "frequency_rank": 111
+    },
+    {
+      "id": "v112",
+      "type": "verb",
+      "english": "to promise",
+      "msa": {
+        "form": "وَعَدَ / يَعِدُ",
+        "translit": "wa'ada / ya'idu",
+        "root": "و ع د",
+        "example": "وعد بأن يأتي."
+      },
+      "lev": {
+        "form": "وعد / بوعد",
+        "translit": "wa'ad / bi'ood",
+        "notes": "Cognate.",
+        "example": "وعد يجي."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 112
+    },
+    {
+      "id": "v113",
+      "type": "verb",
+      "english": "to lie (tell untruth)",
+      "msa": {
+        "form": "كَذَبَ / يَكْذِبُ",
+        "translit": "kadhaba / yakdhibu",
+        "root": "ك ذ ب",
+        "example": "كذب على أمه."
+      },
+      "lev": {
+        "form": "كذب / بكذب",
+        "translit": "kadhab / bikdheb",
+        "notes": "Cognate.",
+        "example": "كذب عإمه."
+      },
+      "tags": [
+        "communication"
+      ],
+      "frequency_rank": 113
+    },
+    {
+      "id": "v114",
+      "type": "verb",
+      "english": "to explain",
+      "msa": {
+        "form": "شَرَحَ / يَشْرَحُ",
+        "translit": "sharaha / yashrahu",
+        "root": "ش ر ح",
+        "example": "شرح الدرس."
+      },
+      "lev": {
+        "form": "شرح / بشرح",
+        "translit": "sharah / bishrah",
+        "notes": "Cognate.",
+        "example": "شرح الدرس."
+      },
+      "tags": [
+        "communication",
+        "study"
+      ],
+      "frequency_rank": 114
+    },
+    {
+      "id": "v115",
+      "type": "verb",
+      "english": "to show",
+      "msa": {
+        "form": "أَرَى / يُرِي",
+        "translit": "araa / yuree",
+        "root": "ر أ ي",
+        "example": "أراني الصورة."
+      },
+      "lev": {
+        "form": "ورّى / بورّي",
+        "translit": "warra / biwarri",
+        "notes": "ورّي=showed in Lev.",
+        "example": "ورّاني الصورة."
+      },
+      "tags": [
+        "communication",
+        "action"
+      ],
+      "frequency_rank": 115
+    },
+    {
+      "id": "n001",
+      "type": "noun",
+      "english": "house / home",
+      "msa": {
+        "form": "بَيْت",
+        "translit": "bayt",
+        "root": "ب ي ت",
+        "example": "البيت كبير."
+      },
+      "lev": {
+        "form": "بيت",
+        "translit": "beit",
+        "notes": "Same word.",
+        "example": "البيت كبير."
+      },
+      "tags": [
+        "home",
+        "daily"
+      ],
+      "frequency_rank": 1
+    },
+    {
+      "id": "n002",
+      "type": "noun",
+      "english": "room",
+      "msa": {
+        "form": "غُرْفَة",
+        "translit": "ghurfa",
+        "root": "غ ر ف",
+        "example": "الغرفة نظيفة."
+      },
+      "lev": {
+        "form": "غرفة",
+        "translit": "ghurfe",
+        "notes": "Cognate.",
+        "example": "الغرفة نظيفة."
+      },
+      "tags": [
+        "home"
+      ],
+      "frequency_rank": 2
+    },
+    {
+      "id": "n003",
+      "type": "noun",
+      "english": "door",
+      "msa": {
+        "form": "بَاب",
+        "translit": "baab",
+        "root": "ب و ب",
+        "example": "الباب مفتوح."
+      },
+      "lev": {
+        "form": "باب",
+        "translit": "baab",
+        "notes": "Same.",
+        "example": "الباب مفتوح."
+      },
+      "tags": [
+        "home"
+      ],
+      "frequency_rank": 3
+    },
+    {
+      "id": "n004",
+      "type": "noun",
+      "english": "window",
+      "msa": {
+        "form": "نَافِذَة",
+        "translit": "naafidha",
+        "root": "ن ف ذ",
+        "example": "النافذة مكسورة."
+      },
+      "lev": {
+        "form": "شباك",
+        "translit": "shubbaak",
+        "notes": "شباك in Lev.",
+        "example": "الشباك مكسور."
+      },
+      "tags": [
+        "home"
+      ],
+      "frequency_rank": 4
+    },
+    {
+      "id": "n005",
+      "type": "noun",
+      "english": "water",
+      "msa": {
+        "form": "مَاء",
+        "translit": "maa'",
+        "root": "م و ه",
+        "example": "الماء بارد."
+      },
+      "lev": {
+        "form": "مي",
+        "translit": "mayy",
+        "notes": "مي very common.",
+        "example": "المي باردة."
+      },
+      "tags": [
+        "food",
+        "daily"
+      ],
+      "frequency_rank": 5
+    },
+    {
+      "id": "n006",
+      "type": "noun",
+      "english": "food",
+      "msa": {
+        "form": "طَعَام",
+        "translit": "ta'aam",
+        "root": "ط ع م",
+        "example": "الطعام لذيذ."
+      },
+      "lev": {
+        "form": "أكل",
+        "translit": "akl",
+        "notes": "أكل as noun.",
+        "example": "الأكل طيب."
+      },
+      "tags": [
+        "food",
+        "daily"
+      ],
+      "frequency_rank": 6
+    },
+    {
+      "id": "n007",
+      "type": "noun",
+      "english": "bread",
+      "msa": {
+        "form": "خُبْز",
+        "translit": "khubz",
+        "root": "خ ب ز",
+        "example": "الخبز طازج."
+      },
+      "lev": {
+        "form": "خبز",
+        "translit": "khobez",
+        "notes": "Same.",
+        "example": "الخبز طازج."
+      },
+      "tags": [
+        "food"
+      ],
+      "frequency_rank": 7
+    },
+    {
+      "id": "n008",
+      "type": "noun",
+      "english": "coffee",
+      "msa": {
+        "form": "قَهْوَة",
+        "translit": "qahwa",
+        "root": "ق ه و",
+        "example": "القهوة ساخنة."
+      },
+      "lev": {
+        "form": "قهوة",
+        "translit": "'ahwe",
+        "notes": "Same.",
+        "example": "القهوة سخنة."
+      },
+      "tags": [
+        "food",
+        "daily"
+      ],
+      "frequency_rank": 8
+    },
+    {
+      "id": "n009",
+      "type": "noun",
+      "english": "tea",
+      "msa": {
+        "form": "شَاي",
+        "translit": "shaay",
+        "root": "ش ي",
+        "example": "الشاي بالنعناع."
+      },
+      "lev": {
+        "form": "شاي",
+        "translit": "shaay",
+        "notes": "Same.",
+        "example": "الشاي بالنعناع."
+      },
+      "tags": [
+        "food"
+      ],
+      "frequency_rank": 9
+    },
+    {
+      "id": "n010",
+      "type": "noun",
+      "english": "man",
+      "msa": {
+        "form": "رَجُل",
+        "translit": "rajul",
+        "root": "ر ج ل",
+        "example": "الرجل طويل."
+      },
+      "lev": {
+        "form": "رجل",
+        "translit": "rajjel",
+        "notes": "Same.",
+        "example": "الرجل طويل."
+      },
+      "tags": [
+        "people"
+      ],
+      "frequency_rank": 10
+    },
+    {
+      "id": "n011",
+      "type": "noun",
+      "english": "woman",
+      "msa": {
+        "form": "اِمْرَأَة",
+        "translit": "imra'a",
+        "root": "م ر أ",
+        "example": "المرأة ذكية."
+      },
+      "lev": {
+        "form": "مرة",
+        "translit": "marra",
+        "notes": "مرة in Lev (can be colloquial).",
+        "example": "المرة ذكية."
+      },
+      "tags": [
+        "people"
+      ],
+      "frequency_rank": 11
+    },
+    {
+      "id": "n012",
+      "type": "noun",
+      "english": "boy / child (m)",
+      "msa": {
+        "form": "وَلَد",
+        "translit": "walad",
+        "root": "و ل د",
+        "example": "الولد يلعب."
+      },
+      "lev": {
+        "form": "ولد",
+        "translit": "walad",
+        "notes": "Same.",
+        "example": "الولد بيلعب."
+      },
+      "tags": [
+        "people",
+        "family"
+      ],
+      "frequency_rank": 12
+    },
+    {
+      "id": "n013",
+      "type": "noun",
+      "english": "girl",
+      "msa": {
+        "form": "بِنْت",
+        "translit": "bint",
+        "root": "ب ن ت",
+        "example": "البنت تدرس."
+      },
+      "lev": {
+        "form": "بنت",
+        "translit": "bint",
+        "notes": "Same.",
+        "example": "البنت بتدرس."
+      },
+      "tags": [
+        "people",
+        "family"
+      ],
+      "frequency_rank": 13
+    },
+    {
+      "id": "n014",
+      "type": "noun",
+      "english": "person",
+      "msa": {
+        "form": "شَخْص",
+        "translit": "shakhs",
+        "root": "ش خ ص",
+        "example": "شخص غريب."
+      },
+      "lev": {
+        "form": "واحد",
+        "translit": "waahid",
+        "notes": "واحد=person/guy.",
+        "example": "واحد غريب."
+      },
+      "tags": [
+        "people"
+      ],
+      "frequency_rank": 14
+    },
+    {
+      "id": "n015",
+      "type": "noun",
+      "english": "people",
+      "msa": {
+        "form": "نَاس",
+        "translit": "naas",
+        "root": "ن و س",
+        "example": "الناس كثيرون."
+      },
+      "lev": {
+        "form": "ناس",
+        "translit": "naas",
+        "notes": "Same.",
+        "example": "الناس كتار."
+      },
+      "tags": [
+        "people",
+        "social"
+      ],
+      "frequency_rank": 15
+    },
+    {
+      "id": "n016",
+      "type": "noun",
+      "english": "friend",
+      "msa": {
+        "form": "صَدِيق",
+        "translit": "sadeeq",
+        "root": "ص د ق",
+        "example": "صديقي طيب."
+      },
+      "lev": {
+        "form": "صاحب / رفيق",
+        "translit": "saahib / rafee'",
+        "notes": "صاحب very common.",
+        "example": "صاحبي طيب."
+      },
+      "tags": [
+        "people",
+        "social"
+      ],
+      "frequency_rank": 16
+    },
+    {
+      "id": "n017",
+      "type": "noun",
+      "english": "family",
+      "msa": {
+        "form": "عَائِلَة",
+        "translit": "'aa'ila",
+        "root": "ع و ل",
+        "example": "العائلة كبيرة."
+      },
+      "lev": {
+        "form": "عيلة",
+        "translit": "'eele",
+        "notes": "عيلة in speech.",
+        "example": "العيلة كبيرة."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 17
+    },
+    {
+      "id": "n018",
+      "type": "noun",
+      "english": "father",
+      "msa": {
+        "form": "أَب",
+        "translit": "ab",
+        "root": "أ ب",
+        "example": "أبي مهندس."
+      },
+      "lev": {
+        "form": "أبو",
+        "translit": "aboo",
+        "notes": "أبو very common.",
+        "example": "أبوي مهندس."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 18
+    },
+    {
+      "id": "n019",
+      "type": "noun",
+      "english": "mother",
+      "msa": {
+        "form": "أُمّ",
+        "translit": "umm",
+        "root": "أ م",
+        "example": "أمي طباخة."
+      },
+      "lev": {
+        "form": "إمّ / أمّ",
+        "translit": "imm / umm",
+        "notes": "إمّ or أمّ.",
+        "example": "إمّي بتطبخ."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 19
+    },
+    {
+      "id": "n020",
+      "type": "noun",
+      "english": "brother",
+      "msa": {
+        "form": "أَخ",
+        "translit": "akh",
+        "root": "أ خ",
+        "example": "أخي في الجامعة."
+      },
+      "lev": {
+        "form": "أخ",
+        "translit": "akh",
+        "notes": "Same.",
+        "example": "أخوي بالجامعة."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 20
+    },
+    {
+      "id": "n021",
+      "type": "noun",
+      "english": "sister",
+      "msa": {
+        "form": "أُخْت",
+        "translit": "ukht",
+        "root": "أ خ ت",
+        "example": "أختي معلمة."
+      },
+      "lev": {
+        "form": "أخت",
+        "translit": "okht",
+        "notes": "Same.",
+        "example": "أختي معلمة."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 21
+    },
+    {
+      "id": "n022",
+      "type": "noun",
+      "english": "son",
+      "msa": {
+        "form": "اِبْن",
+        "translit": "ibn",
+        "root": "ب ن",
+        "example": "ابنه طبيب."
+      },
+      "lev": {
+        "form": "ابن",
+        "translit": "ibn",
+        "notes": "Same.",
+        "example": "ابنه دكتور."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 22
+    },
+    {
+      "id": "n023",
+      "type": "noun",
+      "english": "daughter",
+      "msa": {
+        "form": "اِبْنَة",
+        "translit": "ibna",
+        "root": "ب ن",
+        "example": "ابنتها جميلة."
+      },
+      "lev": {
+        "form": "بنت",
+        "translit": "bint",
+        "notes": "Same as girl.",
+        "example": "بنته حلوة."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 23
+    },
+    {
+      "id": "n024",
+      "type": "noun",
+      "english": "husband",
+      "msa": {
+        "form": "زَوْج",
+        "translit": "zawj",
+        "root": "ز و ج",
+        "example": "زوجها كريم."
+      },
+      "lev": {
+        "form": "جوز",
+        "translit": "jooz",
+        "notes": "جوز in Lev.",
+        "example": "جوزها كريم."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 24
+    },
+    {
+      "id": "n025",
+      "type": "noun",
+      "english": "wife",
+      "msa": {
+        "form": "زَوْجَة",
+        "translit": "zawja",
+        "root": "ز و ج",
+        "example": "زوجته نشيطة."
+      },
+      "lev": {
+        "form": "مرته",
+        "translit": "marto",
+        "notes": "مرته=his wife.",
+        "example": "مرته نشيطة."
+      },
+      "tags": [
+        "family"
+      ],
+      "frequency_rank": 25
+    },
+    {
+      "id": "n026",
+      "type": "noun",
+      "english": "name",
+      "msa": {
+        "form": "اِسْم",
+        "translit": "ism",
+        "root": "س م و",
+        "example": "ما اسمك؟"
+      },
+      "lev": {
+        "form": "اسم",
+        "translit": "ism",
+        "notes": "Same.",
+        "example": "شو اسمك؟"
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 26
+    },
+    {
+      "id": "n027",
+      "type": "noun",
+      "english": "book",
+      "msa": {
+        "form": "كِتَاب",
+        "translit": "kitaab",
+        "root": "ك ت ب",
+        "example": "الكتاب مفيد."
+      },
+      "lev": {
+        "form": "كتاب",
+        "translit": "kteeb",
+        "notes": "Same.",
+        "example": "الكتاب مفيد."
+      },
+      "tags": [
+        "study"
+      ],
+      "frequency_rank": 27
+    },
+    {
+      "id": "n028",
+      "type": "noun",
+      "english": "school",
+      "msa": {
+        "form": "مَدْرَسَة",
+        "translit": "madrasa",
+        "root": "د ر س",
+        "example": "المدرسة قريبة."
+      },
+      "lev": {
+        "form": "مدرسة",
+        "translit": "madrase",
+        "notes": "Same.",
+        "example": "المدرسة قريبة."
+      },
+      "tags": [
+        "study"
+      ],
+      "frequency_rank": 28
+    },
+    {
+      "id": "n029",
+      "type": "noun",
+      "english": "university",
+      "msa": {
+        "form": "جَامِعَة",
+        "translit": "jaami'a",
+        "root": "ج م ع",
+        "example": "الجامعة كبيرة."
+      },
+      "lev": {
+        "form": "جامعة",
+        "translit": "jaami'a",
+        "notes": "Same.",
+        "example": "الجامعة كبيرة."
+      },
+      "tags": [
+        "study"
+      ],
+      "frequency_rank": 29
+    },
+    {
+      "id": "n030",
+      "type": "noun",
+      "english": "work / job",
+      "msa": {
+        "form": "عَمَل",
+        "translit": "'amal",
+        "root": "ع م ل",
+        "example": "العمل صعب."
+      },
+      "lev": {
+        "form": "شغل",
+        "translit": "shughil",
+        "notes": "شغل very common.",
+        "example": "الشغل صعب."
+      },
+      "tags": [
+        "work",
+        "daily"
+      ],
+      "frequency_rank": 30
+    },
+    {
+      "id": "n031",
+      "type": "noun",
+      "english": "office",
+      "msa": {
+        "form": "مَكْتَب",
+        "translit": "maktab",
+        "root": "ك ت ب",
+        "example": "المكتب في الطابق الثاني."
+      },
+      "lev": {
+        "form": "مكتب",
+        "translit": "maktab",
+        "notes": "Same.",
+        "example": "المكتب بالطابق التاني."
+      },
+      "tags": [
+        "work"
+      ],
+      "frequency_rank": 31
+    },
+    {
+      "id": "n032",
+      "type": "noun",
+      "english": "money",
+      "msa": {
+        "form": "مَال",
+        "translit": "maal",
+        "root": "م و ل",
+        "example": "المال قليل."
+      },
+      "lev": {
+        "form": "مصاري / فلوس",
+        "translit": "maasaari / flous",
+        "notes": "مصاري/fلوس in Lev.",
+        "example": "المصاري قليلة."
+      },
+      "tags": [
+        "commerce",
+        "daily"
+      ],
+      "frequency_rank": 32
+    },
+    {
+      "id": "n033",
+      "type": "noun",
+      "english": "price",
+      "msa": {
+        "form": "ثَمَن / سِعْر",
+        "translit": "thaman / si'r",
+        "root": "ث م ن",
+        "example": "السعر مرتفع."
+      },
+      "lev": {
+        "form": "سعر",
+        "translit": "si'r",
+        "notes": "Same.",
+        "example": "السعر غالي."
+      },
+      "tags": [
+        "commerce"
+      ],
+      "frequency_rank": 33
+    },
+    {
+      "id": "n034",
+      "type": "noun",
+      "english": "market / shop",
+      "msa": {
+        "form": "سُوق",
+        "translit": "sooq",
+        "root": "س و ق",
+        "example": "السوق مزدحم."
+      },
+      "lev": {
+        "form": "سوق / محل",
+        "translit": "sooq / mahall",
+        "notes": "محل=store.",
+        "example": "السوق زحمة."
+      },
+      "tags": [
+        "commerce",
+        "daily"
+      ],
+      "frequency_rank": 34
+    },
+    {
+      "id": "n035",
+      "type": "noun",
+      "english": "car",
+      "msa": {
+        "form": "سَيَّارَة",
+        "translit": "sayyaara",
+        "root": "س ي ر",
+        "example": "السيارة جديدة."
+      },
+      "lev": {
+        "form": "سيارة",
+        "translit": "sayyaara",
+        "notes": "Same.",
+        "example": "السيارة جديدة."
+      },
+      "tags": [
+        "travel",
+        "daily"
+      ],
+      "frequency_rank": 35
+    },
+    {
+      "id": "n036",
+      "type": "noun",
+      "english": "street",
+      "msa": {
+        "form": "شَارِع",
+        "translit": "shaari'",
+        "root": "ش ر ع",
+        "example": "الشارع واسع."
+      },
+      "lev": {
+        "form": "شارع",
+        "translit": "shaari'",
+        "notes": "Same.",
+        "example": "الشارع واسع."
+      },
+      "tags": [
+        "place",
+        "daily"
+      ],
+      "frequency_rank": 36
+    },
+    {
+      "id": "n037",
+      "type": "noun",
+      "english": "city",
+      "msa": {
+        "form": "مَدِينَة",
+        "translit": "madeena",
+        "root": "د و ن",
+        "example": "المدينة جميلة."
+      },
+      "lev": {
+        "form": "مدينة",
+        "translit": "madiine",
+        "notes": "Same.",
+        "example": "المدينة حلوة."
+      },
+      "tags": [
+        "place"
+      ],
+      "frequency_rank": 37
+    },
+    {
+      "id": "n038",
+      "type": "noun",
+      "english": "country",
+      "msa": {
+        "form": "بَلَد",
+        "translit": "balad",
+        "root": "ب ل د",
+        "example": "البلد كبير."
+      },
+      "lev": {
+        "form": "بلد",
+        "translit": "balad",
+        "notes": "Same.",
+        "example": "البلد كبير."
+      },
+      "tags": [
+        "place"
+      ],
+      "frequency_rank": 38
+    },
+    {
+      "id": "n039",
+      "type": "noun",
+      "english": "world",
+      "msa": {
+        "form": "عَالَم",
+        "translit": "'aalam",
+        "root": "ع ل م",
+        "example": "العالم واسع."
+      },
+      "lev": {
+        "form": "عالم",
+        "translit": "'aalam",
+        "notes": "Same.",
+        "example": "العالم واسع."
+      },
+      "tags": [
+        "place"
+      ],
+      "frequency_rank": 39
+    },
+    {
+      "id": "n040",
+      "type": "noun",
+      "english": "day",
+      "msa": {
+        "form": "يَوْم",
+        "translit": "yawm",
+        "root": "ي و م",
+        "example": "اليوم جميل."
+      },
+      "lev": {
+        "form": "يوم",
+        "translit": "yoom",
+        "notes": "Same.",
+        "example": "اليوم حلو."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 40
+    },
+    {
+      "id": "n041",
+      "type": "noun",
+      "english": "night",
+      "msa": {
+        "form": "لَيْل",
+        "translit": "layl",
+        "root": "ل ي ل",
+        "example": "الليل هادئ."
+      },
+      "lev": {
+        "form": "ليل",
+        "translit": "leel",
+        "notes": "Same.",
+        "example": "الليل هادي."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 41
+    },
+    {
+      "id": "n042",
+      "type": "noun",
+      "english": "morning",
+      "msa": {
+        "form": "صَبَاح",
+        "translit": "sabaah",
+        "root": "ص ب ح",
+        "example": "الصباح بارد."
+      },
+      "lev": {
+        "form": "صبح / بكير",
+        "translit": "subh / bukeer",
+        "notes": "بكير=early morning.",
+        "example": "الصبح بارد."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 42
+    },
+    {
+      "id": "n043",
+      "type": "noun",
+      "english": "evening",
+      "msa": {
+        "form": "مَسَاء",
+        "translit": "masaa'",
+        "root": "م س ي",
+        "example": "المساء جميل."
+      },
+      "lev": {
+        "form": "مسا",
+        "translit": "masa",
+        "notes": "Same.",
+        "example": "المسا حلو."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 43
+    },
+    {
+      "id": "n044",
+      "type": "noun",
+      "english": "hour",
+      "msa": {
+        "form": "سَاعَة",
+        "translit": "saa'a",
+        "root": "س و ع",
+        "example": "الساعة الثالثة."
+      },
+      "lev": {
+        "form": "ساعة",
+        "translit": "saa'a",
+        "notes": "Same.",
+        "example": "الساعة التالتة."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 44
+    },
+    {
+      "id": "n045",
+      "type": "noun",
+      "english": "week",
+      "msa": {
+        "form": "أُسْبُوع",
+        "translit": "usboo'",
+        "root": "س ب ع",
+        "example": "الأسبوع طويل."
+      },
+      "lev": {
+        "form": "أسبوع",
+        "translit": "usboo'",
+        "notes": "Same.",
+        "example": "الأسبوع طويل."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 45
+    },
+    {
+      "id": "n046",
+      "type": "noun",
+      "english": "month",
+      "msa": {
+        "form": "شَهْر",
+        "translit": "shahr",
+        "root": "ش ه ر",
+        "example": "الشهر الجديد."
+      },
+      "lev": {
+        "form": "شهر",
+        "translit": "shahr",
+        "notes": "Same.",
+        "example": "الشهر الجديد."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 46
+    },
+    {
+      "id": "n047",
+      "type": "noun",
+      "english": "year",
+      "msa": {
+        "form": "سَنَة",
+        "translit": "sana",
+        "root": "س ن و",
+        "example": "السنة الجديدة."
+      },
+      "lev": {
+        "form": "سنة",
+        "translit": "sene",
+        "notes": "Same.",
+        "example": "السنة الجديدة."
+      },
+      "tags": [
+        "time"
+      ],
+      "frequency_rank": 47
+    },
+    {
+      "id": "n048",
+      "type": "noun",
+      "english": "today",
+      "msa": {
+        "form": "اليَوْم",
+        "translit": "alyawm",
+        "root": "ي و م",
+        "example": "اليوم الجمعة."
+      },
+      "lev": {
+        "form": "اليوم",
+        "translit": "elyoom",
+        "notes": "Same.",
+        "example": "اليوم الجمعة."
+      },
+      "tags": [
+        "time",
+        "daily"
+      ],
+      "frequency_rank": 48
+    },
+    {
+      "id": "n049",
+      "type": "noun",
+      "english": "tomorrow",
+      "msa": {
+        "form": "غَدًا",
+        "translit": "ghadan",
+        "root": "غ د و",
+        "example": "غداً سأسافر."
+      },
+      "lev": {
+        "form": "بكرا",
+        "translit": "bukra",
+        "notes": "بكرا very common.",
+        "example": "بكرا بسافر."
+      },
+      "tags": [
+        "time",
+        "daily"
+      ],
+      "frequency_rank": 49
+    },
+    {
+      "id": "n050",
+      "type": "noun",
+      "english": "yesterday",
+      "msa": {
+        "form": "أَمْس",
+        "translit": "ams",
+        "root": "م س ي",
+        "example": "أمس ذهبت."
+      },
+      "lev": {
+        "form": "مبارح",
+        "translit": "mbareeh",
+        "notes": "مبارح in Lev.",
+        "example": "مبارح رحت."
+      },
+      "tags": [
+        "time",
+        "daily"
+      ],
+      "frequency_rank": 50
+    },
+    {
+      "id": "n051",
+      "type": "noun",
+      "english": "hand",
+      "msa": {
+        "form": "يَد",
+        "translit": "yad",
+        "root": "ي د",
+        "example": "يدي تؤلمني."
+      },
+      "lev": {
+        "form": "إيد",
+        "translit": "eed",
+        "notes": "إيد in Lev.",
+        "example": "إيدي بتوجعني."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 51
+    },
+    {
+      "id": "n052",
+      "type": "noun",
+      "english": "head",
+      "msa": {
+        "form": "رَأْس",
+        "translit": "ra's",
+        "root": "ر أ س",
+        "example": "رأسي يؤلمني."
+      },
+      "lev": {
+        "form": "راس",
+        "translit": "raas",
+        "notes": "Same.",
+        "example": "راسي بيوجعني."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 52
+    },
+    {
+      "id": "n053",
+      "type": "noun",
+      "english": "eye",
+      "msa": {
+        "form": "عَيْن",
+        "translit": "'ayn",
+        "root": "ع ي ن",
+        "example": "عينها جميلة."
+      },
+      "lev": {
+        "form": "عين",
+        "translit": "'een",
+        "notes": "Same.",
+        "example": "عينها حلوة."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 53
+    },
+    {
+      "id": "n054",
+      "type": "noun",
+      "english": "ear",
+      "msa": {
+        "form": "أُذُن",
+        "translit": "udhun",
+        "root": "أ ذ ن",
+        "example": "أذني تؤلمني."
+      },
+      "lev": {
+        "form": "ودن",
+        "translit": "widan",
+        "notes": "ودن in Lev.",
+        "example": "ودني بتوجعني."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 54
+    },
+    {
+      "id": "n055",
+      "type": "noun",
+      "english": "mouth",
+      "msa": {
+        "form": "فَم",
+        "translit": "fam",
+        "root": "ف م",
+        "example": "فمه مفتوح."
+      },
+      "lev": {
+        "form": "تمّ",
+        "translit": "timm",
+        "notes": "تمّ in Lev.",
+        "example": "تمّه مفتوح."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 55
+    },
+    {
+      "id": "n056",
+      "type": "noun",
+      "english": "heart",
+      "msa": {
+        "form": "قَلْب",
+        "translit": "qalb",
+        "root": "ق ل ب",
+        "example": "قلبي ينبض."
+      },
+      "lev": {
+        "form": "قلب",
+        "translit": "'alb",
+        "notes": "Same.",
+        "example": "قلبي بيدق."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 56
+    },
+    {
+      "id": "n057",
+      "type": "noun",
+      "english": "face",
+      "msa": {
+        "form": "وَجْه",
+        "translit": "wajh",
+        "root": "و ج ه",
+        "example": "وجهه جميل."
+      },
+      "lev": {
+        "form": "وش / وجه",
+        "translit": "wish / wajeh",
+        "notes": "وش very common.",
+        "example": "وشه حلو."
+      },
+      "tags": [
+        "body"
+      ],
+      "frequency_rank": 57
+    },
+    {
+      "id": "n058",
+      "type": "noun",
+      "english": "sun",
+      "msa": {
+        "form": "شَمْس",
+        "translit": "shams",
+        "root": "ش م س",
+        "example": "الشمس ساطعة."
+      },
+      "lev": {
+        "form": "شمس",
+        "translit": "shams",
+        "notes": "Same.",
+        "example": "الشمس طالعة."
+      },
+      "tags": [
+        "nature",
+        "weather"
+      ],
+      "frequency_rank": 58
+    },
+    {
+      "id": "n059",
+      "type": "noun",
+      "english": "moon",
+      "msa": {
+        "form": "قَمَر",
+        "translit": "qamar",
+        "root": "ق م ر",
+        "example": "القمر مكتمل."
+      },
+      "lev": {
+        "form": "قمر",
+        "translit": "'amar",
+        "notes": "Same.",
+        "example": "القمر مكتمل."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 59
+    },
+    {
+      "id": "n060",
+      "type": "noun",
+      "english": "sky",
+      "msa": {
+        "form": "سَمَاء",
+        "translit": "samaa'",
+        "root": "س م و",
+        "example": "السماء صافية."
+      },
+      "lev": {
+        "form": "سماء",
+        "translit": "samaa'",
+        "notes": "Same.",
+        "example": "السماء صافية."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 60
+    },
+    {
+      "id": "n061",
+      "type": "noun",
+      "english": "earth / ground",
+      "msa": {
+        "form": "أَرْض",
+        "translit": "ard",
+        "root": "أ ر ض",
+        "example": "الأرض جافة."
+      },
+      "lev": {
+        "form": "أرض / أرض",
+        "translit": "ard",
+        "notes": "Same.",
+        "example": "الأرض يابسة."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 61
+    },
+    {
+      "id": "n062",
+      "type": "noun",
+      "english": "sea",
+      "msa": {
+        "form": "بَحْر",
+        "translit": "bahr",
+        "root": "ب ح ر",
+        "example": "البحر هادئ."
+      },
+      "lev": {
+        "form": "بحر",
+        "translit": "bahr",
+        "notes": "Same.",
+        "example": "البحر هادي."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 62
+    },
+    {
+      "id": "n063",
+      "type": "noun",
+      "english": "river",
+      "msa": {
+        "form": "نَهْر",
+        "translit": "nahr",
+        "root": "ن ه ر",
+        "example": "النهر طويل."
+      },
+      "lev": {
+        "form": "نهر",
+        "translit": "nahr",
+        "notes": "Same.",
+        "example": "النهر طويل."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 63
+    },
+    {
+      "id": "n064",
+      "type": "noun",
+      "english": "mountain",
+      "msa": {
+        "form": "جَبَل",
+        "translit": "jabal",
+        "root": "ج ب ل",
+        "example": "الجبل عالٍ."
+      },
+      "lev": {
+        "form": "جبل",
+        "translit": "jabal",
+        "notes": "Same.",
+        "example": "الجبل عالي."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 64
+    },
+    {
+      "id": "n065",
+      "type": "noun",
+      "english": "tree",
+      "msa": {
+        "form": "شَجَرَة",
+        "translit": "shajara",
+        "root": "ش ج ر",
+        "example": "الشجرة كبيرة."
+      },
+      "lev": {
+        "form": "شجرة",
+        "translit": "shajara",
+        "notes": "Same.",
+        "example": "الشجرة كبيرة."
+      },
+      "tags": [
+        "nature"
+      ],
+      "frequency_rank": 65
+    },
+    {
+      "id": "n066",
+      "type": "noun",
+      "english": "dog",
+      "msa": {
+        "form": "كَلْب",
+        "translit": "kalb",
+        "root": "ك ل ب",
+        "example": "الكلب ينبح."
+      },
+      "lev": {
+        "form": "كلب",
+        "translit": "kalb",
+        "notes": "Same.",
+        "example": "الكلب بيعوع."
+      },
+      "tags": [
+        "animals"
+      ],
+      "frequency_rank": 66
+    },
+    {
+      "id": "n067",
+      "type": "noun",
+      "english": "cat",
+      "msa": {
+        "form": "قِطّ",
+        "translit": "qitt",
+        "root": "ق ط ط",
+        "example": "القط نائم."
+      },
+      "lev": {
+        "form": "قطّة",
+        "translit": "'otta",
+        "notes": "Same.",
+        "example": "القطّة نايمة."
+      },
+      "tags": [
+        "animals"
+      ],
+      "frequency_rank": 67
+    },
+    {
+      "id": "n068",
+      "type": "noun",
+      "english": "bird",
+      "msa": {
+        "form": "طَيْر",
+        "translit": "tayr",
+        "root": "ط ي ر",
+        "example": "الطير يطير."
+      },
+      "lev": {
+        "form": "طير",
+        "translit": "tayr",
+        "notes": "Same.",
+        "example": "الطير بيطير."
+      },
+      "tags": [
+        "animals"
+      ],
+      "frequency_rank": 68
+    },
+    {
+      "id": "n069",
+      "type": "noun",
+      "english": "fish",
+      "msa": {
+        "form": "سَمَك",
+        "translit": "samak",
+        "root": "س م ك",
+        "example": "السمك طازج."
+      },
+      "lev": {
+        "form": "سمك",
+        "translit": "samak",
+        "notes": "Same.",
+        "example": "السمك طازج."
+      },
+      "tags": [
+        "animals",
+        "food"
+      ],
+      "frequency_rank": 69
+    },
+    {
+      "id": "n070",
+      "type": "noun",
+      "english": "color",
+      "msa": {
+        "form": "لَوْن",
+        "translit": "lawn",
+        "root": "ل و ن",
+        "example": "اللون أحمر."
+      },
+      "lev": {
+        "form": "لون",
+        "translit": "lawn",
+        "notes": "Same.",
+        "example": "اللون أحمر."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 70
+    },
+    {
+      "id": "n071",
+      "type": "noun",
+      "english": "red",
+      "msa": {
+        "form": "أَحْمَر",
+        "translit": "ahmar",
+        "root": "ح م ر",
+        "example": "اللون أحمر."
+      },
+      "lev": {
+        "form": "أحمر",
+        "translit": "ahmar",
+        "notes": "Same.",
+        "example": "أحمر."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 71
+    },
+    {
+      "id": "n072",
+      "type": "noun",
+      "english": "blue",
+      "msa": {
+        "form": "أَزْرَق",
+        "translit": "azraq",
+        "root": "ز ر ق",
+        "example": "السماء زرقاء."
+      },
+      "lev": {
+        "form": "أزرق",
+        "translit": "azra'",
+        "notes": "Same.",
+        "example": "أزرق."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 72
+    },
+    {
+      "id": "n073",
+      "type": "noun",
+      "english": "green",
+      "msa": {
+        "form": "أَخْضَر",
+        "translit": "akhdar",
+        "root": "خ ض ر",
+        "example": "العشب أخضر."
+      },
+      "lev": {
+        "form": "أخضر",
+        "translit": "akh''ar",
+        "notes": "Same.",
+        "example": "أخضر."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 73
+    },
+    {
+      "id": "n074",
+      "type": "noun",
+      "english": "white",
+      "msa": {
+        "form": "أَبْيَض",
+        "translit": "abyad",
+        "root": "ب ي ض",
+        "example": "الثلج أبيض."
+      },
+      "lev": {
+        "form": "أبيض",
+        "translit": "abyad",
+        "notes": "Same.",
+        "example": "أبيض."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 74
+    },
+    {
+      "id": "n075",
+      "type": "noun",
+      "english": "black",
+      "msa": {
+        "form": "أَسْوَد",
+        "translit": "aswad",
+        "root": "س و د",
+        "example": "الليل أسود."
+      },
+      "lev": {
+        "form": "أسود",
+        "translit": "aswad",
+        "notes": "Same.",
+        "example": "أسود."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 75
+    },
+    {
+      "id": "n076",
+      "type": "noun",
+      "english": "big / large",
+      "msa": {
+        "form": "كَبِير",
+        "translit": "kabeer",
+        "root": "ك ب ر",
+        "example": "البيت كبير."
+      },
+      "lev": {
+        "form": "كبير",
+        "translit": "kbir",
+        "notes": "Same.",
+        "example": "البيت كبير."
+      },
+      "tags": [
+        "adjective",
+        "daily"
+      ],
+      "frequency_rank": 76
+    },
+    {
+      "id": "n077",
+      "type": "noun",
+      "english": "small",
+      "msa": {
+        "form": "صَغِير",
+        "translit": "sagheer",
+        "root": "ص غ ر",
+        "example": "الكلب صغير."
+      },
+      "lev": {
+        "form": "صغير",
+        "translit": "zghir",
+        "notes": "Same.",
+        "example": "الكلب صغير."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 77
+    },
+    {
+      "id": "n078",
+      "type": "noun",
+      "english": "good",
+      "msa": {
+        "form": "جَيِّد",
+        "translit": "jayyid",
+        "root": "ج و د",
+        "example": "الطعام جيد."
+      },
+      "lev": {
+        "form": "منيح / طيب",
+        "translit": "mniih / tayyib",
+        "notes": "منيح very Lev.",
+        "example": "الأكل منيح."
+      },
+      "tags": [
+        "adjective",
+        "daily"
+      ],
+      "frequency_rank": 78
+    },
+    {
+      "id": "n079",
+      "type": "noun",
+      "english": "bad",
+      "msa": {
+        "form": "سَيِّئ",
+        "translit": "sayyi'",
+        "root": "س و أ",
+        "example": "الجو سيء."
+      },
+      "lev": {
+        "form": "وحش / سيّئ",
+        "translit": "wahesh / sayyi'",
+        "notes": "وحش=bad/ugly.",
+        "example": "الجو وحش."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 79
+    },
+    {
+      "id": "n080",
+      "type": "noun",
+      "english": "new",
+      "msa": {
+        "form": "جَدِيد",
+        "translit": "jadeed",
+        "root": "ج د د",
+        "example": "السيارة جديدة."
+      },
+      "lev": {
+        "form": "جديد",
+        "translit": "jdeed",
+        "notes": "Same.",
+        "example": "السيارة جديدة."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 80
+    },
+    {
+      "id": "n081",
+      "type": "noun",
+      "english": "old",
+      "msa": {
+        "form": "قَدِيم",
+        "translit": "qadeem",
+        "root": "ق د م",
+        "example": "البيت قديم."
+      },
+      "lev": {
+        "form": "قديم",
+        "translit": "'adeem",
+        "notes": "Same.",
+        "example": "البيت قديم."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 81
+    },
+    {
+      "id": "n082",
+      "type": "noun",
+      "english": "hot (temp)",
+      "msa": {
+        "form": "حَارّ",
+        "translit": "haarr",
+        "root": "ح ر ر",
+        "example": "الشاي حار."
+      },
+      "lev": {
+        "form": "سخن",
+        "translit": "sokhn",
+        "notes": "سخن in Lev.",
+        "example": "الشاي سخن."
+      },
+      "tags": [
+        "adjective",
+        "daily"
+      ],
+      "frequency_rank": 82
+    },
+    {
+      "id": "n083",
+      "type": "noun",
+      "english": "cold",
+      "msa": {
+        "form": "بَارِد",
+        "translit": "baarid",
+        "root": "ب ر د",
+        "example": "الماء بارد."
+      },
+      "lev": {
+        "form": "بارد",
+        "translit": "baarid",
+        "notes": "Same.",
+        "example": "المي باردة."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 83
+    },
+    {
+      "id": "n084",
+      "type": "noun",
+      "english": "beautiful",
+      "msa": {
+        "form": "جَمِيل",
+        "translit": "jameel",
+        "root": "ج م ل",
+        "example": "المدينة جميلة."
+      },
+      "lev": {
+        "form": "حلو / جميل",
+        "translit": "hilu / jameel",
+        "notes": "حلو very common.",
+        "example": "المدينة حلوة."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 84
+    },
+    {
+      "id": "n085",
+      "type": "noun",
+      "english": "difficult",
+      "msa": {
+        "form": "صَعْب",
+        "translit": "sa'b",
+        "root": "ص ع ب",
+        "example": "الامتحان صعب."
+      },
+      "lev": {
+        "form": "صعب",
+        "translit": "sa'b",
+        "notes": "Same.",
+        "example": "الامتحان صعب."
+      },
+      "tags": [
+        "adjective",
+        "study"
+      ],
+      "frequency_rank": 85
+    },
+    {
+      "id": "n086",
+      "type": "noun",
+      "english": "easy",
+      "msa": {
+        "form": "سَهْل",
+        "translit": "sahl",
+        "root": "س ه ل",
+        "example": "السؤال سهل."
+      },
+      "lev": {
+        "form": "سهل",
+        "translit": "sahl",
+        "notes": "Same.",
+        "example": "السؤال سهل."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 86
+    },
+    {
+      "id": "n087",
+      "type": "noun",
+      "english": "important",
+      "msa": {
+        "form": "مُهِمّ",
+        "translit": "muhim",
+        "root": "ه م م",
+        "example": "الموضوع مهم."
+      },
+      "lev": {
+        "form": "مهم",
+        "translit": "muhem",
+        "notes": "Same.",
+        "example": "الموضوع مهم."
+      },
+      "tags": [
+        "adjective"
+      ],
+      "frequency_rank": 87
+    },
+    {
+      "id": "n088",
+      "type": "noun",
+      "english": "problem",
+      "msa": {
+        "form": "مُشْكِلَة",
+        "translit": "mushkila",
+        "root": "ش ك ل",
+        "example": "المشكلة كبيرة."
+      },
+      "lev": {
+        "form": "مشكلة",
+        "translit": "mushkile",
+        "notes": "Same.",
+        "example": "المشكلة كبيرة."
+      },
+      "tags": [
+        "daily"
+      ],
+      "frequency_rank": 88
+    },
+    {
+      "id": "n089",
+      "type": "noun",
+      "english": "question",
+      "msa": {
+        "form": "سُؤَال",
+        "translit": "su'aal",
+        "root": "س أ ل",
+        "example": "السؤال صعب."
+      },
+      "lev": {
+        "form": "سؤال",
+        "translit": "so'aal",
+        "notes": "Same.",
+        "example": "السؤال صعب."
+      },
+      "tags": [
+        "study",
+        "communication"
+      ],
+      "frequency_rank": 89
+    },
+    {
+      "id": "n090",
+      "type": "noun",
+      "english": "answer",
+      "msa": {
+        "form": "جَوَاب",
+        "translit": "jawaab",
+        "root": "ج و ب",
+        "example": "الجواب صحيح."
+      },
+      "lev": {
+        "form": "جواب",
+        "translit": "jawaab",
+        "notes": "Same.",
+        "example": "الجواب صح."
+      },
+      "tags": [
+        "study",
+        "communication"
+      ],
+      "frequency_rank": 90
+    },
+    {
+      "id": "n091",
+      "type": "noun",
+      "english": "word",
+      "msa": {
+        "form": "كَلِمَة",
+        "translit": "kalima",
+        "root": "ك ل م",
+        "example": "الكلمة جديدة."
+      },
+      "lev": {
+        "form": "كلمة",
+        "translit": "kilme",
+        "notes": "Same.",
+        "example": "الكلمة جديدة."
+      },
+      "tags": [
+        "study",
+        "language"
+      ],
+      "frequency_rank": 91
+    },
+    {
+      "id": "n092",
+      "type": "noun",
+      "english": "language",
+      "msa": {
+        "form": "لُغَة",
+        "translit": "lugha",
+        "root": "ل غ ة",
+        "example": "اللغة العربية."
+      },
+      "lev": {
+        "form": "لغة / لغة",
+        "translit": "lugha",
+        "notes": "Same.",
+        "example": "اللغة العربية."
+      },
+      "tags": [
+        "study",
+        "language"
+      ],
+      "frequency_rank": 92
+    },
+    {
+      "id": "n093",
+      "type": "noun",
+      "english": "war",
+      "msa": {
+        "form": "حَرْب",
+        "translit": "harb",
+        "root": "ح ر ب",
+        "example": "الحرب طويلة."
+      },
+      "lev": {
+        "form": "حرب",
+        "translit": "harb",
+        "notes": "Same.",
+        "example": "الحرب طويلة."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 93
+    },
+    {
+      "id": "n094",
+      "type": "noun",
+      "english": "peace",
+      "msa": {
+        "form": "سَلَام",
+        "translit": "salaam",
+        "root": "س ل م",
+        "example": "السلام مهم."
+      },
+      "lev": {
+        "form": "سلام",
+        "translit": "salaam",
+        "notes": "Same.",
+        "example": "السلام مهم."
+      },
+      "tags": [
+        "military",
+        "social"
+      ],
+      "frequency_rank": 94
+    },
+    {
+      "id": "n095",
+      "type": "noun",
+      "english": "army",
+      "msa": {
+        "form": "جَيْش",
+        "translit": "jaysh",
+        "root": "ج ي ش",
+        "example": "الجيش قوي."
+      },
+      "lev": {
+        "form": "جيش",
+        "translit": "jaysh",
+        "notes": "Same.",
+        "example": "الجيش قوي."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 95
+    },
+    {
+      "id": "n096",
+      "type": "noun",
+      "english": "soldier",
+      "msa": {
+        "form": "جُنْدِيّ",
+        "translit": "jundiyy",
+        "root": "ج ن د",
+        "example": "الجندي شجاع."
+      },
+      "lev": {
+        "form": "جندي",
+        "translit": "jundi",
+        "notes": "Same.",
+        "example": "الجندي شجاع."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 96
+    },
+    {
+      "id": "n097",
+      "type": "noun",
+      "english": "weapon",
+      "msa": {
+        "form": "سِلَاح",
+        "translit": "silaah",
+        "root": "س ل ح",
+        "example": "السلاح خطير."
+      },
+      "lev": {
+        "form": "سلاح",
+        "translit": "silaah",
+        "notes": "Same.",
+        "example": "السلاح خطير."
+      },
+      "tags": [
+        "military"
+      ],
+      "frequency_rank": 97
+    },
+    {
+      "id": "n098",
+      "type": "noun",
+      "english": "government",
+      "msa": {
+        "form": "حُكُومَة",
+        "translit": "hukooma",
+        "root": "ح ك م",
+        "example": "الحكومة جديدة."
+      },
+      "lev": {
+        "form": "حكومة",
+        "translit": "hukome",
+        "notes": "Same.",
+        "example": "الحكومة جديدة."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 98
+    },
+    {
+      "id": "n099",
+      "type": "noun",
+      "english": "president",
+      "msa": {
+        "form": "رَئِيس",
+        "translit": "ra'ees",
+        "root": "ر أ س",
+        "example": "الرئيس يتكلم."
+      },
+      "lev": {
+        "form": "رئيس",
+        "translit": "ra'ees",
+        "notes": "Same.",
+        "example": "الرئيس بحكي."
+      },
+      "tags": [
+        "politics"
+      ],
+      "frequency_rank": 99
+    },
+    {
+      "id": "n100",
+      "type": "noun",
+      "english": "hospital",
+      "msa": {
+        "form": "مُسْتَشْفَى",
+        "translit": "mustashfaa",
+        "root": "ش ف ي",
+        "example": "المستشفى قريب."
+      },
+      "lev": {
+        "form": "مستشفى",
+        "translit": "mustashfa",
+        "notes": "Same.",
+        "example": "المستشفى قريب."
+      },
+      "tags": [
+        "daily",
+        "health"
+      ],
+      "frequency_rank": 100
+    }
+  ]
+}

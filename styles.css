@@ -1,0 +1,242 @@
+/* Arabic DrillForge — custom styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Arabic text */
+.arabic {
+  font-family: 'Noto Sans Arabic', Tahoma, 'Segoe UI', Arial, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.6;
+  direction: rtl;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+.arabic-lg {
+  font-size: 2.25rem;
+}
+
+.arabic-sm {
+  font-size: 1.25rem;
+}
+
+.translit {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 0.85rem;
+  color: #8fb39e;
+}
+
+/* Flashcard */
+.flashcard {
+  perspective: 1000px;
+  min-height: 280px;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  transition: transform 0.35s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #1a2420;
+  border: 1px solid #3d5248;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.flashcard-face.back {
+  transform: rotateY(180deg);
+}
+
+/* Mastery stars */
+.stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.star {
+  color: #3d5248;
+  font-size: 0.75rem;
+}
+
+.star.filled {
+  color: #c4a35a;
+}
+
+/* Item cards */
+.item-card {
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.item-card:hover {
+  border-color: #5a7a6a;
+  background: #1f2b26;
+}
+
+.item-card:focus-visible {
+  outline: 2px solid #c4a35a;
+  outline-offset: 2px;
+}
+
+/* MC options */
+.mc-option {
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.mc-option:hover:not(:disabled) {
+  background: #243029;
+  border-color: #5a7a6a;
+}
+
+.mc-option.selected {
+  border-color: #c4a35a;
+  background: #243029;
+}
+
+.mc-option.correct {
+  border-color: #4caf7a;
+  background: rgba(76, 175, 122, 0.15);
+}
+
+.mc-option.wrong {
+  border-color: #c45c5c;
+  background: rgba(196, 92, 92, 0.15);
+}
+
+/* Conjugation table */
+.conj-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.conj-table th,
+.conj-table td {
+  border: 1px solid #3d5248;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+}
+
+.conj-table th {
+  background: #1a2420;
+  color: #8fb39e;
+  font-weight: 600;
+}
+
+.conj-table td.arabic-cell {
+  font-family: 'Noto Sans Arabic', Tahoma, sans-serif;
+  font-size: 1.1rem;
+  direction: rtl;
+}
+
+.conj-table tr:hover td {
+  background: rgba(196, 163, 90, 0.08);
+}
+
+.conj-highlight {
+  background: rgba(196, 163, 90, 0.2) !important;
+}
+
+/* Feedback */
+.feedback-correct {
+  border-color: #4caf7a;
+  background: rgba(76, 175, 122, 0.1);
+}
+
+.feedback-wrong {
+  border-color: #c45c5c;
+  background: rgba(196, 92, 92, 0.1);
+}
+
+/* Stats panel mobile */
+#stats-panel.mobile-open {
+  display: block !important;
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  background: rgba(10, 15, 13, 0.95);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#stats-panel.mobile-open > div {
+  position: relative;
+  top: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1613;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d5248;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a7a6a;
+}
+
+/* Focus */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #c4a35a;
+  outline-offset: 2px;
+}
+
+/* Tag pill */
+.tag-pill {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.65rem;
+  background: #243029;
+  border: 1px solid #3d5248;
+  border-radius: 9999px;
+  color: #8fb39e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Onboarding + modal flex */
+#onboarding.flex,
+#detail-modal.flex {
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .arabic {
+    font-size: 1.5rem;
+  }
+  .arabic-lg {
+    font-size: 1.85rem;
+  }
+}
