@@ -1,12 +1,13 @@
 {
   "_meta": {
-    "description": "Arabic DrillForge vocabulary. Types: verb, noun, phrase. Fields: id, type, english, msa/lev objects, tags, dlpt_level, frequency_rank.",
+    "description": "Arabic DrillForge vocabulary. Types: verb, noun, phrase. Fields: id, type, english, msa/lev objects, tags, dlpt_level, frequency_rank. Tag harry-potter marks vocab for reading Harry Potter in Arabic.",
     "version": "1.0",
     "counts": {
-      "verbs": 155,
-      "nouns": 178,
+      "verbs": 220,
+      "nouns": 250,
       "phrases": 42,
-      "total": 375
+      "harry_potter": 137,
+      "total": 512
     },
     "dlpt_levels": [
       "0+",
@@ -8409,6 +8410,3170 @@
         "discourse"
       ],
       "frequency_rank": 242
+    },
+    {
+      "id": "n179",
+      "type": "noun",
+      "english": "wizard / sorcerer",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "سَاحِر",
+        "translit": "saahir",
+        "example": "تعلّم الساحر تعويذة جديدة.",
+        "root": "س ح ر"
+      },
+      "lev": {
+        "form": "ساحر",
+        "translit": "saahir",
+        "notes": "Same.",
+        "example": "الساحر تعلّم تعويذة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 301
+    },
+    {
+      "id": "n180",
+      "type": "noun",
+      "english": "witch",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "سَاحِرَة",
+        "translit": "saahira",
+        "example": "كانت الساحرة ماهرة في الجرعات.",
+        "root": "س ح ر"
+      },
+      "lev": {
+        "form": "ساحرة",
+        "translit": "saahire",
+        "notes": "Same.",
+        "example": "الساحرة ماهرة بالجرعات."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 302
+    },
+    {
+      "id": "n181",
+      "type": "noun",
+      "english": "magic",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "سِحْر",
+        "translit": "sihr",
+        "example": "السحر موجود في كل زاوية من المدرسة.",
+        "root": "س ح ر"
+      },
+      "lev": {
+        "form": "سحر",
+        "translit": "sihr",
+        "notes": "Same.",
+        "example": "السحر بكل زاوية من المدرسة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 303
+    },
+    {
+      "id": "n182",
+      "type": "noun",
+      "english": "wand",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "عَصَا سِحْرِيَّة",
+        "translit": "asaa sihriyya",
+        "example": "رفع عصاه السحرية وألقى التعويذة.",
+        "root": "ع ص و"
+      },
+      "lev": {
+        "form": "عصا سحرية",
+        "translit": "asaa sihriyye",
+        "notes": "Same.",
+        "example": "رفع عصاه السحرية."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 304
+    },
+    {
+      "id": "n183",
+      "type": "noun",
+      "english": "spell / charm",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "تَعْوِيذَة",
+        "translit": "ta'weedha",
+        "example": "حفظ الطلاب تعويذة الإضاءة.",
+        "root": "ع و ذ"
+      },
+      "lev": {
+        "form": "تعويذة",
+        "translit": "ta'weedha",
+        "notes": "Same.",
+        "example": "الطلاب حفظوا التعويذة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 305
+    },
+    {
+      "id": "n184",
+      "type": "noun",
+      "english": "curse (magic)",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "لَعْنَة",
+        "translit": "la'na",
+        "example": "كانت اللعنة قوية جداً.",
+        "root": "ل ع ن"
+      },
+      "lev": {
+        "form": "لعنة",
+        "translit": "la'ne",
+        "notes": "Same.",
+        "example": "اللعنة كانت قوية."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 306
+    },
+    {
+      "id": "n185",
+      "type": "noun",
+      "english": "potion",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "جُرْعَة / إِكْسِير",
+        "translit": "jur'a / ikseer",
+        "example": "حضّر الإكسير في المرجل.",
+        "root": "ج ر ع"
+      },
+      "lev": {
+        "form": "جرعة / إكسير",
+        "translit": "jur'a / ikseer",
+        "notes": "Same.",
+        "example": "حضّر الإكسير بالمرجل."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 307
+    },
+    {
+      "id": "n186",
+      "type": "noun",
+      "english": "cauldron",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "مِرْجَل",
+        "translit": "mirjal",
+        "example": "وضع المكونات في المرجل.",
+        "root": "ر ج ل"
+      },
+      "lev": {
+        "form": "مرجل",
+        "translit": "mirjal",
+        "notes": "Same.",
+        "example": "حط المكونات بالمرجل."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 308
+    },
+    {
+      "id": "n187",
+      "type": "noun",
+      "english": "broomstick",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "مِكْنَسَة",
+        "translit": "miknasa",
+        "example": "طار على مكنسته فوق الملعب.",
+        "root": "ك ن س"
+      },
+      "lev": {
+        "form": "مكنسة",
+        "translit": "miknase",
+        "notes": "Same.",
+        "example": "طار على مكنسته."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy",
+        "sports"
+      ],
+      "frequency_rank": 309
+    },
+    {
+      "id": "n188",
+      "type": "noun",
+      "english": "owl",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "بُومَة",
+        "translit": "booma",
+        "example": "وصلت البومة تحمل رسالة.",
+        "root": "ب و م"
+      },
+      "lev": {
+        "form": "بومة",
+        "translit": "boome",
+        "notes": "Same.",
+        "example": "البومة وصلت ومعها رسالة."
+      },
+      "tags": [
+        "harry-potter",
+        "animals"
+      ],
+      "frequency_rank": 310
+    },
+    {
+      "id": "n189",
+      "type": "noun",
+      "english": "dragon",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تِنِّين",
+        "translit": "tinneen",
+        "example": "حرس التنين الكهف.",
+        "root": "ت ن ن"
+      },
+      "lev": {
+        "form": "تنين",
+        "translit": "tinneen",
+        "notes": "Same.",
+        "example": "التنين حرس الكهف."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy",
+        "animals"
+      ],
+      "frequency_rank": 311
+    },
+    {
+      "id": "n190",
+      "type": "noun",
+      "english": "snake / serpent",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَفْعَى / ثُعْبَان",
+        "translit": "af'a / thu'baan",
+        "example": "تكلّم مع الأفعى بهدوء.",
+        "root": "ث ع ب"
+      },
+      "lev": {
+        "form": "أفعى / تعبان",
+        "translit": "af'a / ti'baan",
+        "notes": "تعبان common Lev.",
+        "example": "حكي مع الأفعى."
+      },
+      "tags": [
+        "harry-potter",
+        "animals"
+      ],
+      "frequency_rank": 312
+    },
+    {
+      "id": "n191",
+      "type": "noun",
+      "english": "ghost",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "شَبَح",
+        "translit": "shabah",
+        "example": "مرّ الشبح عبر الجدار.",
+        "root": "ش ب ح"
+      },
+      "lev": {
+        "form": "شبح",
+        "translit": "shabah",
+        "notes": "Same.",
+        "example": "الشبح مرّ من الجدار."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 313
+    },
+    {
+      "id": "n192",
+      "type": "noun",
+      "english": "spirit / soul",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "رُوح",
+        "translit": "rooh",
+        "example": "شعر بأن روحاً تراقب المكان.",
+        "root": "ر و ح"
+      },
+      "lev": {
+        "form": "روح",
+        "translit": "rooh",
+        "notes": "Same.",
+        "example": "حس إن في روح تراقب."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 314
+    },
+    {
+      "id": "n193",
+      "type": "noun",
+      "english": "house-elf",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "عِفْرِيت مَنْزِلِيّ",
+        "translit": "ifreet manziliyy",
+        "example": "خدم العفريت المنزلي العائلة بأمانة.",
+        "root": "ع ف ر"
+      },
+      "lev": {
+        "form": "عفريت منزلي",
+        "translit": "ifreet manzili",
+        "notes": "Same.",
+        "example": "العفريت المنزلي خدم العيلة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 315
+    },
+    {
+      "id": "n194",
+      "type": "noun",
+      "english": "goblin",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "عِفْرِيت / قَزَم",
+        "translit": "ifreet / qazam",
+        "example": "يعمل العفاريت في المصرف السحري.",
+        "root": "ع ف ر"
+      },
+      "lev": {
+        "form": "عفريت",
+        "translit": "ifreet",
+        "notes": "Same.",
+        "example": "العفاريت بيشتغلوا بالمصرف."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 316
+    },
+    {
+      "id": "n195",
+      "type": "noun",
+      "english": "werewolf",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "مُسْتَذْئِب",
+        "translit": "mustadh'ib",
+        "example": "يتحول المستذئب عند اكتمال القمر.",
+        "root": "ذ ئ ب"
+      },
+      "lev": {
+        "form": "مستذئب",
+        "translit": "mustadh'ib",
+        "notes": "Same.",
+        "example": "المستذئب بيتحول لما القمر يكمل."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 317
+    },
+    {
+      "id": "n196",
+      "type": "noun",
+      "english": "phoenix",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "طَائِر الفِينِيق",
+        "translit": "taa'ir alfineeq",
+        "example": "نهض طائر الفينيق من الرماد.",
+        "root": "ف ن ق"
+      },
+      "lev": {
+        "form": "طائر الفينيق",
+        "translit": "taa'ir ilfineeq",
+        "notes": "Same.",
+        "example": "الفينيق قام من الرماد."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy",
+        "animals"
+      ],
+      "frequency_rank": 318
+    },
+    {
+      "id": "n197",
+      "type": "noun",
+      "english": "giant",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "عِمْلَاق",
+        "translit": "imlaaq",
+        "example": "وقف العملاق عند باب القلعة.",
+        "root": "ع م ل"
+      },
+      "lev": {
+        "form": "عملاق",
+        "translit": "imlaaq",
+        "notes": "Same.",
+        "example": "العملاق وقف عند باب القلعة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 319
+    },
+    {
+      "id": "n198",
+      "type": "noun",
+      "english": "troll",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "تْرُول",
+        "translit": "trool",
+        "example": "هاجم الترول الحمام في الطابق الأرضي."
+      },
+      "lev": {
+        "form": "ترول",
+        "translit": "trool",
+        "notes": "Loanword.",
+        "example": "الترول هاجم الحمام."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 320
+    },
+    {
+      "id": "n199",
+      "type": "noun",
+      "english": "basilisk",
+      "dlpt_level": "3+",
+      "msa": {
+        "form": "بَازِيلِيسْق",
+        "translit": "baazeelisq",
+        "example": "نام البازيليسق في حجرة الأسرار."
+      },
+      "lev": {
+        "form": "بازيليسق",
+        "translit": "baazeelisq",
+        "notes": "Loanword.",
+        "example": "البازيليسق نام بحجرة الأسرار."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 321
+    },
+    {
+      "id": "n200",
+      "type": "noun",
+      "english": "castle",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "قَلْعَة",
+        "translit": "qal'a",
+        "example": "تقع المدرسة داخل قلعة قديمة.",
+        "root": "ق ل ع"
+      },
+      "lev": {
+        "form": "قلعة",
+        "translit": "qal'a",
+        "notes": "Same.",
+        "example": "المدرسة جوا قلعة قديمة."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 322
+    },
+    {
+      "id": "n201",
+      "type": "noun",
+      "english": "tower",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "بُرْج",
+        "translit": "burj",
+        "example": "يقع المرقاب في أعلى البرج.",
+        "root": "ب ر ج"
+      },
+      "lev": {
+        "form": "برج",
+        "translit": "burj",
+        "notes": "Same.",
+        "example": "المرقاب بأعلى البرج."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 323
+    },
+    {
+      "id": "n202",
+      "type": "noun",
+      "english": "corridor / hallway",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "مَمَرّ",
+        "translit": "mamarr",
+        "example": "ركض الطلاب في الممر.",
+        "root": "م ر ر"
+      },
+      "lev": {
+        "form": "ممر",
+        "translit": "mamarr",
+        "notes": "Same.",
+        "example": "الطلاب ركضوا بالممر."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 324
+    },
+    {
+      "id": "n203",
+      "type": "noun",
+      "english": "staircase",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "دَرَج / سُلَّم",
+        "translit": "daraj / sullam",
+        "example": "تحرّك الدرج فجأة.",
+        "root": "د ر ج"
+      },
+      "lev": {
+        "form": "درج / سلم",
+        "translit": "daraj / sallam",
+        "notes": "Same.",
+        "example": "الدرج تحرك فجأة."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 325
+    },
+    {
+      "id": "n204",
+      "type": "noun",
+      "english": "dungeon",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "قَبْو / زِنْزَانَة",
+        "translit": "qabw / zanzaana",
+        "example": "دروس الجرعات في القبو.",
+        "root": "ق ب و"
+      },
+      "lev": {
+        "form": "قبو",
+        "translit": "qabw",
+        "notes": "Same.",
+        "example": "درس الجرعات بالقبو."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 326
+    },
+    {
+      "id": "n205",
+      "type": "noun",
+      "english": "common room",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "غُرْفَة مُشْتَرَكَة",
+        "translit": "ghurfa mushtaraka",
+        "example": "اجتمعوا في الغرفة المشتركة.",
+        "root": "ش ر ك"
+      },
+      "lev": {
+        "form": "غرفة مشتركة",
+        "translit": "ghurfe mushtarake",
+        "notes": "Same.",
+        "example": "اجتمعوا بالغرفة المشتركة."
+      },
+      "tags": [
+        "harry-potter",
+        "place",
+        "school"
+      ],
+      "frequency_rank": 327
+    },
+    {
+      "id": "n206",
+      "type": "noun",
+      "english": "dormitory",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "مَهْجَع",
+        "translit": "mahja'",
+        "example": "نام الطلاب في المهجع.",
+        "root": "ه ج ع"
+      },
+      "lev": {
+        "form": "مهجع",
+        "translit": "mahja'",
+        "notes": "Same.",
+        "example": "الطلاب ناموا بالمهجع."
+      },
+      "tags": [
+        "harry-potter",
+        "place",
+        "school"
+      ],
+      "frequency_rank": 328
+    },
+    {
+      "id": "n207",
+      "type": "noun",
+      "english": "Great Hall",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "القَاعَة الكُبْرَى",
+        "translit": "alqaa'a alkubra",
+        "example": "تناولوا العشاء في القاعة الكبرى.",
+        "root": "ق و ع"
+      },
+      "lev": {
+        "form": "القاعة الكبرى",
+        "translit": "ilqaa'a ilkubra",
+        "notes": "Same.",
+        "example": "تعشّوا بالقاعة الكبرى."
+      },
+      "tags": [
+        "harry-potter",
+        "place",
+        "school"
+      ],
+      "frequency_rank": 329
+    },
+    {
+      "id": "n208",
+      "type": "noun",
+      "english": "library",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "مَكْتَبَة",
+        "translit": "maktaba",
+        "example": "بحث في المكتبة عن كتاب نادر.",
+        "root": "ك ت ب"
+      },
+      "lev": {
+        "form": "مكتبة",
+        "translit": "maktabe",
+        "notes": "Same.",
+        "example": "فتّش بالمكتبة عن كتاب نادر."
+      },
+      "tags": [
+        "harry-potter",
+        "place",
+        "school"
+      ],
+      "frequency_rank": 330
+    },
+    {
+      "id": "n209",
+      "type": "noun",
+      "english": "Forbidden Forest",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "الغَابَة المَحْظُورَة",
+        "translit": "alghaaba almahzoora",
+        "example": "يُمنع الطلاب من دخول الغابة المحظورة.",
+        "root": "ح ظ ر"
+      },
+      "lev": {
+        "form": "الغابة المحظورة",
+        "translit": "ilghaabe ilmahzure",
+        "notes": "Same.",
+        "example": "ممنوع يدخلوا الغابة المحظورة."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 331
+    },
+    {
+      "id": "n210",
+      "type": "noun",
+      "english": "chamber / secret room",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "حُجْرَة",
+        "translit": "hujra",
+        "example": "فتح باب حجرة الأسرار.",
+        "root": "ح ج ر"
+      },
+      "lev": {
+        "form": "حجرة",
+        "translit": "hujra",
+        "notes": "Same.",
+        "example": "فتح باب حجرة الأسرار."
+      },
+      "tags": [
+        "harry-potter",
+        "place"
+      ],
+      "frequency_rank": 332
+    },
+    {
+      "id": "n211",
+      "type": "noun",
+      "english": "house (school house)",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "بَيْت",
+        "translit": "bayt",
+        "example": "انضمّ إلى بيت الشجعان.",
+        "root": "ب ي ت"
+      },
+      "lev": {
+        "form": "بيت",
+        "translit": "bayt",
+        "notes": "Houses = بيوت.",
+        "example": "انضم لبيت الشجعان."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 333
+    },
+    {
+      "id": "n212",
+      "type": "noun",
+      "english": "Sorting Hat",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "قُبَّعَة الفَرْز",
+        "translit": "qubba'at alfarz",
+        "example": "وضعت قبعة الفرز على رأسه.",
+        "root": "ف ر ز"
+      },
+      "lev": {
+        "form": "قبعة الفرز",
+        "translit": "qubba'et ilfarz",
+        "notes": "Same.",
+        "example": "حطوا قبعة الفرز على راسه."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 334
+    },
+    {
+      "id": "n213",
+      "type": "noun",
+      "english": "headmaster",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "نَاظِر / مُدِير المَدْرَسَة",
+        "translit": "naazir / mudeer almadrasa",
+        "example": "دعا الناظر الطلاب إلى القاعة.",
+        "root": "ن ظ ر"
+      },
+      "lev": {
+        "form": "مدير المدرسة / ناظر",
+        "translit": "mudeer ilmadrase",
+        "notes": "Same.",
+        "example": "المدير دعا الطلاب."
+      },
+      "tags": [
+        "harry-potter",
+        "school",
+        "people"
+      ],
+      "frequency_rank": 335
+    },
+    {
+      "id": "n214",
+      "type": "noun",
+      "english": "professor / teacher",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "أُسْتَاذ / بْرُوفِيسُور",
+        "translit": "ustaadh / broofisoor",
+        "example": "شرح الأستاذ الدرس ببطء."
+      },
+      "lev": {
+        "form": "أستاذ",
+        "translit": "ustaaz",
+        "notes": "Same.",
+        "example": "الأستاذ شرح الدرس."
+      },
+      "tags": [
+        "harry-potter",
+        "school",
+        "people"
+      ],
+      "frequency_rank": 336
+    },
+    {
+      "id": "n215",
+      "type": "noun",
+      "english": "student",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "طَالِب",
+        "translit": "taalib",
+        "example": "كان الطالب مجتهداً في دروسه.",
+        "root": "ط ل ب"
+      },
+      "lev": {
+        "form": "طالب",
+        "translit": "taalib",
+        "notes": "Same.",
+        "example": "الطالب كان مجتهد."
+      },
+      "tags": [
+        "harry-potter",
+        "school",
+        "people"
+      ],
+      "frequency_rank": 337
+    },
+    {
+      "id": "n216",
+      "type": "noun",
+      "english": "lesson / class",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "دَرْس / حِصَّة",
+        "translit": "dars / hissa",
+        "example": "بدأ درس التحويل.",
+        "root": "د ر س"
+      },
+      "lev": {
+        "form": "درس / حصة",
+        "translit": "dars / hissa",
+        "notes": "Same.",
+        "example": "بلش درس التحويل."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 338
+    },
+    {
+      "id": "n217",
+      "type": "noun",
+      "english": "exam",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "اِمْتِحَان",
+        "translit": "imtihaan",
+        "example": "استعدّوا للامتحان النهائي.",
+        "root": "م ح ن"
+      },
+      "lev": {
+        "form": "امتحان",
+        "translit": "imtihaan",
+        "notes": "Same.",
+        "example": "استعدوا للامتحان."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 339
+    },
+    {
+      "id": "n218",
+      "type": "noun",
+      "english": "detention",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "عِقَاب / حَجْز",
+        "translit": "iqaab / hajz",
+        "example": "حصل على عقاب بعد مخالفة القواعد.",
+        "root": "ع ق ب"
+      },
+      "lev": {
+        "form": "عقاب / حجز",
+        "translit": "i'aab / hajz",
+        "notes": "Same.",
+        "example": "أخد عقاب بعد ما خالف."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 340
+    },
+    {
+      "id": "n219",
+      "type": "noun",
+      "english": "password",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "كَلِمَة السِّرّ",
+        "translit": "kalimat assirr",
+        "example": "نسي كلمة سر الغرفة المشتركة.",
+        "root": "س ر ر"
+      },
+      "lev": {
+        "form": "كلمة السر",
+        "translit": "kilmet issirr",
+        "notes": "Same.",
+        "example": "نسي كلمة سر الغرفة."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 341
+    },
+    {
+      "id": "n220",
+      "type": "noun",
+      "english": "house points",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "نِقَاط البَيْت",
+        "translit": "niqaat albayt",
+        "example": "خسر البيت عشر نقاط.",
+        "root": "ن ق ط"
+      },
+      "lev": {
+        "form": "نقاط البيت",
+        "translit": "ni'aat ilbayt",
+        "notes": "Same.",
+        "example": "البيت خسر عشر نقاط."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 342
+    },
+    {
+      "id": "n221",
+      "type": "noun",
+      "english": "feast",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "وَلِيمَة / مَأْدُبَة",
+        "translit": "waleema / ma'duba",
+        "example": "بدأت الوليمة في القاعة الكبرى.",
+        "root": "و ل م"
+      },
+      "lev": {
+        "form": "وليمة",
+        "translit": "waleeme",
+        "notes": "Same.",
+        "example": "الوليمة بلشت بالقاعة."
+      },
+      "tags": [
+        "harry-potter",
+        "food",
+        "school"
+      ],
+      "frequency_rank": 343
+    },
+    {
+      "id": "n222",
+      "type": "noun",
+      "english": "cloak",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "عَبَاءَة",
+        "translit": "abaa'a",
+        "example": "ارتدى عباءة سوداء.",
+        "root": "ع ب و"
+      },
+      "lev": {
+        "form": "عباءة",
+        "translit": "abaa'a",
+        "notes": "Same.",
+        "example": "لبس عباءة سودا."
+      },
+      "tags": [
+        "harry-potter",
+        "daily"
+      ],
+      "frequency_rank": 344
+    },
+    {
+      "id": "n223",
+      "type": "noun",
+      "english": "invisibility cloak",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "عَبَاءَة الاِخْتِفَاء",
+        "translit": "abaa'at alikhtifaa'",
+        "example": "اختفى تحت عباءة الاختفاء.",
+        "root": "خ ف ي"
+      },
+      "lev": {
+        "form": "عباءة الاختفاء",
+        "translit": "abaa'et ilikhtifa",
+        "notes": "Same.",
+        "example": "اختفى تحت عباءة الاختفاء."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 345
+    },
+    {
+      "id": "n224",
+      "type": "noun",
+      "english": "mirror",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "مِرْآة",
+        "translit": "miraa'a",
+        "example": "نظر في المرآة فرأى أمنية.",
+        "root": "ر أ ي"
+      },
+      "lev": {
+        "form": "مراية / مرآة",
+        "translit": "miraaye",
+        "notes": "مراية common Lev.",
+        "example": "نظر بالمراية."
+      },
+      "tags": [
+        "harry-potter"
+      ],
+      "frequency_rank": 346
+    },
+    {
+      "id": "n225",
+      "type": "noun",
+      "english": "scar",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "نَدْبَة",
+        "translit": "nadba",
+        "example": "كانت الندبة على جبينه على شكل برق.",
+        "root": "ن د ب"
+      },
+      "lev": {
+        "form": "ندبة",
+        "translit": "nadbe",
+        "notes": "Same.",
+        "example": "الندبة على جبينه شكل برق."
+      },
+      "tags": [
+        "harry-potter",
+        "body"
+      ],
+      "frequency_rank": 347
+    },
+    {
+      "id": "n226",
+      "type": "noun",
+      "english": "letter",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "رِسَالَة",
+        "translit": "risaala",
+        "example": "وصلت رسالة من المدرسة.",
+        "root": "ر س ل"
+      },
+      "lev": {
+        "form": "رسالة",
+        "translit": "risaale",
+        "notes": "Same.",
+        "example": "وصلت رسالة من المدرسة."
+      },
+      "tags": [
+        "harry-potter",
+        "communication"
+      ],
+      "frequency_rank": 348
+    },
+    {
+      "id": "n227",
+      "type": "noun",
+      "english": "envelope",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "ظَرْف",
+        "translit": "zarf",
+        "example": "فتح الظرف الأخضر.",
+        "root": "ظ ر ف"
+      },
+      "lev": {
+        "form": "ظرف",
+        "translit": "zarf",
+        "notes": "Same.",
+        "example": "فتح الظرف الأخضر."
+      },
+      "tags": [
+        "harry-potter",
+        "communication"
+      ],
+      "frequency_rank": 349
+    },
+    {
+      "id": "n228",
+      "type": "noun",
+      "english": "platform (train)",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "رَصِيف",
+        "translit": "raseef",
+        "example": "وقف على الرصيف ينتظر القطار.",
+        "root": "ر ص ف"
+      },
+      "lev": {
+        "form": "رصيف",
+        "translit": "raseef",
+        "notes": "Same.",
+        "example": "وقف على الرصيف."
+      },
+      "tags": [
+        "harry-potter",
+        "travel"
+      ],
+      "frequency_rank": 350
+    },
+    {
+      "id": "n229",
+      "type": "noun",
+      "english": "train",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "قِطَار",
+        "translit": "qitaar",
+        "example": "غادر القطار المحطة في الوقت المحدد.",
+        "root": "ق ط ر"
+      },
+      "lev": {
+        "form": "قطار",
+        "translit": "qitaar",
+        "notes": "Same.",
+        "example": "القطار غادر بالموعد."
+      },
+      "tags": [
+        "harry-potter",
+        "travel"
+      ],
+      "frequency_rank": 351
+    },
+    {
+      "id": "n230",
+      "type": "noun",
+      "english": "prophecy",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "نُبُوءَة",
+        "translit": "nubuu'a",
+        "example": "تحدّثت النبوءة عن صبي.",
+        "root": "ن ب أ"
+      },
+      "lev": {
+        "form": "نبوءة",
+        "translit": "nubuu'a",
+        "notes": "Same.",
+        "example": "النبوءة حكت عن صبي."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 352
+    },
+    {
+      "id": "n231",
+      "type": "noun",
+      "english": "destiny / fate",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "قَدَر / مَصِير",
+        "translit": "qadar / maseer",
+        "example": "قبل مصيره بشجاعة.",
+        "root": "ق د ر"
+      },
+      "lev": {
+        "form": "قدر / مصير",
+        "translit": "qadar / maseer",
+        "notes": "Same.",
+        "example": "قبل مصيره بشجاعة."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 353
+    },
+    {
+      "id": "n232",
+      "type": "noun",
+      "english": "heir",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "وَرِيث",
+        "translit": "wareeth",
+        "example": "كان وريث البيت القديم.",
+        "root": "و ر ث"
+      },
+      "lev": {
+        "form": "وريث",
+        "translit": "wareeth",
+        "notes": "Same.",
+        "example": "كان وريث البيت."
+      },
+      "tags": [
+        "harry-potter",
+        "family"
+      ],
+      "frequency_rank": 354
+    },
+    {
+      "id": "n233",
+      "type": "noun",
+      "english": "enemy",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "عَدُوّ",
+        "translit": "aduww",
+        "example": "واجه عدوه في النهاية.",
+        "root": "ع د و"
+      },
+      "lev": {
+        "form": "عدو",
+        "translit": "aduww",
+        "notes": "Same.",
+        "example": "واجه عدوه بالنهاية."
+      },
+      "tags": [
+        "harry-potter",
+        "people"
+      ],
+      "frequency_rank": 355
+    },
+    {
+      "id": "n234",
+      "type": "noun",
+      "english": "courage",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "شَجَاعَة",
+        "translit": "shajaa'a",
+        "example": "أظهر شجاعة نادرة.",
+        "root": "ش ج ع"
+      },
+      "lev": {
+        "form": "شجاعة",
+        "translit": "shajaa'a",
+        "notes": "Same.",
+        "example": "أظهر شجاعة نادرة."
+      },
+      "tags": [
+        "harry-potter",
+        "emotion"
+      ],
+      "frequency_rank": 356
+    },
+    {
+      "id": "n235",
+      "type": "noun",
+      "english": "fear",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "خَوْف",
+        "translit": "khawf",
+        "example": "تغلب على خوفه.",
+        "root": "خ و ف"
+      },
+      "lev": {
+        "form": "خوف",
+        "translit": "khawf",
+        "notes": "Same.",
+        "example": "تغلب على خوفه."
+      },
+      "tags": [
+        "harry-potter",
+        "emotion"
+      ],
+      "frequency_rank": 357
+    },
+    {
+      "id": "n236",
+      "type": "noun",
+      "english": "darkness",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "ظَلَام",
+        "translit": "zalaam",
+        "example": "امتلأ الممر بالظلام.",
+        "root": "ظ ل م"
+      },
+      "lev": {
+        "form": "ظلام",
+        "translit": "zalaam",
+        "notes": "Same.",
+        "example": "الممر انملأ ظلام."
+      },
+      "tags": [
+        "harry-potter",
+        "nature"
+      ],
+      "frequency_rank": 358
+    },
+    {
+      "id": "n237",
+      "type": "noun",
+      "english": "light",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "نُور / ضَوْء",
+        "translit": "noor / daw'",
+        "example": "ملأ النور الغرفة.",
+        "root": "ن و ر"
+      },
+      "lev": {
+        "form": "نور / ضوء",
+        "translit": "noor / daw'",
+        "notes": "Same.",
+        "example": "النور ملّى الغرفة."
+      },
+      "tags": [
+        "harry-potter",
+        "nature"
+      ],
+      "frequency_rank": 359
+    },
+    {
+      "id": "n238",
+      "type": "noun",
+      "english": "muggle / non-magical person",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "غَيْر سَاحِر / مَغْل",
+        "translit": "ghayr saahir / maghl",
+        "example": "عاش بين غير السحرة سنوات."
+      },
+      "lev": {
+        "form": "غير ساحر / مغل",
+        "translit": "ghayr saahir",
+        "notes": "مغل from Arabic HP.",
+        "example": "عاش بين غير السحرة."
+      },
+      "tags": [
+        "harry-potter",
+        "people"
+      ],
+      "frequency_rank": 360
+    },
+    {
+      "id": "n239",
+      "type": "noun",
+      "english": "pure-blood",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "دَم نَقِيّ",
+        "translit": "dam naqiyy",
+        "example": "افتخر بعض العائلات بدمها النقي.",
+        "root": "د م م"
+      },
+      "lev": {
+        "form": "دم نقي",
+        "translit": "dam na'i",
+        "notes": "Same.",
+        "example": "بعض العيل بيفتخروا بدمهم النقي."
+      },
+      "tags": [
+        "harry-potter",
+        "people"
+      ],
+      "frequency_rank": 361
+    },
+    {
+      "id": "n240",
+      "type": "noun",
+      "english": "half-blood",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "نِصْف دَم",
+        "translit": "nisf dam",
+        "example": "كان نصف دم ولم يخجل من ذلك.",
+        "root": "د م م"
+      },
+      "lev": {
+        "form": "نصف دم",
+        "translit": "nuss dam",
+        "notes": "Same.",
+        "example": "كان نصف دم وما خجل."
+      },
+      "tags": [
+        "harry-potter",
+        "people"
+      ],
+      "frequency_rank": 362
+    },
+    {
+      "id": "n241",
+      "type": "noun",
+      "english": "Quidditch",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "كُوِيدِتْش",
+        "translit": "kweeditch",
+        "example": "فاز فريقهم في مباراة كويدتش."
+      },
+      "lev": {
+        "form": "كويدتش",
+        "translit": "kweeditch",
+        "notes": "Loanword.",
+        "example": "فازوا بمباراة كويدتش."
+      },
+      "tags": [
+        "harry-potter",
+        "sports"
+      ],
+      "frequency_rank": 363
+    },
+    {
+      "id": "n242",
+      "type": "noun",
+      "english": "Golden Snitch",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "الخَطَّاف الذَّهَبِيّ",
+        "translit": "alkhattaaf adhdhahabiyy",
+        "example": "أمسك الباحث بالخطاف الذهبي.",
+        "root": "خ ط ف"
+      },
+      "lev": {
+        "form": "الخطاف الذهبي",
+        "translit": "ilkhattaaf idhdhahabi",
+        "notes": "Same.",
+        "example": "أمسك الخطاف الذهبي."
+      },
+      "tags": [
+        "harry-potter",
+        "sports"
+      ],
+      "frequency_rank": 364
+    },
+    {
+      "id": "n243",
+      "type": "noun",
+      "english": "seeker (Quidditch)",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "البَاحِث",
+        "translit": "albaahith",
+        "example": "طار الباحث خلف الخطاف.",
+        "root": "ب ح ث"
+      },
+      "lev": {
+        "form": "الباحث",
+        "translit": "ilbaahith",
+        "notes": "Same.",
+        "example": "الباحث طار ورا الخطاف."
+      },
+      "tags": [
+        "harry-potter",
+        "sports",
+        "people"
+      ],
+      "frequency_rank": 365
+    },
+    {
+      "id": "n244",
+      "type": "noun",
+      "english": "Philosopher's Stone",
+      "dlpt_level": "3",
+      "msa": {
+        "form": "حَجَر الفَلَاسِفَة",
+        "translit": "hajar alfalaasifa",
+        "example": "سعى الجميع للحصول على حجر الفلاسفة.",
+        "root": "ح ج ر"
+      },
+      "lev": {
+        "form": "حجر الفلاسفة",
+        "translit": "hajar ilfalaasife",
+        "notes": "Same.",
+        "example": "الجميع بدهم حجر الفلاسفة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 366
+    },
+    {
+      "id": "n245",
+      "type": "noun",
+      "english": "diary",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "يَوْمِيَّات / مُذَكِّرَة",
+        "translit": "yawmiyyaat / mudhakkira",
+        "example": "كتب في يومياته كل ليلة.",
+        "root": "ذ ك ر"
+      },
+      "lev": {
+        "form": "يوميات / مذكرة",
+        "translit": "yawmiyyaat",
+        "notes": "Same.",
+        "example": "كتب بيومياته كل ليلة."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 367
+    },
+    {
+      "id": "n246",
+      "type": "noun",
+      "english": "orphan",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "يَتِيم",
+        "translit": "yateem",
+        "example": "كان يتيماً يعيش مع أقاربه.",
+        "root": "ي ت م"
+      },
+      "lev": {
+        "form": "يتيم",
+        "translit": "yateem",
+        "notes": "Same.",
+        "example": "كان يتيم وعايش مع أقاربه."
+      },
+      "tags": [
+        "harry-potter",
+        "family",
+        "people"
+      ],
+      "frequency_rank": 368
+    },
+    {
+      "id": "n247",
+      "type": "noun",
+      "english": "cupboard (under stairs)",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "خِزَانَة",
+        "translit": "khizaana",
+        "example": "نام في خزانة تحت الدرج.",
+        "root": "خ ز ن"
+      },
+      "lev": {
+        "form": "خزانة",
+        "translit": "khizaane",
+        "notes": "Same.",
+        "example": "نام بخزانة تحت الدرج."
+      },
+      "tags": [
+        "harry-potter",
+        "home"
+      ],
+      "frequency_rank": 369
+    },
+    {
+      "id": "n248",
+      "type": "noun",
+      "english": "glasses",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "نَظَّارَة",
+        "translit": "nazzaara",
+        "example": "أصلح نظارته المستديرة.",
+        "root": "ن ظ ر"
+      },
+      "lev": {
+        "form": "نظارة",
+        "translit": "nazzaara",
+        "notes": "Same.",
+        "example": "أصلح نظارته."
+      },
+      "tags": [
+        "harry-potter",
+        "body"
+      ],
+      "frequency_rank": 370
+    },
+    {
+      "id": "n249",
+      "type": "noun",
+      "english": "lightning",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "بَرْق / صَاعِقَة",
+        "translit": "barq / saa'iqa",
+        "example": "ندبته على شكل صاعقة.",
+        "root": "ب ر ق"
+      },
+      "lev": {
+        "form": "برق / صاعقة",
+        "translit": "bar' / saa'i'a",
+        "notes": "Same.",
+        "example": "ندبته شكل صاعقة."
+      },
+      "tags": [
+        "harry-potter",
+        "weather"
+      ],
+      "frequency_rank": 371
+    },
+    {
+      "id": "n250",
+      "type": "noun",
+      "english": "forest",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "غَابَة",
+        "translit": "ghaaba",
+        "example": "دخل الغابة المظلمة بحذر.",
+        "root": "غ ي ب"
+      },
+      "lev": {
+        "form": "غابة",
+        "translit": "ghaabe",
+        "notes": "Same.",
+        "example": "دخل الغابة المظلمة."
+      },
+      "tags": [
+        "harry-potter",
+        "nature",
+        "place"
+      ],
+      "frequency_rank": 372
+    },
+    {
+      "id": "v156",
+      "type": "verb",
+      "english": "to cast a spell",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "أَلْقَى تَعْوِيذَة / سَحَرَ",
+        "translit": "alqa ta'weedha / sahara",
+        "example": "ألقى تعويذة على الباب.",
+        "root": "س ح ر"
+      },
+      "lev": {
+        "form": "ألقى تعويذة / سحر",
+        "translit": "al'a ta'weedha",
+        "notes": "Same.",
+        "example": "ألقى تعويذة على الباب."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy",
+        "action"
+      ],
+      "frequency_rank": 401
+    },
+    {
+      "id": "v157",
+      "type": "verb",
+      "english": "to bewitch / enchant",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "سَحَرَ / يَسْحَرُ",
+        "translit": "sahara / yasharu",
+        "example": "سحر القلعة لحمايتها.",
+        "root": "س ح ر"
+      },
+      "lev": {
+        "form": "سحر / بيسحر",
+        "translit": "sahar / bis-har",
+        "notes": "Cognate.",
+        "example": "سحر القلعة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 402
+    },
+    {
+      "id": "v158",
+      "type": "verb",
+      "english": "to curse (someone)",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "لَعَنَ / يَلْعَنُ",
+        "translit": "la'ana / yal'anu",
+        "example": "لعن العدو بكلمات مظلمة.",
+        "root": "ل ع ن"
+      },
+      "lev": {
+        "form": "لعن / بيلعن",
+        "translit": "la'an / bil'an",
+        "notes": "Cognate.",
+        "example": "لعن العدو."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 403
+    },
+    {
+      "id": "v159",
+      "type": "verb",
+      "english": "to disappear / vanish",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "اِخْتَفَى / يَخْتَفِي",
+        "translit": "ikhtafa / yakhtafi",
+        "example": "اختفى فجأة من الغرفة.",
+        "root": "خ ف ي"
+      },
+      "lev": {
+        "form": "اختفى / بيختفي",
+        "translit": "ikhtafa / bikhtifi",
+        "notes": "Cognate.",
+        "example": "اختفى فجأة من الغرفة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 404
+    },
+    {
+      "id": "v160",
+      "type": "verb",
+      "english": "to appear",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "ظَهَرَ / يَظْهَرُ",
+        "translit": "zahara / yazharu",
+        "example": "ظهر شبح في الممر.",
+        "root": "ظ ه ر"
+      },
+      "lev": {
+        "form": "ظهر / بيظهر",
+        "translit": "zahar / bizhar",
+        "notes": "Cognate.",
+        "example": "ظهر شبح بالممر."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 405
+    },
+    {
+      "id": "v161",
+      "type": "verb",
+      "english": "to transform / change into",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تَحَوَّلَ / يَتَحَوَّلُ",
+        "translit": "tahawwala / yatahawwalu",
+        "example": "تحوّل إلى حيوان.",
+        "root": "ح و ل"
+      },
+      "lev": {
+        "form": "تحول / بيتحول",
+        "translit": "thawwal / bithawwal",
+        "notes": "Cognate.",
+        "example": "تحول لحيوان."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 406
+    },
+    {
+      "id": "v162",
+      "type": "verb",
+      "english": "to fly",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "طَارَ / يَطِيرُ",
+        "translit": "taara / yateeru",
+        "example": "طار فوق الملعب على مكنسته.",
+        "root": "ط ي ر"
+      },
+      "lev": {
+        "form": "طار / بيطير",
+        "translit": "taar / biteer",
+        "notes": "Cognate.",
+        "example": "طار فوق الملعب."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 407
+    },
+    {
+      "id": "v163",
+      "type": "verb",
+      "english": "to protect",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "حَمَى / يَحْمِي",
+        "translit": "hama / yahmee",
+        "example": "حمى أصدقاءه من الخطر.",
+        "root": "ح م ي"
+      },
+      "lev": {
+        "form": "حمى / بيحمي",
+        "translit": "hama / bihmi",
+        "notes": "Cognate.",
+        "example": "حمى أصحابه."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 408
+    },
+    {
+      "id": "v164",
+      "type": "verb",
+      "english": "to attack",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "هَاجَمَ / يُهَاجِمُ",
+        "translit": "hajama / yuhaajimu",
+        "example": "هاجم الوحش من الظلام.",
+        "root": "ه ج م"
+      },
+      "lev": {
+        "form": "هاجم / بيهاجم",
+        "translit": "hajam / bihajim",
+        "notes": "Cognate.",
+        "example": "الوحش هاجم من الظلام."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 409
+    },
+    {
+      "id": "v165",
+      "type": "verb",
+      "english": "to defend",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "دَافَعَ / يُدَافِعُ",
+        "translit": "daafa'a / yudaafi'u",
+        "example": "دافع عن المدرسة بشجاعة.",
+        "root": "د ف ع"
+      },
+      "lev": {
+        "form": "دافع / بيدافع",
+        "translit": "daafa' / bidaafi'",
+        "notes": "Cognate.",
+        "example": "دافع عن المدرسة."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 410
+    },
+    {
+      "id": "v166",
+      "type": "verb",
+      "english": "to escape",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "هَرَبَ / يَهْرُبُ",
+        "translit": "haraba / yahrubu",
+        "example": "هرب من الزنزانة ليلاً.",
+        "root": "ه ر ب"
+      },
+      "lev": {
+        "form": "هرب / بيهرب",
+        "translit": "harab / bihrub",
+        "notes": "Cognate.",
+        "example": "هرب من الزنزانة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 411
+    },
+    {
+      "id": "v167",
+      "type": "verb",
+      "english": "to hide",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "اِخْتَبَأَ / يَخْتَبِئُ",
+        "translit": "ikhtaba'a / yakhtabi'u",
+        "example": "اختبأ خلف الستارة.",
+        "root": "خ ب أ"
+      },
+      "lev": {
+        "form": "اختبأ / بيختبئ",
+        "translit": "ikhtaba / bikhtibi",
+        "notes": "Cognate.",
+        "example": "اختبأ ورا الستارة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 412
+    },
+    {
+      "id": "v168",
+      "type": "verb",
+      "english": "to discover",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "اِكْتَشَفَ / يَكْتَشِفُ",
+        "translit": "iktashafa / yaktashifu",
+        "example": "اكتشف سراً قديماً في القلعة.",
+        "root": "ك ش ف"
+      },
+      "lev": {
+        "form": "اكتشف / بيكتشف",
+        "translit": "iktashaf / biktishif",
+        "notes": "Cognate.",
+        "example": "اكتشف سر قديم."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 413
+    },
+    {
+      "id": "v169",
+      "type": "verb",
+      "english": "to search / look for",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "بَحَثَ / يَبْحَثُ",
+        "translit": "bahatha / yabhathu",
+        "example": "بحث عن الكتاب في المكتبة.",
+        "root": "ب ح ث"
+      },
+      "lev": {
+        "form": "فتّش / بيبحث",
+        "translit": "fattash / bib-has",
+        "notes": "فتّش common Lev.",
+        "example": "فتّش عن الكتاب."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 414
+    },
+    {
+      "id": "v170",
+      "type": "verb",
+      "english": "to find",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "وَجَدَ / يَجِدُ",
+        "translit": "wajada / yajidu",
+        "example": "وجد الخريطة المخبأة.",
+        "root": "و ج د"
+      },
+      "lev": {
+        "form": "لقى / بيلاقي",
+        "translit": "la'a / bila'i",
+        "notes": "لقى = find in Lev.",
+        "example": "لقى الخريطة."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 415
+    },
+    {
+      "id": "v171",
+      "type": "verb",
+      "english": "to save / rescue",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَنْقَذَ / يُنْقِذُ",
+        "translit": "anqadha / yunqidhu",
+        "example": "أنقذ صديقه من الخطر.",
+        "root": "ن ق ذ"
+      },
+      "lev": {
+        "form": "أنقذ / بينقذ",
+        "translit": "an'az / bin'iz",
+        "notes": "Cognate.",
+        "example": "أنقذ صاحبه."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 416
+    },
+    {
+      "id": "v172",
+      "type": "verb",
+      "english": "to defeat",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "هَزَمَ / يَهْزِمُ",
+        "translit": "hazama / yahzimu",
+        "example": "هزم العدو في المعركة الأخيرة.",
+        "root": "ه ز م"
+      },
+      "lev": {
+        "form": "هزم / بيهزم",
+        "translit": "hazam / bihzim",
+        "notes": "Cognate.",
+        "example": "هزم العدو."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 417
+    },
+    {
+      "id": "v173",
+      "type": "verb",
+      "english": "to summon",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "اِسْتَدْعَى / يَسْتَدْعِي",
+        "translit": "istad'a / yastad'ee",
+        "example": "استدعى عصاه بكلمة سرية.",
+        "root": "د ع و"
+      },
+      "lev": {
+        "form": "استدعى",
+        "translit": "istad'a",
+        "notes": "Same.",
+        "example": "استدعى عصاه."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 418
+    },
+    {
+      "id": "v174",
+      "type": "verb",
+      "english": "to brew (a potion)",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "حَضَّرَ / يُحَضِّرُ",
+        "translit": "haddara / yuhaddiru",
+        "example": "حضّر الجرعة بحذر.",
+        "root": "ح ض ر"
+      },
+      "lev": {
+        "form": "حضّر / بيحضّر",
+        "translit": "haddar / bihaddir",
+        "notes": "Cognate.",
+        "example": "حضّر الجرعة."
+      },
+      "tags": [
+        "harry-potter",
+        "fantasy"
+      ],
+      "frequency_rank": 419
+    },
+    {
+      "id": "v175",
+      "type": "verb",
+      "english": "to mix",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "خَلَطَ / يَخْلِطُ",
+        "translit": "khalata / yakhlitu",
+        "example": "خلط المكونات في المرجل.",
+        "root": "خ ل ط"
+      },
+      "lev": {
+        "form": "خلط / بيخلط",
+        "translit": "khalat / bikhlut",
+        "notes": "Cognate.",
+        "example": "خلط المكونات."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 420
+    },
+    {
+      "id": "v176",
+      "type": "verb",
+      "english": "to whisper",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "هَمَسَ / يَهْمِسُ",
+        "translit": "hamasa / yahmisu",
+        "example": "همس في أذن صديقه.",
+        "root": "ه م س"
+      },
+      "lev": {
+        "form": "همس / بيهمس",
+        "translit": "hamas / bihmis",
+        "notes": "Cognate.",
+        "example": "همس بأذن صاحبه."
+      },
+      "tags": [
+        "harry-potter",
+        "communication"
+      ],
+      "frequency_rank": 421
+    },
+    {
+      "id": "v177",
+      "type": "verb",
+      "english": "to shout / yell",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "صَاحَ / يَصِيحُ",
+        "translit": "saaha / yaseehu",
+        "example": "صاح محذراً الجميع.",
+        "root": "ص ي ح"
+      },
+      "lev": {
+        "form": "صاح / بيصيح",
+        "translit": "saah / biseeh",
+        "notes": "Cognate.",
+        "example": "صاح وحذّر الكل."
+      },
+      "tags": [
+        "harry-potter",
+        "communication"
+      ],
+      "frequency_rank": 422
+    },
+    {
+      "id": "v178",
+      "type": "verb",
+      "english": "to fear / be afraid",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "خَافَ / يَخَافُ",
+        "translit": "khaafa / yakhaafu",
+        "example": "خاف من الظلام في الممر.",
+        "root": "خ و ف"
+      },
+      "lev": {
+        "form": "خاف / بيخاف",
+        "translit": "khaaf / bikhaaf",
+        "notes": "Cognate.",
+        "example": "خاف من الظلام."
+      },
+      "tags": [
+        "harry-potter",
+        "emotion"
+      ],
+      "frequency_rank": 423
+    },
+    {
+      "id": "v179",
+      "type": "verb",
+      "english": "to dare",
+      "dlpt_level": "2+",
+      "msa": {
+        "form": "تَجَرَّأَ / يَتَجَرَّأُ",
+        "translit": "tajarra'a / yatajarra'u",
+        "example": "تجرّأ على دخول الغابة.",
+        "root": "ج ر أ"
+      },
+      "lev": {
+        "form": "تجرّأ",
+        "translit": "tajarra'",
+        "notes": "Same.",
+        "example": "تجرّأ ودخل الغابة."
+      },
+      "tags": [
+        "harry-potter",
+        "emotion"
+      ],
+      "frequency_rank": 424
+    },
+    {
+      "id": "v180",
+      "type": "verb",
+      "english": "to heal",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "شَفَى / يَشْفِي",
+        "translit": "shafa / yashfee",
+        "example": "شفى الجرح بتعويذة.",
+        "root": "ش ف ي"
+      },
+      "lev": {
+        "form": "شفى / بيشفي",
+        "translit": "shafa / bishfi",
+        "notes": "Cognate.",
+        "example": "شفى الجرح بتعويذة."
+      },
+      "tags": [
+        "harry-potter",
+        "health"
+      ],
+      "frequency_rank": 425
+    },
+    {
+      "id": "v181",
+      "type": "verb",
+      "english": "to unlock / open (magic)",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "فَتَحَ / يَفْتَحُ",
+        "translit": "fataha / yaftahu",
+        "example": "فتح الباب بتعويذة.",
+        "root": "ف ت ح"
+      },
+      "lev": {
+        "form": "فتح / بيفتح",
+        "translit": "fatah / biftaah",
+        "notes": "Cognate.",
+        "example": "فتح الباب بتعويذة."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 426
+    },
+    {
+      "id": "v182",
+      "type": "verb",
+      "english": "to lock",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "أَغْلَقَ / يُغْلِقُ",
+        "translit": "aghlaqa / yughliqu",
+        "example": "أغلق الباب خلفه.",
+        "root": "غ ل ق"
+      },
+      "lev": {
+        "form": "سكّر / بيسكّر",
+        "translit": "sakkar / bisakkir",
+        "notes": "سكّر = lock/close Lev.",
+        "example": "سكّر الباب وراه."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 427
+    },
+    {
+      "id": "v183",
+      "type": "verb",
+      "english": "to glow / shine",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تَلَأْلَأَ / أَضَاءَ",
+        "translit": "tala'la'a / adaa'a",
+        "example": "تلألأت العصا في الظلام.",
+        "root": "ض و أ"
+      },
+      "lev": {
+        "form": "لمعت / أضاءت",
+        "translit": "lama'at / adaa'at",
+        "notes": "Same.",
+        "example": "العصا لمعت بالظلام."
+      },
+      "tags": [
+        "harry-potter",
+        "perception"
+      ],
+      "frequency_rank": 428
+    },
+    {
+      "id": "v184",
+      "type": "verb",
+      "english": "to float",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "طَفَا / يَطْفُو",
+        "translit": "tafa / yatfoo",
+        "example": "طفت الشموع في الهواء.",
+        "root": "ط ف و"
+      },
+      "lev": {
+        "form": "طفت / بتطفو",
+        "translit": "tafat / btutfu",
+        "notes": "Cognate.",
+        "example": "الشموع طافت بالهوا."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 429
+    },
+    {
+      "id": "v185",
+      "type": "verb",
+      "english": "to fall",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "سَقَطَ / يَسْقُطُ",
+        "translit": "saqata / yasqutu",
+        "example": "سقط من المكنسة في المباراة.",
+        "root": "س ق ط"
+      },
+      "lev": {
+        "form": "وقع / بيقع",
+        "translit": "wi'i' / bi'a'",
+        "notes": "وقع common Lev.",
+        "example": "وقع من المكنسة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 430
+    },
+    {
+      "id": "v186",
+      "type": "verb",
+      "english": "to climb",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "تَسَلَّقَ / يَتَسَلَّقُ",
+        "translit": "tasallaqa / yatasallaqu",
+        "example": "تسلّق الجدار إلى البرج.",
+        "root": "س ل ق"
+      },
+      "lev": {
+        "form": "تسلّق",
+        "translit": "tsalla'",
+        "notes": "Same.",
+        "example": "تسلّق الجدار للبرج."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 431
+    },
+    {
+      "id": "v187",
+      "type": "verb",
+      "english": "to chase",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "طَارَدَ / يُطَارِدُ",
+        "translit": "taarada / yutaaridu",
+        "example": "طارد الخطاف الذهبي في السماء.",
+        "root": "ط ر د"
+      },
+      "lev": {
+        "form": "طارد / بيطارد",
+        "translit": "taarad / bitaarid",
+        "notes": "Cognate.",
+        "example": "طارد الخطاف."
+      },
+      "tags": [
+        "harry-potter",
+        "action",
+        "sports"
+      ],
+      "frequency_rank": 432
+    },
+    {
+      "id": "v188",
+      "type": "verb",
+      "english": "to catch",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "أَمْسَكَ / يُمْسِكُ",
+        "translit": "amsaka / yumsiku",
+        "example": "أمسك بالخطاف الذهبي.",
+        "root": "م س ك"
+      },
+      "lev": {
+        "form": "مسك / بيمسك",
+        "translit": "masak / bimsik",
+        "notes": "مسك common Lev.",
+        "example": "مسك الخطاف الذهبي."
+      },
+      "tags": [
+        "harry-potter",
+        "action",
+        "sports"
+      ],
+      "frequency_rank": 433
+    },
+    {
+      "id": "v189",
+      "type": "verb",
+      "english": "to throw",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "رَمَى / يَرْمِي",
+        "translit": "rama / yarmee",
+        "example": "رمى الكرة نحو الحلقات.",
+        "root": "ر م ي"
+      },
+      "lev": {
+        "form": "رمى / بيرمي",
+        "translit": "rama / birmi",
+        "notes": "Cognate.",
+        "example": "رمى الكرة على الحلقات."
+      },
+      "tags": [
+        "harry-potter",
+        "action",
+        "sports"
+      ],
+      "frequency_rank": 434
+    },
+    {
+      "id": "v190",
+      "type": "verb",
+      "english": "to ride",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "رَكِبَ / يَرْكَبُ",
+        "translit": "rakiba / yarkabu",
+        "example": "ركب المكنسة وانطلق.",
+        "root": "ر ك ب"
+      },
+      "lev": {
+        "form": "ركب / بيركب",
+        "translit": "rikib / birkab",
+        "notes": "Cognate.",
+        "example": "ركب المكنسة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 435
+    },
+    {
+      "id": "v191",
+      "type": "verb",
+      "english": "to arrive",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "وَصَلَ / يَصِلُ",
+        "translit": "wasala / yasilu",
+        "example": "وصل القطار إلى المحطة.",
+        "root": "و ص ل"
+      },
+      "lev": {
+        "form": "وصل / بيوصل",
+        "translit": "wisil / biwsal",
+        "notes": "Cognate.",
+        "example": "القطار وصل للمحطة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion",
+        "travel"
+      ],
+      "frequency_rank": 436
+    },
+    {
+      "id": "v192",
+      "type": "verb",
+      "english": "to wait",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "اِنْتَظَرَ / يَنْتَظِرُ",
+        "translit": "intazara / yantaziru",
+        "example": "انتظر الرسالة كل صباح.",
+        "root": "ن ظ ر"
+      },
+      "lev": {
+        "form": "استنى / بينتظر",
+        "translit": "istanna / bintizir",
+        "notes": "استنى common Lev.",
+        "example": "استنى الرسالة كل صبح."
+      },
+      "tags": [
+        "harry-potter",
+        "daily"
+      ],
+      "frequency_rank": 437
+    },
+    {
+      "id": "v193",
+      "type": "verb",
+      "english": "to wonder",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "تَسَاءَلَ / يَتَسَاءَلُ",
+        "translit": "tasaa'ala / yatasaa'alu",
+        "example": "تساءل عما يخفيه السر.",
+        "root": "س أ ل"
+      },
+      "lev": {
+        "form": "تساءل",
+        "translit": "tsaa'al",
+        "notes": "Same.",
+        "example": "تساءل شو السر."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 438
+    },
+    {
+      "id": "v194",
+      "type": "verb",
+      "english": "to realize",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "أَدْرَكَ / يُدْرِكُ",
+        "translit": "adraka / yudriku",
+        "example": "أدرك الحقيقة فجأة.",
+        "root": "د ر ك"
+      },
+      "lev": {
+        "form": "أدرك / فهم",
+        "translit": "adrak / fihim",
+        "notes": "فهم often used.",
+        "example": "فهم الحقيقة فجأة."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 439
+    },
+    {
+      "id": "v195",
+      "type": "verb",
+      "english": "to remember",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "تَذَكَّرَ / يَتَذَكَّرُ",
+        "translit": "tadhakkara / yatadhakkaru",
+        "example": "تذكر كلام الأستاذ.",
+        "root": "ذ ك ر"
+      },
+      "lev": {
+        "form": "تذكر / بيتذكر",
+        "translit": "tdhakkar / bitdhakkar",
+        "notes": "Cognate.",
+        "example": "تذكر كلام الأستاذ."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 440
+    },
+    {
+      "id": "v196",
+      "type": "verb",
+      "english": "to forget",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "نَسِيَ / يَنْسَى",
+        "translit": "nasiya / yansaa",
+        "example": "نسي كلمة السر.",
+        "root": "ن س ي"
+      },
+      "lev": {
+        "form": "نسي / بينسى",
+        "translit": "nisi / binsa",
+        "notes": "Cognate.",
+        "example": "نسي كلمة السر."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 441
+    },
+    {
+      "id": "v197",
+      "type": "verb",
+      "english": "to believe",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "آمَنَ / يُؤْمِنُ",
+        "translit": "aamana / yu'minu",
+        "example": "آمن بالسحر رغم الشك.",
+        "root": "أ م ن"
+      },
+      "lev": {
+        "form": "آمن / بيؤمن",
+        "translit": "aaman / bi'min",
+        "notes": "Cognate.",
+        "example": "آمن بالسحر."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 442
+    },
+    {
+      "id": "v198",
+      "type": "verb",
+      "english": "to refuse",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "رَفَضَ / يَرْفُضُ",
+        "translit": "rafada / yarfuDu",
+        "example": "رفض الانضمام إلى الجانب المظلم.",
+        "root": "ر ف ض"
+      },
+      "lev": {
+        "form": "رفض / بيرفض",
+        "translit": "rafad / birfud",
+        "notes": "Cognate.",
+        "example": "رفض ينضم للجانب المظلم."
+      },
+      "tags": [
+        "harry-potter",
+        "social"
+      ],
+      "frequency_rank": 443
+    },
+    {
+      "id": "v199",
+      "type": "verb",
+      "english": "to choose",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "اِخْتَارَ / يَخْتَارُ",
+        "translit": "ikhtaara / yakhtaaru",
+        "example": "اختارت القبعة بيته.",
+        "root": "خ ي ر"
+      },
+      "lev": {
+        "form": "اختار / بيختار",
+        "translit": "ikhtaar / bikhtaar",
+        "notes": "Cognate.",
+        "example": "القبعة اختارت بيته."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 444
+    },
+    {
+      "id": "v200",
+      "type": "verb",
+      "english": "to belong",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "اِنْتَمَى / يَنْتَمِي",
+        "translit": "intama / yantamee",
+        "example": "انتمى إلى بيت الشجعان.",
+        "root": "ن م و"
+      },
+      "lev": {
+        "form": "انتمى",
+        "translit": "intama",
+        "notes": "Same.",
+        "example": "انتمى لبيت الشجعان."
+      },
+      "tags": [
+        "harry-potter",
+        "social"
+      ],
+      "frequency_rank": 445
+    },
+    {
+      "id": "v201",
+      "type": "verb",
+      "english": "to betray",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "خَانَ / يَخُونُ",
+        "translit": "khaana / yakhoonu",
+        "example": "خان صديقه في أصعب لحظة.",
+        "root": "خ و ن"
+      },
+      "lev": {
+        "form": "خان / بيخون",
+        "translit": "khaan / bikhoon",
+        "notes": "Cognate.",
+        "example": "خان صاحبه."
+      },
+      "tags": [
+        "harry-potter",
+        "social"
+      ],
+      "frequency_rank": 446
+    },
+    {
+      "id": "v202",
+      "type": "verb",
+      "english": "to trust",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "وَثِقَ / يَثِقُ",
+        "translit": "wathiqa / yathiqu",
+        "example": "وثق بأصدقائه تماماً.",
+        "root": "و ث ق"
+      },
+      "lev": {
+        "form": "وثق / بيثق",
+        "translit": "wathiq / bithiq",
+        "notes": "Cognate.",
+        "example": "وثق بأصحابه."
+      },
+      "tags": [
+        "harry-potter",
+        "social"
+      ],
+      "frequency_rank": 447
+    },
+    {
+      "id": "v203",
+      "type": "verb",
+      "english": "to promise",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "وَعَدَ / يَعِدُ",
+        "translit": "wa'ada / ya'idu",
+        "example": "وعد بأن يعود.",
+        "root": "و ع د"
+      },
+      "lev": {
+        "form": "وعد / بيوعد",
+        "translit": "wa'ad / bi'id",
+        "notes": "Cognate.",
+        "example": "وعد إنه يرجع."
+      },
+      "tags": [
+        "harry-potter",
+        "social"
+      ],
+      "frequency_rank": 448
+    },
+    {
+      "id": "v204",
+      "type": "verb",
+      "english": "to warn",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "حَذَّرَ / يُحَذِّرُ",
+        "translit": "hadhdhara / yuhadhdhiru",
+        "example": "حذّره من الغابة المحظورة.",
+        "root": "ح ذ ر"
+      },
+      "lev": {
+        "form": "حذّر / بيحذّر",
+        "translit": "hazzar / bihazzir",
+        "notes": "Cognate.",
+        "example": "حذّره من الغابة."
+      },
+      "tags": [
+        "harry-potter",
+        "communication"
+      ],
+      "frequency_rank": 449
+    },
+    {
+      "id": "v205",
+      "type": "verb",
+      "english": "to reveal",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "كَشَفَ / يَكْشِفُ",
+        "translit": "kashafa / yakshifu",
+        "example": "كشف السر أخيراً.",
+        "root": "ك ش ف"
+      },
+      "lev": {
+        "form": "كشف / بيكشف",
+        "translit": "kashaf / bikshif",
+        "notes": "Cognate.",
+        "example": "كشف السر أخيراً."
+      },
+      "tags": [
+        "harry-potter",
+        "cognition"
+      ],
+      "frequency_rank": 450
+    },
+    {
+      "id": "v206",
+      "type": "verb",
+      "english": "to conceal / hide (something)",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَخْفَى / يُخْفِي",
+        "translit": "akhfa / yukhfee",
+        "example": "أخفى الرسالة تحت الوسادة.",
+        "root": "خ ف ي"
+      },
+      "lev": {
+        "form": "خبّى / بيخبّي",
+        "translit": "khabba / bikhabbi",
+        "notes": "خبّى common Lev.",
+        "example": "خبّى الرسالة تحت المخدة."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 451
+    },
+    {
+      "id": "v207",
+      "type": "verb",
+      "english": "to kill",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "قَتَلَ / يَقْتُلُ",
+        "translit": "qatala / yaqtulu",
+        "example": "حاول أن يقتل خصمه.",
+        "root": "ق ت ل"
+      },
+      "lev": {
+        "form": "قتل / بيقتل",
+        "translit": "qatal / bi'tul",
+        "notes": "Cognate.",
+        "example": "حاول يقتل خصمه."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 452
+    },
+    {
+      "id": "v208",
+      "type": "verb",
+      "english": "to live",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "عَاشَ / يَعِيشُ",
+        "translit": "aasha / ya'eeshu",
+        "example": "عاش حياة غريبة في عالم السحر.",
+        "root": "ع ي ش"
+      },
+      "lev": {
+        "form": "عاش / بيعيش",
+        "translit": "aash / bi'eesh",
+        "notes": "Cognate.",
+        "example": "عاش حياة غريبة."
+      },
+      "tags": [
+        "harry-potter",
+        "life"
+      ],
+      "frequency_rank": 453
+    },
+    {
+      "id": "v209",
+      "type": "verb",
+      "english": "to die",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "مَاتَ / يَمُوتُ",
+        "translit": "maata / yamootu",
+        "example": "مات البطل وهو يدافع عن أصدقائه.",
+        "root": "م و ت"
+      },
+      "lev": {
+        "form": "مات / بيموت",
+        "translit": "maat / bimoot",
+        "notes": "Cognate.",
+        "example": "مات وهو بيدافع عن أصحابه."
+      },
+      "tags": [
+        "harry-potter",
+        "life"
+      ],
+      "frequency_rank": 454
+    },
+    {
+      "id": "v210",
+      "type": "verb",
+      "english": "to teach",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "عَلَّمَ / يُعَلِّمُ",
+        "translit": "allama / yu'allimu",
+        "example": "علّم الأستاذ الطلاب تعويذة جديدة.",
+        "root": "ع ل م"
+      },
+      "lev": {
+        "form": "علّم / بيعلّم",
+        "translit": "allam / bi'allim",
+        "notes": "Cognate.",
+        "example": "الأستاذ علّم الطلاب."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 455
+    },
+    {
+      "id": "v211",
+      "type": "verb",
+      "english": "to learn",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "تَعَلَّمَ / يَتَعَلَّمُ",
+        "translit": "ta'allama / yata'allamu",
+        "example": "تعلّم السحر بسرعة.",
+        "root": "ع ل م"
+      },
+      "lev": {
+        "form": "تعلّم / بيتعلّم",
+        "translit": "t'allam / bit'allam",
+        "notes": "Cognate.",
+        "example": "تعلّم السحر بسرعة."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 456
+    },
+    {
+      "id": "v212",
+      "type": "verb",
+      "english": "to study",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "دَرَسَ / يَدْرُسُ",
+        "translit": "darasa / yadrusu",
+        "example": "درس حتى منتصف الليل.",
+        "root": "د ر س"
+      },
+      "lev": {
+        "form": "درس / بيدرس",
+        "translit": "daras / bidrus",
+        "notes": "Cognate.",
+        "example": "درس لتحت الليل."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 457
+    },
+    {
+      "id": "v213",
+      "type": "verb",
+      "english": "to read",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "قَرَأَ / يَقْرَأُ",
+        "translit": "qara'a / yaqra'u",
+        "example": "قرأ الكتاب القديم بصعوبة.",
+        "root": "ق ر أ"
+      },
+      "lev": {
+        "form": "قرأ / بيقرأ",
+        "translit": "ara / bi'ra",
+        "notes": "قرأ common.",
+        "example": "قرأ الكتاب القديم."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 458
+    },
+    {
+      "id": "v214",
+      "type": "verb",
+      "english": "to write",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "كَتَبَ / يَكْتُبُ",
+        "translit": "kataba / yaktubu",
+        "example": "كتب الواجب بريشة سحرية.",
+        "root": "ك ت ب"
+      },
+      "lev": {
+        "form": "كتب / بيكتب",
+        "translit": "katab / biktub",
+        "notes": "Cognate.",
+        "example": "كتب الواجب."
+      },
+      "tags": [
+        "harry-potter",
+        "school"
+      ],
+      "frequency_rank": 459
+    },
+    {
+      "id": "v215",
+      "type": "verb",
+      "english": "to enter",
+      "dlpt_level": "0+",
+      "msa": {
+        "form": "دَخَلَ / يَدْخُلُ",
+        "translit": "dakhala / yadkhulu",
+        "example": "دخل القاعة الكبرى.",
+        "root": "د خ ل"
+      },
+      "lev": {
+        "form": "دخل / بيدخل",
+        "translit": "dakhal / bidkhul",
+        "notes": "Cognate.",
+        "example": "دخل القاعة الكبرى."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 460
+    },
+    {
+      "id": "v216",
+      "type": "verb",
+      "english": "to leave",
+      "dlpt_level": "1",
+      "msa": {
+        "form": "غَادَرَ / يُغَادِرُ",
+        "translit": "ghaadara / yughaadiru",
+        "example": "غادر المدرسة في العطلة.",
+        "root": "غ د ر"
+      },
+      "lev": {
+        "form": "طلع / غادر",
+        "translit": "tala' / ghaadar",
+        "notes": "طلع common Lev.",
+        "example": "طلع من المدرسة بالعطلة."
+      },
+      "tags": [
+        "harry-potter",
+        "motion"
+      ],
+      "frequency_rank": 461
+    },
+    {
+      "id": "v217",
+      "type": "verb",
+      "english": "to point (with wand)",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَشَارَ / يُشِيرُ",
+        "translit": "ashaara / yusheeru",
+        "example": "أشار بعصاه نحو الهدف.",
+        "root": "ش و ر"
+      },
+      "lev": {
+        "form": "أشار / بيشير",
+        "translit": "ashaar / bisheer",
+        "notes": "Cognate.",
+        "example": "أشار بعصاه."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 462
+    },
+    {
+      "id": "v218",
+      "type": "verb",
+      "english": "to wave",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "لَوَّحَ / يُلَوِّحُ",
+        "translit": "lawwaha / yulawwihu",
+        "example": "لوّح بعصاه ثلاث مرات.",
+        "root": "ل و ح"
+      },
+      "lev": {
+        "form": "لوّح",
+        "translit": "lawwah",
+        "notes": "Same.",
+        "example": "لوّح بعصاه."
+      },
+      "tags": [
+        "harry-potter",
+        "action"
+      ],
+      "frequency_rank": 463
+    },
+    {
+      "id": "v219",
+      "type": "verb",
+      "english": "to threaten",
+      "dlpt_level": "2",
+      "msa": {
+        "form": "هَدَّدَ / يُهَدِّدُ",
+        "translit": "haddada / yuhaddidu",
+        "example": "هدّد بالانتقام.",
+        "root": "ه د د"
+      },
+      "lev": {
+        "form": "هدّد / بيهدّد",
+        "translit": "haddad / bihaddid",
+        "notes": "Cognate.",
+        "example": "هدّد بالانتقام."
+      },
+      "tags": [
+        "harry-potter",
+        "communication"
+      ],
+      "frequency_rank": 464
+    },
+    {
+      "id": "v220",
+      "type": "verb",
+      "english": "to obey",
+      "dlpt_level": "1+",
+      "msa": {
+        "form": "أَطَاعَ / يُطِيعُ",
+        "translit": "ataa'a / yutee'u",
+        "example": "أطاع أوامر الناظر.",
+        "root": "ط و ع"
+      },
+      "lev": {
+        "form": "أطاع / بيطّع",
+        "translit": "ataa' / bittee'",
+        "notes": "Cognate.",
+        "example": "أطاع أوامر المدير."
+      },
+      "tags": [
+        "harry-potter",
+        "social"
+      ],
+      "frequency_rank": 465
     }
   ]
 }

@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body class="bg-forge-950 text-gray-100 min-h-screen font-sans">
   <!-- Onboarding overlay -->
@@ -51,6 +51,7 @@
         <li><strong class="text-forge-300">Space</strong> — flip / continue &nbsp; <strong class="text-forge-300">Enter</strong> — submit &nbsp; <strong class="text-forge-300">1–4</strong> — multiple choice (vocab + conjugation)</li>
         <li><strong class="text-forge-300">Sentences</strong> tab — Arabic → English (typos accepted). Conjugation drill is multiple choice — no Arabic typing needed.</li>
         <li><strong class="text-forge-300">Phrases</strong> — filler words, connectors, obituary/death register, news discourse.</li>
+        <li><strong class="text-forge-300">Harry Potter</strong> — verbs & nouns for reading هاري بوتر in Arabic (magic school, fantasy, narrative).</li>
         <li>Progress saves automatically. <strong class="text-forge-300">Settings</strong> has export/backup.</li>
       </ul>
       <button id="onboarding-dismiss" class="w-full py-2 bg-forge-accent text-forge-950 font-semibold rounded hover:brightness-110">Start Drilling</button>
@@ -85,6 +86,7 @@
       <div class="flex gap-1 mt-3" role="tablist" aria-label="Content type">
         <button data-content="verbs" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-700 text-white">Verbs</button>
         <button data-content="nouns" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Nouns</button>
+        <button data-content="harry-potter" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white" title="Verbs & nouns for reading Harry Potter in Arabic">Harry Potter</button>
         <button data-content="conjugation" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Conjugation</button>
         <button data-content="sentences" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Sentences</button>
         <button data-content="phrases" class="content-tab px-4 py-1.5 text-sm rounded-t font-medium bg-forge-800 text-gray-400 hover:text-white">Phrases</button>
@@ -297,6 +299,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=16"></script>
+  <script src="script.js?v=17"></script>
 </body>
 </html>

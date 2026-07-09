@@ -15,13 +15,14 @@ Open `http://localhost:8080` — do **not** open `index.html` directly (`file://
 ## Daily Usage
 
 1. **Pick register** — MSA or Levantine (top toggle). Progress is tracked separately per register.
-2. **Verbs / Nouns / Conjugation** — secondary tabs switch content.
+2. **Verbs / Nouns / Harry Potter / Conjugation** — secondary tabs switch content.
 3. **Browse** — search by English, Arabic, translit, or root. Filter by Known / Needs Work.
 4. **Start Drill** — choose Flashcard, Multiple Choice, or Typing. Sessions prioritize weak items.
 5. **After each answer** — see the other register (MSA ↔ Lev mapping).
 6. **Sentences tab** — Arabic example sentence → type English translation (typos OK).
 7. **Conjugation tab** — full past/present tables + multiple-choice conjugation drill (no Arabic typing).
-7. **Stats panel** — today's count, accuracy, streak, mastery bars. Export progress as JSON.
+8. **Harry Potter tab** — verbs & nouns tagged for reading هاري بوتر in Arabic (magic school, fantasy, narrative).
+9. **Stats panel** — today's count, accuracy, streak, mastery bars. Export progress as JSON.
 
 ### Keyboard Shortcuts
 
@@ -119,7 +120,7 @@ Levantine TTS quality varies by browser — recorded audio is better for product
 - HTML5 + Tailwind CDN + vanilla JS
 - Noto Sans Arabic (Google Fonts)
 - localStorage for all state
-- ~215 starter items (115 verbs, 100 nouns), 10 full conjugation tables
+- ~500+ items (verbs, nouns, phrases) including a Harry Potter reading pack, 10 full conjugation tables
 
 ## License
 

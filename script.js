@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const APP_VERSION = '16';
+  const APP_VERSION = '17';
 
   const STORAGE = {
     progress: 'adf_progress',
@@ -182,6 +182,12 @@
   function getItems() {
     if (settings.contentType === 'phrases') {
       return vocabData.items.filter(i => i.type === 'phrase');
+    }
+    if (settings.contentType === 'harry-potter') {
+      return vocabData.items.filter(i =>
+        (i.type === 'verb' || i.type === 'noun') &&
+        (i.tags || []).includes('harry-potter')
+      );
     }
     const type = settings.contentType === 'nouns' ? 'noun' : 'verb';
     if (settings.contentType === 'conjugation') {
@@ -363,10 +369,16 @@
 
       const card = document.createElement('button');
       card.className = 'item-card text-left w-full p-3 bg-forge-900 border border-forge-700 rounded-lg';
+      const typeBadge = settings.contentType === 'harry-potter'
+        ? `<span class="tag-pill shrink-0">${esc(item.type)}</span>`
+        : '';
+      const tagsForCard = (item.tags || [])
+        .filter(t => settings.contentType !== 'harry-potter' || t !== 'harry-potter')
+        .slice(0, 2);
       card.innerHTML = `
         <div class="flex justify-between items-start gap-2 mb-1">
           <span class="text-sm text-gray-300">${esc(item.english)}</span>
-          <span class="stars shrink-0">${masteryStars(m)}</span>
+          <span class="flex items-center gap-1 shrink-0">${typeBadge}<span class="stars">${masteryStars(m)}</span></span>
         </div>
         <div class="arabic arabic-sm text-forge-300 mb-1">${esc(reg.form)}</div>
         <div class="translit mb-2">${esc(reg.translit)}</div>
@@ -375,7 +387,7 @@
           ${esc(other.form)}
         </div>
         <div class="mt-1 flex flex-wrap gap-1 items-center">
-          ${(item.tags || []).slice(0, 2).map(t => `<span class="tag-pill">${esc(t)}</span>`).join('')}
+          ${tagsForCard.map(t => `<span class="tag-pill">${esc(t)}</span>`).join('')}
         </div>
       `;
       card.addEventListener('click', () => openDetail(item));
@@ -1202,7 +1214,7 @@
 
   function refreshAfterDataChange() {
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns' || settings.contentType === 'phrases') renderBrowse();
+    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns' || settings.contentType === 'phrases' || settings.contentType === 'harry-potter') renderBrowse();
     else if (settings.contentType === 'conjugation') renderConjugation();
   }
 
@@ -1291,7 +1303,7 @@
       btn.setAttribute('aria-selected', active);
     });
     if (settings.contentType === 'sentences') renderSentencesView();
-    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns' || settings.contentType === 'phrases') renderBrowse();
+    else if (settings.contentType === 'verbs' || settings.contentType === 'nouns' || settings.contentType === 'phrases' || settings.contentType === 'harry-potter') renderBrowse();
     updateStats();
   }
 
